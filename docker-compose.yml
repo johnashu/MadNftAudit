@@ -1,0 +1,38 @@
+version: "3.7"
+# chcp.com 437
+services:
+
+  halmos:
+    container_name: halmos
+    tty: true
+    build: ./Halmos
+    restart: unless-stopped
+    volumes:
+      - ./auditFiles:/auditFiles
+
+  slither:
+    container_name: slither
+    tty: true
+    build: ./Slither
+    restart: unless-stopped
+    volumes:
+      - ./auditFiles:/auditFiles
+
+  manticore:
+    container_name: manticore
+    tty: true
+    image: trailofbits/manticore
+    restart: unless-stopped
+    volumes:
+      - ./auditFiles:/auditFiles
+
+  gasgauge:
+    container_name: gasgauge
+    tty: true
+    build: ./Gasgauge
+    restart: unless-stopped
+    volumes:
+      - ./auditFiles:/auditFiles
+
+volumes:
+  auditFiles:
