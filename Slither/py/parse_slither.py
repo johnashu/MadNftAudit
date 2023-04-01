@@ -102,7 +102,7 @@ with open("Slither/results/slitherResults.MD", "w") as f:
     for checkType, items in markdown_data.items():
         summary = f"# {checkType}\n\n> Items Found: {len(items)}\n"
         for i, item in enumerate(items):
-            summary += f"\n**Item {i+1} / {len(items)} **\n{item}"
+            summary += f"\n_Item {i+1} / {len(items)}_\n{item}"
         f.write(summary)
 
 
