@@ -1,6 +1,52 @@
 
 # MAD NFTs Audit - Slither
 
+# Introduction
+
+A time-boxed security review of the **MAD NFTs MArket Place** protocol was done by **Maffaz**, with a focus on the security aspects of the application's implementation.
+
+# Disclaimer
+
+A smart contract security review can never verify the complete absence of vulnerabilities. This is a time, resource and expertise bound effort where I try to find as many vulnerabilities as possible. I can not guarantee 100% security after the review or even if the review will find any problems with your smart contracts.
+
+# About **Maffaz**
+
+John Ashurst, or **Maffaz**, is an independent smart contract security researcher. He does his best to contribute to the blockchain ecosystem and its protocols by putting time and effort into security research.
+
+# About **MAD NFTs**
+
+
+## Unexpected/Interesting Design choices
+
+The `withdraw` functionality is callable by anyone..
+
+
+# Threat Model
+
+## Roles & Actors
+
+- ERC721 NFT Contract Owner
+- ERC1155 Contract Owner
+- Unauthorized User - anyone can call `withdraw` by just paying gas
+
+## Security Interview
+
+**Q:** What in the protocol has value in the market?
+
+**A:** 
+
+
+## Potential attacker's goals
+
+- Place any method in the protocol into a state of DoS ???
+- Steal another user's claimable tokens ???
+- Exploit bugs in price calculations ???
+
+## Potential ways for the attacker to achieve his goals
+
+- Exploit errors or rounding downs in divisions in price calculations for personal benefit - division error
+- 
+
 # Severity classification
 
 | Severity               | Impact: High | Impact: Medium | Impact: Low |
@@ -8,6 +54,23 @@
 | **Likelihood: High**   | Critical     | High           | Medium      |
 | **Likelihood: Medium** | High         | Medium         | Low         |
 | **Likelihood: Low**    | Medium       | Low            | Low         |
+
+**Impact** - the technical, economic and reputation damage of a successful attack
+
+**Likelihood** - the chance that a particular vulnerability gets discovered and exploited
+
+**Severity** - the overall criticality of the risk
+
+# Security Assessment Summary
+
+**_review commit hash_ - [c128e6780c557dc8eb432c6545ebc2411b26cbd3](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3)**
+
+### Scope
+
+The following smart contracts were in scope of the audit:
+
+- `MAD.sol`
+
 
 The following number of issues were found, categorized by their severity:
 
@@ -3440,3 +3503,106 @@ _Item 37 / 37_
 ## Recommendations
 
 ---
+
+# ERC Compliance Checks
+
+# Check ERC1155B
+
+`/auditFiles/madnfts-solidity-contracts# slither-check-erc ./contracts/lib/tokens/erc1155/Base/ERC1155B.sol ERC1155B`
+
+## Check functions
+```
+[ ] totalSupply() is missing
+[ ] balanceOf(address) is missing
+[ ] transfer(address,uint256) is missing
+[ ] transferFrom(address,address,uint256) is missing
+[ ] approve(address,uint256) is missing
+[ ] allowance(address,address) is missing
+[ ] name() is missing (optional)
+[ ] symbol() is missing (optional)
+[ ] decimals() is missing (optional)
+
+## Check events
+
+[ ] Transfer(address,address,uint256) is missing
+[ ] Approval(address,address,uint256) is missing
+
+[ ] ERC1155B is not protected for the ERC20 approval race condition
+```
+# Check ERC20
+
+`/auditFiles/madnfts-solidity-contracts# slither-check-erc /auditFiles/madnfts-solidity-contracts/contracts/lib/tokens/erc20.sol ERC20`
+
+## Check functions
+
+```[✓] totalSupply() is present
+        [✓] totalSupply() -> (uint256) (correct return type)
+        [✓] totalSupply() is view
+[✓] balanceOf(address) is present
+        [✓] balanceOf(address) -> (uint256) (correct return type)
+        [✓] balanceOf(address) is view
+[✓] transfer(address,uint256) is present
+        [✓] transfer(address,uint256) -> (bool) (correct return type)
+        [ ] Must emit be view Transfer(address,address,uint256)
+[✓] transferFrom(address,address,uint256) is present
+        [✓] transferFrom(address,address,uint256) -> (bool) (correct return type)
+        [ ] Must emit be view Transfer(address,address,uint256)
+[✓] approve(address,uint256) is present
+        [✓] approve(address,uint256) -> (bool) (correct return type)
+        [ ] Must emit be view Approval(address,address,uint256)
+[✓] allowance(address,address) is present
+        [✓] allowance(address,address) -> (uint256) (correct return type)
+        [✓] allowance(address,address) is view
+        
+[ ] name() is missing (optional)
+[ ] symbol() is missing (optional)
+[ ] decimals() is missing (optional)```
+
+## Check events
+
+```[✓] Transfer(address,address,uint256) is present
+        [✓] parameter 0 is indexed
+        [✓] parameter 1 is indexed
+[✓] Approval(address,address,uint256) is present
+        [✓] parameter 0 is indexed
+        [✓] parameter 1 is indexed
+
+
+[ ] ERC20 is not protected for the ERC20 approval race condition```# Check ERC721
+
+`/auditFiles/madnfts-solidity-contracts# slither-check-erc ./contracts/lib/tokens/erc721/Base/ERC721.sol ERC721`
+
+
+## Check functions
+
+```[ ] totalSupply() is missing
+[✓] balanceOf(address) is present
+        [✓] balanceOf(address) -> (uint256) (correct return type)
+        [✓] balanceOf(address) is view
+[ ] transfer(address,uint256) is missing
+[✓] transferFrom(address,address,uint256) is present
+        [ ] transferFrom(address,address,uint256) -> () should return bool
+        [✓] Transfer(address,address,uint256) is emitted
+[✓] approve(address,uint256) is present
+        [ ] approve(address,uint256) -> () should return bool
+        [✓] Approval(address,address,uint256) is emitted
+[ ] allowance(address,address) is missing
+[✓] name() is present
+        [✓] name() -> (string) (correct return type)
+        [✓] name() is view
+[✓] symbol() is present
+        [✓] symbol() -> (string) (correct return type)
+        [✓] symbol() is view
+[ ] decimals() is missing (optional)```
+
+## Check events
+
+```[✓] Transfer(address,address,uint256) is present
+        [✓] parameter 0 is indexed
+        [✓] parameter 1 is indexed
+[✓] Approval(address,address,uint256) is present
+        [✓] parameter 0 is indexed
+        [✓] parameter 1 is indexed
+
+
+[ ] ERC721 is not protected for the ERC20 approval race condition```

@@ -1,4 +1,6 @@
 import json, os
+import glob
+from templates import base_template, check_template, checks_header, issues_found
 
 repo_contract_path = "https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/"
 fn = os.path.join("Slither", "results", "slither.results.json")
@@ -26,24 +28,6 @@ with open(fn) as f:
 markdown_data = {
 
 }
-
-check_template = """
-## Severity
-
-**Impact:** {}
-
-**Likelihood:** {}
-
-## Description
-
- {}
-
-## Example / POC
-
-## Recommendations
-
----
-"""
 
 items_count = {
     "High": 0,
@@ -75,26 +59,20 @@ for check in results:
             if k not in omit_keys:
                 print(f"{k}\n\t{v}\n")
                 
-header = f"""
-# MAD NFTs Audit - Slither
+header = base_template + issues_found.format(
+    items_count["High"],
+    items_count["Medium"],
+    items_count["Low"],
+    items_count["Optimization"]
+)
 
-# Severity classification
+def get_erc_checks() -> str:
+    check_str = ""
+    for check in glob.glob("Slither/results/erc-checker/*.MD"):
+        with open(check, "r") as f:
+            check_str += f.read()
+    return check_str
 
-| Severity               | Impact: High | Impact: Medium | Impact: Low |
-| ---------------------- | ------------ | -------------- | ----------- |
-| **Likelihood: High**   | Critical     | High           | Medium      |
-| **Likelihood: Medium** | High         | Medium         | Low         |
-| **Likelihood: Low**    | Medium       | Low            | Low         |
-
-The following number of issues were found, categorized by their severity:
-
-- Critical 
-- High: {items_count["High"]} issues
-- Medium: {items_count["Medium"]} issues
-- Low: {items_count["Low"]} issues
-- Optimization: {items_count["Optimization"]} issues
-
-"""
 
 
 with open("Slither/results/slitherResults.MD", "w") as f:
@@ -104,5 +82,6 @@ with open("Slither/results/slitherResults.MD", "w") as f:
         for i, item in enumerate(items):
             summary += f"\n_Item {i+1} / {len(items)}_\n{item}"
         f.write(summary)
+    f.write(checks_header + get_erc_checks())
 
 
