@@ -1,5 +1,5 @@
 base_template = """
-# MAD NFTs Audit - Slither
+# MAD NFTs Audit
 
 # Introduction
 

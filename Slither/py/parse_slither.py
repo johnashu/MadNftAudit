@@ -74,7 +74,6 @@ def get_erc_checks() -> str:
     return check_str
 
 
-
 with open("Slither/results/slitherResults.MD", "w") as f:
     f.write(header)
     for checkType, items in markdown_data.items():
