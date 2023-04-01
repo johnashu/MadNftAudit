@@ -1,0 +1,13 @@
+strict digraph {
+subgraph cluster_19575_ERC20 {
+label = "ERC20"
+"19575_totalSupply" [label="totalSupply"]
+"19575_transfer" [label="transfer"]
+"19575_approve" [label="approve"]
+"19575_transferFrom" [label="transferFrom"]
+"19575_balanceOf" [label="balanceOf"]
+"19575_allowance" [label="allowance"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+}
+}

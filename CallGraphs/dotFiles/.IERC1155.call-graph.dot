@@ -1,0 +1,15 @@
+strict digraph {
+subgraph cluster_13912_IERC1155 {
+label = "IERC1155"
+"13912_isApprovedForAll" [label="isApprovedForAll"]
+"13912_setApprovalForAll" [label="setApprovalForAll"]
+"13912_balanceOfBatch" [label="balanceOfBatch"]
+"13912_safeBatchTransferFrom" [label="safeBatchTransferFrom"]
+"13912_safeTransferFrom" [label="safeTransferFrom"]
+"13912_royaltyInfo" [label="royaltyInfo"]
+"13912_balanceOf" [label="balanceOf"]
+"13912_supportsInterface" [label="supportsInterface"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+}
+}

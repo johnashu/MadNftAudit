@@ -1,5 +1,7 @@
 # Slither
 
+,inheritance-graph
+
 https://github.com/crytic/slither?s=35#how-to-install
 
 Docker Linux command line..

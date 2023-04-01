@@ -1,0 +1,40 @@
+strict digraph {
+subgraph cluster_12458_MockERC20 {
+label = "MockERC20"
+"12458_constructor" [label="constructor"]
+"12458_burn" [label="burn"]
+"12458_mint" [label="mint"]
+"12458_burn" -> "12458__burn"
+"12458_constructor" -> "12458_mint"
+"12458_constructor" -> "12458_constructor"
+"12458_mint" -> "12458__mint"
+}subgraph cluster_12412_ERC20 {
+label = "ERC20"
+"12412_computeDomainSeparator" [label="computeDomainSeparator"]
+"12412__mint" [label="_mint"]
+"12412_approve" [label="approve"]
+"12412_DOMAIN_SEPARATOR" [label="DOMAIN_SEPARATOR"]
+"12412_constructor" [label="constructor"]
+"12412_transferFrom" [label="transferFrom"]
+"12412__burn" [label="_burn"]
+"12412_transfer" [label="transfer"]
+"12412_permit" [label="permit"]
+"12412_permit" -> "12412_DOMAIN_SEPARATOR"
+"12412_constructor" -> "12412_computeDomainSeparator"
+"12412_DOMAIN_SEPARATOR" -> "12412_computeDomainSeparator"
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"ecrecover(bytes32,uint8,bytes32,bytes32)" 
+"abi.encode()" 
+"abi.encodePacked()" 
+"require(bool,string)" 
+"keccak256(bytes)" 
+"12412_permit" -> "abi.encode()"
+"12412_computeDomainSeparator" -> "keccak256(bytes)"
+"12412_permit" -> "abi.encodePacked()"
+"12412_permit" -> "keccak256(bytes)"
+"12412_permit" -> "require(bool,string)"
+"12412_computeDomainSeparator" -> "abi.encode()"
+"12412_permit" -> "ecrecover(bytes32,uint8,bytes32,bytes32)"
+}
+}

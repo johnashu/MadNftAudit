@@ -1,0 +1,24 @@
+strict digraph {
+subgraph cluster_25000_CREATE3 {
+label = "CREATE3"
+"25000_getDeployed" [label="getDeployed"]
+"25000_deploy" [label="deploy"]
+"25000_slitherConstructorConstantVariables" [label="slitherConstructorConstantVariables"]
+"25000_deploy" -> "25000_getDeployed"
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"create2(uint256,uint256,uint256,uint256)" 
+"mload(uint256)" 
+"abi.encodePacked()" 
+"code(address)" 
+"require(bool,string)" 
+"keccak256(bytes)" 
+"25000_deploy" -> "require(bool,string)"
+"25000_getDeployed" -> "abi.encodePacked()"
+"25000_slitherConstructorConstantVariables" -> "keccak256(bytes)"
+"25000_deploy" -> "code(address)"
+"25000_deploy" -> "create2(uint256,uint256,uint256,uint256)"
+"25000_getDeployed" -> "keccak256(bytes)"
+"25000_deploy" -> "mload(uint256)"
+}
+}

@@ -1,0 +1,10 @@
+strict digraph {
+subgraph cluster_12610_IERC721Metadata {
+label = "IERC721Metadata"
+"12610_name" [label="name"]
+"12610_tokenURI" [label="tokenURI"]
+"12610_symbol" [label="symbol"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+}
+}

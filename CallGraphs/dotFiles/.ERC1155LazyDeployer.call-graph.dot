@@ -1,0 +1,16 @@
+strict digraph {
+subgraph cluster_10883_ERC1155LazyDeployer {
+label = "ERC1155LazyDeployer"
+"10883__1155LazyDeploy" [label="_1155LazyDeploy"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"keccak256(bytes)" 
+"type()" 
+"abi.encode()" 
+"abi.encodePacked()" 
+"10883__1155LazyDeploy" -> "abi.encode()"
+"10883__1155LazyDeploy" -> "keccak256(bytes)"
+"10883__1155LazyDeploy" -> "type()"
+"10883__1155LazyDeploy" -> "abi.encodePacked()"
+}
+}

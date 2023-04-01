@@ -1,0 +1,201 @@
+strict digraph {
+subgraph cluster_10593_Owned {
+label = "Owned"
+"10593_setOwner" [label="setOwner"]
+"10593_constructor" [label="constructor"]
+"10593_setOwner" -> "10593_onlyOwner"
+}subgraph cluster_20484_ERC721Holder {
+label = "ERC721Holder"
+"20484_onERC721Received" [label="onERC721Received"]
+}subgraph cluster_11366_Pausable {
+label = "Pausable"
+"11366__pause" [label="_pause"]
+"11366_paused" [label="paused"]
+"11366_constructor" [label="constructor"]
+"11366__unpause" [label="_unpause"]
+"11366__unpause" -> "11366_whenPaused"
+"11366__pause" -> "11366_whenNotPaused"
+}subgraph cluster_20139_ERC721TokenReceiver {
+label = "ERC721TokenReceiver"
+"20139_onERC721Received" [label="onERC721Received"]
+}subgraph cluster_7565_MADMarketplace721 {
+label = "MADMarketplace721"
+"7565_name" [label="name"]
+"7565_constructor" [label="constructor"]
+"7565__claimChecks" [label="_claimChecks"]
+"7565_setRecipient" [label="setRecipient"]
+"7565_withdrawERC20" [label="withdrawERC20"]
+"7565_getOutbidBalance" [label="getOutbidBalance"]
+"7565_ERC165Check" [label="ERC165Check"]
+"7565_updateSettings" [label="updateSettings"]
+"7565_getCurrentPrice" [label="getCurrentPrice"]
+"7565_fixedPrice" [label="fixedPrice"]
+"7565__buyChecks" [label="_buyChecks"]
+"7565__withdrawOutbid" [label="_withdrawOutbid"]
+"7565_setOwner" [label="setOwner"]
+"7565_dutchAuction" [label="dutchAuction"]
+"7565_pause" [label="pause"]
+"7565_delOrder" [label="delOrder"]
+"7565_claim" [label="claim"]
+"7565_autoTransferFunds" [label="autoTransferFunds"]
+"7565_englishAuction" [label="englishAuction"]
+"7565_sellerOrderLength" [label="sellerOrderLength"]
+"7565__makeOrderChecks" [label="_makeOrderChecks"]
+"7565_unpause" [label="unpause"]
+"7565_bid" [label="bid"]
+"7565_cancelOrder" [label="cancelOrder"]
+"7565_interfaceCheck" [label="interfaceCheck"]
+"7565_withdraw" [label="withdraw"]
+"7565__bidChecks" [label="_bidChecks"]
+"7565__feeResolver" [label="_feeResolver"]
+"7565_slitherConstructorVariables" [label="slitherConstructorVariables"]
+"7565_tokenOrderLength" [label="tokenOrderLength"]
+"7565_setFees" [label="setFees"]
+"7565__intPath" [label="_intPath"]
+"7565__hash" [label="_hash"]
+"7565__cancelOrderChecks" [label="_cancelOrderChecks"]
+"7565_withdrawOutbid" [label="withdrawOutbid"]
+"7565__setPaymentToken" [label="_setPaymentToken"]
+"7565_setFactory" [label="setFactory"]
+"7565_slitherConstructorConstantVariables" [label="slitherConstructorConstantVariables"]
+"7565__exceedsMaxEP" [label="_exceedsMaxEP"]
+"7565__isBidderOrSeller" [label="_isBidderOrSeller"]
+"7565_buy" [label="buy"]
+"7565__extPath1" [label="_extPath1"]
+"7565_withdrawOutbidEth" [label="withdrawOutbidEth"]
+"7565__makeOrder" [label="_makeOrder"]
+"7565_receive" [label="receive"]
+"7565__extPath0" [label="_extPath0"]
+"7565_bid" -> "7565_whenNotPaused"
+"7565_updateSettings" -> "7565_onlyOwner"
+"7565_constructor" -> "7565_setRecipient"
+"7565_dutchAuction" -> "7565__makeOrder"
+"7565_bid" -> "7565__bidChecks"
+"7565_buy" -> "7565_ERC165Check"
+"7565_dutchAuction" -> "7565__exceedsMaxEP"
+"7565__makeOrder" -> "7565__hash"
+"7565_constructor" -> "7565__setPaymentToken"
+"7565_buy" -> "7565__intPath"
+"7565_englishAuction" -> "7565_whenNotPaused"
+"7565_autoTransferFunds" -> "7565_onlyOwner"
+"7565_autoTransferFunds" -> "7565__withdrawOutbid"
+"7565_delOrder" -> "7565_onlyOwner"
+"7565_delOrder" -> "7565_whenPaused"
+"7565_pause" -> "7565_onlyOwner"
+"7565_unpause" -> "7565_onlyOwner"
+"7565_setOwner" -> "7565_onlyOwner"
+"7565_claim" -> "7565_whenNotPaused"
+"7565_claim" -> "7565_interfaceCheck"
+"7565_constructor" -> "7565_setFactory"
+"7565_unpause" -> "7565__unpause"
+"7565_dutchAuction" -> "7565_whenNotPaused"
+"7565_withdraw" -> "7565_whenPaused"
+"7565_setFees" -> "7565_onlyOwner"
+"7565_setRecipient" -> "7565_onlyOwner"
+"7565_claim" -> "7565__intPath"
+"7565_withdrawERC20" -> "7565_onlyOwner"
+"7565__intPath" -> "7565__feeResolver"
+"7565_claim" -> "7565__claimChecks"
+"7565_buy" -> "7565__extPath0"
+"7565_constructor" -> "7565_updateSettings"
+"7565_cancelOrder" -> "7565__cancelOrderChecks"
+"7565_withdrawERC20" -> "7565_whenPaused"
+"7565_setFactory" -> "7565_onlyOwner"
+"7565_buy" -> "7565_whenNotPaused"
+"7565_withdrawOutbid" -> "7565__withdrawOutbid"
+"7565_buy" -> "7565_getCurrentPrice"
+"7565__makeOrder" -> "7565__makeOrderChecks"
+"7565_fixedPrice" -> "7565__makeOrder"
+"7565_buy" -> "7565_interfaceCheck"
+"7565_fixedPrice" -> "7565_whenNotPaused"
+"7565_claim" -> "7565__isBidderOrSeller"
+"7565_claim" -> "7565__extPath0"
+"7565_claim" -> "7565__extPath1"
+"7565_pause" -> "7565__pause"
+"7565_buy" -> "7565__buyChecks"
+"7565_withdraw" -> "7565_onlyOwner"
+"7565_claim" -> "7565_ERC165Check"
+"7565_ERC165Check" -> "7565_interfaceCheck"
+"7565_englishAuction" -> "7565__makeOrder"
+"7565_buy" -> "7565__extPath1"
+}subgraph cluster_659_MAD {
+label = "MAD"
+"659_name" [label="name"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"revert WrongPrice()" 
+"abi.encodeWithSelector()" 
+"revert(uint256,uint256)" 
+"mload(uint256)" 
+"staticcall(uint256,uint256,uint256,uint256,uint256,uint256)" 
+"keccak256(uint256,uint256)" 
+"sstore(uint256,uint256)" 
+"revert(string)" 
+"mstore(uint256,uint256)" 
+"timestamp()" 
+"balance(address)" 
+"abi.encodePacked()" 
+"require(bool,string)" 
+"keccak256(bytes)" 
+"sload(uint256)" 
+"returndatasize()" 
+"return(uint256,uint256)" 
+"7565__makeOrderChecks" -> "mstore(uint256,uint256)"
+"7565__makeOrderChecks" -> "timestamp()"
+"7565_setFees" -> "require(bool,string)"
+"7565__bidChecks" -> "revert(uint256,uint256)"
+"7565__feeResolver" -> "sload(uint256)"
+"7565__exceedsMaxEP" -> "mstore(uint256,uint256)"
+"7565__bidChecks" -> "sload(uint256)"
+"7565_getCurrentPrice" -> "mstore(uint256,uint256)"
+"7565_withdraw" -> "balance(address)"
+"7565_autoTransferFunds" -> "revert(string)"
+"7565__isBidderOrSeller" -> "revert(uint256,uint256)"
+"7565__feeResolver" -> "keccak256(uint256,uint256)"
+"7565_bid" -> "timestamp()"
+"7565_setOwner" -> "require(bool,string)"
+"7565_withdrawOutbidEth" -> "require(bool,string)"
+"7565_interfaceCheck" -> "returndatasize()"
+"7565_buy" -> "revert WrongPrice()"
+"7565__feeResolver" -> "mstore(uint256,uint256)"
+"7565__claimChecks" -> "mstore(uint256,uint256)"
+"7565_bid" -> "sstore(uint256,uint256)"
+"7565__withdrawOutbid" -> "require(bool,string)"
+"7565_setRecipient" -> "sstore(uint256,uint256)"
+"7565_setOwner" -> "sstore(uint256,uint256)"
+"7565__claimChecks" -> "timestamp()"
+"7565_updateSettings" -> "require(bool,string)"
+"7565_getCurrentPrice" -> "mload(uint256)"
+"7565__exceedsMaxEP" -> "revert(uint256,uint256)"
+"7565_getCurrentPrice" -> "sload(uint256)"
+"7565__hash" -> "keccak256(bytes)"
+"7565__bidChecks" -> "mstore(uint256,uint256)"
+"7565_getCurrentPrice" -> "timestamp()"
+"7565__bidChecks" -> "timestamp()"
+"7565__makeOrderChecks" -> "revert(uint256,uint256)"
+"7565_setFees" -> "sstore(uint256,uint256)"
+"7565__hash" -> "abi.encodePacked()"
+"7565__claimChecks" -> "revert(uint256,uint256)"
+"7565_constructor" -> "require(bool,string)"
+"7565_withdrawERC20" -> "require(bool,string)"
+"7565_autoTransferFunds" -> "require(bool,string)"
+"7565_interfaceCheck" -> "staticcall(uint256,uint256,uint256,uint256,uint256,uint256)"
+"7565__isBidderOrSeller" -> "mstore(uint256,uint256)"
+"7565__buyChecks" -> "revert(uint256,uint256)"
+"7565__buyChecks" -> "timestamp()"
+"7565__buyChecks" -> "mstore(uint256,uint256)"
+"7565_updateSettings" -> "sstore(uint256,uint256)"
+"7565__makeOrderChecks" -> "sload(uint256)"
+"7565__cancelOrderChecks" -> "revert(uint256,uint256)"
+"7565__cancelOrderChecks" -> "mstore(uint256,uint256)"
+"7565_bid" -> "sload(uint256)"
+"7565__feeResolver" -> "sstore(uint256,uint256)"
+"7565_setFactory" -> "sstore(uint256,uint256)"
+"7565_interfaceCheck" -> "abi.encodeWithSelector()"
+"7565_interfaceCheck" -> "mload(uint256)"
+"7565_name" -> "mstore(uint256,uint256)"
+"7565_setRecipient" -> "require(bool,string)"
+"7565_name" -> "return(uint256,uint256)"
+"7565_withdraw" -> "require(bool,string)"
+}
+}

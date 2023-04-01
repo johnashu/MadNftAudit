@@ -1,0 +1,20 @@
+strict digraph {
+subgraph cluster_25101_MerkleProof {
+label = "MerkleProof"
+"25101_verify" [label="verify"]
+"25101_verifyMultiProof" [label="verifyMultiProof"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"keccak256(uint256,uint256)" 
+"mstore(uint256,uint256)" 
+"mload(uint256)" 
+"calldataload(uint256)" 
+"25101_verify" -> "mstore(uint256,uint256)"
+"25101_verify" -> "calldataload(uint256)"
+"25101_verifyMultiProof" -> "keccak256(uint256,uint256)"
+"25101_verifyMultiProof" -> "calldataload(uint256)"
+"25101_verifyMultiProof" -> "mload(uint256)"
+"25101_verifyMultiProof" -> "mstore(uint256,uint256)"
+"25101_verify" -> "keccak256(uint256,uint256)"
+}
+}

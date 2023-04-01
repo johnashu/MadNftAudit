@@ -1,0 +1,150 @@
+strict digraph {
+subgraph cluster_10593_Owned {
+label = "Owned"
+"10593_setOwner" [label="setOwner"]
+"10593_constructor" [label="constructor"]
+"10593_setOwner" -> "10593_onlyOwner"
+}subgraph cluster_24843_ERC2981 {
+label = "ERC2981"
+"24843_supportsInterface" [label="supportsInterface"]
+"24843_royaltyInfo" [label="royaltyInfo"]
+}subgraph cluster_20139_ERC721TokenReceiver {
+label = "ERC721TokenReceiver"
+"20139_onERC721Received" [label="onERC721Received"]
+}subgraph cluster_20119_ERC721 {
+label = "ERC721"
+"20119_constructor" [label="constructor"]
+"20119__burn" [label="_burn"]
+"20119_transferFrom" [label="transferFrom"]
+"20119_tokenURI" [label="tokenURI"]
+"20119_balanceOf" [label="balanceOf"]
+"20119__mint" [label="_mint"]
+"20119_supportsInterface" [label="supportsInterface"]
+"20119_ownerOf" [label="ownerOf"]
+"20119_approve" [label="approve"]
+"20119_setApprovalForAll" [label="setApprovalForAll"]
+"20119__safeMint" [label="_safeMint"]
+"20119_safeTransferFrom" [label="safeTransferFrom"]
+"20119__safeMint" -> "20119__mint"
+"20119_safeTransferFrom" -> "20119_transferFrom"
+}subgraph cluster_24793_ERC721Whitelist {
+label = "ERC721Whitelist"
+"24793_setBaseURILock" [label="setBaseURILock"]
+"24793_withdraw" [label="withdraw"]
+"24793_claimFree" [label="claimFree"]
+"24793_totalSupply" [label="totalSupply"]
+"24793_getMintCount" [label="getMintCount"]
+"24793_whitelistMint" [label="whitelistMint"]
+"24793_setBaseURI" [label="setBaseURI"]
+"24793__paymentCheck" [label="_paymentCheck"]
+"24793_mintToCreator" [label="mintToCreator"]
+"24793_constructor" [label="constructor"]
+"24793_getBaseURI" [label="getBaseURI"]
+"24793__getPriceValue" [label="_getPriceValue"]
+"24793_burn" [label="burn"]
+"24793__getFeeValue" [label="_getFeeValue"]
+"24793_supportsInterface" [label="supportsInterface"]
+"24793_giftTokens" [label="giftTokens"]
+"24793_setWhitelistMintState" [label="setWhitelistMintState"]
+"24793__feeCheck" [label="_feeCheck"]
+"24793_setFreeClaimState" [label="setFreeClaimState"]
+"24793_freeConfig" [label="freeConfig"]
+"24793_withdrawERC20" [label="withdrawERC20"]
+"24793_mint" [label="mint"]
+"24793_setPublicMintState" [label="setPublicMintState"]
+"24793_tokenURI" [label="tokenURI"]
+"24793_whitelistConfig" [label="whitelistConfig"]
+"24793__incrementCounter" [label="_incrementCounter"]
+"24793_whitelistMint" -> "24793_whitelistMax"
+"24793_withdraw" -> "24793_onlyOwner"
+"24793_claimFree" -> "24793_freeClaimAccess"
+"24793_mintToCreator" -> "24793__safeMint"
+"24793_withdrawERC20" -> "24793_onlyOwner"
+"24793_giftTokens" -> "24793__incrementCounter"
+"24793_giftTokens" -> "24793__safeMint"
+"24793_setBaseURILock" -> "24793_onlyOwner"
+"24793_giftTokens" -> "24793_onlyOwner"
+"24793_giftTokens" -> "24793_canMintFree"
+"24793__paymentCheck" -> "24793__getPriceValue"
+"24793_giftTokens" -> "24793__paymentCheck"
+"24793_whitelistMint" -> "24793__paymentCheck"
+"24793_whitelistMint" -> "24793_whitelistMintAccess"
+"24793_mint" -> "24793_publicMintPriceCheck"
+"24793__paymentCheck" -> "24793__feeCheck"
+"24793_burn" -> "24793__paymentCheck"
+"24793_mint" -> "24793__incrementCounter"
+"24793_whitelistMint" -> "24793_nonReentrant"
+"24793_mintToCreator" -> "24793_onlyOwner"
+"24793_mint" -> "24793_publicMintAccess"
+"24793_burn" -> "24793__burn"
+"24793_burn" -> "24793_onlyOwner"
+"24793_mint" -> "24793_hasReachedMax"
+"24793_giftTokens" -> "24793_nonReentrant"
+"24793_setWhitelistMintState" -> "24793_onlyOwner"
+"24793_setPublicMintState" -> "24793_onlyOwner"
+"24793_claimFree" -> "24793__incrementCounter"
+"24793_mintToCreator" -> "24793_nonReentrant"
+"24793_whitelistMint" -> "24793__safeMint"
+"24793_mint" -> "24793__paymentCheck"
+"24793_constructor" -> "24793_constructor"
+"24793_mint" -> "24793_nonReentrant"
+"24793_setBaseURI" -> "24793_onlyOwner"
+"24793_mintToCreator" -> "24793_canMintFree"
+"24793_setFreeClaimState" -> "24793_onlyOwner"
+"24793_mint" -> "24793__safeMint"
+"24793_whitelistMint" -> "24793__incrementCounter"
+"24793_claimFree" -> "24793__safeMint"
+"24793_whitelistMint" -> "24793_merkleVerify"
+"24793_mintToCreator" -> "24793__incrementCounter"
+"24793_whitelistConfig" -> "24793_onlyOwner"
+"24793_mintToCreator" -> "24793__paymentCheck"
+"24793_claimFree" -> "24793_canMintFree"
+"24793_claimFree" -> "24793_merkleVerify"
+"24793_whitelistMint" -> "24793_publicMintPriceCheck"
+"24793_freeConfig" -> "24793_onlyOwner"
+"24793__feeCheck" -> "24793__getFeeValue"
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"revert(uint256,uint256)" 
+"revert NotMintedYet()" 
+"revert UriLocked()" 
+"mstore(uint256,uint256)" 
+"balance(address)" 
+"abi.encodePacked()" 
+"code(address)" 
+"require(bool,string)" 
+"revert AlreadyClaimed()" 
+"sload(uint256)" 
+"24793_mint" -> "revert(uint256,uint256)"
+"24793_mintToCreator" -> "mstore(uint256,uint256)"
+"24793_mint" -> "mstore(uint256,uint256)"
+"24793_whitelistMint" -> "mstore(uint256,uint256)"
+"24793__feeCheck" -> "mstore(uint256,uint256)"
+"24793_tokenURI" -> "abi.encodePacked()"
+"20119__burn" -> "require(bool,string)"
+"20119__safeMint" -> "code(address)"
+"24793_claimFree" -> "sload(uint256)"
+"24793_claimFree" -> "revert AlreadyClaimed()"
+"24793_claimFree" -> "mstore(uint256,uint256)"
+"24793_withdraw" -> "balance(address)"
+"24793_whitelistMint" -> "revert(uint256,uint256)"
+"24793_tokenURI" -> "revert NotMintedYet()"
+"24793_giftTokens" -> "revert(uint256,uint256)"
+"24793_setBaseURI" -> "revert UriLocked()"
+"24793_claimFree" -> "revert(uint256,uint256)"
+"20119__safeMint" -> "require(bool,string)"
+"20119_approve" -> "require(bool,string)"
+"24793_burn" -> "revert(uint256,uint256)"
+"24793_burn" -> "mstore(uint256,uint256)"
+"24793_giftTokens" -> "mstore(uint256,uint256)"
+"20119_ownerOf" -> "require(bool,string)"
+"20119__mint" -> "require(bool,string)"
+"20119_transferFrom" -> "require(bool,string)"
+"20119_safeTransferFrom" -> "require(bool,string)"
+"24793__feeCheck" -> "revert(uint256,uint256)"
+"20119_safeTransferFrom" -> "code(address)"
+"24793_mintToCreator" -> "revert(uint256,uint256)"
+"20119_balanceOf" -> "require(bool,string)"
+}"20119_safeTransferFrom" -> "20139_onERC721Received"
+"20119__safeMint" -> "20139_onERC721Received"
+}

@@ -8,7 +8,7 @@ def main():
     CONTRACT_PATH --> for all contracts in folder give the address of the folder
                   --> for a specific contract give the full address of the contract including .sol at the end
     """
-    CONTRACT_PATH = "/auditFiles/madnfts-solidity-contracts/contracts"
+    CONTRACT_PATH = "/auditFiles/madnfts-solidity-contracts/artifacts"
     GAS_LIMIT = 6721975
     FUZZER = True
     THRESHOLD = True

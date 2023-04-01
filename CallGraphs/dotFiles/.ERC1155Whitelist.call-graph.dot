@@ -1,0 +1,215 @@
+strict digraph {
+subgraph cluster_10593_Owned {
+label = "Owned"
+"10593_setOwner" [label="setOwner"]
+"10593_constructor" [label="constructor"]
+"10593_setOwner" -> "10593_onlyOwner"
+}subgraph cluster_19497_ERC1155Whitelist {
+label = "ERC1155Whitelist"
+"19497__incrementCounter" [label="_incrementCounter"]
+"19497__getPriceValue" [label="_getPriceValue"]
+"19497_setURILock" [label="setURILock"]
+"19497_mintBatchToCreator" [label="mintBatchToCreator"]
+"19497__publicMintCheck" [label="_publicMintCheck"]
+"19497_getMintCount" [label="getMintCount"]
+"19497__paymentCheck" [label="_paymentCheck"]
+"19497_burn" [label="burn"]
+"19497_totalSupply" [label="totalSupply"]
+"19497_whitelistConfig" [label="whitelistConfig"]
+"19497_mint" [label="mint"]
+"19497_whitelistMint" [label="whitelistMint"]
+"19497_uri" [label="uri"]
+"19497__publicWhitelistMintCheck" [label="_publicWhitelistMintCheck"]
+"19497__canBatchToCreator" [label="_canBatchToCreator"]
+"19497__canBatchMint" [label="_canBatchMint"]
+"19497__feeCheck" [label="_feeCheck"]
+"19497_setWhitelistMintState" [label="setWhitelistMintState"]
+"19497_setFreeClaimState" [label="setFreeClaimState"]
+"19497_withdraw" [label="withdraw"]
+"19497_mintBatch" [label="mintBatch"]
+"19497_setPublicMintState" [label="setPublicMintState"]
+"19497_mintToCreator" [label="mintToCreator"]
+"19497_setURI" [label="setURI"]
+"19497_burnBatch" [label="burnBatch"]
+"19497_withdrawERC20" [label="withdrawERC20"]
+"19497_constructor" [label="constructor"]
+"19497_freeConfig" [label="freeConfig"]
+"19497_giftTokens" [label="giftTokens"]
+"19497__getFeeValue" [label="_getFeeValue"]
+"19497_claimFree" [label="claimFree"]
+"19497_getURI" [label="getURI"]
+"19497_whitelistMintBatch" [label="whitelistMintBatch"]
+"19497__canWhitelistBatch" [label="_canWhitelistBatch"]
+"19497_supportsInterface" [label="supportsInterface"]
+"19497_whitelistMintBatch" -> "19497_merkleVerify"
+"19497_whitelistConfig" -> "19497_onlyOwner"
+"19497__publicWhitelistMintCheck" -> "19497_publicMintPriceCheck"
+"19497_setURILock" -> "19497_onlyOwner"
+"19497_whitelistMint" -> "19497__mint"
+"19497_setWhitelistMintState" -> "19497_onlyOwner"
+"19497_claimFree" -> "19497_balanceMatchesTotal"
+"19497_burn" -> "19497_onlyOwner"
+"19497_mintBatch" -> "19497__batchMint"
+"19497_mintBatchToCreator" -> "19497_onlyOwner"
+"19497_mintBatchToCreator" -> "19497__canBatchToCreator"
+"19497_giftTokens" -> "19497_balanceMatchesTotal"
+"19497_setPublicMintState" -> "19497_onlyOwner"
+"19497_mintToCreator" -> "19497_balanceMatchesTotal"
+"19497_whitelistMintBatch" -> "19497__batchMint"
+"19497_mintToCreator" -> "19497_onlyOwner"
+"19497_whitelistMint" -> "19497_nonReentrant"
+"19497_whitelistMint" -> "19497__publicWhitelistMintCheck"
+"19497_mint" -> "19497_publicMintPriceCheck"
+"19497_burnBatch" -> "19497_onlyOwner"
+"19497_giftTokens" -> "19497_onlyOwner"
+"19497__publicMintCheck" -> "19497_balanceMatchesTotal"
+"19497_burnBatch" -> "19497__batchBurn"
+"19497_giftTokens" -> "19497__mint"
+"19497__publicMintCheck" -> "19497__paymentCheck"
+"19497_claimFree" -> "19497__mint"
+"19497__canBatchToCreator" -> "19497_totalSupply"
+"19497_setFreeClaimState" -> "19497_onlyOwner"
+"19497_mint" -> "19497__publicMintCheck"
+"19497_giftTokens" -> "19497__incrementCounter"
+"19497__publicWhitelistMintCheck" -> "19497_whitelistMax"
+"19497_claimFree" -> "19497__incrementCounter"
+"19497_mintBatchToCreator" -> "19497_balanceMatchesTotal"
+"19497_whitelistMint" -> "19497__incrementCounter"
+"19497_mintBatchToCreator" -> "19497_nonReentrant"
+"19497_mintToCreator" -> "19497_canMintFree"
+"19497_mint" -> "19497__mint"
+"19497_mintBatchToCreator" -> "19497__batchMint"
+"19497_claimFree" -> "19497_merkleVerify"
+"19497__publicMintCheck" -> "19497_publicMintAccess"
+"19497_setURI" -> "19497_onlyOwner"
+"19497_mintBatchToCreator" -> "19497__paymentCheck"
+"19497_mintBatch" -> "19497__incrementCounter"
+"19497__feeCheck" -> "19497__getFeeValue"
+"19497_burn" -> "19497__paymentCheck"
+"19497_mintBatch" -> "19497_publicMintAccess"
+"19497_mint" -> "19497_nonReentrant"
+"19497_mintBatch" -> "19497_nonReentrant"
+"19497_mintBatchToCreator" -> "19497__incrementCounter"
+"19497_mintToCreator" -> "19497_nonReentrant"
+"19497__paymentCheck" -> "19497__feeCheck"
+"19497_burnBatch" -> "19497__paymentCheck"
+"19497_mintToCreator" -> "19497__incrementCounter"
+"19497_mintBatch" -> "19497__getPriceValue"
+"19497__canBatchMint" -> "19497_totalSupply"
+"19497_giftTokens" -> "19497_nonReentrant"
+"19497_whitelistMintBatch" -> "19497_nonReentrant"
+"19497_constructor" -> "19497_constructor"
+"19497_giftTokens" -> "19497__paymentCheck"
+"19497__paymentCheck" -> "19497__getPriceValue"
+"19497_mintBatch" -> "19497__canBatchMint"
+"19497_withdraw" -> "19497_onlyOwner"
+"19497_mintToCreator" -> "19497__mint"
+"19497_claimFree" -> "19497_freeClaimAccess"
+"19497_whitelistMintBatch" -> "19497__incrementCounter"
+"19497_claimFree" -> "19497_canMintFree"
+"19497_withdrawERC20" -> "19497_onlyOwner"
+"19497_whitelistMintBatch" -> "19497__canWhitelistBatch"
+"19497_whitelistMintBatch" -> "19497__paymentCheck"
+"19497_mint" -> "19497__incrementCounter"
+"19497_burn" -> "19497__burn"
+"19497_whitelistMint" -> "19497_whitelistMintAccess"
+"19497_giftTokens" -> "19497_canMintFree"
+"19497__publicMintCheck" -> "19497_hasReachedMax"
+"19497_mintBatch" -> "19497_publicMintPriceCheck"
+"19497_whitelistMintBatch" -> "19497_whitelistMintAccess"
+"19497_mintToCreator" -> "19497__paymentCheck"
+"19497__canWhitelistBatch" -> "19497_totalSupply"
+"19497_whitelistMint" -> "19497_merkleVerify"
+"19497_freeConfig" -> "19497_onlyOwner"
+}subgraph cluster_24843_ERC2981 {
+label = "ERC2981"
+"24843_supportsInterface" [label="supportsInterface"]
+"24843_royaltyInfo" [label="royaltyInfo"]
+}subgraph cluster_13550_ERC1155B {
+label = "ERC1155B"
+"13550__mint" [label="_mint"]
+"13550__batchMint" [label="_batchMint"]
+"13550_uri" [label="uri"]
+"13550_balanceOfBatch" [label="balanceOfBatch"]
+"13550_safeTransferFrom" [label="safeTransferFrom"]
+"13550__batchBurn" [label="_batchBurn"]
+"13550_balanceOf" [label="balanceOf"]
+"13550_setApprovalForAll" [label="setApprovalForAll"]
+"13550_safeBatchTransferFrom" [label="safeBatchTransferFrom"]
+"13550__burn" [label="_burn"]
+"13550_balanceOfBatch" -> "13550_balanceOf"
+}subgraph cluster_13594_ERC1155TokenReceiver {
+label = "ERC1155TokenReceiver"
+"13594_onERC1155BatchReceived" [label="onERC1155BatchReceived"]
+"13594_onERC1155Received" [label="onERC1155Received"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"revert WrongPrice()" 
+"revert(uint256,uint256)" 
+"revert MaxMintReached()" 
+"revert MaxWhitelistReached()" 
+"revert UriLocked()" 
+"mstore(uint256,uint256)" 
+"balance(address)" 
+"abi.encodePacked()" 
+"code(address)" 
+"require(bool,string)" 
+"revert AlreadyClaimed()" 
+"sload(uint256)" 
+"revert MaxFreeReached()" 
+"19497_giftTokens" -> "revert(uint256,uint256)"
+"13550__batchBurn" -> "require(bool,string)"
+"19497_uri" -> "mstore(uint256,uint256)"
+"19497_uri" -> "revert(uint256,uint256)"
+"13550_safeTransferFrom" -> "require(bool,string)"
+"19497_mint" -> "revert(uint256,uint256)"
+"19497_mintBatchToCreator" -> "revert(uint256,uint256)"
+"19497_whitelistMintBatch" -> "mstore(uint256,uint256)"
+"19497_whitelistMintBatch" -> "require(bool,string)"
+"19497__canWhitelistBatch" -> "revert MaxWhitelistReached()"
+"13550_safeBatchTransferFrom" -> "require(bool,string)"
+"19497__feeCheck" -> "revert(uint256,uint256)"
+"19497_withdraw" -> "balance(address)"
+"13550__mint" -> "code(address)"
+"13550__batchMint" -> "require(bool,string)"
+"19497_burnBatch" -> "require(bool,string)"
+"19497_whitelistMint" -> "require(bool,string)"
+"13550__burn" -> "require(bool,string)"
+"19497_claimFree" -> "sload(uint256)"
+"19497_claimFree" -> "revert(uint256,uint256)"
+"19497_mintToCreator" -> "revert(uint256,uint256)"
+"13550_safeTransferFrom" -> "code(address)"
+"19497_mintBatch" -> "mstore(uint256,uint256)"
+"19497_mintBatch" -> "require(bool,string)"
+"13550__batchMint" -> "code(address)"
+"19497_giftTokens" -> "mstore(uint256,uint256)"
+"19497__feeCheck" -> "mstore(uint256,uint256)"
+"19497_mintBatchToCreator" -> "mstore(uint256,uint256)"
+"19497_setURI" -> "revert UriLocked()"
+"19497__canBatchToCreator" -> "revert MaxMintReached()"
+"19497_burn" -> "require(bool,string)"
+"19497_mintBatch" -> "revert(uint256,uint256)"
+"19497_claimFree" -> "revert AlreadyClaimed()"
+"19497_burn" -> "mstore(uint256,uint256)"
+"19497__canBatchToCreator" -> "revert MaxFreeReached()"
+"19497__canBatchMint" -> "revert MaxMintReached()"
+"19497_whitelistMint" -> "revert(uint256,uint256)"
+"13550_safeBatchTransferFrom" -> "code(address)"
+"19497_mintToCreator" -> "mstore(uint256,uint256)"
+"19497_claimFree" -> "mstore(uint256,uint256)"
+"19497_whitelistMintBatch" -> "revert(uint256,uint256)"
+"19497_burnBatch" -> "revert(uint256,uint256)"
+"19497_whitelistMint" -> "mstore(uint256,uint256)"
+"19497_burnBatch" -> "mstore(uint256,uint256)"
+"19497_uri" -> "abi.encodePacked()"
+"19497_mint" -> "mstore(uint256,uint256)"
+"19497__canWhitelistBatch" -> "revert MaxMintReached()"
+"19497__canWhitelistBatch" -> "revert WrongPrice()"
+"13550_balanceOfBatch" -> "require(bool,string)"
+"19497_burn" -> "revert(uint256,uint256)"
+"13550__mint" -> "require(bool,string)"
+}"13550__batchMint" -> "13594_onERC1155BatchReceived"
+"13550__mint" -> "13594_onERC1155Received"
+"13550_safeTransferFrom" -> "13594_onERC1155Received"
+"13550_safeBatchTransferFrom" -> "13594_onERC1155BatchReceived"
+}

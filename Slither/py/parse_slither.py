@@ -5,6 +5,8 @@ from templates import base_template, check_template, checks_header, issues_found
 repo_contract_path = "https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/"
 fn = os.path.join("Slither", "results", "slither.results.json")
 
+outFile = "Slither/results/slitherResults.MD"
+
 impacts = (
     "High",
     "Medium",
@@ -47,7 +49,7 @@ for check in results:
         items_count[check['impact']] += 1 
         
         try:
-            markdown_data[check["check"]].append(check_template.format(check['impact'], check['confidence'], check['markdown']))
+            markdown_data[check["check"]].append(check_template.format(check['impact'], check['markdown'].replace("contracts/", repo_contract_path)))
         except KeyError:
             markdown_data[check["check"]] = [check_template.format(check['impact'], check['confidence'], check['markdown'].replace("contracts/", repo_contract_path))]
         
@@ -74,7 +76,7 @@ def get_erc_checks() -> str:
     return check_str
 
 
-with open("Slither/results/slitherResults.MD", "w") as f:
+with open(outFile, "w") as f:
     f.write(header)
     for checkType, items in markdown_data.items():
         summary = f"# {checkType}\n\n> Items Found: {len(items)}\n"
@@ -82,5 +84,3 @@ with open("Slither/results/slitherResults.MD", "w") as f:
             summary += f"\n_Item {i+1} / {len(items)}_\n{item}"
         f.write(summary)
     f.write(checks_header + get_erc_checks())
-
-

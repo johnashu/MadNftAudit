@@ -1,0 +1,42 @@
+strict digraph {
+subgraph cluster_11935_SplitterImpl {
+label = "SplitterImpl"
+"11935_release" [label="release"]
+"11935_constructor" [label="constructor"]
+"11935_releasable" [label="releasable"]
+"11935_payeesLength" [label="payeesLength"]
+"11935__pendingPayment" [label="_pendingPayment"]
+"11935_releaseAll" [label="releaseAll"]
+"11935_totalShares" [label="totalShares"]
+"11935_receive" [label="receive"]
+"11935__addPayee" [label="_addPayee"]
+"11935_totalReleased" [label="totalReleased"]
+"11935_released" [label="released"]
+"11935_releaseAll" -> "11935_releasable"
+"11935_releaseAll" -> "11935_release"
+"11935_receive" -> "11935_releaseAll"
+"11935_constructor" -> "11935__addPayee"
+"11935_release" -> "11935_releasable"
+"11935_releasable" -> "11935__pendingPayment"
+"11935_releasable" -> "11935_totalReleased"
+"11935_releasable" -> "11935_released"
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"revert NoPayees()" 
+"revert NoShares()" 
+"balance(address)" 
+"revert AlreadyPayee()" 
+"revert DeniedAccount()" 
+"revert DeadAddress()" 
+"revert LengthMismatch()" 
+"revert InvalidShare()" 
+"11935_constructor" -> "revert LengthMismatch()"
+"11935__addPayee" -> "revert InvalidShare()"
+"11935_constructor" -> "revert NoPayees()"
+"11935__addPayee" -> "revert DeadAddress()"
+"11935_release" -> "revert NoShares()"
+"11935_releasable" -> "balance(address)"
+"11935__addPayee" -> "revert AlreadyPayee()"
+"11935_release" -> "revert DeniedAccount()"
+}
+}

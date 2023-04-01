@@ -1,0 +1,8 @@
+strict digraph {
+subgraph cluster_12580_IERC165 {
+label = "IERC165"
+"12580_supportsInterface" [label="supportsInterface"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+}
+}

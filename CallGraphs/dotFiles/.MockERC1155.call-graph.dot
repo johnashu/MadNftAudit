@@ -1,0 +1,54 @@
+strict digraph {
+subgraph cluster_12024_MockERC1155 {
+label = "MockERC1155"
+"12024_uri" [label="uri"]
+"12024_supportsInterface" [label="supportsInterface"]
+"12024_mint" [label="mint"]
+"12024_constructor" [label="constructor"]
+"12024_batchMint" [label="batchMint"]
+"12024_mint" -> "12024__mint"
+"12024_batchMint" -> "12024_onlyOwner"
+"12024_batchMint" -> "12024__batchMint"
+"12024_mint" -> "12024_onlyOwner"
+}subgraph cluster_10593_Owned {
+label = "Owned"
+"10593_setOwner" [label="setOwner"]
+"10593_constructor" [label="constructor"]
+"10593_setOwner" -> "10593_onlyOwner"
+}subgraph cluster_13594_ERC1155TokenReceiver {
+label = "ERC1155TokenReceiver"
+"13594_onERC1155BatchReceived" [label="onERC1155BatchReceived"]
+"13594_onERC1155Received" [label="onERC1155Received"]
+}subgraph cluster_13550_ERC1155B {
+label = "ERC1155B"
+"13550__mint" [label="_mint"]
+"13550__batchMint" [label="_batchMint"]
+"13550_uri" [label="uri"]
+"13550_balanceOfBatch" [label="balanceOfBatch"]
+"13550_safeTransferFrom" [label="safeTransferFrom"]
+"13550__batchBurn" [label="_batchBurn"]
+"13550_balanceOf" [label="balanceOf"]
+"13550_setApprovalForAll" [label="setApprovalForAll"]
+"13550_safeBatchTransferFrom" [label="safeBatchTransferFrom"]
+"13550__burn" [label="_burn"]
+"13550_balanceOfBatch" -> "13550_balanceOf"
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"code(address)" 
+"require(bool,string)" 
+"13550__mint" -> "code(address)"
+"13550_safeBatchTransferFrom" -> "code(address)"
+"13550__batchMint" -> "require(bool,string)"
+"13550__batchBurn" -> "require(bool,string)"
+"13550__burn" -> "require(bool,string)"
+"13550_safeTransferFrom" -> "require(bool,string)"
+"13550_balanceOfBatch" -> "require(bool,string)"
+"13550_safeTransferFrom" -> "code(address)"
+"13550_safeBatchTransferFrom" -> "require(bool,string)"
+"13550__batchMint" -> "code(address)"
+"13550__mint" -> "require(bool,string)"
+}"13550__batchMint" -> "13594_onERC1155BatchReceived"
+"13550__mint" -> "13594_onERC1155Received"
+"13550_safeTransferFrom" -> "13594_onERC1155Received"
+"13550_safeBatchTransferFrom" -> "13594_onERC1155BatchReceived"
+}

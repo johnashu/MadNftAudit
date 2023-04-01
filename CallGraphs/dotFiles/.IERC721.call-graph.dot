@@ -1,0 +1,17 @@
+strict digraph {
+subgraph cluster_20457_IERC721 {
+label = "IERC721"
+"20457_setApprovalForAll" [label="setApprovalForAll"]
+"20457_supportsInterface" [label="supportsInterface"]
+"20457_transferFrom" [label="transferFrom"]
+"20457_isApprovedForAll" [label="isApprovedForAll"]
+"20457_ownerOf" [label="ownerOf"]
+"20457_balanceOf" [label="balanceOf"]
+"20457_approve" [label="approve"]
+"20457_getApproved" [label="getApproved"]
+"20457_safeTransferFrom" [label="safeTransferFrom"]
+"20457_royaltyInfo" [label="royaltyInfo"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+}
+}

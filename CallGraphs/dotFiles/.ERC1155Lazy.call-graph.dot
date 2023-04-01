@@ -1,0 +1,154 @@
+strict digraph {
+subgraph cluster_10593_Owned {
+label = "Owned"
+"10593_setOwner" [label="setOwner"]
+"10593_constructor" [label="constructor"]
+"10593_setOwner" -> "10593_onlyOwner"
+}subgraph cluster_16706_ERC1155Lazy {
+label = "ERC1155Lazy"
+"16706_totalSupply" [label="totalSupply"]
+"16706_burn" [label="burn"]
+"16706__userMint" [label="_userMint"]
+"16706__verifyVoucher" [label="_verifyVoucher"]
+"16706__verifyBatch" [label="_verifyBatch"]
+"16706__batchCheck" [label="_batchCheck"]
+"16706_DOMAIN_SEPARATOR" [label="DOMAIN_SEPARATOR"]
+"16706__getFeeValue" [label="_getFeeValue"]
+"16706_slitherConstructorConstantVariables" [label="slitherConstructorConstantVariables"]
+"16706_uri" [label="uri"]
+"16706_setURI" [label="setURI"]
+"16706_setSigner" [label="setSigner"]
+"16706__voucherCheck" [label="_voucherCheck"]
+"16706_setURILock" [label="setURILock"]
+"16706_burnBatch" [label="burnBatch"]
+"16706_getMintCount" [label="getMintCount"]
+"16706_withdrawERC20" [label="withdrawERC20"]
+"16706__getPriceValue" [label="_getPriceValue"]
+"16706_getURI" [label="getURI"]
+"16706__paymentCheck" [label="_paymentCheck"]
+"16706__feeCheck" [label="_feeCheck"]
+"16706_lazyMintBatch" [label="lazyMintBatch"]
+"16706_withdraw" [label="withdraw"]
+"16706_computeDS" [label="computeDS"]
+"16706_lazyMint" [label="lazyMint"]
+"16706__incrementCounter" [label="_incrementCounter"]
+"16706_constructor" [label="constructor"]
+"16706_supportsInterface" [label="supportsInterface"]
+"16706_setSigner" -> "16706_onlyOwner"
+"16706_burn" -> "16706__burn"
+"16706_lazyMintBatch" -> "16706__verifyBatch"
+"16706_setURILock" -> "16706_onlyOwner"
+"16706_constructor" -> "16706_computeDS"
+"16706_withdrawERC20" -> "16706_onlyOwner"
+"16706__voucherCheck" -> "16706__getFeeValue"
+"16706_lazyMintBatch" -> "16706__getPriceValue"
+"16706__paymentCheck" -> "16706__feeCheck"
+"16706__paymentCheck" -> "16706__getPriceValue"
+"16706_withdraw" -> "16706_onlyOwner"
+"16706_constructor" -> "16706_constructor"
+"16706_burnBatch" -> "16706_onlyOwner"
+"16706__feeCheck" -> "16706__getFeeValue"
+"16706__userMint" -> "16706__mint"
+"16706_burnBatch" -> "16706__paymentCheck"
+"16706_lazyMint" -> "16706_nonReentrant"
+"16706_lazyMint" -> "16706__userMint"
+"16706_burnBatch" -> "16706__batchBurn"
+"16706_lazyMintBatch" -> "16706__batchMint"
+"16706_lazyMintBatch" -> "16706_nonReentrant"
+"16706__verifyBatch" -> "16706_DOMAIN_SEPARATOR"
+"16706_lazyMintBatch" -> "16706__batchCheck"
+"16706_lazyMint" -> "16706__verifyVoucher"
+"16706__verifyVoucher" -> "16706_DOMAIN_SEPARATOR"
+"16706_DOMAIN_SEPARATOR" -> "16706_computeDS"
+"16706_lazyMintBatch" -> "16706__incrementCounter"
+"16706__batchCheck" -> "16706__getFeeValue"
+"16706_lazyMint" -> "16706__voucherCheck"
+"16706_lazyMint" -> "16706__getPriceValue"
+"16706_setURI" -> "16706_onlyOwner"
+"16706__userMint" -> "16706__incrementCounter"
+"16706_burn" -> "16706__paymentCheck"
+"16706_burn" -> "16706_onlyOwner"
+}subgraph cluster_24843_ERC2981 {
+label = "ERC2981"
+"24843_supportsInterface" [label="supportsInterface"]
+"24843_royaltyInfo" [label="royaltyInfo"]
+}subgraph cluster_13550_ERC1155B {
+label = "ERC1155B"
+"13550__mint" [label="_mint"]
+"13550__batchMint" [label="_batchMint"]
+"13550_uri" [label="uri"]
+"13550_balanceOfBatch" [label="balanceOfBatch"]
+"13550_safeTransferFrom" [label="safeTransferFrom"]
+"13550__batchBurn" [label="_batchBurn"]
+"13550_balanceOf" [label="balanceOf"]
+"13550_setApprovalForAll" [label="setApprovalForAll"]
+"13550_safeBatchTransferFrom" [label="safeBatchTransferFrom"]
+"13550__burn" [label="_burn"]
+"13550_balanceOfBatch" -> "13550_balanceOf"
+}subgraph cluster_13594_ERC1155TokenReceiver {
+label = "ERC1155TokenReceiver"
+"13594_onERC1155BatchReceived" [label="onERC1155BatchReceived"]
+"13594_onERC1155Received" [label="onERC1155Received"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"revert WrongPrice()" 
+"revert(uint256,uint256)" 
+"revert NotMintedYet()" 
+"ecrecover(bytes32,uint8,bytes32,bytes32)" 
+"keccak256(bytes)" 
+"revert UriLocked()" 
+"mstore(uint256,uint256)" 
+"balance(address)" 
+"abi.encodePacked()" 
+"code(address)" 
+"require(bool,string)" 
+"revert UsedVoucher()" 
+"abi.encode()" 
+"revert InvalidSigner()" 
+"16706_burn" -> "require(bool,string)"
+"16706__verifyVoucher" -> "abi.encode()"
+"16706__verifyBatch" -> "keccak256(bytes)"
+"13550__batchBurn" -> "require(bool,string)"
+"16706__feeCheck" -> "revert(uint256,uint256)"
+"16706__verifyVoucher" -> "keccak256(bytes)"
+"16706_burnBatch" -> "mstore(uint256,uint256)"
+"16706__userMint" -> "require(bool,string)"
+"16706__batchCheck" -> "revert InvalidSigner()"
+"13550_safeTransferFrom" -> "require(bool,string)"
+"16706_lazyMintBatch" -> "require(bool,string)"
+"16706__verifyBatch" -> "abi.encode()"
+"13550_safeBatchTransferFrom" -> "require(bool,string)"
+"13550__mint" -> "code(address)"
+"16706__verifyBatch" -> "abi.encodePacked()"
+"13550__batchMint" -> "require(bool,string)"
+"13550__burn" -> "require(bool,string)"
+"16706__batchCheck" -> "revert UsedVoucher()"
+"16706_uri" -> "revert NotMintedYet()"
+"16706__batchCheck" -> "revert WrongPrice()"
+"13550_safeTransferFrom" -> "code(address)"
+"16706__voucherCheck" -> "revert UsedVoucher()"
+"16706__feeCheck" -> "mstore(uint256,uint256)"
+"16706_burn" -> "mstore(uint256,uint256)"
+"13550__batchMint" -> "code(address)"
+"16706_computeDS" -> "abi.encode()"
+"16706_burn" -> "revert(uint256,uint256)"
+"16706_setURI" -> "revert UriLocked()"
+"16706_burnBatch" -> "require(bool,string)"
+"16706_burnBatch" -> "revert(uint256,uint256)"
+"16706__voucherCheck" -> "revert WrongPrice()"
+"16706__voucherCheck" -> "revert InvalidSigner()"
+"16706_uri" -> "abi.encodePacked()"
+"16706_computeDS" -> "keccak256(bytes)"
+"13550_safeBatchTransferFrom" -> "code(address)"
+"16706_withdraw" -> "balance(address)"
+"16706__verifyVoucher" -> "ecrecover(bytes32,uint8,bytes32,bytes32)"
+"16706__verifyBatch" -> "ecrecover(bytes32,uint8,bytes32,bytes32)"
+"16706__verifyVoucher" -> "abi.encodePacked()"
+"13550_balanceOfBatch" -> "require(bool,string)"
+"16706_slitherConstructorConstantVariables" -> "keccak256(bytes)"
+"13550__mint" -> "require(bool,string)"
+}"13550__batchMint" -> "13594_onERC1155BatchReceived"
+"13550__mint" -> "13594_onERC1155Received"
+"13550_safeTransferFrom" -> "13594_onERC1155Received"
+"13550_safeBatchTransferFrom" -> "13594_onERC1155BatchReceived"
+}

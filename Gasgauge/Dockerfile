@@ -1,8 +1,8 @@
 FROM ubuntu:20.04
 ARG DEBIAN_FRONTEND=noninteractive
 
-# # set work directory
-WORKDIR /auditFiles
+# # # set work directory
+# WORKDIR /auditFiles
 
 # set environment variables..j.
 # Prevents Python from writing pyc files to disc (equivalent to python -B option)
@@ -34,8 +34,6 @@ RUN npm install -g ganache-cli
 RUN pip3 install solc-select
 RUN solc-select install 0.8.16
 
-RUN git clone https://github.com/gasgauge/gasgauge.github.io.git
-
 # RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 RUN curl -L https://foundry.paradigm.xyz | bash
 RUN source /root/.bashrc | bash
@@ -46,5 +44,7 @@ RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 RUN source ~/.nvm/nvm.sh && nvm install 16 && nvm use 16
 
+RUN git clone https://github.com/gasgauge/gasgauge.github.io.git
+
 # # copy run.py
-COPY ./src/run.py /gasgauge/run.py
+COPY ./src/run.py /gasgauge.github.io/run.py

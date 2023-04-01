@@ -1,0 +1,202 @@
+strict digraph {
+subgraph cluster_10593_Owned {
+label = "Owned"
+"10593_setOwner" [label="setOwner"]
+"10593_constructor" [label="constructor"]
+"10593_setOwner" -> "10593_onlyOwner"
+}subgraph cluster_5348_MADMarketplace1155 {
+label = "MADMarketplace1155"
+"5348__makeOrder" [label="_makeOrder"]
+"5348_withdrawOutbidEth" [label="withdrawOutbidEth"]
+"5348_sellerOrderLength" [label="sellerOrderLength"]
+"5348_claim" [label="claim"]
+"5348_cancelOrder" [label="cancelOrder"]
+"5348_setFactory" [label="setFactory"]
+"5348_setOwner" [label="setOwner"]
+"5348_slitherConstructorVariables" [label="slitherConstructorVariables"]
+"5348_dutchAuction" [label="dutchAuction"]
+"5348_delOrder" [label="delOrder"]
+"5348_setRecipient" [label="setRecipient"]
+"5348_interfaceCheck" [label="interfaceCheck"]
+"5348_withdrawERC20" [label="withdrawERC20"]
+"5348_unpause" [label="unpause"]
+"5348__cancelOrderChecks" [label="_cancelOrderChecks"]
+"5348__bidChecks" [label="_bidChecks"]
+"5348_withdrawOutbid" [label="withdrawOutbid"]
+"5348_updateSettings" [label="updateSettings"]
+"5348__claimChecks" [label="_claimChecks"]
+"5348_constructor" [label="constructor"]
+"5348__hash" [label="_hash"]
+"5348_ERC165Check" [label="ERC165Check"]
+"5348__buyChecks" [label="_buyChecks"]
+"5348__extPath0" [label="_extPath0"]
+"5348_buy" [label="buy"]
+"5348__extPath1" [label="_extPath1"]
+"5348_autoTransferFunds" [label="autoTransferFunds"]
+"5348_getCurrentPrice" [label="getCurrentPrice"]
+"5348__setPaymentToken" [label="_setPaymentToken"]
+"5348_pause" [label="pause"]
+"5348_setFees" [label="setFees"]
+"5348__withdrawOutbid" [label="_withdrawOutbid"]
+"5348__intPath" [label="_intPath"]
+"5348__feeResolver" [label="_feeResolver"]
+"5348_tokenOrderLength" [label="tokenOrderLength"]
+"5348__exceedsMaxEP" [label="_exceedsMaxEP"]
+"5348_englishAuction" [label="englishAuction"]
+"5348_bid" [label="bid"]
+"5348_receive" [label="receive"]
+"5348__isBidderOrSeller" [label="_isBidderOrSeller"]
+"5348_slitherConstructorConstantVariables" [label="slitherConstructorConstantVariables"]
+"5348_name" [label="name"]
+"5348_getOutbidBalance" [label="getOutbidBalance"]
+"5348__makeOrderChecks" [label="_makeOrderChecks"]
+"5348_fixedPrice" [label="fixedPrice"]
+"5348_withdraw" [label="withdraw"]
+"5348_unpause" -> "5348_onlyOwner"
+"5348_bid" -> "5348_whenNotPaused"
+"5348_dutchAuction" -> "5348__exceedsMaxEP"
+"5348__intPath" -> "5348__feeResolver"
+"5348_buy" -> "5348__intPath"
+"5348_setFactory" -> "5348_onlyOwner"
+"5348_buy" -> "5348__extPath1"
+"5348_setOwner" -> "5348_onlyOwner"
+"5348_claim" -> "5348__claimChecks"
+"5348_delOrder" -> "5348_whenPaused"
+"5348_buy" -> "5348_ERC165Check"
+"5348_setFees" -> "5348_onlyOwner"
+"5348_setRecipient" -> "5348_onlyOwner"
+"5348_claim" -> "5348__intPath"
+"5348_buy" -> "5348__buyChecks"
+"5348_buy" -> "5348_whenNotPaused"
+"5348_buy" -> "5348_interfaceCheck"
+"5348_cancelOrder" -> "5348__cancelOrderChecks"
+"5348_claim" -> "5348_whenNotPaused"
+"5348_englishAuction" -> "5348_whenNotPaused"
+"5348_withdrawERC20" -> "5348_onlyOwner"
+"5348_autoTransferFunds" -> "5348__withdrawOutbid"
+"5348_delOrder" -> "5348_onlyOwner"
+"5348_pause" -> "5348__pause"
+"5348_constructor" -> "5348_updateSettings"
+"5348_withdraw" -> "5348_whenPaused"
+"5348_englishAuction" -> "5348__makeOrder"
+"5348_claim" -> "5348__isBidderOrSeller"
+"5348_fixedPrice" -> "5348__makeOrder"
+"5348_claim" -> "5348__extPath1"
+"5348_autoTransferFunds" -> "5348_onlyOwner"
+"5348_withdraw" -> "5348_onlyOwner"
+"5348_claim" -> "5348_ERC165Check"
+"5348_claim" -> "5348_interfaceCheck"
+"5348_fixedPrice" -> "5348_whenNotPaused"
+"5348_updateSettings" -> "5348_onlyOwner"
+"5348_ERC165Check" -> "5348_interfaceCheck"
+"5348__makeOrder" -> "5348__hash"
+"5348_constructor" -> "5348_setRecipient"
+"5348_pause" -> "5348_onlyOwner"
+"5348_claim" -> "5348__extPath0"
+"5348_withdrawOutbid" -> "5348__withdrawOutbid"
+"5348__makeOrder" -> "5348__makeOrderChecks"
+"5348_constructor" -> "5348__setPaymentToken"
+"5348_constructor" -> "5348_setFactory"
+"5348_dutchAuction" -> "5348__makeOrder"
+"5348_dutchAuction" -> "5348_whenNotPaused"
+"5348_bid" -> "5348__bidChecks"
+"5348_buy" -> "5348__extPath0"
+"5348_withdrawERC20" -> "5348_whenPaused"
+"5348_unpause" -> "5348__unpause"
+"5348_buy" -> "5348_getCurrentPrice"
+}subgraph cluster_11366_Pausable {
+label = "Pausable"
+"11366__pause" [label="_pause"]
+"11366_paused" [label="paused"]
+"11366_constructor" [label="constructor"]
+"11366__unpause" [label="_unpause"]
+"11366__unpause" -> "11366_whenPaused"
+"11366__pause" -> "11366_whenNotPaused"
+}subgraph cluster_13964_ERC1155Holder {
+label = "ERC1155Holder"
+"13964_onERC1155BatchReceived" [label="onERC1155BatchReceived"]
+"13964_onERC1155Received" [label="onERC1155Received"]
+}subgraph cluster_659_MAD {
+label = "MAD"
+"659_name" [label="name"]
+}subgraph cluster_13594_ERC1155TokenReceiver {
+label = "ERC1155TokenReceiver"
+"13594_onERC1155BatchReceived" [label="onERC1155BatchReceived"]
+"13594_onERC1155Received" [label="onERC1155Received"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"revert WrongPrice()" 
+"abi.encodeWithSelector()" 
+"revert(uint256,uint256)" 
+"mload(uint256)" 
+"staticcall(uint256,uint256,uint256,uint256,uint256,uint256)" 
+"keccak256(uint256,uint256)" 
+"sstore(uint256,uint256)" 
+"mstore(uint256,uint256)" 
+"timestamp()" 
+"balance(address)" 
+"abi.encodePacked()" 
+"require(bool,string)" 
+"keccak256(bytes)" 
+"sload(uint256)" 
+"returndatasize()" 
+"return(uint256,uint256)" 
+"5348_setFees" -> "require(bool,string)"
+"5348_getCurrentPrice" -> "mstore(uint256,uint256)"
+"5348__feeResolver" -> "mstore(uint256,uint256)"
+"5348_getCurrentPrice" -> "mload(uint256)"
+"5348__bidChecks" -> "revert(uint256,uint256)"
+"5348_interfaceCheck" -> "mload(uint256)"
+"5348_bid" -> "timestamp()"
+"5348_setFactory" -> "sstore(uint256,uint256)"
+"5348__exceedsMaxEP" -> "revert(uint256,uint256)"
+"5348_withdrawOutbidEth" -> "require(bool,string)"
+"5348__isBidderOrSeller" -> "revert(uint256,uint256)"
+"5348_withdraw" -> "require(bool,string)"
+"5348_bid" -> "sstore(uint256,uint256)"
+"5348_buy" -> "revert WrongPrice()"
+"5348_bid" -> "sload(uint256)"
+"5348_setOwner" -> "sstore(uint256,uint256)"
+"5348__feeResolver" -> "sload(uint256)"
+"5348__claimChecks" -> "timestamp()"
+"5348_setRecipient" -> "sstore(uint256,uint256)"
+"5348_getCurrentPrice" -> "sload(uint256)"
+"5348_interfaceCheck" -> "returndatasize()"
+"5348__hash" -> "keccak256(bytes)"
+"5348_autoTransferFunds" -> "require(bool,string)"
+"5348_interfaceCheck" -> "abi.encodeWithSelector()"
+"5348__makeOrderChecks" -> "timestamp()"
+"5348__buyChecks" -> "revert(uint256,uint256)"
+"5348__hash" -> "abi.encodePacked()"
+"5348_name" -> "mstore(uint256,uint256)"
+"5348__isBidderOrSeller" -> "mstore(uint256,uint256)"
+"5348_getCurrentPrice" -> "timestamp()"
+"5348__bidChecks" -> "timestamp()"
+"5348_setRecipient" -> "require(bool,string)"
+"5348__setPaymentToken" -> "require(bool,string)"
+"5348_interfaceCheck" -> "staticcall(uint256,uint256,uint256,uint256,uint256,uint256)"
+"5348__feeResolver" -> "sstore(uint256,uint256)"
+"5348__makeOrderChecks" -> "revert(uint256,uint256)"
+"5348__makeOrderChecks" -> "mstore(uint256,uint256)"
+"5348__bidChecks" -> "sload(uint256)"
+"5348__cancelOrderChecks" -> "mstore(uint256,uint256)"
+"5348__exceedsMaxEP" -> "mstore(uint256,uint256)"
+"5348__bidChecks" -> "mstore(uint256,uint256)"
+"5348__makeOrderChecks" -> "sload(uint256)"
+"5348_setOwner" -> "require(bool,string)"
+"5348__feeResolver" -> "keccak256(uint256,uint256)"
+"5348__buyChecks" -> "timestamp()"
+"5348_updateSettings" -> "sstore(uint256,uint256)"
+"5348_withdraw" -> "balance(address)"
+"5348__claimChecks" -> "revert(uint256,uint256)"
+"5348__claimChecks" -> "mstore(uint256,uint256)"
+"5348_updateSettings" -> "require(bool,string)"
+"5348_name" -> "return(uint256,uint256)"
+"5348_withdrawERC20" -> "require(bool,string)"
+"5348__withdrawOutbid" -> "require(bool,string)"
+"5348_setFees" -> "sstore(uint256,uint256)"
+"5348_constructor" -> "require(bool,string)"
+"5348__buyChecks" -> "mstore(uint256,uint256)"
+"5348__cancelOrderChecks" -> "revert(uint256,uint256)"
+}
+}

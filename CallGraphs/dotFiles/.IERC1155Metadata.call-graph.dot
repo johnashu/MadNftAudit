@@ -1,0 +1,8 @@
+strict digraph {
+subgraph cluster_12822_IERC1155Metadata {
+label = "IERC1155Metadata"
+"12822_uri" [label="uri"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+}
+}

@@ -1,0 +1,131 @@
+strict digraph {
+subgraph cluster_10593_Owned {
+label = "Owned"
+"10593_setOwner" [label="setOwner"]
+"10593_constructor" [label="constructor"]
+"10593_setOwner" -> "10593_onlyOwner"
+}subgraph cluster_20119_ERC721 {
+label = "ERC721"
+"20119_constructor" [label="constructor"]
+"20119__burn" [label="_burn"]
+"20119_transferFrom" [label="transferFrom"]
+"20119_tokenURI" [label="tokenURI"]
+"20119_balanceOf" [label="balanceOf"]
+"20119__mint" [label="_mint"]
+"20119_supportsInterface" [label="supportsInterface"]
+"20119_ownerOf" [label="ownerOf"]
+"20119_approve" [label="approve"]
+"20119_setApprovalForAll" [label="setApprovalForAll"]
+"20119__safeMint" [label="_safeMint"]
+"20119_safeTransferFrom" [label="safeTransferFrom"]
+"20119__safeMint" -> "20119__mint"
+"20119_safeTransferFrom" -> "20119_transferFrom"
+}subgraph cluster_24843_ERC2981 {
+label = "ERC2981"
+"24843_supportsInterface" [label="supportsInterface"]
+"24843_royaltyInfo" [label="royaltyInfo"]
+}subgraph cluster_20139_ERC721TokenReceiver {
+label = "ERC721TokenReceiver"
+"20139_onERC721Received" [label="onERC721Received"]
+}subgraph cluster_22647_ERC721Lazy {
+label = "ERC721Lazy"
+"22647_setBaseURILock" [label="setBaseURILock"]
+"22647_totalSupply" [label="totalSupply"]
+"22647_getMintCount" [label="getMintCount"]
+"22647_getBaseURI" [label="getBaseURI"]
+"22647_DOMAIN_SEPARATOR" [label="DOMAIN_SEPARATOR"]
+"22647__lazyCheck" [label="_lazyCheck"]
+"22647_tokenURI" [label="tokenURI"]
+"22647_slitherConstructorConstantVariables" [label="slitherConstructorConstantVariables"]
+"22647_burn" [label="burn"]
+"22647__feeCheck" [label="_feeCheck"]
+"22647_setSigner" [label="setSigner"]
+"22647_constructor" [label="constructor"]
+"22647__getPriceValue" [label="_getPriceValue"]
+"22647_lazyMint" [label="lazyMint"]
+"22647__getFeeValue" [label="_getFeeValue"]
+"22647_supportsInterface" [label="supportsInterface"]
+"22647__userMint" [label="_userMint"]
+"22647__incrementCounter" [label="_incrementCounter"]
+"22647_withdrawERC20" [label="withdrawERC20"]
+"22647__paymentCheck" [label="_paymentCheck"]
+"22647_computeDS" [label="computeDS"]
+"22647__verify" [label="_verify"]
+"22647_withdraw" [label="withdraw"]
+"22647__verifyVoucher" [label="_verifyVoucher"]
+"22647_setBaseURI" [label="setBaseURI"]
+"22647_constructor" -> "22647_computeDS"
+"22647_DOMAIN_SEPARATOR" -> "22647_computeDS"
+"22647_withdrawERC20" -> "22647_onlyOwner"
+"22647_lazyMint" -> "22647__userMint"
+"22647_burn" -> "22647__paymentCheck"
+"22647_burn" -> "22647__burn"
+"22647_lazyMint" -> "22647__getPriceValue"
+"22647_lazyMint" -> "22647__lazyCheck"
+"22647__lazyCheck" -> "22647__getFeeValue"
+"22647__paymentCheck" -> "22647__feeCheck"
+"22647_setBaseURI" -> "22647_onlyOwner"
+"22647_constructor" -> "22647_constructor"
+"22647_burn" -> "22647_onlyOwner"
+"22647__paymentCheck" -> "22647__getPriceValue"
+"22647_setSigner" -> "22647_onlyOwner"
+"22647_lazyMint" -> "22647__verify"
+"22647_setBaseURILock" -> "22647_onlyOwner"
+"22647__userMint" -> "22647__incrementCounter"
+"22647__feeCheck" -> "22647__getFeeValue"
+"22647__verify" -> "22647_DOMAIN_SEPARATOR"
+"22647_withdraw" -> "22647_onlyOwner"
+"22647__userMint" -> "22647__mint"
+"22647_lazyMint" -> "22647_nonReentrant"
+"22647__verifyVoucher" -> "22647_DOMAIN_SEPARATOR"
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"revert WrongPrice()" 
+"revert(uint256,uint256)" 
+"revert NotMintedYet()" 
+"ecrecover(bytes32,uint8,bytes32,bytes32)" 
+"keccak256(bytes)" 
+"revert UriLocked()" 
+"mstore(uint256,uint256)" 
+"balance(address)" 
+"abi.encodePacked()" 
+"code(address)" 
+"require(bool,string)" 
+"revert UsedVoucher()" 
+"abi.encode()" 
+"revert InvalidSigner()" 
+"22647_tokenURI" -> "revert NotMintedYet()"
+"22647_slitherConstructorConstantVariables" -> "keccak256(bytes)"
+"22647__verify" -> "ecrecover(bytes32,uint8,bytes32,bytes32)"
+"22647__verify" -> "keccak256(bytes)"
+"22647_withdraw" -> "balance(address)"
+"20119__burn" -> "require(bool,string)"
+"20119__safeMint" -> "code(address)"
+"22647__lazyCheck" -> "revert InvalidSigner()"
+"22647__lazyCheck" -> "revert UsedVoucher()"
+"22647_computeDS" -> "keccak256(bytes)"
+"22647__verify" -> "abi.encode()"
+"22647_burn" -> "revert(uint256,uint256)"
+"22647__verify" -> "abi.encodePacked()"
+"22647__verifyVoucher" -> "abi.encode()"
+"22647_burn" -> "mstore(uint256,uint256)"
+"22647_setBaseURI" -> "revert UriLocked()"
+"22647__verifyVoucher" -> "keccak256(bytes)"
+"22647_tokenURI" -> "abi.encodePacked()"
+"22647_computeDS" -> "abi.encode()"
+"22647__verifyVoucher" -> "ecrecover(bytes32,uint8,bytes32,bytes32)"
+"20119__safeMint" -> "require(bool,string)"
+"20119_approve" -> "require(bool,string)"
+"22647__lazyCheck" -> "revert WrongPrice()"
+"20119_ownerOf" -> "require(bool,string)"
+"20119__mint" -> "require(bool,string)"
+"20119_transferFrom" -> "require(bool,string)"
+"20119_safeTransferFrom" -> "require(bool,string)"
+"20119_safeTransferFrom" -> "code(address)"
+"22647__feeCheck" -> "mstore(uint256,uint256)"
+"22647__verifyVoucher" -> "abi.encodePacked()"
+"22647__feeCheck" -> "revert(uint256,uint256)"
+"20119_balanceOf" -> "require(bool,string)"
+}"20119_safeTransferFrom" -> "20139_onERC721Received"
+"20119__safeMint" -> "20139_onERC721Received"
+}

@@ -1,0 +1,16 @@
+strict digraph {
+subgraph cluster_10676_ERC1155MinimalDeployer {
+label = "ERC1155MinimalDeployer"
+"10676__1155MinimalDeploy" [label="_1155MinimalDeploy"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"keccak256(bytes)" 
+"type()" 
+"abi.encode()" 
+"abi.encodePacked()" 
+"10676__1155MinimalDeploy" -> "keccak256(bytes)"
+"10676__1155MinimalDeploy" -> "abi.encode()"
+"10676__1155MinimalDeploy" -> "type()"
+"10676__1155MinimalDeploy" -> "abi.encodePacked()"
+}
+}

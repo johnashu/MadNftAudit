@@ -1,0 +1,129 @@
+strict digraph {
+subgraph cluster_1856_MADFactory1155 {
+label = "MADFactory1155"
+"1856_createCollection" [label="createCollection"]
+"1856_setSigner" [label="setSigner"]
+"1856_typeChecker" [label="typeChecker"]
+"1856__sharesBuffer" [label="_sharesBuffer"]
+"1856_creatorCheck" [label="creatorCheck"]
+"1856_setRouter" [label="setRouter"]
+"1856_splitterCheck" [label="splitterCheck"]
+"1856__limiter" [label="_limiter"]
+"1856_setMarket" [label="setMarket"]
+"1856__isRouter" [label="_isRouter"]
+"1856_creatorAuth" [label="creatorAuth"]
+"1856_getColID" [label="getColID"]
+"1856__setPaymentToken" [label="_setPaymentToken"]
+"1856_constructor" [label="constructor"]
+"1856_pause" [label="pause"]
+"1856_getIDsLength" [label="getIDsLength"]
+"1856_getDeployedAddr" [label="getDeployedAddr"]
+"1856__userRender" [label="_userRender"]
+"1856_setOwner" [label="setOwner"]
+"1856__payeesBuffer" [label="_payeesBuffer"]
+"1856__royaltyLocker" [label="_royaltyLocker"]
+"1856__isMarket" [label="_isMarket"]
+"1856_unpause" [label="unpause"]
+"1856_name" [label="name"]
+"1856_createCollection" -> "1856_nonReentrant"
+"1856_setMarket" -> "1856_onlyOwner"
+"1856_constructor" -> "1856_setSigner"
+"1856_creatorAuth" -> "1856__userRender"
+"1856_setSigner" -> "1856_onlyOwner"
+"1856_pause" -> "1856_onlyOwner"
+"1856_createCollection" -> "1856_isThisOg"
+"1856_pause" -> "1856__pause"
+"1856_setOwner" -> "1856_onlyOwner"
+"1856_creatorAuth" -> "1856__isMarket"
+"1856_unpause" -> "1856__unpause"
+"1856_createCollection" -> "1856_whenNotPaused"
+"1856_splitterCheck" -> "1856__payeesBuffer"
+"1856_splitterCheck" -> "1856__sharesBuffer"
+"1856_splitterCheck" -> "1856_whenNotPaused"
+"1856_splitterCheck" -> "1856_isThisOg"
+"1856_splitterCheck" -> "1856_nonReentrant"
+"1856_createCollection" -> "1856__limiter"
+"1856_constructor" -> "1856__setPaymentToken"
+"1856_setRouter" -> "1856_onlyOwner"
+"1856_typeChecker" -> "1856__isRouter"
+"1856_creatorCheck" -> "1856__isRouter"
+"1856_createCollection" -> "1856__royaltyLocker"
+"1856_constructor" -> "1856_setMarket"
+"1856_unpause" -> "1856_onlyOwner"
+}subgraph cluster_10593_Owned {
+label = "Owned"
+"10593_setOwner" [label="setOwner"]
+"10593_constructor" [label="constructor"]
+"10593_setOwner" -> "10593_onlyOwner"
+}subgraph cluster_10533_FactoryVerifier {
+label = "FactoryVerifier"
+"10533_creatorCheck" [label="creatorCheck"]
+"10533_typeChecker" [label="typeChecker"]
+"10533_creatorAuth" [label="creatorAuth"]
+"10533_getColID" [label="getColID"]
+}subgraph cluster_11366_Pausable {
+label = "Pausable"
+"11366__pause" [label="_pause"]
+"11366_paused" [label="paused"]
+"11366_constructor" [label="constructor"]
+"11366__unpause" [label="_unpause"]
+"11366__unpause" -> "11366_whenPaused"
+"11366__pause" -> "11366_whenNotPaused"
+}subgraph cluster_659_MAD {
+label = "MAD"
+"659_name" [label="name"]
+}subgraph cluster_11285_DCPrevent {
+label = "DCPrevent"
+"11285_constructor" [label="constructor"]
+"11285_selfReferencePointer" [label="selfReferencePointer"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"revert(uint256,uint256)" 
+"mload(uint256)" 
+"keccak256(uint256,uint256)" 
+"revert(string)" 
+"sstore(uint256,uint256)" 
+"mstore(uint256,uint256)" 
+"require(bool,string)" 
+"keccak256(bytes)" 
+"sload(uint256)" 
+"return(uint256,uint256)" 
+"1856_name" -> "mstore(uint256,uint256)"
+"1856_setRouter" -> "require(bool,string)"
+"1856__payeesBuffer" -> "mstore(uint256,uint256)"
+"1856_typeChecker" -> "sload(uint256)"
+"1856__isMarket" -> "sload(uint256)"
+"1856_creatorCheck" -> "mstore(uint256,uint256)"
+"1856_splitterCheck" -> "revert(uint256,uint256)"
+"1856_name" -> "return(uint256,uint256)"
+"1856__limiter" -> "revert(uint256,uint256)"
+"1856_getDeployedAddr" -> "keccak256(bytes)"
+"1856_splitterCheck" -> "mstore(uint256,uint256)"
+"1856_setOwner" -> "sstore(uint256,uint256)"
+"11285_selfReferencePointer" -> "revert(string)"
+"1856_setMarket" -> "require(bool,string)"
+"1856__sharesBuffer" -> "mload(uint256)"
+"1856__isMarket" -> "mstore(uint256,uint256)"
+"1856_splitterCheck" -> "keccak256(bytes)"
+"1856__isMarket" -> "revert(uint256,uint256)"
+"1856__isRouter" -> "mstore(uint256,uint256)"
+"1856__userRender" -> "mload(uint256)"
+"1856__isRouter" -> "sload(uint256)"
+"1856__userRender" -> "sload(uint256)"
+"1856_setSigner" -> "sstore(uint256,uint256)"
+"1856_setRouter" -> "sstore(uint256,uint256)"
+"1856__sharesBuffer" -> "mstore(uint256,uint256)"
+"1856__royaltyLocker" -> "revert(uint256,uint256)"
+"1856_setMarket" -> "sstore(uint256,uint256)"
+"1856__userRender" -> "keccak256(uint256,uint256)"
+"1856__royaltyLocker" -> "mstore(uint256,uint256)"
+"1856__isRouter" -> "revert(uint256,uint256)"
+"1856__payeesBuffer" -> "mload(uint256)"
+"1856_setOwner" -> "require(bool,string)"
+"1856_setSigner" -> "require(bool,string)"
+"1856__limiter" -> "mstore(uint256,uint256)"
+"1856_creatorCheck" -> "sload(uint256)"
+"1856__userRender" -> "mstore(uint256,uint256)"
+"1856_creatorCheck" -> "revert(uint256,uint256)"
+}
+}

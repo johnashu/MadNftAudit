@@ -1,0 +1,97 @@
+strict digraph {
+subgraph cluster_10593_Owned {
+label = "Owned"
+"10593_setOwner" [label="setOwner"]
+"10593_constructor" [label="constructor"]
+"10593_setOwner" -> "10593_onlyOwner"
+}subgraph cluster_17481_ERC1155Minimal {
+label = "ERC1155Minimal"
+"17481__paymentCheck" [label="_paymentCheck"]
+"17481_safeMint" [label="safeMint"]
+"17481_withdrawERC20" [label="withdrawERC20"]
+"17481_publicMint" [label="publicMint"]
+"17481__feeCheck" [label="_feeCheck"]
+"17481__getFeeValue" [label="_getFeeValue"]
+"17481_supportsInterface" [label="supportsInterface"]
+"17481__getPriceValue" [label="_getPriceValue"]
+"17481_constructor" [label="constructor"]
+"17481_setPublicMintState" [label="setPublicMintState"]
+"17481_withdraw" [label="withdraw"]
+"17481_uri" [label="uri"]
+"17481_burn" [label="burn"]
+"17481_safeMint" -> "17481__paymentCheck"
+"17481_safeMint" -> "17481__mint"
+"17481_burn" -> "17481__paymentCheck"
+"17481_publicMint" -> "17481__mint"
+"17481_safeMint" -> "17481_onlyOwner"
+"17481__feeCheck" -> "17481__getFeeValue"
+"17481__paymentCheck" -> "17481__getPriceValue"
+"17481_withdraw" -> "17481_onlyOwner"
+"17481_burn" -> "17481_onlyOwner"
+"17481_publicMint" -> "17481__paymentCheck"
+"17481_burn" -> "17481__burn"
+"17481_publicMint" -> "17481__getPriceValue"
+"17481__paymentCheck" -> "17481__feeCheck"
+"17481_setPublicMintState" -> "17481_onlyOwner"
+"17481_publicMint" -> "17481__getFeeValue"
+"17481_withdrawERC20" -> "17481_onlyOwner"
+"17481_constructor" -> "17481_constructor"
+}subgraph cluster_24843_ERC2981 {
+label = "ERC2981"
+"24843_supportsInterface" [label="supportsInterface"]
+"24843_royaltyInfo" [label="royaltyInfo"]
+}subgraph cluster_13550_ERC1155B {
+label = "ERC1155B"
+"13550__mint" [label="_mint"]
+"13550__batchMint" [label="_batchMint"]
+"13550_uri" [label="uri"]
+"13550_balanceOfBatch" [label="balanceOfBatch"]
+"13550_safeTransferFrom" [label="safeTransferFrom"]
+"13550__batchBurn" [label="_batchBurn"]
+"13550_balanceOf" [label="balanceOf"]
+"13550_setApprovalForAll" [label="setApprovalForAll"]
+"13550_safeBatchTransferFrom" [label="safeBatchTransferFrom"]
+"13550__burn" [label="_burn"]
+"13550_balanceOfBatch" -> "13550_balanceOf"
+}subgraph cluster_13594_ERC1155TokenReceiver {
+label = "ERC1155TokenReceiver"
+"13594_onERC1155BatchReceived" [label="onERC1155BatchReceived"]
+"13594_onERC1155Received" [label="onERC1155Received"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"revert InvalidId()" 
+"revert WrongPrice()" 
+"revert(uint256,uint256)" 
+"revert AlreadyMinted()" 
+"revert PublicMintOff()" 
+"balance(address)" 
+"mstore(uint256,uint256)" 
+"code(address)" 
+"require(bool,string)" 
+"revert NotMinted()" 
+"13550__batchBurn" -> "require(bool,string)"
+"17481_publicMint" -> "revert AlreadyMinted()"
+"13550_safeTransferFrom" -> "require(bool,string)"
+"13550_safeBatchTransferFrom" -> "require(bool,string)"
+"13550__mint" -> "code(address)"
+"17481_uri" -> "revert NotMinted()"
+"13550__batchMint" -> "require(bool,string)"
+"13550__burn" -> "require(bool,string)"
+"17481_withdraw" -> "balance(address)"
+"17481_publicMint" -> "revert WrongPrice()"
+"17481_publicMint" -> "revert PublicMintOff()"
+"13550_safeTransferFrom" -> "code(address)"
+"13550__batchMint" -> "code(address)"
+"17481_safeMint" -> "revert InvalidId()"
+"17481__feeCheck" -> "mstore(uint256,uint256)"
+"13550_safeBatchTransferFrom" -> "code(address)"
+"17481__feeCheck" -> "revert(uint256,uint256)"
+"13550_balanceOfBatch" -> "require(bool,string)"
+"17481_safeMint" -> "revert AlreadyMinted()"
+"17481_uri" -> "revert InvalidId()"
+"13550__mint" -> "require(bool,string)"
+}"13550__batchMint" -> "13594_onERC1155BatchReceived"
+"13550__mint" -> "13594_onERC1155Received"
+"13550_safeTransferFrom" -> "13594_onERC1155Received"
+"13550_safeBatchTransferFrom" -> "13594_onERC1155BatchReceived"
+}

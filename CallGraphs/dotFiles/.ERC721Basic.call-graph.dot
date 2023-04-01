@@ -1,0 +1,109 @@
+strict digraph {
+subgraph cluster_10593_Owned {
+label = "Owned"
+"10593_setOwner" [label="setOwner"]
+"10593_constructor" [label="constructor"]
+"10593_setOwner" -> "10593_onlyOwner"
+}subgraph cluster_24843_ERC2981 {
+label = "ERC2981"
+"24843_supportsInterface" [label="supportsInterface"]
+"24843_royaltyInfo" [label="royaltyInfo"]
+}subgraph cluster_20139_ERC721TokenReceiver {
+label = "ERC721TokenReceiver"
+"20139_onERC721Received" [label="onERC721Received"]
+}subgraph cluster_21455_ERC721Basic {
+label = "ERC721Basic"
+"21455_setBaseURI" [label="setBaseURI"]
+"21455_mintTo" [label="mintTo"]
+"21455_burn" [label="burn"]
+"21455__getFeeValue" [label="_getFeeValue"]
+"21455__paymentCheck" [label="_paymentCheck"]
+"21455_tokenURI" [label="tokenURI"]
+"21455_supportsInterface" [label="supportsInterface"]
+"21455_getBaseURI" [label="getBaseURI"]
+"21455_totalSupply" [label="totalSupply"]
+"21455_getMintCount" [label="getMintCount"]
+"21455_setBaseURILock" [label="setBaseURILock"]
+"21455_mint" [label="mint"]
+"21455_withdrawERC20" [label="withdrawERC20"]
+"21455_withdraw" [label="withdraw"]
+"21455_constructor" [label="constructor"]
+"21455__feeCheck" [label="_feeCheck"]
+"21455__getPriceValue" [label="_getPriceValue"]
+"21455__incrementCounter" [label="_incrementCounter"]
+"21455_setPublicMintState" [label="setPublicMintState"]
+"21455_burn" -> "21455__burn"
+"21455_setPublicMintState" -> "21455_onlyOwner"
+"21455_withdrawERC20" -> "21455_onlyOwner"
+"21455_withdraw" -> "21455_onlyOwner"
+"21455_mint" -> "21455_publicMintAccess"
+"21455_mintTo" -> "21455__safeMint"
+"21455_mintTo" -> "21455__paymentCheck"
+"21455_burn" -> "21455__paymentCheck"
+"21455_mint" -> "21455__incrementCounter"
+"21455__paymentCheck" -> "21455__getPriceValue"
+"21455_mint" -> "21455__paymentCheck"
+"21455_mint" -> "21455_hasReachedMax"
+"21455_mint" -> "21455_publicMintPriceCheck"
+"21455_mint" -> "21455_nonReentrant"
+"21455_setBaseURI" -> "21455_onlyOwner"
+"21455_constructor" -> "21455_constructor"
+"21455_mintTo" -> "21455_hasReachedMax"
+"21455_mintTo" -> "21455_onlyOwner"
+"21455_setBaseURILock" -> "21455_onlyOwner"
+"21455_mint" -> "21455__safeMint"
+"21455__paymentCheck" -> "21455__feeCheck"
+"21455_burn" -> "21455_onlyOwner"
+"21455_mintTo" -> "21455__incrementCounter"
+"21455__feeCheck" -> "21455__getFeeValue"
+}subgraph cluster_20119_ERC721 {
+label = "ERC721"
+"20119_constructor" [label="constructor"]
+"20119__burn" [label="_burn"]
+"20119_transferFrom" [label="transferFrom"]
+"20119_tokenURI" [label="tokenURI"]
+"20119_balanceOf" [label="balanceOf"]
+"20119__mint" [label="_mint"]
+"20119_supportsInterface" [label="supportsInterface"]
+"20119_ownerOf" [label="ownerOf"]
+"20119_approve" [label="approve"]
+"20119_setApprovalForAll" [label="setApprovalForAll"]
+"20119__safeMint" [label="_safeMint"]
+"20119_safeTransferFrom" [label="safeTransferFrom"]
+"20119__safeMint" -> "20119__mint"
+"20119_safeTransferFrom" -> "20119_transferFrom"
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"revert(uint256,uint256)" 
+"revert NotMintedYet()" 
+"revert UriLocked()" 
+"mstore(uint256,uint256)" 
+"balance(address)" 
+"abi.encodePacked()" 
+"code(address)" 
+"require(bool,string)" 
+"21455__feeCheck" -> "revert(uint256,uint256)"
+"20119__burn" -> "require(bool,string)"
+"21455_tokenURI" -> "abi.encodePacked()"
+"20119__safeMint" -> "code(address)"
+"21455_mintTo" -> "mstore(uint256,uint256)"
+"21455_tokenURI" -> "revert NotMintedYet()"
+"21455_mintTo" -> "revert(uint256,uint256)"
+"21455_setBaseURI" -> "revert UriLocked()"
+"20119__safeMint" -> "require(bool,string)"
+"20119_approve" -> "require(bool,string)"
+"21455_burn" -> "mstore(uint256,uint256)"
+"21455_burn" -> "revert(uint256,uint256)"
+"20119_ownerOf" -> "require(bool,string)"
+"20119__mint" -> "require(bool,string)"
+"21455__feeCheck" -> "mstore(uint256,uint256)"
+"20119_transferFrom" -> "require(bool,string)"
+"20119_safeTransferFrom" -> "require(bool,string)"
+"21455_mint" -> "revert(uint256,uint256)"
+"20119_safeTransferFrom" -> "code(address)"
+"21455_withdraw" -> "balance(address)"
+"20119_balanceOf" -> "require(bool,string)"
+"21455_mint" -> "mstore(uint256,uint256)"
+}"20119_safeTransferFrom" -> "20139_onERC721Received"
+"20119__safeMint" -> "20139_onERC721Received"
+}

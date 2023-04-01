@@ -1,0 +1,141 @@
+strict digraph {
+subgraph cluster_10593_Owned {
+label = "Owned"
+"10593_setOwner" [label="setOwner"]
+"10593_constructor" [label="constructor"]
+"10593_setOwner" -> "10593_onlyOwner"
+}subgraph cluster_11366_Pausable {
+label = "Pausable"
+"11366__pause" [label="_pause"]
+"11366_paused" [label="paused"]
+"11366_constructor" [label="constructor"]
+"11366__unpause" [label="_unpause"]
+"11366__unpause" -> "11366_whenPaused"
+"11366__pause" -> "11366_whenNotPaused"
+}subgraph cluster_659_MAD {
+label = "MAD"
+"659_name" [label="name"]
+}subgraph cluster_24853_FeeOracle {
+label = "FeeOracle"
+"24853_feeLookup" [label="feeLookup"]
+}subgraph cluster_10333_MADRouter721 {
+label = "MADRouter721"
+"10333__stateType1" [label="_stateType1"]
+"10333_constructor" [label="constructor"]
+"10333_setSigner" [label="setSigner"]
+"10333_withdraw" [label="withdraw"]
+"10333__setPaymentToken" [label="_setPaymentToken"]
+"10333__paymentCheck" [label="_paymentCheck"]
+"10333_whitelistSettings" [label="whitelistSettings"]
+"10333_minimalSafeMint" [label="minimalSafeMint"]
+"10333_pause" [label="pause"]
+"10333_setMintState" [label="setMintState"]
+"10333_slitherConstructorConstantVariables" [label="slitherConstructorConstantVariables"]
+"10333_setBaseLock" [label="setBaseLock"]
+"10333_setBase" [label="setBase"]
+"10333_burn" [label="burn"]
+"10333__stateType2" [label="_stateType2"]
+"10333_unpause" [label="unpause"]
+"10333__tokenRender" [label="_tokenRender"]
+"10333_slitherConstructorVariables" [label="slitherConstructorVariables"]
+"10333_feeLookup" [label="feeLookup"]
+"10333_gift" [label="gift"]
+"10333_freeSettings" [label="freeSettings"]
+"10333_setRecipient" [label="setRecipient"]
+"10333_setOwner" [label="setOwner"]
+"10333_basicMintTo" [label="basicMintTo"]
+"10333__stateType0" [label="_stateType0"]
+"10333_setFees" [label="setFees"]
+"10333_name" [label="name"]
+"10333_creatorMint" [label="creatorMint"]
+"10333_minimalSafeMint" -> "10333_whenNotPaused"
+"10333_whitelistSettings" -> "10333__tokenRender"
+"10333_freeSettings" -> "10333__tokenRender"
+"10333_constructor" -> "10333__setPaymentToken"
+"10333_setMintState" -> "10333__stateType2"
+"10333_setOwner" -> "10333_onlyOwner"
+"10333_pause" -> "10333_onlyOwner"
+"10333_setRecipient" -> "10333_onlyOwner"
+"10333_setBase" -> "10333__tokenRender"
+"10333_burn" -> "10333_nonReentrant"
+"10333_unpause" -> "10333_onlyOwner"
+"10333_setSigner" -> "10333_onlyOwner"
+"10333_setBaseLock" -> "10333_nonReentrant"
+"10333_freeSettings" -> "10333_whenNotPaused"
+"10333_setBase" -> "10333_nonReentrant"
+"10333_setMintState" -> "10333__stateType0"
+"10333_gift" -> "10333_nonReentrant"
+"10333_creatorMint" -> "10333__paymentCheck"
+"10333_burn" -> "10333_whenNotPaused"
+"10333_burn" -> "10333__paymentCheck"
+"10333_whitelistSettings" -> "10333_nonReentrant"
+"10333_withdraw" -> "10333_whenNotPaused"
+"10333_creatorMint" -> "10333_nonReentrant"
+"10333_basicMintTo" -> "10333__tokenRender"
+"10333_unpause" -> "10333__unpause"
+"10333_creatorMint" -> "10333_whenNotPaused"
+"10333_burn" -> "10333__tokenRender"
+"10333_setMintState" -> "10333__stateType1"
+"10333_minimalSafeMint" -> "10333__paymentCheck"
+"10333_gift" -> "10333__tokenRender"
+"10333_setMintState" -> "10333_nonReentrant"
+"10333_gift" -> "10333__paymentCheck"
+"10333_withdraw" -> "10333_nonReentrant"
+"10333_withdraw" -> "10333__tokenRender"
+"10333_basicMintTo" -> "10333_whenNotPaused"
+"10333_whitelistSettings" -> "10333_whenNotPaused"
+"10333_setMintState" -> "10333__tokenRender"
+"10333_constructor" -> "10333_setRecipient"
+"10333_setMintState" -> "10333_whenNotPaused"
+"10333_setBase" -> "10333_whenNotPaused"
+"10333_basicMintTo" -> "10333__paymentCheck"
+"10333_basicMintTo" -> "10333_nonReentrant"
+"10333_setFees" -> "10333_onlyOwner"
+"10333_setBaseLock" -> "10333__tokenRender"
+"10333_setBaseLock" -> "10333_whenNotPaused"
+"10333_freeSettings" -> "10333_nonReentrant"
+"10333_gift" -> "10333_whenNotPaused"
+"10333_minimalSafeMint" -> "10333_nonReentrant"
+"10333_pause" -> "10333__pause"
+"10333_minimalSafeMint" -> "10333__tokenRender"
+"10333_creatorMint" -> "10333__tokenRender"
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"revert(uint256,uint256)" 
+"revert(string)" 
+"sstore(uint256,uint256)" 
+"balance(address)" 
+"mstore(uint256,uint256)" 
+"require(bool,string)" 
+"sload(uint256)" 
+"return(uint256,uint256)" 
+"10333_creatorMint" -> "revert(string)"
+"10333_setSigner" -> "require(bool,string)"
+"10333_burn" -> "revert(string)"
+"10333__stateType2" -> "revert(string)"
+"10333_freeSettings" -> "revert(string)"
+"10333_setFees" -> "sstore(uint256,uint256)"
+"10333_setBaseLock" -> "revert(string)"
+"10333_setMintState" -> "require(bool,string)"
+"10333__stateType1" -> "revert(string)"
+"10333_setFees" -> "require(bool,string)"
+"10333_whitelistSettings" -> "revert(string)"
+"10333_setOwner" -> "require(bool,string)"
+"10333__paymentCheck" -> "mstore(uint256,uint256)"
+"10333_basicMintTo" -> "revert(string)"
+"10333_setRecipient" -> "require(bool,string)"
+"10333_withdraw" -> "revert(string)"
+"10333_name" -> "return(uint256,uint256)"
+"10333__stateType0" -> "revert(string)"
+"10333_name" -> "mstore(uint256,uint256)"
+"10333_constructor" -> "require(bool,string)"
+"10333_withdraw" -> "balance(address)"
+"10333__paymentCheck" -> "revert(uint256,uint256)"
+"10333_setBase" -> "revert(string)"
+"10333_minimalSafeMint" -> "revert(string)"
+"10333_feeLookup" -> "sload(uint256)"
+"10333_setOwner" -> "sstore(uint256,uint256)"
+"10333_gift" -> "revert(string)"
+"10333_setRecipient" -> "sstore(uint256,uint256)"
+}"10333__paymentCheck" -> "24853_feeLookup"
+}

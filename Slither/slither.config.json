@@ -1,5 +1,5 @@
 {
-
+    "printers_to_run": "call-graph,vars-and-auth",
     "exclude_informational": false,
     "exclude_low": false,
     "exclude_medium": false,

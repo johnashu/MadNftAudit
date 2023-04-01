@@ -1,0 +1,8 @@
+strict digraph {
+subgraph cluster_12592_IERC2981 {
+label = "IERC2981"
+"12592_royaltyInfo" [label="royaltyInfo"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+}
+}

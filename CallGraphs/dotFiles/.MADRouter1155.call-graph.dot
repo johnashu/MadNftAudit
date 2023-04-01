@@ -1,0 +1,159 @@
+strict digraph {
+subgraph cluster_10593_Owned {
+label = "Owned"
+"10593_setOwner" [label="setOwner"]
+"10593_constructor" [label="constructor"]
+"10593_setOwner" -> "10593_onlyOwner"
+}subgraph cluster_9062_MADRouter1155 {
+label = "MADRouter1155"
+"9062_creatorBatchMint" [label="creatorBatchMint"]
+"9062_batchBurn" [label="batchBurn"]
+"9062_freeSettings" [label="freeSettings"]
+"9062_withdraw" [label="withdraw"]
+"9062_setSigner" [label="setSigner"]
+"9062_whitelistSettings" [label="whitelistSettings"]
+"9062_basicMintBatchTo" [label="basicMintBatchTo"]
+"9062_creatorMint" [label="creatorMint"]
+"9062_basicMintTo" [label="basicMintTo"]
+"9062_minimalSafeMint" [label="minimalSafeMint"]
+"9062_setURI" [label="setURI"]
+"9062__tokenRender" [label="_tokenRender"]
+"9062_slitherConstructorVariables" [label="slitherConstructorVariables"]
+"9062__paymentCheck" [label="_paymentCheck"]
+"9062_name" [label="name"]
+"9062_unpause" [label="unpause"]
+"9062__setPaymentToken" [label="_setPaymentToken"]
+"9062_gift" [label="gift"]
+"9062__stateType1" [label="_stateType1"]
+"9062_setOwner" [label="setOwner"]
+"9062_setMintState" [label="setMintState"]
+"9062_burn" [label="burn"]
+"9062__stateType0" [label="_stateType0"]
+"9062__stateType2" [label="_stateType2"]
+"9062_setURILock" [label="setURILock"]
+"9062_feeLookup" [label="feeLookup"]
+"9062_slitherConstructorConstantVariables" [label="slitherConstructorConstantVariables"]
+"9062_setRecipient" [label="setRecipient"]
+"9062_constructor" [label="constructor"]
+"9062_setFees" [label="setFees"]
+"9062_pause" [label="pause"]
+"9062_setSigner" -> "9062_onlyOwner"
+"9062_burn" -> "9062_nonReentrant"
+"9062_setURILock" -> "9062_nonReentrant"
+"9062_setMintState" -> "9062__stateType1"
+"9062_minimalSafeMint" -> "9062_whenNotPaused"
+"9062_setURI" -> "9062_whenNotPaused"
+"9062_setMintState" -> "9062__stateType0"
+"9062_setRecipient" -> "9062_onlyOwner"
+"9062_withdraw" -> "9062_whenNotPaused"
+"9062_freeSettings" -> "9062__tokenRender"
+"9062_creatorMint" -> "9062__paymentCheck"
+"9062_pause" -> "9062_onlyOwner"
+"9062_freeSettings" -> "9062_nonReentrant"
+"9062_basicMintBatchTo" -> "9062__tokenRender"
+"9062_burn" -> "9062_whenNotPaused"
+"9062_minimalSafeMint" -> "9062__paymentCheck"
+"9062_unpause" -> "9062_onlyOwner"
+"9062_gift" -> "9062_nonReentrant"
+"9062_basicMintTo" -> "9062__tokenRender"
+"9062_whitelistSettings" -> "9062__tokenRender"
+"9062_freeSettings" -> "9062_whenNotPaused"
+"9062_basicMintTo" -> "9062_nonReentrant"
+"9062_whitelistSettings" -> "9062_whenNotPaused"
+"9062_basicMintBatchTo" -> "9062__paymentCheck"
+"9062_basicMintBatchTo" -> "9062_whenNotPaused"
+"9062_batchBurn" -> "9062__paymentCheck"
+"9062_basicMintTo" -> "9062__paymentCheck"
+"9062_withdraw" -> "9062_nonReentrant"
+"9062_setURI" -> "9062__tokenRender"
+"9062_setOwner" -> "9062_onlyOwner"
+"9062_setURI" -> "9062_nonReentrant"
+"9062_burn" -> "9062__tokenRender"
+"9062_creatorBatchMint" -> "9062_nonReentrant"
+"9062_withdraw" -> "9062__tokenRender"
+"9062_setMintState" -> "9062_nonReentrant"
+"9062_creatorMint" -> "9062_whenNotPaused"
+"9062_creatorBatchMint" -> "9062_whenNotPaused"
+"9062_constructor" -> "9062__setPaymentToken"
+"9062_whitelistSettings" -> "9062_nonReentrant"
+"9062_batchBurn" -> "9062_nonReentrant"
+"9062_setFees" -> "9062_onlyOwner"
+"9062_setMintState" -> "9062_whenNotPaused"
+"9062_unpause" -> "9062__unpause"
+"9062_setURILock" -> "9062_whenNotPaused"
+"9062_setURILock" -> "9062__tokenRender"
+"9062_gift" -> "9062_whenNotPaused"
+"9062_burn" -> "9062__paymentCheck"
+"9062_basicMintTo" -> "9062_whenNotPaused"
+"9062_setMintState" -> "9062__stateType2"
+"9062_setMintState" -> "9062__tokenRender"
+"9062_basicMintBatchTo" -> "9062_nonReentrant"
+"9062_creatorBatchMint" -> "9062__paymentCheck"
+"9062_minimalSafeMint" -> "9062__tokenRender"
+"9062_creatorMint" -> "9062_nonReentrant"
+"9062_gift" -> "9062__tokenRender"
+"9062_batchBurn" -> "9062_whenNotPaused"
+"9062_batchBurn" -> "9062__tokenRender"
+"9062_pause" -> "9062__pause"
+"9062_creatorMint" -> "9062__tokenRender"
+"9062_gift" -> "9062__paymentCheck"
+"9062_minimalSafeMint" -> "9062_nonReentrant"
+"9062_creatorBatchMint" -> "9062__tokenRender"
+"9062_constructor" -> "9062_setRecipient"
+}subgraph cluster_11366_Pausable {
+label = "Pausable"
+"11366__pause" [label="_pause"]
+"11366_paused" [label="paused"]
+"11366_constructor" [label="constructor"]
+"11366__unpause" [label="_unpause"]
+"11366__unpause" -> "11366_whenPaused"
+"11366__pause" -> "11366_whenNotPaused"
+}subgraph cluster_659_MAD {
+label = "MAD"
+"659_name" [label="name"]
+}subgraph cluster_24853_FeeOracle {
+label = "FeeOracle"
+"24853_feeLookup" [label="feeLookup"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"revert(uint256,uint256)" 
+"revert(string)" 
+"sstore(uint256,uint256)" 
+"mstore(uint256,uint256)" 
+"balance(address)" 
+"require(bool,string)" 
+"sload(uint256)" 
+"return(uint256,uint256)" 
+"9062_name" -> "return(uint256,uint256)"
+"9062_setRecipient" -> "sstore(uint256,uint256)"
+"9062_setOwner" -> "sstore(uint256,uint256)"
+"9062_whitelistSettings" -> "revert(string)"
+"9062_setOwner" -> "require(bool,string)"
+"9062__paymentCheck" -> "mstore(uint256,uint256)"
+"9062__stateType0" -> "revert(string)"
+"9062_name" -> "mstore(uint256,uint256)"
+"9062_setFees" -> "require(bool,string)"
+"9062_withdraw" -> "revert(string)"
+"9062_creatorMint" -> "revert(string)"
+"9062_batchBurn" -> "revert(string)"
+"9062_burn" -> "revert(string)"
+"9062_setSigner" -> "require(bool,string)"
+"9062_basicMintTo" -> "revert(string)"
+"9062_setRecipient" -> "require(bool,string)"
+"9062__paymentCheck" -> "revert(uint256,uint256)"
+"9062_constructor" -> "require(bool,string)"
+"9062_setURILock" -> "revert(string)"
+"9062_setMintState" -> "require(bool,string)"
+"9062_withdraw" -> "balance(address)"
+"9062_basicMintBatchTo" -> "revert(string)"
+"9062_setFees" -> "sstore(uint256,uint256)"
+"9062_creatorBatchMint" -> "revert(string)"
+"9062_gift" -> "revert(string)"
+"9062_feeLookup" -> "sload(uint256)"
+"9062_minimalSafeMint" -> "revert(string)"
+"9062_freeSettings" -> "revert(string)"
+"9062__stateType1" -> "revert(string)"
+"9062__stateType2" -> "revert(string)"
+"9062_setURI" -> "revert(string)"
+}"9062__paymentCheck" -> "24853_feeLookup"
+}

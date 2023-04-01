@@ -1,0 +1,40 @@
+strict digraph {
+subgraph cluster_12570_MockERC721 {
+label = "MockERC721"
+"12570_tokenURI" [label="tokenURI"]
+"12570_constructor" [label="constructor"]
+"12570_mint" [label="mint"]
+"12570_mint" -> "12570__mint"
+"12570_constructor" -> "12570_constructor"
+}subgraph cluster_20119_ERC721 {
+label = "ERC721"
+"20119_constructor" [label="constructor"]
+"20119__burn" [label="_burn"]
+"20119_transferFrom" [label="transferFrom"]
+"20119_tokenURI" [label="tokenURI"]
+"20119_balanceOf" [label="balanceOf"]
+"20119__mint" [label="_mint"]
+"20119_supportsInterface" [label="supportsInterface"]
+"20119_ownerOf" [label="ownerOf"]
+"20119_approve" [label="approve"]
+"20119_setApprovalForAll" [label="setApprovalForAll"]
+"20119__safeMint" [label="_safeMint"]
+"20119_safeTransferFrom" [label="safeTransferFrom"]
+"20119__safeMint" -> "20119__mint"
+"20119_safeTransferFrom" -> "20119_transferFrom"
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"code(address)" 
+"require(bool,string)" 
+"20119__burn" -> "require(bool,string)"
+"20119__safeMint" -> "code(address)"
+"20119_ownerOf" -> "require(bool,string)"
+"20119__mint" -> "require(bool,string)"
+"20119_transferFrom" -> "require(bool,string)"
+"20119_safeTransferFrom" -> "require(bool,string)"
+"20119_approve" -> "require(bool,string)"
+"20119_safeTransferFrom" -> "code(address)"
+"20119__safeMint" -> "require(bool,string)"
+"20119_balanceOf" -> "require(bool,string)"
+}
+}

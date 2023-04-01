@@ -1,0 +1,23 @@
+strict digraph {
+subgraph cluster_10593_Owned {
+label = "Owned"
+"10593_setOwner" [label="setOwner"]
+"10593_constructor" [label="constructor"]
+"10593_setOwner" -> "10593_onlyOwner"
+}subgraph cluster_24843_ERC2981 {
+label = "ERC2981"
+"24843_supportsInterface" [label="supportsInterface"]
+"24843_royaltyInfo" [label="royaltyInfo"]
+}subgraph cluster_12529_MockERC2981 {
+label = "MockERC2981"
+"12529_setRoyaltyRecipient" [label="setRoyaltyRecipient"]
+"12529_constructor" [label="constructor"]
+"12529_setRoyaltyFee" [label="setRoyaltyFee"]
+"12529_setRoyaltyFee" -> "12529_onlyOwner"
+"12529_constructor" -> "12529_setRoyaltyFee"
+"12529_setRoyaltyRecipient" -> "12529_onlyOwner"
+"12529_constructor" -> "12529_setRoyaltyRecipient"
+}subgraph cluster_solidity {
+label = "[Solidity]"
+}
+}

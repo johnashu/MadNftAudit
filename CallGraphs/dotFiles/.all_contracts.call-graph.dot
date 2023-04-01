@@ -1,0 +1,2091 @@
+strict digraph {
+subgraph cluster_15234_ERC1155Basic {
+label = "ERC1155Basic"
+"15234__feeCheck" [label="_feeCheck"]
+"15234__getFeeValue" [label="_getFeeValue"]
+"15234_burn" [label="burn"]
+"15234_uri" [label="uri"]
+"15234_burnBatch" [label="burnBatch"]
+"15234_withdrawERC20" [label="withdrawERC20"]
+"15234__getPriceValue" [label="_getPriceValue"]
+"15234_mint" [label="mint"]
+"15234_setURILock" [label="setURILock"]
+"15234__incrementCounter" [label="_incrementCounter"]
+"15234_mintBatchTo" [label="mintBatchTo"]
+"15234_supportsInterface" [label="supportsInterface"]
+"15234_getMintCount" [label="getMintCount"]
+"15234__paymentCheck" [label="_paymentCheck"]
+"15234_setPublicMintState" [label="setPublicMintState"]
+"15234_mintBatch" [label="mintBatch"]
+"15234_setURI" [label="setURI"]
+"15234__sumAmounts" [label="_sumAmounts"]
+"15234_getURI" [label="getURI"]
+"15234_constructor" [label="constructor"]
+"15234_mintTo" [label="mintTo"]
+"15234_totalSupply" [label="totalSupply"]
+"15234_withdraw" [label="withdraw"]
+"15234_withdraw" -> "15234_onlyOwner"
+"15234_withdrawERC20" -> "15234_onlyOwner"
+"15234_mint" -> "15234__incrementCounter"
+"15234_setPublicMintState" -> "15234_onlyOwner"
+"15234_mintTo" -> "15234_hasReachedMax"
+"15234_burn" -> "15234__burn"
+"15234_mintBatch" -> "15234__getPriceValue"
+"15234_mintTo" -> "15234_onlyOwner"
+"15234_burnBatch" -> "15234__paymentCheck"
+"15234_mintTo" -> "15234__mint"
+"15234_constructor" -> "15234_constructor"
+"15234__paymentCheck" -> "15234__getPriceValue"
+"15234_mintBatchTo" -> "15234_onlyOwner"
+"15234_mintBatch" -> "15234__batchMint"
+"15234_mintBatchTo" -> "15234_hasReachedMax"
+"15234_mintBatchTo" -> "15234__sumAmounts"
+"15234_mint" -> "15234_publicMintPriceCheck"
+"15234_burn" -> "15234_onlyOwner"
+"15234_burn" -> "15234__paymentCheck"
+"15234__paymentCheck" -> "15234__feeCheck"
+"15234_mint" -> "15234__paymentCheck"
+"15234_mintTo" -> "15234__incrementCounter"
+"15234_mintBatch" -> "15234__incrementCounter"
+"15234_mintBatchTo" -> "15234__paymentCheck"
+"15234_setURILock" -> "15234_onlyOwner"
+"15234_mint" -> "15234__mint"
+"15234_mint" -> "15234_nonReentrant"
+"15234_mintBatchTo" -> "15234__batchMint"
+"15234_burnBatch" -> "15234__batchBurn"
+"15234_setURI" -> "15234_onlyOwner"
+"15234__feeCheck" -> "15234__getFeeValue"
+"15234_mintTo" -> "15234__sumAmounts"
+"15234_mintBatch" -> "15234_publicMintAccess"
+"15234_mintBatch" -> "15234_hasReachedMax"
+"15234_mintTo" -> "15234__paymentCheck"
+"15234_mintBatch" -> "15234__sumAmounts"
+"15234_mint" -> "15234_publicMintAccess"
+"15234_mint" -> "15234_hasReachedMax"
+"15234_mintBatch" -> "15234_nonReentrant"
+"15234_burnBatch" -> "15234_onlyOwner"
+"15234_mintBatch" -> "15234_publicMintPriceCheck"
+}subgraph cluster_10883_ERC1155LazyDeployer {
+label = "ERC1155LazyDeployer"
+"10883__1155LazyDeploy" [label="_1155LazyDeploy"]
+}subgraph cluster_20484_ERC721Holder {
+label = "ERC721Holder"
+"20484_onERC721Received" [label="onERC721Received"]
+}subgraph cluster_24843_ERC2981 {
+label = "ERC2981"
+"24843_supportsInterface" [label="supportsInterface"]
+"24843_royaltyInfo" [label="royaltyInfo"]
+}subgraph cluster_13964_ERC1155Holder {
+label = "ERC1155Holder"
+"13964_onERC1155BatchReceived" [label="onERC1155BatchReceived"]
+"13964_onERC1155Received" [label="onERC1155Received"]
+}subgraph cluster_13_IUniswapV3SwapCallback {
+label = "IUniswapV3SwapCallback"
+"13_uniswapV3SwapCallback" [label="uniswapV3SwapCallback"]
+}subgraph cluster_7565_MADMarketplace721 {
+label = "MADMarketplace721"
+"7565_name" [label="name"]
+"7565_constructor" [label="constructor"]
+"7565__claimChecks" [label="_claimChecks"]
+"7565_setRecipient" [label="setRecipient"]
+"7565_withdrawERC20" [label="withdrawERC20"]
+"7565_getOutbidBalance" [label="getOutbidBalance"]
+"7565_ERC165Check" [label="ERC165Check"]
+"7565_updateSettings" [label="updateSettings"]
+"7565_getCurrentPrice" [label="getCurrentPrice"]
+"7565_fixedPrice" [label="fixedPrice"]
+"7565__buyChecks" [label="_buyChecks"]
+"7565__withdrawOutbid" [label="_withdrawOutbid"]
+"7565_setOwner" [label="setOwner"]
+"7565_dutchAuction" [label="dutchAuction"]
+"7565_pause" [label="pause"]
+"7565_delOrder" [label="delOrder"]
+"7565_claim" [label="claim"]
+"7565_autoTransferFunds" [label="autoTransferFunds"]
+"7565_englishAuction" [label="englishAuction"]
+"7565_sellerOrderLength" [label="sellerOrderLength"]
+"7565__makeOrderChecks" [label="_makeOrderChecks"]
+"7565_unpause" [label="unpause"]
+"7565_bid" [label="bid"]
+"7565_cancelOrder" [label="cancelOrder"]
+"7565_interfaceCheck" [label="interfaceCheck"]
+"7565_withdraw" [label="withdraw"]
+"7565__bidChecks" [label="_bidChecks"]
+"7565__feeResolver" [label="_feeResolver"]
+"7565_tokenOrderLength" [label="tokenOrderLength"]
+"7565_setFees" [label="setFees"]
+"7565__intPath" [label="_intPath"]
+"7565__hash" [label="_hash"]
+"7565__cancelOrderChecks" [label="_cancelOrderChecks"]
+"7565_withdrawOutbid" [label="withdrawOutbid"]
+"7565__setPaymentToken" [label="_setPaymentToken"]
+"7565_setFactory" [label="setFactory"]
+"7565__exceedsMaxEP" [label="_exceedsMaxEP"]
+"7565__isBidderOrSeller" [label="_isBidderOrSeller"]
+"7565_buy" [label="buy"]
+"7565__extPath1" [label="_extPath1"]
+"7565_withdrawOutbidEth" [label="withdrawOutbidEth"]
+"7565__makeOrder" [label="_makeOrder"]
+"7565_receive" [label="receive"]
+"7565__extPath0" [label="_extPath0"]
+"7565_bid" -> "7565_whenNotPaused"
+"7565_updateSettings" -> "7565_onlyOwner"
+"7565_constructor" -> "7565_setRecipient"
+"7565_dutchAuction" -> "7565__makeOrder"
+"7565_buy" -> "7565_ERC165Check"
+"7565_bid" -> "7565__bidChecks"
+"7565_dutchAuction" -> "7565__exceedsMaxEP"
+"7565__makeOrder" -> "7565__hash"
+"7565_constructor" -> "7565__setPaymentToken"
+"7565_buy" -> "7565__intPath"
+"7565_englishAuction" -> "7565_whenNotPaused"
+"7565_autoTransferFunds" -> "7565_onlyOwner"
+"7565_autoTransferFunds" -> "7565__withdrawOutbid"
+"7565_delOrder" -> "7565_onlyOwner"
+"7565_delOrder" -> "7565_whenPaused"
+"7565_pause" -> "7565_onlyOwner"
+"7565_unpause" -> "7565_onlyOwner"
+"7565_setOwner" -> "7565_onlyOwner"
+"7565_claim" -> "7565_whenNotPaused"
+"7565_claim" -> "7565_interfaceCheck"
+"7565_constructor" -> "7565_setFactory"
+"7565_unpause" -> "7565__unpause"
+"7565_dutchAuction" -> "7565_whenNotPaused"
+"7565_withdraw" -> "7565_whenPaused"
+"7565_setFees" -> "7565_onlyOwner"
+"7565_setRecipient" -> "7565_onlyOwner"
+"7565_claim" -> "7565__intPath"
+"7565_withdrawERC20" -> "7565_onlyOwner"
+"7565__intPath" -> "7565__feeResolver"
+"7565_claim" -> "7565__claimChecks"
+"7565_buy" -> "7565__extPath0"
+"7565_cancelOrder" -> "7565__cancelOrderChecks"
+"7565_withdrawOutbid" -> "7565__withdrawOutbid"
+"7565_withdrawERC20" -> "7565_whenPaused"
+"7565_setFactory" -> "7565_onlyOwner"
+"7565_buy" -> "7565_whenNotPaused"
+"7565__makeOrder" -> "7565__makeOrderChecks"
+"7565_buy" -> "7565_getCurrentPrice"
+"7565_constructor" -> "7565_updateSettings"
+"7565_buy" -> "7565_interfaceCheck"
+"7565_fixedPrice" -> "7565__makeOrder"
+"7565_fixedPrice" -> "7565_whenNotPaused"
+"7565_claim" -> "7565__isBidderOrSeller"
+"7565_claim" -> "7565__extPath0"
+"7565_claim" -> "7565__extPath1"
+"7565_pause" -> "7565__pause"
+"7565_buy" -> "7565__buyChecks"
+"7565_withdraw" -> "7565_onlyOwner"
+"7565_claim" -> "7565_ERC165Check"
+"7565_ERC165Check" -> "7565_interfaceCheck"
+"7565_englishAuction" -> "7565__makeOrder"
+"7565_buy" -> "7565__extPath1"
+}subgraph cluster_12814_IERC1155 {
+label = "IERC1155"
+"12814_isApprovedForAll" [label="isApprovedForAll"]
+"12814_setApprovalForAll" [label="setApprovalForAll"]
+"12814_safeBatchTransferFrom" [label="safeBatchTransferFrom"]
+"12814_safeTransferFrom" [label="safeTransferFrom"]
+"12814_balanceOf" [label="balanceOf"]
+"12814_balanceOfBatch" [label="balanceOfBatch"]
+}subgraph cluster_25101_MerkleProof {
+label = "MerkleProof"
+"25101_verify" [label="verify"]
+"25101_verifyMultiProof" [label="verifyMultiProof"]
+}subgraph cluster_659_MAD {
+label = "MAD"
+"659_name" [label="name"]
+}subgraph cluster_24853_FeeOracle {
+label = "FeeOracle"
+"24853_feeLookup" [label="feeLookup"]
+}subgraph cluster_11285_DCPrevent {
+label = "DCPrevent"
+"11285_constructor" [label="constructor"]
+"11285_selfReferencePointer" [label="selfReferencePointer"]
+}subgraph cluster_20119_ERC721 {
+label = "ERC721"
+"20119__burn" [label="_burn"]
+"20119_constructor" [label="constructor"]
+"20119_transferFrom" [label="transferFrom"]
+"20119__mint" [label="_mint"]
+"20119_tokenURI" [label="tokenURI"]
+"20119_balanceOf" [label="balanceOf"]
+"20119_supportsInterface" [label="supportsInterface"]
+"20119_approve" [label="approve"]
+"20119__safeMint" [label="_safeMint"]
+"20119_setApprovalForAll" [label="setApprovalForAll"]
+"20119_ownerOf" [label="ownerOf"]
+"20119_safeTransferFrom" [label="safeTransferFrom"]
+"20119__safeMint" -> "20119__mint"
+"20119_safeTransferFrom" -> "20119_transferFrom"
+}subgraph cluster_22647_ERC721Lazy {
+label = "ERC721Lazy"
+"22647_setBaseURILock" [label="setBaseURILock"]
+"22647_totalSupply" [label="totalSupply"]
+"22647_getMintCount" [label="getMintCount"]
+"22647_getBaseURI" [label="getBaseURI"]
+"22647_DOMAIN_SEPARATOR" [label="DOMAIN_SEPARATOR"]
+"22647__lazyCheck" [label="_lazyCheck"]
+"22647_tokenURI" [label="tokenURI"]
+"22647_burn" [label="burn"]
+"22647__feeCheck" [label="_feeCheck"]
+"22647_setSigner" [label="setSigner"]
+"22647_constructor" [label="constructor"]
+"22647__getPriceValue" [label="_getPriceValue"]
+"22647_lazyMint" [label="lazyMint"]
+"22647__getFeeValue" [label="_getFeeValue"]
+"22647_supportsInterface" [label="supportsInterface"]
+"22647__userMint" [label="_userMint"]
+"22647__incrementCounter" [label="_incrementCounter"]
+"22647_withdrawERC20" [label="withdrawERC20"]
+"22647__paymentCheck" [label="_paymentCheck"]
+"22647_computeDS" [label="computeDS"]
+"22647__verify" [label="_verify"]
+"22647_withdraw" [label="withdraw"]
+"22647__verifyVoucher" [label="_verifyVoucher"]
+"22647_setBaseURI" [label="setBaseURI"]
+"22647_constructor" -> "22647_computeDS"
+"22647_DOMAIN_SEPARATOR" -> "22647_computeDS"
+"22647_withdrawERC20" -> "22647_onlyOwner"
+"22647_lazyMint" -> "22647__userMint"
+"22647_burn" -> "22647__paymentCheck"
+"22647_burn" -> "22647__burn"
+"22647_lazyMint" -> "22647__getPriceValue"
+"22647_lazyMint" -> "22647__lazyCheck"
+"22647__lazyCheck" -> "22647__getFeeValue"
+"22647__paymentCheck" -> "22647__feeCheck"
+"22647_setBaseURI" -> "22647_onlyOwner"
+"22647_constructor" -> "22647_constructor"
+"22647_burn" -> "22647_onlyOwner"
+"22647__paymentCheck" -> "22647__getPriceValue"
+"22647_setSigner" -> "22647_onlyOwner"
+"22647_lazyMint" -> "22647__verify"
+"22647_setBaseURILock" -> "22647_onlyOwner"
+"22647__userMint" -> "22647__incrementCounter"
+"22647__feeCheck" -> "22647__getFeeValue"
+"22647__verify" -> "22647_DOMAIN_SEPARATOR"
+"22647__userMint" -> "22647__mint"
+"22647_withdraw" -> "22647_onlyOwner"
+"22647_lazyMint" -> "22647_nonReentrant"
+"22647__verifyVoucher" -> "22647_DOMAIN_SEPARATOR"
+}subgraph cluster_12822_IERC1155Metadata {
+label = "IERC1155Metadata"
+"12822_uri" [label="uri"]
+}subgraph cluster_13594_ERC1155TokenReceiver {
+label = "ERC1155TokenReceiver"
+"13594_onERC1155BatchReceived" [label="onERC1155BatchReceived"]
+"13594_onERC1155Received" [label="onERC1155Received"]
+}subgraph cluster_12570_MockERC721 {
+label = "MockERC721"
+"12570_tokenURI" [label="tokenURI"]
+"12570_constructor" [label="constructor"]
+"12570_mint" [label="mint"]
+"12570_mint" -> "12570__mint"
+"12570_constructor" -> "12570_constructor"
+}subgraph cluster_11935_SplitterImpl {
+label = "SplitterImpl"
+"11935_release" [label="release"]
+"11935_constructor" [label="constructor"]
+"11935_releasable" [label="releasable"]
+"11935_payeesLength" [label="payeesLength"]
+"11935__pendingPayment" [label="_pendingPayment"]
+"11935_releaseAll" [label="releaseAll"]
+"11935__payees" [label="_payees"]
+"11935__shares" [label="_shares"]
+"11935_totalShares" [label="totalShares"]
+"11935_receive" [label="receive"]
+"11935__addPayee" [label="_addPayee"]
+"11935_totalReleased" [label="totalReleased"]
+"11935_released" [label="released"]
+"11935_releaseAll" -> "11935_releasable"
+"11935_releaseAll" -> "11935_release"
+"11935_receive" -> "11935_releaseAll"
+"11935_constructor" -> "11935__addPayee"
+"11935_release" -> "11935_releasable"
+"11935_releasable" -> "11935__pendingPayment"
+"11935_releasable" -> "11935_totalReleased"
+"11935_releasable" -> "11935_released"
+}subgraph cluster_12708_IERC721 {
+label = "IERC721"
+"12708_getApproved" [label="getApproved"]
+"12708_setApprovalForAll" [label="setApprovalForAll"]
+"12708_isApprovedForAll" [label="isApprovedForAll"]
+"12708_transferFrom" [label="transferFrom"]
+"12708_approve" [label="approve"]
+}subgraph cluster_10533_FactoryVerifier {
+label = "FactoryVerifier"
+"10533_creatorCheck" [label="creatorCheck"]
+"10533_typeChecker" [label="typeChecker"]
+"10533_creatorAuth" [label="creatorAuth"]
+"10533_getColID" [label="getColID"]
+}subgraph cluster_12580_IERC165 {
+label = "IERC165"
+"12580_supportsInterface" [label="supportsInterface"]
+}subgraph cluster_11048_ERC721BasicDeployer {
+label = "ERC721BasicDeployer"
+"11048__721BasicDeploy" [label="_721BasicDeploy"]
+}subgraph cluster_19497_ERC1155Whitelist {
+label = "ERC1155Whitelist"
+"19497__incrementCounter" [label="_incrementCounter"]
+"19497__getPriceValue" [label="_getPriceValue"]
+"19497_setURILock" [label="setURILock"]
+"19497_mintBatchToCreator" [label="mintBatchToCreator"]
+"19497__publicMintCheck" [label="_publicMintCheck"]
+"19497_getMintCount" [label="getMintCount"]
+"19497__paymentCheck" [label="_paymentCheck"]
+"19497_burn" [label="burn"]
+"19497_totalSupply" [label="totalSupply"]
+"19497_whitelistConfig" [label="whitelistConfig"]
+"19497_mint" [label="mint"]
+"19497_whitelistMint" [label="whitelistMint"]
+"19497_uri" [label="uri"]
+"19497__publicWhitelistMintCheck" [label="_publicWhitelistMintCheck"]
+"19497__canBatchToCreator" [label="_canBatchToCreator"]
+"19497__canBatchMint" [label="_canBatchMint"]
+"19497_setWhitelistMintState" [label="setWhitelistMintState"]
+"19497_setFreeClaimState" [label="setFreeClaimState"]
+"19497_withdraw" [label="withdraw"]
+"19497_mintBatch" [label="mintBatch"]
+"19497_setPublicMintState" [label="setPublicMintState"]
+"19497_mintToCreator" [label="mintToCreator"]
+"19497_setURI" [label="setURI"]
+"19497_burnBatch" [label="burnBatch"]
+"19497_withdrawERC20" [label="withdrawERC20"]
+"19497_constructor" [label="constructor"]
+"19497__getFeeValue" [label="_getFeeValue"]
+"19497_giftTokens" [label="giftTokens"]
+"19497_freeConfig" [label="freeConfig"]
+"19497_claimFree" [label="claimFree"]
+"19497_getURI" [label="getURI"]
+"19497_whitelistMintBatch" [label="whitelistMintBatch"]
+"19497__feeCheck" [label="_feeCheck"]
+"19497__canWhitelistBatch" [label="_canWhitelistBatch"]
+"19497_supportsInterface" [label="supportsInterface"]
+"19497_whitelistMintBatch" -> "19497_merkleVerify"
+"19497_whitelistConfig" -> "19497_onlyOwner"
+"19497__publicWhitelistMintCheck" -> "19497_publicMintPriceCheck"
+"19497_setURILock" -> "19497_onlyOwner"
+"19497_whitelistMint" -> "19497__mint"
+"19497_setWhitelistMintState" -> "19497_onlyOwner"
+"19497_claimFree" -> "19497_balanceMatchesTotal"
+"19497_burn" -> "19497_onlyOwner"
+"19497_mintBatch" -> "19497__batchMint"
+"19497_mintBatchToCreator" -> "19497_onlyOwner"
+"19497_mintBatchToCreator" -> "19497__canBatchToCreator"
+"19497_giftTokens" -> "19497_balanceMatchesTotal"
+"19497_setPublicMintState" -> "19497_onlyOwner"
+"19497_mintToCreator" -> "19497_balanceMatchesTotal"
+"19497_whitelistMintBatch" -> "19497__batchMint"
+"19497_mintToCreator" -> "19497_onlyOwner"
+"19497_whitelistMint" -> "19497_nonReentrant"
+"19497_whitelistMint" -> "19497__publicWhitelistMintCheck"
+"19497_mint" -> "19497_publicMintPriceCheck"
+"19497_burnBatch" -> "19497_onlyOwner"
+"19497_giftTokens" -> "19497_onlyOwner"
+"19497__publicMintCheck" -> "19497_balanceMatchesTotal"
+"19497_burnBatch" -> "19497__batchBurn"
+"19497_giftTokens" -> "19497__mint"
+"19497__publicMintCheck" -> "19497__paymentCheck"
+"19497_claimFree" -> "19497__mint"
+"19497__canBatchToCreator" -> "19497_totalSupply"
+"19497_setFreeClaimState" -> "19497_onlyOwner"
+"19497_mint" -> "19497__publicMintCheck"
+"19497_giftTokens" -> "19497__incrementCounter"
+"19497__publicWhitelistMintCheck" -> "19497_whitelistMax"
+"19497_claimFree" -> "19497__incrementCounter"
+"19497_mintBatchToCreator" -> "19497_balanceMatchesTotal"
+"19497_whitelistMint" -> "19497__incrementCounter"
+"19497_mintBatchToCreator" -> "19497_nonReentrant"
+"19497_mintToCreator" -> "19497_canMintFree"
+"19497_mint" -> "19497__mint"
+"19497_mintBatchToCreator" -> "19497__batchMint"
+"19497_claimFree" -> "19497_merkleVerify"
+"19497__publicMintCheck" -> "19497_publicMintAccess"
+"19497_setURI" -> "19497_onlyOwner"
+"19497_mintBatchToCreator" -> "19497__paymentCheck"
+"19497_mintBatch" -> "19497__incrementCounter"
+"19497__feeCheck" -> "19497__getFeeValue"
+"19497_burn" -> "19497__paymentCheck"
+"19497_mintBatch" -> "19497_publicMintAccess"
+"19497_mint" -> "19497_nonReentrant"
+"19497_mintBatch" -> "19497_nonReentrant"
+"19497_mintBatchToCreator" -> "19497__incrementCounter"
+"19497_mintToCreator" -> "19497_nonReentrant"
+"19497__paymentCheck" -> "19497__feeCheck"
+"19497_burnBatch" -> "19497__paymentCheck"
+"19497_mintToCreator" -> "19497__incrementCounter"
+"19497_mintBatch" -> "19497__getPriceValue"
+"19497__canBatchMint" -> "19497_totalSupply"
+"19497_giftTokens" -> "19497_nonReentrant"
+"19497_whitelistMintBatch" -> "19497_nonReentrant"
+"19497_constructor" -> "19497_constructor"
+"19497_giftTokens" -> "19497__paymentCheck"
+"19497__paymentCheck" -> "19497__getPriceValue"
+"19497_mintBatch" -> "19497__canBatchMint"
+"19497_withdraw" -> "19497_onlyOwner"
+"19497_claimFree" -> "19497_freeClaimAccess"
+"19497_mintToCreator" -> "19497__mint"
+"19497_whitelistMintBatch" -> "19497__incrementCounter"
+"19497_claimFree" -> "19497_canMintFree"
+"19497_withdrawERC20" -> "19497_onlyOwner"
+"19497_whitelistMintBatch" -> "19497__canWhitelistBatch"
+"19497_whitelistMintBatch" -> "19497__paymentCheck"
+"19497_mint" -> "19497__incrementCounter"
+"19497_burn" -> "19497__burn"
+"19497_whitelistMint" -> "19497_whitelistMintAccess"
+"19497_giftTokens" -> "19497_canMintFree"
+"19497__publicMintCheck" -> "19497_hasReachedMax"
+"19497_mintBatch" -> "19497_publicMintPriceCheck"
+"19497_whitelistMintBatch" -> "19497_whitelistMintAccess"
+"19497_mintToCreator" -> "19497__paymentCheck"
+"19497__canWhitelistBatch" -> "19497_totalSupply"
+"19497_whitelistMint" -> "19497_merkleVerify"
+"19497_freeConfig" -> "19497_onlyOwner"
+}subgraph cluster_25000_CREATE3 {
+label = "CREATE3"
+"25000_getDeployed" [label="getDeployed"]
+"25000_deploy" [label="deploy"]
+"25000_deploy" -> "25000_getDeployed"
+}subgraph cluster_20139_ERC721TokenReceiver {
+label = "ERC721TokenReceiver"
+"20139_onERC721Received" [label="onERC721Received"]
+}subgraph cluster_12458_MockERC20 {
+label = "MockERC20"
+"12458_constructor" [label="constructor"]
+"12458_burn" [label="burn"]
+"12458_mint" [label="mint"]
+"12458_burn" -> "12458__burn"
+"12458_constructor" -> "12458_mint"
+"12458_constructor" -> "12458_constructor"
+"12458_mint" -> "12458__mint"
+}subgraph cluster_12592_IERC2981 {
+label = "IERC2981"
+"12592_royaltyInfo" [label="royaltyInfo"]
+}subgraph cluster_10676_ERC1155MinimalDeployer {
+label = "ERC1155MinimalDeployer"
+"10676__1155MinimalDeploy" [label="_1155MinimalDeploy"]
+}subgraph cluster_24892_Bytes32AddressLib {
+label = "Bytes32AddressLib"
+"24892_fillLast12Bytes" [label="fillLast12Bytes"]
+"24892_fromLast20Bytes" [label="fromLast20Bytes"]
+}subgraph cluster_11197_ERC721LazyDeployer {
+label = "ERC721LazyDeployer"
+"11197__721LazyDeploy" [label="_721LazyDeploy"]
+}subgraph cluster_1856_MADFactory1155 {
+label = "MADFactory1155"
+"1856_createCollection" [label="createCollection"]
+"1856_setSigner" [label="setSigner"]
+"1856_typeChecker" [label="typeChecker"]
+"1856__sharesBuffer" [label="_sharesBuffer"]
+"1856_creatorCheck" [label="creatorCheck"]
+"1856_setRouter" [label="setRouter"]
+"1856_splitterCheck" [label="splitterCheck"]
+"1856__limiter" [label="_limiter"]
+"1856_setMarket" [label="setMarket"]
+"1856__isRouter" [label="_isRouter"]
+"1856_creatorAuth" [label="creatorAuth"]
+"1856_getColID" [label="getColID"]
+"1856__setPaymentToken" [label="_setPaymentToken"]
+"1856_constructor" [label="constructor"]
+"1856_pause" [label="pause"]
+"1856_getIDsLength" [label="getIDsLength"]
+"1856_getDeployedAddr" [label="getDeployedAddr"]
+"1856__userRender" [label="_userRender"]
+"1856_setOwner" [label="setOwner"]
+"1856__payeesBuffer" [label="_payeesBuffer"]
+"1856__royaltyLocker" [label="_royaltyLocker"]
+"1856__isMarket" [label="_isMarket"]
+"1856_unpause" [label="unpause"]
+"1856_name" [label="name"]
+"1856_createCollection" -> "1856_nonReentrant"
+"1856_setMarket" -> "1856_onlyOwner"
+"1856_constructor" -> "1856_setSigner"
+"1856_creatorAuth" -> "1856__userRender"
+"1856_setSigner" -> "1856_onlyOwner"
+"1856_pause" -> "1856_onlyOwner"
+"1856_createCollection" -> "1856_isThisOg"
+"1856_pause" -> "1856__pause"
+"1856_setOwner" -> "1856_onlyOwner"
+"1856_creatorAuth" -> "1856__isMarket"
+"1856_unpause" -> "1856__unpause"
+"1856_createCollection" -> "1856_whenNotPaused"
+"1856_splitterCheck" -> "1856__payeesBuffer"
+"1856_splitterCheck" -> "1856__sharesBuffer"
+"1856_splitterCheck" -> "1856_whenNotPaused"
+"1856_splitterCheck" -> "1856_isThisOg"
+"1856_splitterCheck" -> "1856_nonReentrant"
+"1856_createCollection" -> "1856__limiter"
+"1856_constructor" -> "1856__setPaymentToken"
+"1856_setRouter" -> "1856_onlyOwner"
+"1856_typeChecker" -> "1856__isRouter"
+"1856_creatorCheck" -> "1856__isRouter"
+"1856_createCollection" -> "1856__royaltyLocker"
+"1856_constructor" -> "1856_setMarket"
+"1856_unpause" -> "1856_onlyOwner"
+}subgraph cluster_10816_ERC1155WhitelistDeployer {
+label = "ERC1155WhitelistDeployer"
+"10816__1155WhitelistDeploy" [label="_1155WhitelistDeploy"]
+}subgraph cluster_16706_ERC1155Lazy {
+label = "ERC1155Lazy"
+"16706_totalSupply" [label="totalSupply"]
+"16706_burn" [label="burn"]
+"16706__userMint" [label="_userMint"]
+"16706__verifyVoucher" [label="_verifyVoucher"]
+"16706__verifyBatch" [label="_verifyBatch"]
+"16706__batchCheck" [label="_batchCheck"]
+"16706_DOMAIN_SEPARATOR" [label="DOMAIN_SEPARATOR"]
+"16706__getFeeValue" [label="_getFeeValue"]
+"16706_uri" [label="uri"]
+"16706_setURI" [label="setURI"]
+"16706_setSigner" [label="setSigner"]
+"16706__voucherCheck" [label="_voucherCheck"]
+"16706_setURILock" [label="setURILock"]
+"16706_burnBatch" [label="burnBatch"]
+"16706_getMintCount" [label="getMintCount"]
+"16706_withdrawERC20" [label="withdrawERC20"]
+"16706__getPriceValue" [label="_getPriceValue"]
+"16706_getURI" [label="getURI"]
+"16706__paymentCheck" [label="_paymentCheck"]
+"16706__feeCheck" [label="_feeCheck"]
+"16706_lazyMintBatch" [label="lazyMintBatch"]
+"16706_withdraw" [label="withdraw"]
+"16706_computeDS" [label="computeDS"]
+"16706_lazyMint" [label="lazyMint"]
+"16706__incrementCounter" [label="_incrementCounter"]
+"16706_constructor" [label="constructor"]
+"16706_supportsInterface" [label="supportsInterface"]
+"16706_setSigner" -> "16706_onlyOwner"
+"16706_burn" -> "16706__burn"
+"16706_lazyMintBatch" -> "16706__verifyBatch"
+"16706_setURILock" -> "16706_onlyOwner"
+"16706_constructor" -> "16706_computeDS"
+"16706_withdrawERC20" -> "16706_onlyOwner"
+"16706__voucherCheck" -> "16706__getFeeValue"
+"16706__paymentCheck" -> "16706__feeCheck"
+"16706_lazyMintBatch" -> "16706__getPriceValue"
+"16706__paymentCheck" -> "16706__getPriceValue"
+"16706_withdraw" -> "16706_onlyOwner"
+"16706_constructor" -> "16706_constructor"
+"16706_burnBatch" -> "16706_onlyOwner"
+"16706__feeCheck" -> "16706__getFeeValue"
+"16706__userMint" -> "16706__mint"
+"16706_burnBatch" -> "16706__paymentCheck"
+"16706_lazyMint" -> "16706_nonReentrant"
+"16706_lazyMint" -> "16706__userMint"
+"16706_burnBatch" -> "16706__batchBurn"
+"16706_lazyMintBatch" -> "16706__batchMint"
+"16706__verifyBatch" -> "16706_DOMAIN_SEPARATOR"
+"16706_lazyMintBatch" -> "16706_nonReentrant"
+"16706_lazyMintBatch" -> "16706__batchCheck"
+"16706__verifyVoucher" -> "16706_DOMAIN_SEPARATOR"
+"16706_lazyMint" -> "16706__verifyVoucher"
+"16706_DOMAIN_SEPARATOR" -> "16706_computeDS"
+"16706_lazyMintBatch" -> "16706__incrementCounter"
+"16706__batchCheck" -> "16706__getFeeValue"
+"16706_lazyMint" -> "16706__voucherCheck"
+"16706_lazyMint" -> "16706__getPriceValue"
+"16706_setURI" -> "16706_onlyOwner"
+"16706__userMint" -> "16706__incrementCounter"
+"16706_burn" -> "16706__paymentCheck"
+"16706_burn" -> "16706_onlyOwner"
+}subgraph cluster_12610_IERC721Metadata {
+label = "IERC721Metadata"
+"12610_name" [label="name"]
+"12610_tokenURI" [label="tokenURI"]
+"12610_symbol" [label="symbol"]
+}subgraph cluster_17481_ERC1155Minimal {
+label = "ERC1155Minimal"
+"17481__paymentCheck" [label="_paymentCheck"]
+"17481_safeMint" [label="safeMint"]
+"17481_withdrawERC20" [label="withdrawERC20"]
+"17481_publicMint" [label="publicMint"]
+"17481__feeCheck" [label="_feeCheck"]
+"17481__getFeeValue" [label="_getFeeValue"]
+"17481_supportsInterface" [label="supportsInterface"]
+"17481__getPriceValue" [label="_getPriceValue"]
+"17481_constructor" [label="constructor"]
+"17481_setPublicMintState" [label="setPublicMintState"]
+"17481_withdraw" [label="withdraw"]
+"17481_uri" [label="uri"]
+"17481_burn" [label="burn"]
+"17481_safeMint" -> "17481__paymentCheck"
+"17481_safeMint" -> "17481__mint"
+"17481_burn" -> "17481__paymentCheck"
+"17481_publicMint" -> "17481__mint"
+"17481_safeMint" -> "17481_onlyOwner"
+"17481__feeCheck" -> "17481__getFeeValue"
+"17481__paymentCheck" -> "17481__getPriceValue"
+"17481_withdraw" -> "17481_onlyOwner"
+"17481_burn" -> "17481_onlyOwner"
+"17481_publicMint" -> "17481__paymentCheck"
+"17481_burn" -> "17481__burn"
+"17481_publicMint" -> "17481__getPriceValue"
+"17481__paymentCheck" -> "17481__feeCheck"
+"17481_setPublicMintState" -> "17481_onlyOwner"
+"17481_publicMint" -> "17481__getFeeValue"
+"17481_withdrawERC20" -> "17481_onlyOwner"
+"17481_constructor" -> "17481_constructor"
+}subgraph cluster_21455_ERC721Basic {
+label = "ERC721Basic"
+"21455_setBaseURI" [label="setBaseURI"]
+"21455_mintTo" [label="mintTo"]
+"21455_burn" [label="burn"]
+"21455__getFeeValue" [label="_getFeeValue"]
+"21455__paymentCheck" [label="_paymentCheck"]
+"21455_tokenURI" [label="tokenURI"]
+"21455_supportsInterface" [label="supportsInterface"]
+"21455_getBaseURI" [label="getBaseURI"]
+"21455_totalSupply" [label="totalSupply"]
+"21455_getMintCount" [label="getMintCount"]
+"21455_setBaseURILock" [label="setBaseURILock"]
+"21455_mint" [label="mint"]
+"21455_withdrawERC20" [label="withdrawERC20"]
+"21455_withdraw" [label="withdraw"]
+"21455_constructor" [label="constructor"]
+"21455__feeCheck" [label="_feeCheck"]
+"21455__getPriceValue" [label="_getPriceValue"]
+"21455__incrementCounter" [label="_incrementCounter"]
+"21455_setPublicMintState" [label="setPublicMintState"]
+"21455_burn" -> "21455__burn"
+"21455_setPublicMintState" -> "21455_onlyOwner"
+"21455_withdrawERC20" -> "21455_onlyOwner"
+"21455_withdraw" -> "21455_onlyOwner"
+"21455_mint" -> "21455_publicMintAccess"
+"21455_mintTo" -> "21455__safeMint"
+"21455_mintTo" -> "21455__paymentCheck"
+"21455_burn" -> "21455__paymentCheck"
+"21455_mint" -> "21455__incrementCounter"
+"21455__paymentCheck" -> "21455__getPriceValue"
+"21455_mint" -> "21455__paymentCheck"
+"21455_mint" -> "21455_hasReachedMax"
+"21455_mint" -> "21455_publicMintPriceCheck"
+"21455_mint" -> "21455_nonReentrant"
+"21455_setBaseURI" -> "21455_onlyOwner"
+"21455_constructor" -> "21455_constructor"
+"21455_mintTo" -> "21455_hasReachedMax"
+"21455_mintTo" -> "21455_onlyOwner"
+"21455_setBaseURILock" -> "21455_onlyOwner"
+"21455_mint" -> "21455__safeMint"
+"21455__paymentCheck" -> "21455__feeCheck"
+"21455_burn" -> "21455_onlyOwner"
+"21455_mintTo" -> "21455__incrementCounter"
+"21455__feeCheck" -> "21455__getFeeValue"
+}subgraph cluster_12024_MockERC1155 {
+label = "MockERC1155"
+"12024_uri" [label="uri"]
+"12024_supportsInterface" [label="supportsInterface"]
+"12024_mint" [label="mint"]
+"12024_constructor" [label="constructor"]
+"12024_batchMint" [label="batchMint"]
+"12024_mint" -> "12024__mint"
+"12024_batchMint" -> "12024_onlyOwner"
+"12024_batchMint" -> "12024__batchMint"
+"12024_mint" -> "12024_onlyOwner"
+}subgraph cluster_13912_IERC1155 {
+label = "IERC1155"
+"13912_supportsInterface" [label="supportsInterface"]
+"13912_royaltyInfo" [label="royaltyInfo"]
+}subgraph cluster_24793_ERC721Whitelist {
+label = "ERC721Whitelist"
+"24793_setBaseURILock" [label="setBaseURILock"]
+"24793_withdraw" [label="withdraw"]
+"24793_claimFree" [label="claimFree"]
+"24793_totalSupply" [label="totalSupply"]
+"24793_getMintCount" [label="getMintCount"]
+"24793_whitelistMint" [label="whitelistMint"]
+"24793_setBaseURI" [label="setBaseURI"]
+"24793__paymentCheck" [label="_paymentCheck"]
+"24793_mintToCreator" [label="mintToCreator"]
+"24793_constructor" [label="constructor"]
+"24793_getBaseURI" [label="getBaseURI"]
+"24793__getPriceValue" [label="_getPriceValue"]
+"24793_burn" [label="burn"]
+"24793__getFeeValue" [label="_getFeeValue"]
+"24793_supportsInterface" [label="supportsInterface"]
+"24793_giftTokens" [label="giftTokens"]
+"24793_setWhitelistMintState" [label="setWhitelistMintState"]
+"24793__feeCheck" [label="_feeCheck"]
+"24793_setFreeClaimState" [label="setFreeClaimState"]
+"24793_freeConfig" [label="freeConfig"]
+"24793_withdrawERC20" [label="withdrawERC20"]
+"24793_mint" [label="mint"]
+"24793_setPublicMintState" [label="setPublicMintState"]
+"24793_tokenURI" [label="tokenURI"]
+"24793_whitelistConfig" [label="whitelistConfig"]
+"24793__incrementCounter" [label="_incrementCounter"]
+"24793_whitelistMint" -> "24793_whitelistMax"
+"24793_withdraw" -> "24793_onlyOwner"
+"24793_claimFree" -> "24793_freeClaimAccess"
+"24793_mintToCreator" -> "24793__safeMint"
+"24793_withdrawERC20" -> "24793_onlyOwner"
+"24793_giftTokens" -> "24793__incrementCounter"
+"24793_giftTokens" -> "24793__safeMint"
+"24793_setBaseURILock" -> "24793_onlyOwner"
+"24793_giftTokens" -> "24793_onlyOwner"
+"24793_giftTokens" -> "24793_canMintFree"
+"24793__paymentCheck" -> "24793__getPriceValue"
+"24793_giftTokens" -> "24793__paymentCheck"
+"24793_whitelistMint" -> "24793__paymentCheck"
+"24793_whitelistMint" -> "24793_whitelistMintAccess"
+"24793_mint" -> "24793_publicMintPriceCheck"
+"24793__paymentCheck" -> "24793__feeCheck"
+"24793_burn" -> "24793__paymentCheck"
+"24793_mint" -> "24793__incrementCounter"
+"24793_whitelistMint" -> "24793_nonReentrant"
+"24793_mintToCreator" -> "24793_onlyOwner"
+"24793_mint" -> "24793_publicMintAccess"
+"24793_burn" -> "24793__burn"
+"24793_burn" -> "24793_onlyOwner"
+"24793_mint" -> "24793_hasReachedMax"
+"24793_giftTokens" -> "24793_nonReentrant"
+"24793_setWhitelistMintState" -> "24793_onlyOwner"
+"24793_setPublicMintState" -> "24793_onlyOwner"
+"24793_claimFree" -> "24793__incrementCounter"
+"24793_mintToCreator" -> "24793_nonReentrant"
+"24793_whitelistMint" -> "24793__safeMint"
+"24793_mint" -> "24793__paymentCheck"
+"24793_constructor" -> "24793_constructor"
+"24793_mint" -> "24793_nonReentrant"
+"24793_setBaseURI" -> "24793_onlyOwner"
+"24793_mintToCreator" -> "24793_canMintFree"
+"24793_setFreeClaimState" -> "24793_onlyOwner"
+"24793_mint" -> "24793__safeMint"
+"24793_whitelistMint" -> "24793__incrementCounter"
+"24793_claimFree" -> "24793__safeMint"
+"24793_whitelistMint" -> "24793_merkleVerify"
+"24793_mintToCreator" -> "24793__incrementCounter"
+"24793_whitelistConfig" -> "24793_onlyOwner"
+"24793_mintToCreator" -> "24793__paymentCheck"
+"24793_claimFree" -> "24793_canMintFree"
+"24793_claimFree" -> "24793_merkleVerify"
+"24793_whitelistMint" -> "24793_publicMintPriceCheck"
+"24793_freeConfig" -> "24793_onlyOwner"
+"24793__feeCheck" -> "24793__getFeeValue"
+}subgraph cluster_10972_ERC721MinimalDeployer {
+label = "ERC721MinimalDeployer"
+"10972__721MinimalDeploy" [label="_721MinimalDeploy"]
+}subgraph cluster_10333_MADRouter721 {
+label = "MADRouter721"
+"10333__stateType1" [label="_stateType1"]
+"10333_constructor" [label="constructor"]
+"10333_setSigner" [label="setSigner"]
+"10333_withdraw" [label="withdraw"]
+"10333__setPaymentToken" [label="_setPaymentToken"]
+"10333__paymentCheck" [label="_paymentCheck"]
+"10333_whitelistSettings" [label="whitelistSettings"]
+"10333_minimalSafeMint" [label="minimalSafeMint"]
+"10333_pause" [label="pause"]
+"10333_setMintState" [label="setMintState"]
+"10333_setBaseLock" [label="setBaseLock"]
+"10333_burn" [label="burn"]
+"10333_unpause" [label="unpause"]
+"10333_setBase" [label="setBase"]
+"10333__stateType2" [label="_stateType2"]
+"10333__tokenRender" [label="_tokenRender"]
+"10333_feeLookup" [label="feeLookup"]
+"10333_gift" [label="gift"]
+"10333_setOwner" [label="setOwner"]
+"10333_freeSettings" [label="freeSettings"]
+"10333_setRecipient" [label="setRecipient"]
+"10333_basicMintTo" [label="basicMintTo"]
+"10333__stateType0" [label="_stateType0"]
+"10333_setFees" [label="setFees"]
+"10333_name" [label="name"]
+"10333_creatorMint" [label="creatorMint"]
+"10333_minimalSafeMint" -> "10333_whenNotPaused"
+"10333_whitelistSettings" -> "10333__tokenRender"
+"10333_freeSettings" -> "10333__tokenRender"
+"10333_constructor" -> "10333__setPaymentToken"
+"10333_setMintState" -> "10333__stateType2"
+"10333_setOwner" -> "10333_onlyOwner"
+"10333_pause" -> "10333_onlyOwner"
+"10333_setRecipient" -> "10333_onlyOwner"
+"10333_burn" -> "10333_nonReentrant"
+"10333_setBase" -> "10333__tokenRender"
+"10333_unpause" -> "10333_onlyOwner"
+"10333_setSigner" -> "10333_onlyOwner"
+"10333_setBaseLock" -> "10333_nonReentrant"
+"10333_setBase" -> "10333_nonReentrant"
+"10333_freeSettings" -> "10333_whenNotPaused"
+"10333_setMintState" -> "10333__stateType0"
+"10333_gift" -> "10333_nonReentrant"
+"10333_creatorMint" -> "10333__paymentCheck"
+"10333_burn" -> "10333_whenNotPaused"
+"10333_burn" -> "10333__paymentCheck"
+"10333_withdraw" -> "10333_whenNotPaused"
+"10333_whitelistSettings" -> "10333_nonReentrant"
+"10333_creatorMint" -> "10333_nonReentrant"
+"10333_basicMintTo" -> "10333__tokenRender"
+"10333_unpause" -> "10333__unpause"
+"10333_creatorMint" -> "10333_whenNotPaused"
+"10333_burn" -> "10333__tokenRender"
+"10333_setMintState" -> "10333__stateType1"
+"10333_minimalSafeMint" -> "10333__paymentCheck"
+"10333_gift" -> "10333__tokenRender"
+"10333_gift" -> "10333__paymentCheck"
+"10333_withdraw" -> "10333_nonReentrant"
+"10333_setMintState" -> "10333_nonReentrant"
+"10333_withdraw" -> "10333__tokenRender"
+"10333_basicMintTo" -> "10333_whenNotPaused"
+"10333_whitelistSettings" -> "10333_whenNotPaused"
+"10333_setMintState" -> "10333__tokenRender"
+"10333_constructor" -> "10333_setRecipient"
+"10333_setBase" -> "10333_whenNotPaused"
+"10333_setMintState" -> "10333_whenNotPaused"
+"10333_basicMintTo" -> "10333__paymentCheck"
+"10333_basicMintTo" -> "10333_nonReentrant"
+"10333_setFees" -> "10333_onlyOwner"
+"10333_setBaseLock" -> "10333__tokenRender"
+"10333_gift" -> "10333_whenNotPaused"
+"10333_setBaseLock" -> "10333_whenNotPaused"
+"10333_freeSettings" -> "10333_nonReentrant"
+"10333_minimalSafeMint" -> "10333_nonReentrant"
+"10333_pause" -> "10333__pause"
+"10333_minimalSafeMint" -> "10333__tokenRender"
+"10333_creatorMint" -> "10333__tokenRender"
+}subgraph cluster_10593_Owned {
+label = "Owned"
+"10593_setOwner" [label="setOwner"]
+"10593_constructor" [label="constructor"]
+"10593_setOwner" -> "10593_onlyOwner"
+}subgraph cluster_25186_SafeTransferLib {
+label = "SafeTransferLib"
+"25186_safeTransfer" [label="safeTransfer"]
+"25186_safeTransferETH" [label="safeTransferETH"]
+"25186_safeApprove" [label="safeApprove"]
+"25186_safeTransferFrom" [label="safeTransferFrom"]
+}subgraph cluster_5348_MADMarketplace1155 {
+label = "MADMarketplace1155"
+"5348__makeOrder" [label="_makeOrder"]
+"5348_withdrawOutbidEth" [label="withdrawOutbidEth"]
+"5348_sellerOrderLength" [label="sellerOrderLength"]
+"5348_claim" [label="claim"]
+"5348_cancelOrder" [label="cancelOrder"]
+"5348_setFactory" [label="setFactory"]
+"5348_setOwner" [label="setOwner"]
+"5348_delOrder" [label="delOrder"]
+"5348_dutchAuction" [label="dutchAuction"]
+"5348_setRecipient" [label="setRecipient"]
+"5348_interfaceCheck" [label="interfaceCheck"]
+"5348_unpause" [label="unpause"]
+"5348_name" [label="name"]
+"5348__cancelOrderChecks" [label="_cancelOrderChecks"]
+"5348__bidChecks" [label="_bidChecks"]
+"5348_withdrawOutbid" [label="withdrawOutbid"]
+"5348_updateSettings" [label="updateSettings"]
+"5348__claimChecks" [label="_claimChecks"]
+"5348__hash" [label="_hash"]
+"5348_constructor" [label="constructor"]
+"5348_ERC165Check" [label="ERC165Check"]
+"5348__buyChecks" [label="_buyChecks"]
+"5348__extPath0" [label="_extPath0"]
+"5348_withdraw" [label="withdraw"]
+"5348_buy" [label="buy"]
+"5348__extPath1" [label="_extPath1"]
+"5348_autoTransferFunds" [label="autoTransferFunds"]
+"5348_getCurrentPrice" [label="getCurrentPrice"]
+"5348__setPaymentToken" [label="_setPaymentToken"]
+"5348_pause" [label="pause"]
+"5348_setFees" [label="setFees"]
+"5348__intPath" [label="_intPath"]
+"5348__withdrawOutbid" [label="_withdrawOutbid"]
+"5348__feeResolver" [label="_feeResolver"]
+"5348_tokenOrderLength" [label="tokenOrderLength"]
+"5348__exceedsMaxEP" [label="_exceedsMaxEP"]
+"5348_englishAuction" [label="englishAuction"]
+"5348_bid" [label="bid"]
+"5348_receive" [label="receive"]
+"5348__isBidderOrSeller" [label="_isBidderOrSeller"]
+"5348_fixedPrice" [label="fixedPrice"]
+"5348_getOutbidBalance" [label="getOutbidBalance"]
+"5348__makeOrderChecks" [label="_makeOrderChecks"]
+"5348_withdrawERC20" [label="withdrawERC20"]
+"5348_unpause" -> "5348_onlyOwner"
+"5348_bid" -> "5348_whenNotPaused"
+"5348_dutchAuction" -> "5348__exceedsMaxEP"
+"5348__intPath" -> "5348__feeResolver"
+"5348_buy" -> "5348__intPath"
+"5348_setFactory" -> "5348_onlyOwner"
+"5348_setOwner" -> "5348_onlyOwner"
+"5348_buy" -> "5348__extPath1"
+"5348_delOrder" -> "5348_whenPaused"
+"5348_claim" -> "5348__claimChecks"
+"5348_setFees" -> "5348_onlyOwner"
+"5348_setRecipient" -> "5348_onlyOwner"
+"5348_buy" -> "5348_ERC165Check"
+"5348_claim" -> "5348__intPath"
+"5348_buy" -> "5348__buyChecks"
+"5348_buy" -> "5348_whenNotPaused"
+"5348_buy" -> "5348_interfaceCheck"
+"5348_cancelOrder" -> "5348__cancelOrderChecks"
+"5348_claim" -> "5348_whenNotPaused"
+"5348_englishAuction" -> "5348_whenNotPaused"
+"5348_withdrawERC20" -> "5348_onlyOwner"
+"5348_autoTransferFunds" -> "5348__withdrawOutbid"
+"5348_delOrder" -> "5348_onlyOwner"
+"5348_pause" -> "5348__pause"
+"5348_constructor" -> "5348_updateSettings"
+"5348_withdraw" -> "5348_whenPaused"
+"5348_autoTransferFunds" -> "5348_onlyOwner"
+"5348_englishAuction" -> "5348__makeOrder"
+"5348_fixedPrice" -> "5348__makeOrder"
+"5348_claim" -> "5348__extPath1"
+"5348_claim" -> "5348__isBidderOrSeller"
+"5348_withdraw" -> "5348_onlyOwner"
+"5348_claim" -> "5348_ERC165Check"
+"5348_claim" -> "5348_interfaceCheck"
+"5348_updateSettings" -> "5348_onlyOwner"
+"5348_fixedPrice" -> "5348_whenNotPaused"
+"5348_ERC165Check" -> "5348_interfaceCheck"
+"5348__makeOrder" -> "5348__hash"
+"5348_constructor" -> "5348_setRecipient"
+"5348_pause" -> "5348_onlyOwner"
+"5348_claim" -> "5348__extPath0"
+"5348_withdrawOutbid" -> "5348__withdrawOutbid"
+"5348__makeOrder" -> "5348__makeOrderChecks"
+"5348_constructor" -> "5348__setPaymentToken"
+"5348_constructor" -> "5348_setFactory"
+"5348_dutchAuction" -> "5348__makeOrder"
+"5348_dutchAuction" -> "5348_whenNotPaused"
+"5348_bid" -> "5348__bidChecks"
+"5348_buy" -> "5348__extPath0"
+"5348_withdrawERC20" -> "5348_whenPaused"
+"5348_unpause" -> "5348__unpause"
+"5348_buy" -> "5348_getCurrentPrice"
+}subgraph cluster_11366_Pausable {
+label = "Pausable"
+"11366__pause" [label="_pause"]
+"11366_paused" [label="paused"]
+"11366_constructor" [label="constructor"]
+"11366__unpause" [label="_unpause"]
+"11366__unpause" -> "11366_whenPaused"
+"11366__pause" -> "11366_whenNotPaused"
+}subgraph cluster_9062_MADRouter1155 {
+label = "MADRouter1155"
+"9062_creatorBatchMint" [label="creatorBatchMint"]
+"9062_batchBurn" [label="batchBurn"]
+"9062_freeSettings" [label="freeSettings"]
+"9062_withdraw" [label="withdraw"]
+"9062_setSigner" [label="setSigner"]
+"9062_whitelistSettings" [label="whitelistSettings"]
+"9062_basicMintBatchTo" [label="basicMintBatchTo"]
+"9062_creatorMint" [label="creatorMint"]
+"9062__tokenRender" [label="_tokenRender"]
+"9062_minimalSafeMint" [label="minimalSafeMint"]
+"9062_basicMintTo" [label="basicMintTo"]
+"9062_setURI" [label="setURI"]
+"9062__paymentCheck" [label="_paymentCheck"]
+"9062_name" [label="name"]
+"9062_unpause" [label="unpause"]
+"9062_gift" [label="gift"]
+"9062__setPaymentToken" [label="_setPaymentToken"]
+"9062__stateType1" [label="_stateType1"]
+"9062_setOwner" [label="setOwner"]
+"9062_setMintState" [label="setMintState"]
+"9062_burn" [label="burn"]
+"9062__stateType0" [label="_stateType0"]
+"9062__stateType2" [label="_stateType2"]
+"9062_setURILock" [label="setURILock"]
+"9062_feeLookup" [label="feeLookup"]
+"9062_setRecipient" [label="setRecipient"]
+"9062_constructor" [label="constructor"]
+"9062_setFees" [label="setFees"]
+"9062_pause" [label="pause"]
+"9062_setSigner" -> "9062_onlyOwner"
+"9062_burn" -> "9062_nonReentrant"
+"9062_setURILock" -> "9062_nonReentrant"
+"9062_setMintState" -> "9062__stateType1"
+"9062_minimalSafeMint" -> "9062_whenNotPaused"
+"9062_setMintState" -> "9062__stateType0"
+"9062_setURI" -> "9062_whenNotPaused"
+"9062_setRecipient" -> "9062_onlyOwner"
+"9062_withdraw" -> "9062_whenNotPaused"
+"9062_freeSettings" -> "9062__tokenRender"
+"9062_creatorMint" -> "9062__paymentCheck"
+"9062_pause" -> "9062_onlyOwner"
+"9062_freeSettings" -> "9062_nonReentrant"
+"9062_basicMintBatchTo" -> "9062__tokenRender"
+"9062_burn" -> "9062_whenNotPaused"
+"9062_minimalSafeMint" -> "9062__paymentCheck"
+"9062_unpause" -> "9062_onlyOwner"
+"9062_gift" -> "9062_nonReentrant"
+"9062_basicMintTo" -> "9062__tokenRender"
+"9062_whitelistSettings" -> "9062__tokenRender"
+"9062_freeSettings" -> "9062_whenNotPaused"
+"9062_basicMintTo" -> "9062_nonReentrant"
+"9062_whitelistSettings" -> "9062_whenNotPaused"
+"9062_basicMintBatchTo" -> "9062__paymentCheck"
+"9062_basicMintBatchTo" -> "9062_whenNotPaused"
+"9062_batchBurn" -> "9062__paymentCheck"
+"9062_setURILock" -> "9062__tokenRender"
+"9062_basicMintTo" -> "9062__paymentCheck"
+"9062_withdraw" -> "9062_nonReentrant"
+"9062_setURI" -> "9062__tokenRender"
+"9062_setOwner" -> "9062_onlyOwner"
+"9062_burn" -> "9062__tokenRender"
+"9062_setURI" -> "9062_nonReentrant"
+"9062_creatorBatchMint" -> "9062_nonReentrant"
+"9062_withdraw" -> "9062__tokenRender"
+"9062_setMintState" -> "9062_nonReentrant"
+"9062_creatorMint" -> "9062_whenNotPaused"
+"9062_creatorBatchMint" -> "9062_whenNotPaused"
+"9062_constructor" -> "9062__setPaymentToken"
+"9062_whitelistSettings" -> "9062_nonReentrant"
+"9062_batchBurn" -> "9062_nonReentrant"
+"9062_setFees" -> "9062_onlyOwner"
+"9062_setMintState" -> "9062_whenNotPaused"
+"9062_unpause" -> "9062__unpause"
+"9062_gift" -> "9062_whenNotPaused"
+"9062_batchBurn" -> "9062_whenNotPaused"
+"9062_burn" -> "9062__paymentCheck"
+"9062_setURILock" -> "9062_whenNotPaused"
+"9062_basicMintTo" -> "9062_whenNotPaused"
+"9062_setMintState" -> "9062__stateType2"
+"9062_setMintState" -> "9062__tokenRender"
+"9062_basicMintBatchTo" -> "9062_nonReentrant"
+"9062_creatorBatchMint" -> "9062__paymentCheck"
+"9062_minimalSafeMint" -> "9062__tokenRender"
+"9062_creatorMint" -> "9062_nonReentrant"
+"9062_gift" -> "9062__tokenRender"
+"9062_batchBurn" -> "9062__tokenRender"
+"9062_pause" -> "9062__pause"
+"9062_creatorMint" -> "9062__tokenRender"
+"9062_gift" -> "9062__paymentCheck"
+"9062_minimalSafeMint" -> "9062_nonReentrant"
+"9062_creatorBatchMint" -> "9062__tokenRender"
+"9062_constructor" -> "9062_setRecipient"
+}subgraph cluster_20457_IERC721 {
+label = "IERC721"
+"20457_supportsInterface" [label="supportsInterface"]
+"20457_ownerOf" [label="ownerOf"]
+"20457_balanceOf" [label="balanceOf"]
+"20457_safeTransferFrom" [label="safeTransferFrom"]
+"20457_royaltyInfo" [label="royaltyInfo"]
+}subgraph cluster_25065_Counters {
+label = "Counters"
+"25065_decrement" [label="decrement"]
+"25065_increment" [label="increment"]
+"25065_reset" [label="reset"]
+"25065_current" [label="current"]
+}subgraph cluster_13550_ERC1155B {
+label = "ERC1155B"
+"13550__mint" [label="_mint"]
+"13550__batchMint" [label="_batchMint"]
+"13550_uri" [label="uri"]
+"13550_balanceOfBatch" [label="balanceOfBatch"]
+"13550_safeTransferFrom" [label="safeTransferFrom"]
+"13550__batchBurn" [label="_batchBurn"]
+"13550_balanceOf" [label="balanceOf"]
+"13550_setApprovalForAll" [label="setApprovalForAll"]
+"13550_safeBatchTransferFrom" [label="safeBatchTransferFrom"]
+"13550__burn" [label="_burn"]
+"13550_balanceOfBatch" -> "13550_balanceOf"
+}subgraph cluster_11247_SplitterDeployer {
+label = "SplitterDeployer"
+"11247__SplitterDeploy" [label="_SplitterDeploy"]
+}subgraph cluster_25199_Strings {
+label = "Strings"
+"25199_toString" [label="toString"]
+}subgraph cluster_113_ISwapRouter {
+label = "ISwapRouter"
+"113_exactOutput" [label="exactOutput"]
+"113_exactOutputSingle" [label="exactOutputSingle"]
+"113_exactInputSingle" [label="exactInputSingle"]
+"113_exactInput" [label="exactInput"]
+}subgraph cluster_12529_MockERC2981 {
+label = "MockERC2981"
+"12529_setRoyaltyRecipient" [label="setRoyaltyRecipient"]
+"12529_constructor" [label="constructor"]
+"12529_setRoyaltyFee" [label="setRoyaltyFee"]
+"12529_setRoyaltyFee" -> "12529_onlyOwner"
+"12529_constructor" -> "12529_setRoyaltyFee"
+"12529_setRoyaltyRecipient" -> "12529_onlyOwner"
+"12529_constructor" -> "12529_setRoyaltyRecipient"
+}subgraph cluster_11124_ERC721WhitelistDeployer {
+label = "ERC721WhitelistDeployer"
+"11124__721WhitelistDeploy" [label="_721WhitelistDeploy"]
+}subgraph cluster_3061_MADFactory721 {
+label = "MADFactory721"
+"3061__limiter" [label="_limiter"]
+"3061_setMarket" [label="setMarket"]
+"3061__setPaymentToken" [label="_setPaymentToken"]
+"3061__sharesBuffer" [label="_sharesBuffer"]
+"3061_createCollection" [label="createCollection"]
+"3061_setOwner" [label="setOwner"]
+"3061_setSigner" [label="setSigner"]
+"3061_name" [label="name"]
+"3061_creatorAuth" [label="creatorAuth"]
+"3061_pause" [label="pause"]
+"3061_typeChecker" [label="typeChecker"]
+"3061__payeesBuffer" [label="_payeesBuffer"]
+"3061_splitterCheck" [label="splitterCheck"]
+"3061__isRouter" [label="_isRouter"]
+"3061_getIDsLength" [label="getIDsLength"]
+"3061_unpause" [label="unpause"]
+"3061_getColID" [label="getColID"]
+"3061_setRouter" [label="setRouter"]
+"3061_getDeployedAddr" [label="getDeployedAddr"]
+"3061__userRender" [label="_userRender"]
+"3061__isMarket" [label="_isMarket"]
+"3061_creatorCheck" [label="creatorCheck"]
+"3061_constructor" [label="constructor"]
+"3061__royaltyLocker" [label="_royaltyLocker"]
+"3061_splitterCheck" -> "3061__sharesBuffer"
+"3061_splitterCheck" -> "3061__payeesBuffer"
+"3061_setMarket" -> "3061_onlyOwner"
+"3061_setRouter" -> "3061_onlyOwner"
+"3061_createCollection" -> "3061__royaltyLocker"
+"3061_creatorAuth" -> "3061__userRender"
+"3061_creatorCheck" -> "3061__isRouter"
+"3061_pause" -> "3061_onlyOwner"
+"3061_pause" -> "3061__pause"
+"3061_setOwner" -> "3061_onlyOwner"
+"3061_createCollection" -> "3061_whenNotPaused"
+"3061_splitterCheck" -> "3061_nonReentrant"
+"3061_unpause" -> "3061_onlyOwner"
+"3061_createCollection" -> "3061__limiter"
+"3061_splitterCheck" -> "3061_whenNotPaused"
+"3061_constructor" -> "3061__setPaymentToken"
+"3061_creatorAuth" -> "3061__isMarket"
+"3061_setSigner" -> "3061_onlyOwner"
+"3061_createCollection" -> "3061_isThisOg"
+"3061_constructor" -> "3061_setSigner"
+"3061_typeChecker" -> "3061__isRouter"
+"3061_splitterCheck" -> "3061_isThisOg"
+"3061_constructor" -> "3061_setMarket"
+"3061_createCollection" -> "3061_nonReentrant"
+"3061_unpause" -> "3061__unpause"
+}subgraph cluster_19575_ERC20 {
+label = "ERC20"
+"19575_allowance" [label="allowance"]
+"19575_totalSupply" [label="totalSupply"]
+"19575_balanceOf" [label="balanceOf"]
+}subgraph cluster_23416_ERC721Minimal {
+label = "ERC721Minimal"
+"23416_constructor" [label="constructor"]
+"23416__paymentCheck" [label="_paymentCheck"]
+"23416_tokenURI" [label="tokenURI"]
+"23416_setPublicMintState" [label="setPublicMintState"]
+"23416_safeMint" [label="safeMint"]
+"23416__feeCheck" [label="_feeCheck"]
+"23416_publicMint" [label="publicMint"]
+"23416_withdrawERC20" [label="withdrawERC20"]
+"23416__getFeeValue" [label="_getFeeValue"]
+"23416_burn" [label="burn"]
+"23416_withdraw" [label="withdraw"]
+"23416_supportsInterface" [label="supportsInterface"]
+"23416__getPriceValue" [label="_getPriceValue"]
+"23416__feeCheck" -> "23416__getFeeValue"
+"23416_withdrawERC20" -> "23416_onlyOwner"
+"23416_publicMint" -> "23416_nonReentrant"
+"23416_burn" -> "23416__burn"
+"23416_withdraw" -> "23416_onlyOwner"
+"23416_setPublicMintState" -> "23416_onlyOwner"
+"23416__paymentCheck" -> "23416__feeCheck"
+"23416_safeMint" -> "23416__safeMint"
+"23416_safeMint" -> "23416__paymentCheck"
+"23416_constructor" -> "23416_constructor"
+"23416_safeMint" -> "23416_onlyOwner"
+"23416_publicMint" -> "23416__safeMint"
+"23416_burn" -> "23416__paymentCheck"
+"23416_publicMint" -> "23416__getPriceValue"
+"23416_burn" -> "23416_onlyOwner"
+"23416_publicMint" -> "23416__paymentCheck"
+"23416__paymentCheck" -> "23416__getPriceValue"
+"23416_publicMint" -> "23416__getFeeValue"
+}subgraph cluster_10746_ERC1155BasicDeployer {
+label = "ERC1155BasicDeployer"
+"10746__1155BasicDeploy" [label="_1155BasicDeploy"]
+}subgraph cluster_12412_ERC20 {
+label = "ERC20"
+"12412_computeDomainSeparator" [label="computeDomainSeparator"]
+"12412__mint" [label="_mint"]
+"12412_approve" [label="approve"]
+"12412_DOMAIN_SEPARATOR" [label="DOMAIN_SEPARATOR"]
+"12412_constructor" [label="constructor"]
+"12412_transferFrom" [label="transferFrom"]
+"12412__burn" [label="_burn"]
+"12412_transfer" [label="transfer"]
+"12412_permit" [label="permit"]
+"12412_permit" -> "12412_DOMAIN_SEPARATOR"
+"12412_constructor" -> "12412_computeDomainSeparator"
+"12412_DOMAIN_SEPARATOR" -> "12412_computeDomainSeparator"
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"revert InvalidId()" 
+"mload(uint256)" 
+"ecrecover(bytes32,uint8,bytes32,bytes32)" 
+"revert NoShares()" 
+"calldataload(uint256)" 
+"revert UriLocked()" 
+"mstore(uint256,uint256)" 
+"revert AlreadyPayee()" 
+"require(bool,string)" 
+"revert DeadAddress()" 
+"revert DeniedAccount()" 
+"revert UsedVoucher()" 
+"mstore8(uint256,uint256)" 
+"returndatasize()" 
+"return(uint256,uint256)" 
+"revert InvalidSigner()" 
+"create2(uint256,uint256,uint256,uint256)" 
+"revert NoPayees()" 
+"revert MaxWhitelistReached()" 
+"abi.encodePacked()" 
+"revert AlreadyClaimed()" 
+"keccak256(bytes)" 
+"revert InvalidShare()" 
+"revert NotMinted()" 
+"call(uint256,uint256,uint256,uint256,uint256,uint256,uint256)" 
+"abi.encodeWithSelector()" 
+"revert(uint256,uint256)" 
+"staticcall(uint256,uint256,uint256,uint256,uint256,uint256)" 
+"revert AlreadyMinted()" 
+"revert NotMintedYet()" 
+"sstore(uint256,uint256)" 
+"revert(string)" 
+"gas()" 
+"balance(address)" 
+"abi.encode()" 
+"revert WrongPrice()" 
+"keccak256(uint256,uint256)" 
+"revert MaxMintReached()" 
+"type()" 
+"revert PublicMintOff()" 
+"timestamp()" 
+"code(address)" 
+"revert LengthMismatch()" 
+"sload(uint256)" 
+"revert MaxFreeReached()" 
+"5348__feeResolver" -> "mstore(uint256,uint256)"
+"9062_setOwner" -> "require(bool,string)"
+"25101_verify" -> "calldataload(uint256)"
+"7565__bidChecks" -> "revert(uint256,uint256)"
+"19497_withdraw" -> "balance(address)"
+"20119__safeMint" -> "code(address)"
+"17481_publicMint" -> "revert WrongPrice()"
+"11048__721BasicDeploy" -> "abi.encodePacked()"
+"19497_mintBatch" -> "mstore(uint256,uint256)"
+"5348__makeOrderChecks" -> "timestamp()"
+"13550__batchMint" -> "code(address)"
+"19497__feeCheck" -> "mstore(uint256,uint256)"
+"9062_basicMintTo" -> "revert(string)"
+"16706_burn" -> "revert(uint256,uint256)"
+"10676__1155MinimalDeploy" -> "keccak256(bytes)"
+"24793_tokenURI" -> "revert NotMintedYet()"
+"9062_setRecipient" -> "require(bool,string)"
+"16706_burnBatch" -> "require(bool,string)"
+"25186_safeTransfer" -> "returndatasize()"
+"10746__1155BasicDeploy" -> "abi.encodePacked()"
+"19497__canBatchMint" -> "revert MaxMintReached()"
+"19497_burn" -> "require(bool,string)"
+"15234_burnBatch" -> "revert(uint256,uint256)"
+"20119__safeMint" -> "require(bool,string)"
+"15234_mintTo" -> "mstore(uint256,uint256)"
+"1856_setMarket" -> "sstore(uint256,uint256)"
+"3061__royaltyLocker" -> "mstore(uint256,uint256)"
+"16706__verifyBatch" -> "ecrecover(bytes32,uint8,bytes32,bytes32)"
+"20119__mint" -> "require(bool,string)"
+"25101_verifyMultiProof" -> "keccak256(uint256,uint256)"
+"3061__sharesBuffer" -> "mload(uint256)"
+"23416_withdraw" -> "balance(address)"
+"7565_interfaceCheck" -> "mload(uint256)"
+"5348_name" -> "return(uint256,uint256)"
+"12412_permit" -> "ecrecover(bytes32,uint8,bytes32,bytes32)"
+"11048__721BasicDeploy" -> "keccak256(bytes)"
+"10333_setRecipient" -> "sstore(uint256,uint256)"
+"21455_mint" -> "mstore(uint256,uint256)"
+"25101_verify" -> "mstore(uint256,uint256)"
+"10676__1155MinimalDeploy" -> "type()"
+"9062__paymentCheck" -> "mstore(uint256,uint256)"
+"5348_getCurrentPrice" -> "mload(uint256)"
+"24793_mint" -> "revert(uint256,uint256)"
+"10746__1155BasicDeploy" -> "type()"
+"21455__feeCheck" -> "revert(uint256,uint256)"
+"3061__userRender" -> "sload(uint256)"
+"10816__1155WhitelistDeploy" -> "keccak256(bytes)"
+"19497__feeCheck" -> "revert(uint256,uint256)"
+"25199_toString" -> "mload(uint256)"
+"1856_getDeployedAddr" -> "keccak256(bytes)"
+"22647__verify" -> "keccak256(bytes)"
+"7565__feeResolver" -> "keccak256(uint256,uint256)"
+"3061_splitterCheck" -> "keccak256(bytes)"
+"24793_withdraw" -> "balance(address)"
+"1856__isMarket" -> "mstore(uint256,uint256)"
+"1856__isMarket" -> "revert(uint256,uint256)"
+"22647__verifyVoucher" -> "keccak256(bytes)"
+"9062_constructor" -> "require(bool,string)"
+"3061_splitterCheck" -> "mstore(uint256,uint256)"
+"7565_constructor" -> "require(bool,string)"
+"5348_withdraw" -> "balance(address)"
+"7565__cancelOrderChecks" -> "revert(uint256,uint256)"
+"9062_minimalSafeMint" -> "revert(string)"
+"13550_balanceOfBatch" -> "require(bool,string)"
+"25065_decrement" -> "revert(uint256,uint256)"
+"3061__isRouter" -> "mstore(uint256,uint256)"
+"23416__feeCheck" -> "mstore(uint256,uint256)"
+"19497_burn" -> "revert(uint256,uint256)"
+"19497_giftTokens" -> "mstore(uint256,uint256)"
+"1856_name" -> "mstore(uint256,uint256)"
+"19497_uri" -> "revert(uint256,uint256)"
+"25186_safeTransfer" -> "call(uint256,uint256,uint256,uint256,uint256,uint256,uint256)"
+"7565_withdraw" -> "balance(address)"
+"11197__721LazyDeploy" -> "abi.encodePacked()"
+"24793_tokenURI" -> "abi.encodePacked()"
+"16706__verifyBatch" -> "abi.encodePacked()"
+"21455_tokenURI" -> "abi.encodePacked()"
+"10333_whitelistSettings" -> "revert(string)"
+"7565_buy" -> "revert WrongPrice()"
+"13550__burn" -> "require(bool,string)"
+"7565_getCurrentPrice" -> "mload(uint256)"
+"22647_burn" -> "mstore(uint256,uint256)"
+"10972__721MinimalDeploy" -> "type()"
+"19497_mintBatchToCreator" -> "mstore(uint256,uint256)"
+"19497_mintBatch" -> "revert(uint256,uint256)"
+"7565_setFees" -> "sstore(uint256,uint256)"
+"9062_withdraw" -> "balance(address)"
+"5348__makeOrderChecks" -> "mstore(uint256,uint256)"
+"10333_feeLookup" -> "sload(uint256)"
+"9062_gift" -> "revert(string)"
+"19497_uri" -> "abi.encodePacked()"
+"11247__SplitterDeploy" -> "type()"
+"5348__withdrawOutbid" -> "require(bool,string)"
+"22647__feeCheck" -> "mstore(uint256,uint256)"
+"3061_splitterCheck" -> "revert(uint256,uint256)"
+"25186_safeApprove" -> "call(uint256,uint256,uint256,uint256,uint256,uint256,uint256)"
+"7565__bidChecks" -> "timestamp()"
+"12412_computeDomainSeparator" -> "keccak256(bytes)"
+"16706__verifyBatch" -> "keccak256(bytes)"
+"10333_setSigner" -> "require(bool,string)"
+"9062__stateType0" -> "revert(string)"
+"5348__bidChecks" -> "revert(uint256,uint256)"
+"13550_safeTransferFrom" -> "require(bool,string)"
+"1856__isMarket" -> "sload(uint256)"
+"24793_whitelistMint" -> "mstore(uint256,uint256)"
+"5348__exceedsMaxEP" -> "revert(uint256,uint256)"
+"1856__limiter" -> "revert(uint256,uint256)"
+"15234_mint" -> "revert(uint256,uint256)"
+"7565_withdrawOutbidEth" -> "require(bool,string)"
+"3061__userRender" -> "keccak256(uint256,uint256)"
+"19497_whitelistMint" -> "require(bool,string)"
+"19497_claimFree" -> "sload(uint256)"
+"11935_releasable" -> "balance(address)"
+"15234_mintTo" -> "revert(uint256,uint256)"
+"17481_withdraw" -> "balance(address)"
+"9062_batchBurn" -> "revert(string)"
+"25186_safeTransfer" -> "gas()"
+"23416__feeCheck" -> "revert(uint256,uint256)"
+"24793_whitelistMint" -> "revert(uint256,uint256)"
+"3061__payeesBuffer" -> "mload(uint256)"
+"25199_toString" -> "mstore(uint256,uint256)"
+"1856__userRender" -> "sload(uint256)"
+"22647_tokenURI" -> "abi.encodePacked()"
+"15234_burnBatch" -> "require(bool,string)"
+"11247__SplitterDeploy" -> "abi.encodePacked()"
+"7565__bidChecks" -> "mstore(uint256,uint256)"
+"5348_getCurrentPrice" -> "timestamp()"
+"7565_getCurrentPrice" -> "timestamp()"
+"21455_burn" -> "mstore(uint256,uint256)"
+"22647__lazyCheck" -> "revert WrongPrice()"
+"19497_whitelistMint" -> "mstore(uint256,uint256)"
+"1856__userRender" -> "keccak256(uint256,uint256)"
+"9062_feeLookup" -> "sload(uint256)"
+"1856__userRender" -> "mstore(uint256,uint256)"
+"5348_withdrawERC20" -> "require(bool,string)"
+"10883__1155LazyDeploy" -> "keccak256(bytes)"
+"25186_safeApprove" -> "mload(uint256)"
+"5348_interfaceCheck" -> "mload(uint256)"
+"25186_safeTransferETH" -> "call(uint256,uint256,uint256,uint256,uint256,uint256,uint256)"
+"16706_lazyMintBatch" -> "require(bool,string)"
+"5348_setFactory" -> "sstore(uint256,uint256)"
+"10972__721MinimalDeploy" -> "abi.encodePacked()"
+"11935__addPayee" -> "revert AlreadyPayee()"
+"13550_safeBatchTransferFrom" -> "require(bool,string)"
+"24793__feeCheck" -> "mstore(uint256,uint256)"
+"22647_withdraw" -> "balance(address)"
+"7565_interfaceCheck" -> "returndatasize()"
+"7565_setRecipient" -> "sstore(uint256,uint256)"
+"21455_tokenURI" -> "revert NotMintedYet()"
+"24793_claimFree" -> "mstore(uint256,uint256)"
+"17481_publicMint" -> "revert PublicMintOff()"
+"10333_name" -> "return(uint256,uint256)"
+"7565_getCurrentPrice" -> "sload(uint256)"
+"19497_claimFree" -> "revert AlreadyClaimed()"
+"5348__feeResolver" -> "sstore(uint256,uint256)"
+"5348__feeResolver" -> "keccak256(uint256,uint256)"
+"7565__buyChecks" -> "timestamp()"
+"11935__addPayee" -> "revert DeadAddress()"
+"7565_bid" -> "sload(uint256)"
+"19497__canWhitelistBatch" -> "revert MaxMintReached()"
+"16706__verifyVoucher" -> "abi.encodePacked()"
+"17481_safeMint" -> "revert AlreadyMinted()"
+"5348_getCurrentPrice" -> "sload(uint256)"
+"13550__mint" -> "require(bool,string)"
+"10746__1155BasicDeploy" -> "keccak256(bytes)"
+"17481_publicMint" -> "revert AlreadyMinted()"
+"10333__stateType2" -> "revert(string)"
+"25186_safeTransferFrom" -> "require(bool,string)"
+"11935_release" -> "revert DeniedAccount()"
+"13550__batchMint" -> "require(bool,string)"
+"3061__sharesBuffer" -> "mstore(uint256,uint256)"
+"5348_buy" -> "revert WrongPrice()"
+"25186_safeTransferFrom" -> "gas()"
+"10333__paymentCheck" -> "mstore(uint256,uint256)"
+"15234_uri" -> "revert(uint256,uint256)"
+"16706__batchCheck" -> "revert WrongPrice()"
+"7565_updateSettings" -> "require(bool,string)"
+"7565__makeOrderChecks" -> "revert(uint256,uint256)"
+"10816__1155WhitelistDeploy" -> "type()"
+"7565_interfaceCheck" -> "staticcall(uint256,uint256,uint256,uint256,uint256,uint256)"
+"25101_verify" -> "keccak256(uint256,uint256)"
+"9062_setURI" -> "revert(string)"
+"5348_constructor" -> "require(bool,string)"
+"24793_mintToCreator" -> "revert(uint256,uint256)"
+"11935_constructor" -> "revert LengthMismatch()"
+"7565__makeOrderChecks" -> "mstore(uint256,uint256)"
+"16706__verifyVoucher" -> "keccak256(bytes)"
+"16706_burnBatch" -> "mstore(uint256,uint256)"
+"24793_mint" -> "mstore(uint256,uint256)"
+"5348_withdrawOutbidEth" -> "require(bool,string)"
+"10333__stateType1" -> "revert(string)"
+"7565__claimChecks" -> "mstore(uint256,uint256)"
+"11285_selfReferencePointer" -> "revert(string)"
+"16706_uri" -> "revert NotMintedYet()"
+"15234_mintBatchTo" -> "mstore(uint256,uint256)"
+"5348_autoTransferFunds" -> "require(bool,string)"
+"16706__voucherCheck" -> "revert InvalidSigner()"
+"19497_whitelistMint" -> "revert(uint256,uint256)"
+"1856__royaltyLocker" -> "revert(uint256,uint256)"
+"7565__feeResolver" -> "sstore(uint256,uint256)"
+"1856__limiter" -> "mstore(uint256,uint256)"
+"7565_setFactory" -> "sstore(uint256,uint256)"
+"15234_mint" -> "mstore(uint256,uint256)"
+"1856_creatorCheck" -> "revert(uint256,uint256)"
+"11124__721WhitelistDeploy" -> "keccak256(bytes)"
+"3061_name" -> "mstore(uint256,uint256)"
+"9062_name" -> "return(uint256,uint256)"
+"1856__payeesBuffer" -> "mstore(uint256,uint256)"
+"9062_whitelistSettings" -> "revert(string)"
+"3061_setSigner" -> "require(bool,string)"
+"19497_whitelistMintBatch" -> "mstore(uint256,uint256)"
+"10333_setFees" -> "sstore(uint256,uint256)"
+"22647__verify" -> "ecrecover(bytes32,uint8,bytes32,bytes32)"
+"22647__lazyCheck" -> "revert UsedVoucher()"
+"5348_bid" -> "sstore(uint256,uint256)"
+"25186_safeApprove" -> "require(bool,string)"
+"7565__withdrawOutbid" -> "require(bool,string)"
+"9062_creatorMint" -> "revert(string)"
+"10333_basicMintTo" -> "revert(string)"
+"22647_burn" -> "revert(uint256,uint256)"
+"1856__sharesBuffer" -> "mload(uint256)"
+"13550_safeTransferFrom" -> "code(address)"
+"25000_getDeployed" -> "keccak256(bytes)"
+"3061_setMarket" -> "sstore(uint256,uint256)"
+"25186_safeTransferFrom" -> "mstore(uint256,uint256)"
+"19497__canBatchToCreator" -> "revert MaxMintReached()"
+"5348__bidChecks" -> "timestamp()"
+"25186_safeTransfer" -> "require(bool,string)"
+"21455_burn" -> "revert(uint256,uint256)"
+"16706_withdraw" -> "balance(address)"
+"5348__makeOrderChecks" -> "revert(uint256,uint256)"
+"24793_giftTokens" -> "mstore(uint256,uint256)"
+"7565__isBidderOrSeller" -> "mstore(uint256,uint256)"
+"5348__exceedsMaxEP" -> "mstore(uint256,uint256)"
+"12412_permit" -> "require(bool,string)"
+"9062_basicMintBatchTo" -> "revert(string)"
+"1856__sharesBuffer" -> "mstore(uint256,uint256)"
+"11048__721BasicDeploy" -> "abi.encode()"
+"11197__721LazyDeploy" -> "abi.encode()"
+"7565__buyChecks" -> "mstore(uint256,uint256)"
+"7565_updateSettings" -> "sstore(uint256,uint256)"
+"21455__feeCheck" -> "mstore(uint256,uint256)"
+"7565_interfaceCheck" -> "abi.encodeWithSelector()"
+"3061_setSigner" -> "sstore(uint256,uint256)"
+"5348_getCurrentPrice" -> "mstore(uint256,uint256)"
+"19497_giftTokens" -> "revert(uint256,uint256)"
+"13550__batchBurn" -> "require(bool,string)"
+"19497_uri" -> "mstore(uint256,uint256)"
+"7565_setFees" -> "require(bool,string)"
+"16706__verifyBatch" -> "abi.encode()"
+"25186_safeTransfer" -> "mload(uint256)"
+"9062_name" -> "mstore(uint256,uint256)"
+"1856_name" -> "return(uint256,uint256)"
+"23416_tokenURI" -> "revert InvalidId()"
+"11935_release" -> "revert NoShares()"
+"1856_setMarket" -> "require(bool,string)"
+"19497_claimFree" -> "revert(uint256,uint256)"
+"1856__isRouter" -> "mstore(uint256,uint256)"
+"3061__isMarket" -> "revert(uint256,uint256)"
+"17481_safeMint" -> "revert InvalidId()"
+"16706__voucherCheck" -> "revert WrongPrice()"
+"5348_setRecipient" -> "require(bool,string)"
+"9062_setURILock" -> "revert(string)"
+"10333_name" -> "mstore(uint256,uint256)"
+"19497_burn" -> "mstore(uint256,uint256)"
+"10333_constructor" -> "require(bool,string)"
+"10333_withdraw" -> "balance(address)"
+"24793_burn" -> "revert(uint256,uint256)"
+"5348_interfaceCheck" -> "staticcall(uint256,uint256,uint256,uint256,uint256,uint256)"
+"15234_burn" -> "mstore(uint256,uint256)"
+"19497_mintToCreator" -> "mstore(uint256,uint256)"
+"7565_autoTransferFunds" -> "require(bool,string)"
+"5348__bidChecks" -> "mstore(uint256,uint256)"
+"17481__feeCheck" -> "revert(uint256,uint256)"
+"16706__verifyVoucher" -> "ecrecover(bytes32,uint8,bytes32,bytes32)"
+"5348__buyChecks" -> "timestamp()"
+"19497_burnBatch" -> "revert(uint256,uint256)"
+"5348__claimChecks" -> "revert(uint256,uint256)"
+"20119_ownerOf" -> "require(bool,string)"
+"1856__isRouter" -> "revert(uint256,uint256)"
+"25000_deploy" -> "create2(uint256,uint256,uint256,uint256)"
+"25186_safeTransferETH" -> "require(bool,string)"
+"9062__stateType1" -> "revert(string)"
+"3061_setRouter" -> "require(bool,string)"
+"5348__buyChecks" -> "mstore(uint256,uint256)"
+"22647__feeCheck" -> "revert(uint256,uint256)"
+"25186_safeApprove" -> "returndatasize()"
+"9062_setRecipient" -> "sstore(uint256,uint256)"
+"16706_burn" -> "require(bool,string)"
+"25065_current" -> "sload(uint256)"
+"12412_permit" -> "abi.encodePacked()"
+"10333_burn" -> "revert(string)"
+"19497_mint" -> "revert(uint256,uint256)"
+"19497_whitelistMintBatch" -> "require(bool,string)"
+"10746__1155BasicDeploy" -> "abi.encode()"
+"3061_setOwner" -> "require(bool,string)"
+"10676__1155MinimalDeploy" -> "abi.encodePacked()"
+"7565__isBidderOrSeller" -> "revert(uint256,uint256)"
+"25000_getDeployed" -> "abi.encodePacked()"
+"3061__limiter" -> "mstore(uint256,uint256)"
+"5348_bid" -> "sload(uint256)"
+"5348_setOwner" -> "sstore(uint256,uint256)"
+"22647_computeDS" -> "keccak256(bytes)"
+"5348__hash" -> "keccak256(bytes)"
+"15234__feeCheck" -> "mstore(uint256,uint256)"
+"22647__verifyVoucher" -> "abi.encode()"
+"7565__exceedsMaxEP" -> "revert(uint256,uint256)"
+"22647_setBaseURI" -> "revert UriLocked()"
+"9062_setSigner" -> "require(bool,string)"
+"1856__isRouter" -> "sload(uint256)"
+"16706_burnBatch" -> "revert(uint256,uint256)"
+"15234_burn" -> "revert(uint256,uint256)"
+"19497__canBatchToCreator" -> "revert MaxFreeReached()"
+"15234_uri" -> "abi.encodePacked()"
+"10972__721MinimalDeploy" -> "abi.encode()"
+"19497_claimFree" -> "mstore(uint256,uint256)"
+"5348_setOwner" -> "require(bool,string)"
+"19497_whitelistMintBatch" -> "revert(uint256,uint256)"
+"12412_permit" -> "abi.encode()"
+"1856__payeesBuffer" -> "mload(uint256)"
+"9062_freeSettings" -> "revert(string)"
+"3061__userRender" -> "mload(uint256)"
+"19497__canWhitelistBatch" -> "revert WrongPrice()"
+"7565_name" -> "mstore(uint256,uint256)"
+"25065_increment" -> "sload(uint256)"
+"16706__userMint" -> "require(bool,string)"
+"16706__batchCheck" -> "revert InvalidSigner()"
+"15234_mintBatch" -> "revert(uint256,uint256)"
+"10333_freeSettings" -> "revert(string)"
+"25186_safeTransfer" -> "mstore(uint256,uint256)"
+"1856_creatorCheck" -> "mstore(uint256,uint256)"
+"7565__bidChecks" -> "sload(uint256)"
+"3061__isRouter" -> "revert(uint256,uint256)"
+"10333_setMintState" -> "require(bool,string)"
+"7565_bid" -> "timestamp()"
+"5348_withdraw" -> "require(bool,string)"
+"19497_burnBatch" -> "require(bool,string)"
+"7565__feeResolver" -> "mstore(uint256,uint256)"
+"21455_mintTo" -> "mstore(uint256,uint256)"
+"16706__batchCheck" -> "revert UsedVoucher()"
+"25186_safeApprove" -> "gas()"
+"10333_setRecipient" -> "require(bool,string)"
+"19497_mintToCreator" -> "revert(uint256,uint256)"
+"10972__721MinimalDeploy" -> "keccak256(bytes)"
+"3061_name" -> "return(uint256,uint256)"
+"5348__isBidderOrSeller" -> "mstore(uint256,uint256)"
+"19497_setURI" -> "revert UriLocked()"
+"25000_deploy" -> "code(address)"
+"1856_setSigner" -> "sstore(uint256,uint256)"
+"5348__setPaymentToken" -> "require(bool,string)"
+"3061_creatorCheck" -> "mstore(uint256,uint256)"
+"20119_approve" -> "require(bool,string)"
+"16706_computeDS" -> "keccak256(bytes)"
+"13550_safeBatchTransferFrom" -> "code(address)"
+"5348__cancelOrderChecks" -> "mstore(uint256,uint256)"
+"7565__buyChecks" -> "revert(uint256,uint256)"
+"15234_burnBatch" -> "mstore(uint256,uint256)"
+"3061_creatorCheck" -> "sload(uint256)"
+"1856_setSigner" -> "require(bool,string)"
+"20119_safeTransferFrom" -> "require(bool,string)"
+"7565_withdraw" -> "require(bool,string)"
+"15234_withdraw" -> "balance(address)"
+"10333_creatorMint" -> "revert(string)"
+"9062_setOwner" -> "sstore(uint256,uint256)"
+"24793_mintToCreator" -> "mstore(uint256,uint256)"
+"7565__feeResolver" -> "sload(uint256)"
+"1856_splitterCheck" -> "revert(uint256,uint256)"
+"3061__isMarket" -> "mstore(uint256,uint256)"
+"25186_safeApprove" -> "mstore(uint256,uint256)"
+"23416_publicMint" -> "revert WrongPrice()"
+"25000_deploy" -> "require(bool,string)"
+"20119__burn" -> "require(bool,string)"
+"17481_uri" -> "revert NotMinted()"
+"5348__claimChecks" -> "timestamp()"
+"7565__claimChecks" -> "timestamp()"
+"7565_bid" -> "sstore(uint256,uint256)"
+"19497_mintBatch" -> "require(bool,string)"
+"5348_interfaceCheck" -> "abi.encodeWithSelector()"
+"16706_computeDS" -> "abi.encode()"
+"16706_setURI" -> "revert UriLocked()"
+"24793_setBaseURI" -> "revert UriLocked()"
+"1856_setRouter" -> "sstore(uint256,uint256)"
+"15234_mintBatch" -> "mstore(uint256,uint256)"
+"3061_getDeployedAddr" -> "keccak256(bytes)"
+"3061__payeesBuffer" -> "mstore(uint256,uint256)"
+"7565_withdrawERC20" -> "require(bool,string)"
+"10333_minimalSafeMint" -> "revert(string)"
+"9062_creatorBatchMint" -> "revert(string)"
+"19497_burnBatch" -> "mstore(uint256,uint256)"
+"1856_setOwner" -> "require(bool,string)"
+"24793__feeCheck" -> "revert(uint256,uint256)"
+"3061_setMarket" -> "require(bool,string)"
+"7565_setRecipient" -> "require(bool,string)"
+"5348_setFees" -> "sstore(uint256,uint256)"
+"17481_uri" -> "revert InvalidId()"
+"15234__feeCheck" -> "revert(uint256,uint256)"
+"16706__verifyVoucher" -> "abi.encode()"
+"25065_increment" -> "sstore(uint256,uint256)"
+"7565__makeOrderChecks" -> "timestamp()"
+"19497_mintBatchToCreator" -> "revert(uint256,uint256)"
+"1856_typeChecker" -> "sload(uint256)"
+"7565_getCurrentPrice" -> "mstore(uint256,uint256)"
+"15234_uri" -> "mstore(uint256,uint256)"
+"9062_setFees" -> "require(bool,string)"
+"11935__addPayee" -> "revert InvalidShare()"
+"10333_setOwner" -> "require(bool,string)"
+"11247__SplitterDeploy" -> "abi.encode()"
+"24793_claimFree" -> "revert AlreadyClaimed()"
+"22647__verify" -> "abi.encode()"
+"10333_withdraw" -> "revert(string)"
+"16706_burn" -> "mstore(uint256,uint256)"
+"5348__buyChecks" -> "revert(uint256,uint256)"
+"10883__1155LazyDeploy" -> "abi.encodePacked()"
+"10333__stateType0" -> "revert(string)"
+"3061__isMarket" -> "sload(uint256)"
+"22647_computeDS" -> "abi.encode()"
+"24793_claimFree" -> "revert(uint256,uint256)"
+"22647__verifyVoucher" -> "ecrecover(bytes32,uint8,bytes32,bytes32)"
+"10333__paymentCheck" -> "revert(uint256,uint256)"
+"25101_verifyMultiProof" -> "mload(uint256)"
+"24793_burn" -> "mstore(uint256,uint256)"
+"10883__1155LazyDeploy" -> "abi.encode()"
+"11197__721LazyDeploy" -> "type()"
+"3061_setOwner" -> "sstore(uint256,uint256)"
+"9062_setFees" -> "sstore(uint256,uint256)"
+"7565__cancelOrderChecks" -> "mstore(uint256,uint256)"
+"5348_updateSettings" -> "require(bool,string)"
+"23416_publicMint" -> "revert AlreadyMinted()"
+"15234_setURI" -> "revert UriLocked()"
+"25065_decrement" -> "sstore(uint256,uint256)"
+"20119_balanceOf" -> "require(bool,string)"
+"24793_claimFree" -> "sload(uint256)"
+"5348_setFees" -> "require(bool,string)"
+"16706__feeCheck" -> "revert(uint256,uint256)"
+"11048__721BasicDeploy" -> "type()"
+"10333_setBaseLock" -> "revert(string)"
+"25000_deploy" -> "mload(uint256)"
+"13550__mint" -> "code(address)"
+"5348__isBidderOrSeller" -> "revert(uint256,uint256)"
+"7565_setOwner" -> "require(bool,string)"
+"25186_safeTransferFrom" -> "call(uint256,uint256,uint256,uint256,uint256,uint256,uint256)"
+"1856_splitterCheck" -> "mstore(uint256,uint256)"
+"5348_interfaceCheck" -> "returndatasize()"
+"22647__verify" -> "abi.encodePacked()"
+"1856__userRender" -> "mload(uint256)"
+"3061_setRouter" -> "sstore(uint256,uint256)"
+"16706_uri" -> "abi.encodePacked()"
+"9062_setMintState" -> "require(bool,string)"
+"25101_verifyMultiProof" -> "calldataload(uint256)"
+"25199_toString" -> "mstore8(uint256,uint256)"
+"25101_verifyMultiProof" -> "mstore(uint256,uint256)"
+"15234_mintBatchTo" -> "revert(uint256,uint256)"
+"25186_safeTransferFrom" -> "returndatasize()"
+"19497_mint" -> "mstore(uint256,uint256)"
+"21455_mint" -> "revert(uint256,uint256)"
+"20119_safeTransferFrom" -> "code(address)"
+"12412_computeDomainSeparator" -> "abi.encode()"
+"10333_gift" -> "revert(string)"
+"22647_tokenURI" -> "revert NotMintedYet()"
+"10816__1155WhitelistDeploy" -> "abi.encode()"
+"19497__canWhitelistBatch" -> "revert MaxWhitelistReached()"
+"11197__721LazyDeploy" -> "keccak256(bytes)"
+"7565__exceedsMaxEP" -> "mstore(uint256,uint256)"
+"25065_decrement" -> "sload(uint256)"
+"10816__1155WhitelistDeploy" -> "abi.encodePacked()"
+"7565_autoTransferFunds" -> "revert(string)"
+"25065_reset" -> "sstore(uint256,uint256)"
+"9062_withdraw" -> "revert(string)"
+"5348__feeResolver" -> "sload(uint256)"
+"1856_splitterCheck" -> "keccak256(bytes)"
+"21455_mintTo" -> "revert(uint256,uint256)"
+"3061_creatorCheck" -> "revert(uint256,uint256)"
+"7565__hash" -> "keccak256(bytes)"
+"25065_decrement" -> "mstore(uint256,uint256)"
+"25186_safeTransferFrom" -> "mload(uint256)"
+"24793_giftTokens" -> "revert(uint256,uint256)"
+"17481__feeCheck" -> "mstore(uint256,uint256)"
+"3061__userRender" -> "mstore(uint256,uint256)"
+"7565__claimChecks" -> "revert(uint256,uint256)"
+"7565__hash" -> "abi.encodePacked()"
+"10333_setBase" -> "revert(string)"
+"11124__721WhitelistDeploy" -> "abi.encode()"
+"5348__makeOrderChecks" -> "sload(uint256)"
+"5348_updateSettings" -> "sstore(uint256,uint256)"
+"1856__royaltyLocker" -> "mstore(uint256,uint256)"
+"23416_tokenURI" -> "revert NotMinted()"
+"12412_permit" -> "keccak256(bytes)"
+"23416_safeMint" -> "revert AlreadyMinted()"
+"20119_transferFrom" -> "require(bool,string)"
+"1856_creatorCheck" -> "sload(uint256)"
+"11124__721WhitelistDeploy" -> "abi.encodePacked()"
+"11124__721WhitelistDeploy" -> "type()"
+"21455_withdraw" -> "balance(address)"
+"22647__verifyVoucher" -> "abi.encodePacked()"
+"7565_name" -> "return(uint256,uint256)"
+"10333_setOwner" -> "sstore(uint256,uint256)"
+"3061__royaltyLocker" -> "revert(uint256,uint256)"
+"3061__limiter" -> "revert(uint256,uint256)"
+"1856_setRouter" -> "require(bool,string)"
+"10883__1155LazyDeploy" -> "type()"
+"3061__isRouter" -> "sload(uint256)"
+"25186_safeTransferETH" -> "gas()"
+"5348_bid" -> "timestamp()"
+"10333_setFees" -> "require(bool,string)"
+"22647__lazyCheck" -> "revert InvalidSigner()"
+"15234_mintBatch" -> "require(bool,string)"
+"1856_setOwner" -> "sstore(uint256,uint256)"
+"11247__SplitterDeploy" -> "keccak256(bytes)"
+"5348_setRecipient" -> "sstore(uint256,uint256)"
+"7565_setOwner" -> "sstore(uint256,uint256)"
+"16706__voucherCheck" -> "revert UsedVoucher()"
+"16706__feeCheck" -> "mstore(uint256,uint256)"
+"5348__hash" -> "abi.encodePacked()"
+"9062_burn" -> "revert(string)"
+"5348_name" -> "mstore(uint256,uint256)"
+"11935_constructor" -> "revert NoPayees()"
+"9062__paymentCheck" -> "revert(uint256,uint256)"
+"21455_setBaseURI" -> "revert UriLocked()"
+"3061_typeChecker" -> "sload(uint256)"
+"23416_publicMint" -> "revert PublicMintOff()"
+"5348__bidChecks" -> "sload(uint256)"
+"10676__1155MinimalDeploy" -> "abi.encode()"
+"7565__makeOrderChecks" -> "sload(uint256)"
+"9062__stateType2" -> "revert(string)"
+"5348__claimChecks" -> "mstore(uint256,uint256)"
+"15234_burn" -> "require(bool,string)"
+"5348__cancelOrderChecks" -> "revert(uint256,uint256)"
+}"1856_createCollection" -> "24892_fillLast12Bytes"
+"9062_basicMintBatchTo" -> "15234_mintBatchTo"
+"5348__withdrawOutbid" -> "113_exactInputSingle"
+"22647_withdrawERC20" -> "11935_payeesLength"
+"10333__paymentCheck" -> "19575_allowance"
+"10333_withdraw" -> "23416_withdraw"
+"10816__1155WhitelistDeploy" -> "25000_deploy"
+"15234_withdraw" -> "11935_payeesLength"
+"15234_mintBatch" -> "25186_safeTransferFrom"
+"7565__intPath" -> "20457_royaltyInfo"
+"10333_burn" -> "21455_burn"
+"7565_bid" -> "19575_allowance"
+"5348_cancelOrder" -> "13912_safeTransferFrom"
+"25000_getDeployed" -> "24892_fromLast20Bytes"
+"5348_autoTransferFunds" -> "25186_safeTransferETH"
+"16706_withdraw" -> "11935__shares"
+"9062__paymentCheck" -> "24853_feeLookup"
+"15234_withdraw" -> "11935__payees"
+"10333_withdraw" -> "23416_withdrawERC20"
+"22647__getPriceValue" -> "19575_allowance"
+"9062_batchBurn" -> "16706_burnBatch"
+"7565__intPath" -> "25186_safeTransfer"
+"21455_tokenURI" -> "25199_toString"
+"22647_withdrawERC20" -> "19575_balanceOf"
+"21455_withdraw" -> "25186_safeTransferETH"
+"21455_withdrawERC20" -> "11935_payeesLength"
+"23416__getFeeValue" -> "24853_feeLookup"
+"7565_claim" -> "10533_creatorAuth"
+"15234_uri" -> "25199_toString"
+"7565__extPath1" -> "20457_safeTransferFrom"
+"9062_withdraw" -> "15234_withdrawERC20"
+"17481__getPriceValue" -> "19575_allowance"
+"9062_withdraw" -> "19497_withdrawERC20"
+"10333__tokenRender" -> "10533_typeChecker"
+"17481_withdrawERC20" -> "11935__payees"
+"15234_withdrawERC20" -> "19575_balanceOf"
+"23416_withdraw" -> "11935_payeesLength"
+"22647_tokenURI" -> "25199_toString"
+"19497_withdraw" -> "25186_safeTransferETH"
+"22647_withdrawERC20" -> "11935__payees"
+"21455_withdraw" -> "11935_payeesLength"
+"5348__intPath" -> "25186_safeTransferETH"
+"9062__stateType0" -> "15234_setPublicMintState"
+"15234_totalSupply" -> "25065_current"
+"24793_withdraw" -> "25186_safeTransferETH"
+"21455__incrementCounter" -> "25065_increment"
+"7565_withdrawERC20" -> "19575_balanceOf"
+"22647_withdraw" -> "11935__shares"
+"7565_constructor" -> "25186_safeApprove"
+"15234__getFeeValue" -> "24853_feeLookup"
+"23416_withdrawERC20" -> "11935__payees"
+"1856_createCollection" -> "10676__1155MinimalDeploy"
+"22647_withdraw" -> "11935__payees"
+"19497_withdraw" -> "11935__payees"
+"5348__extPath0" -> "13912_royaltyInfo"
+"10333_freeSettings" -> "24793_freeConfig"
+"9062_setSigner" -> "16706_setSigner"
+"24793_withdraw" -> "11935_payeesLength"
+"15234_withdrawERC20" -> "25186_safeTransfer"
+"10333_burn" -> "23416_burn"
+"16706_withdrawERC20" -> "11935__shares"
+"5348__intPath" -> "13912_safeTransferFrom"
+"16706__incrementCounter" -> "25065_increment"
+"7565__intPath" -> "25186_safeTransferETH"
+"10333_withdraw" -> "24793_withdrawERC20"
+"22647__incrementCounter" -> "25065_increment"
+"1856_splitterCheck" -> "11247__SplitterDeploy"
+"7565__withdrawOutbid" -> "113_exactInputSingle"
+"7565_withdrawOutbidEth" -> "25186_safeTransferETH"
+"17481_withdrawERC20" -> "11935__shares"
+"9062_withdraw" -> "17481_withdrawERC20"
+"21455_withdrawERC20" -> "11935__payees"
+"9062__tokenRender" -> "10533_getColID"
+"21455__paymentCheck" -> "25186_safeTransferFrom"
+"9062_setURI" -> "19497_setURI"
+"16706_withdrawERC20" -> "11935__payees"
+"15234_withdrawERC20" -> "11935__shares"
+"23416_withdraw" -> "11935__shares"
+"24793_withdraw" -> "11935__payees"
+"22647__getFeeValue" -> "24853_feeLookup"
+"15234_mintBatchTo" -> "25065_increment"
+"3061_splitterCheck" -> "11247__SplitterDeploy"
+"5348_constructor" -> "25186_safeApprove"
+"21455__getFeeValue" -> "24853_feeLookup"
+"7565_bid" -> "25186_safeTransferFrom"
+"9062_setURILock" -> "19497_setURILock"
+"16706_uri" -> "25199_toString"
+"19497_withdrawERC20" -> "25186_safeTransfer"
+"19497_whitelistMintBatch" -> "25065_current"
+"10333_withdraw" -> "22647_withdrawERC20"
+"9062_setURILock" -> "15234_setURILock"
+"11197__721LazyDeploy" -> "25000_deploy"
+"19497_withdraw" -> "11935__shares"
+"5348_bid" -> "25186_safeTransferFrom"
+"5348__extPath1" -> "25186_safeTransfer"
+"11124__721WhitelistDeploy" -> "25000_deploy"
+"11935_releasable" -> "19575_balanceOf"
+"3061_createCollection" -> "24892_fillLast12Bytes"
+"17481_withdrawERC20" -> "25186_safeTransfer"
+"17481_withdraw" -> "11935__shares"
+"9062__tokenRender" -> "10533_typeChecker"
+"19497_withdrawERC20" -> "11935_payeesLength"
+"17481_withdrawERC20" -> "11935_payeesLength"
+"19497_burnBatch" -> "25065_decrement"
+"7565_autoTransferFunds" -> "25186_safeTransferETH"
+"16706__paymentCheck" -> "25186_safeTransferFrom"
+"16706_lazyMintBatch" -> "25186_safeTransferFrom"
+"5348_buy" -> "10533_creatorAuth"
+"20119__safeMint" -> "20139_onERC721Received"
+"19497__getPriceValue" -> "19575_allowance"
+"7565__makeOrder" -> "20457_safeTransferFrom"
+"9062_basicMintTo" -> "15234_mintTo"
+"15234_withdrawERC20" -> "11935_payeesLength"
+"19497_mintBatch" -> "25065_current"
+"10333_minimalSafeMint" -> "23416_safeMint"
+"21455_withdrawERC20" -> "19575_balanceOf"
+"11247__SplitterDeploy" -> "25000_deploy"
+"3061_getColID" -> "24892_fillLast12Bytes"
+"9062_batchBurn" -> "19497_burnBatch"
+"1856_createCollection" -> "10816__1155WhitelistDeploy"
+"7565__extPath1" -> "25186_safeTransfer"
+"19497_withdrawERC20" -> "11935__shares"
+"22647_withdrawERC20" -> "25186_safeTransfer"
+"23416__paymentCheck" -> "25186_safeTransferFrom"
+"10333_whitelistSettings" -> "24793_whitelistConfig"
+"9062__stateType2" -> "19497_setFreeClaimState"
+"23416_withdrawERC20" -> "25186_safeTransfer"
+"5348__extPath1" -> "25186_safeTransferETH"
+"13550__batchMint" -> "13594_onERC1155BatchReceived"
+"10333_withdraw" -> "21455_withdrawERC20"
+"7565_withdraw" -> "25186_safeTransferETH"
+"22647_withdraw" -> "11935_payeesLength"
+"19497_withdrawERC20" -> "19575_balanceOf"
+"3061_createCollection" -> "11124__721WhitelistDeploy"
+"7565__extPath0" -> "25186_safeTransferETH"
+"17481_withdraw" -> "11935__payees"
+"17481__paymentCheck" -> "25186_safeTransferFrom"
+"9062_withdraw" -> "16706_withdrawERC20"
+"9062__stateType0" -> "19497_setPublicMintState"
+"1856_createCollection" -> "10746__1155BasicDeploy"
+"9062_withdraw" -> "15234_withdraw"
+"9062_withdraw" -> "19497_withdraw"
+"10333_setBaseLock" -> "21455_setBaseURILock"
+"10333__stateType0" -> "23416_setPublicMintState"
+"24793_withdraw" -> "11935__shares"
+"19497__paymentCheck" -> "25186_safeTransferFrom"
+"21455__getPriceValue" -> "19575_allowance"
+"1856_getDeployedAddr" -> "25000_getDeployed"
+"15234_withdrawERC20" -> "11935__payees"
+"11048__721BasicDeploy" -> "25000_deploy"
+"9062_batchBurn" -> "15234_burnBatch"
+"15234_burnBatch" -> "25065_decrement"
+"9062_burn" -> "19497_burn"
+"24793_burn" -> "25065_decrement"
+"16706_totalSupply" -> "25065_current"
+"3061_createCollection" -> "11048__721BasicDeploy"
+"10333_basicMintTo" -> "21455_mintTo"
+"5348_buy" -> "25186_safeTransferFrom"
+"10333_setSigner" -> "22647_setSigner"
+"21455_totalSupply" -> "25065_current"
+"15234__paymentCheck" -> "25186_safeTransferFrom"
+"9062__stateType1" -> "19497_setWhitelistMintState"
+"17481_withdraw" -> "25186_safeTransferETH"
+"5348_withdrawERC20" -> "25186_safeTransfer"
+"5348__withdrawOutbid" -> "25186_safeTransfer"
+"7565_delOrder" -> "20457_transferFrom"
+"16706_withdraw" -> "11935__payees"
+"9062_gift" -> "19497_giftTokens"
+"19497_burn" -> "25065_decrement"
+"9062_setURILock" -> "16706_setURILock"
+"17481_withdraw" -> "11935_payeesLength"
+"5348_claim" -> "10533_creatorAuth"
+"16706_withdraw" -> "25186_safeTransferETH"
+"16706_withdrawERC20" -> "11935_payeesLength"
+"10333__stateType2" -> "24793_setFreeClaimState"
+"9062_withdraw" -> "17481_withdraw"
+"19497_withdraw" -> "11935_payeesLength"
+"21455_withdrawERC20" -> "11935__shares"
+"13550_safeBatchTransferFrom" -> "13594_onERC1155BatchReceived"
+"7565_buy" -> "19575_allowance"
+"15234_withdraw" -> "25186_safeTransferETH"
+"23416_withdraw" -> "25186_safeTransferETH"
+"10333_setBase" -> "21455_setBaseURI"
+"1856_getColID" -> "24892_fillLast12Bytes"
+"24793__paymentCheck" -> "25186_safeTransferFrom"
+"5348_withdrawOutbidEth" -> "25186_safeTransferETH"
+"15234_withdraw" -> "11935__shares"
+"20119_safeTransferFrom" -> "20139_onERC721Received"
+"17481__getFeeValue" -> "24853_feeLookup"
+"7565_buy" -> "10533_creatorAuth"
+"21455_burn" -> "25065_decrement"
+"19497__incrementCounter" -> "25065_increment"
+"5348_bid" -> "19575_allowance"
+"9062_setURI" -> "15234_setURI"
+"22647_burn" -> "25065_decrement"
+"24793__getFeeValue" -> "24853_feeLookup"
+"23416__getPriceValue" -> "19575_allowance"
+"24793_withdrawERC20" -> "19575_balanceOf"
+"10333_withdraw" -> "19575_balanceOf"
+"10333_withdraw" -> "24793_withdraw"
+"10333_setBase" -> "24793_setBaseURI"
+"10676__1155MinimalDeploy" -> "25000_deploy"
+"10333__tokenRender" -> "10533_creatorCheck"
+"10333__tokenRender" -> "10533_getColID"
+"24793_totalSupply" -> "25065_current"
+"9062_creatorBatchMint" -> "19497_mintBatchToCreator"
+"10333__paymentCheck" -> "25186_safeTransferFrom"
+"7565_withdrawERC20" -> "25186_safeTransfer"
+"23416_withdrawERC20" -> "19575_balanceOf"
+"9062_burn" -> "17481_burn"
+"22647_withdrawERC20" -> "11935__shares"
+"24793__incrementCounter" -> "25065_increment"
+"15234_burn" -> "25065_decrement"
+"16706__getFeeValue" -> "24853_feeLookup"
+"7565__extPath0" -> "20457_royaltyInfo"
+"9062_creatorMint" -> "19497_mintToCreator"
+"16706_withdrawERC20" -> "19575_balanceOf"
+"1856_createCollection" -> "10883__1155LazyDeploy"
+"3061_createCollection" -> "11197__721LazyDeploy"
+"7565__extPath1" -> "25186_safeTransferETH"
+"10333_burn" -> "24793_burn"
+"16706_lazyMint" -> "25186_safeTransferFrom"
+"9062__paymentCheck" -> "25186_safeTransferFrom"
+"9062_freeSettings" -> "19497_freeConfig"
+"24793_withdrawERC20" -> "11935_payeesLength"
+"21455_withdraw" -> "11935__shares"
+"5348__extPath1" -> "13912_safeTransferFrom"
+"7565__withdrawOutbid" -> "25186_safeTransfer"
+"9062_minimalSafeMint" -> "17481_safeMint"
+"7565__extPath0" -> "25186_safeTransfer"
+"10883__1155LazyDeploy" -> "25000_deploy"
+"19497_withdrawERC20" -> "11935__payees"
+"24793_tokenURI" -> "25199_toString"
+"3061_creatorAuth" -> "24892_fillLast12Bytes"
+"9062_burn" -> "16706_burn"
+"13550_safeTransferFrom" -> "13594_onERC1155Received"
+"22647_totalSupply" -> "25065_current"
+"10746__1155BasicDeploy" -> "25000_deploy"
+"24793_withdrawERC20" -> "11935__shares"
+"10333_burn" -> "22647_burn"
+"17481_withdrawERC20" -> "19575_balanceOf"
+"23416_withdrawERC20" -> "11935__shares"
+"10333_setBaseLock" -> "24793_setBaseURILock"
+"10333_setBase" -> "22647_setBaseURI"
+"10333__stateType0" -> "24793_setPublicMintState"
+"11935_release" -> "25186_safeTransferETH"
+"7565_cancelOrder" -> "20457_safeTransferFrom"
+"15234__incrementCounter" -> "25065_increment"
+"11935_release" -> "25186_safeTransfer"
+"24793__getPriceValue" -> "19575_allowance"
+"19497_totalSupply" -> "25065_current"
+"10333_setBaseLock" -> "22647_setBaseURILock"
+"5348__intPath" -> "25186_safeTransfer"
+"7565_buy" -> "25186_safeTransferFrom"
+"10972__721MinimalDeploy" -> "25000_deploy"
+"19497__getFeeValue" -> "24853_feeLookup"
+"16706_withdrawERC20" -> "25186_safeTransfer"
+"16706_withdraw" -> "11935_payeesLength"
+"9062__tokenRender" -> "10533_creatorCheck"
+"19497_uri" -> "25199_toString"
+"21455_withdrawERC20" -> "25186_safeTransfer"
+"5348__intPath" -> "13912_royaltyInfo"
+"15234__getPriceValue" -> "19575_allowance"
+"10333__stateType1" -> "24793_setWhitelistMintState"
+"10333_withdraw" -> "22647_withdraw"
+"3061_createCollection" -> "10972__721MinimalDeploy"
+"5348__extPath0" -> "25186_safeTransfer"
+"23416_withdraw" -> "11935__payees"
+"7565__extPath0" -> "20457_safeTransferFrom"
+"5348_delOrder" -> "13912_safeTransferFrom"
+"24793_withdrawERC20" -> "11935__payees"
+"7565__intPath" -> "20457_safeTransferFrom"
+"3061_getDeployedAddr" -> "25000_getDeployed"
+"16706_burn" -> "25065_decrement"
+"22647__paymentCheck" -> "25186_safeTransferFrom"
+"1856_creatorAuth" -> "24892_fillLast12Bytes"
+"9062_withdraw" -> "19575_balanceOf"
+"9062__paymentCheck" -> "19575_allowance"
+"19497_whitelistMintBatch" -> "19575_allowance"
+"9062_burn" -> "15234_burn"
+"5348_buy" -> "19575_allowance"
+"10333_withdraw" -> "21455_withdraw"
+"10333__stateType0" -> "21455_setPublicMintState"
+"9062_setURI" -> "16706_setURI"
+"5348__extPath0" -> "25186_safeTransferETH"
+"5348_withdrawERC20" -> "19575_balanceOf"
+"16706__getPriceValue" -> "19575_allowance"
+"10333__paymentCheck" -> "24853_feeLookup"
+"9062_withdraw" -> "16706_withdraw"
+"21455_withdraw" -> "11935__payees"
+"9062_whitelistSettings" -> "19497_whitelistConfig"
+"16706_burnBatch" -> "25065_decrement"
+"5348_withdraw" -> "25186_safeTransferETH"
+"9062__stateType0" -> "17481_setPublicMintState"
+"13550__mint" -> "13594_onERC1155Received"
+"23416_withdrawERC20" -> "11935_payeesLength"
+"24793_withdrawERC20" -> "25186_safeTransfer"
+"5348__makeOrder" -> "13912_safeTransferFrom"
+"10333_creatorMint" -> "24793_mintToCreator"
+"19497_mintBatch" -> "25186_safeTransferFrom"
+"10333_gift" -> "24793_giftTokens"
+"22647_lazyMint" -> "25186_safeTransferFrom"
+"22647_withdraw" -> "25186_safeTransferETH"
+"5348__extPath0" -> "13912_safeTransferFrom"
+}

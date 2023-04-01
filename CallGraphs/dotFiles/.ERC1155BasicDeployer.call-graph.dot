@@ -1,0 +1,16 @@
+strict digraph {
+subgraph cluster_10746_ERC1155BasicDeployer {
+label = "ERC1155BasicDeployer"
+"10746__1155BasicDeploy" [label="_1155BasicDeploy"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"keccak256(bytes)" 
+"type()" 
+"abi.encode()" 
+"abi.encodePacked()" 
+"10746__1155BasicDeploy" -> "abi.encodePacked()"
+"10746__1155BasicDeploy" -> "type()"
+"10746__1155BasicDeploy" -> "abi.encode()"
+"10746__1155BasicDeploy" -> "keccak256(bytes)"
+}
+}

@@ -1,0 +1,23 @@
+strict digraph {
+subgraph cluster_25065_Counters {
+label = "Counters"
+"25065_decrement" [label="decrement"]
+"25065_increment" [label="increment"]
+"25065_reset" [label="reset"]
+"25065_current" [label="current"]
+}subgraph cluster_solidity {
+label = "[Solidity]"
+"mstore(uint256,uint256)" 
+"sload(uint256)" 
+"sstore(uint256,uint256)" 
+"revert(uint256,uint256)" 
+"25065_current" -> "sload(uint256)"
+"25065_reset" -> "sstore(uint256,uint256)"
+"25065_increment" -> "sstore(uint256,uint256)"
+"25065_increment" -> "sload(uint256)"
+"25065_decrement" -> "sload(uint256)"
+"25065_decrement" -> "revert(uint256,uint256)"
+"25065_decrement" -> "sstore(uint256,uint256)"
+"25065_decrement" -> "mstore(uint256,uint256)"
+}
+}
