@@ -1,5 +1,27 @@
+
+# MAD NFTs Audit - Slither
+
+# Severity classification
+
+| Severity               | Impact: High | Impact: Medium | Impact: Low |
+| ---------------------- | ------------ | -------------- | ----------- |
+| **Likelihood: High**   | Critical     | High           | Medium      |
+| **Likelihood: Medium** | High         | Medium         | Low         |
+| **Likelihood: Low**    | Medium       | Low            | Low         |
+
+The following number of issues were found, categorized by their severity:
+
+- Critical 
+- High: 2 issues
+- Medium: 30 issues
+- Low: 68 issues
+- Optimization: 64 issues
+
 # arbitrary-send-erc20
-**Item: 1**
+
+> Items Found: 2
+
+**Item 1 / 2 **
 
 ## Severity
 
@@ -18,7 +40,7 @@
 
 ---
 
-**Item: 2**
+**Item 2 / 2 **
 
 ## Severity
 
@@ -37,7 +59,10 @@
 
 ---
 # divide-before-multiply
-**Item: 1**
+
+> Items Found: 2
+
+**Item 1 / 2 **
 
 ## Severity
 
@@ -58,7 +83,7 @@
 
 ---
 
-**Item: 2**
+**Item 2 / 2 **
 
 ## Severity
 
@@ -79,7 +104,10 @@
 
 ---
 # incorrect-equality
-**Item: 1**
+
+> Items Found: 2
+
+**Item 1 / 2 **
 
 ## Severity
 
@@ -99,7 +127,7 @@
 
 ---
 
-**Item: 2**
+**Item 2 / 2 **
 
 ## Severity
 
@@ -119,7 +147,10 @@
 
 ---
 # locked-ether
-**Item: 1**
+
+> Items Found: 11
+
+**Item 1 / 11 **
 
 ## Severity
 
@@ -143,7 +174,7 @@
 
 ---
 
-**Item: 2**
+**Item 2 / 11 **
 
 ## Severity
 
@@ -167,7 +198,7 @@
 
 ---
 
-**Item: 3**
+**Item 3 / 11 **
 
 ## Severity
 
@@ -194,7 +225,7 @@
 
 ---
 
-**Item: 4**
+**Item 4 / 11 **
 
 ## Severity
 
@@ -217,7 +248,7 @@
 
 ---
 
-**Item: 5**
+**Item 5 / 11 **
 
 ## Severity
 
@@ -240,7 +271,7 @@
 
 ---
 
-**Item: 6**
+**Item 6 / 11 **
 
 ## Severity
 
@@ -264,7 +295,7 @@
 
 ---
 
-**Item: 7**
+**Item 7 / 11 **
 
 ## Severity
 
@@ -290,7 +321,7 @@
 
 ---
 
-**Item: 8**
+**Item 8 / 11 **
 
 ## Severity
 
@@ -315,7 +346,7 @@
 
 ---
 
-**Item: 9**
+**Item 9 / 11 **
 
 ## Severity
 
@@ -339,7 +370,7 @@
 
 ---
 
-**Item: 10**
+**Item 10 / 11 **
 
 ## Severity
 
@@ -369,7 +400,7 @@
 
 ---
 
-**Item: 11**
+**Item 11 / 11 **
 
 ## Severity
 
@@ -393,7 +424,10 @@
 
 ---
 # reentrancy-no-eth
-**Item: 1**
+
+> Items Found: 7
+
+**Item 1 / 7 **
 
 ## Severity
 
@@ -422,7 +456,7 @@
 
 ---
 
-**Item: 2**
+**Item 2 / 7 **
 
 ## Severity
 
@@ -453,7 +487,7 @@
 
 ---
 
-**Item: 3**
+**Item 3 / 7 **
 
 ## Severity
 
@@ -483,7 +517,7 @@
 
 ---
 
-**Item: 4**
+**Item 4 / 7 **
 
 ## Severity
 
@@ -514,7 +548,7 @@
 
 ---
 
-**Item: 5**
+**Item 5 / 7 **
 
 ## Severity
 
@@ -543,7 +577,7 @@
 
 ---
 
-**Item: 6**
+**Item 6 / 7 **
 
 ## Severity
 
@@ -573,7 +607,7 @@
 
 ---
 
-**Item: 7**
+**Item 7 / 7 **
 
 ## Severity
 
@@ -599,7 +633,10 @@
 
 ---
 # tx-origin
-**Item: 1**
+
+> Items Found: 2
+
+**Item 1 / 2 **
 
 ## Severity
 
@@ -618,7 +655,7 @@
 
 ---
 
-**Item: 2**
+**Item 2 / 2 **
 
 ## Severity
 
@@ -637,7 +674,10 @@
 
 ---
 # tautology
-**Item: 1**
+
+> Items Found: 2
+
+**Item 1 / 2 **
 
 ## Severity
 
@@ -657,7 +697,7 @@
 
 ---
 
-**Item: 2**
+**Item 2 / 2 **
 
 ## Severity
 
@@ -677,7 +717,10 @@
 
 ---
 # unused-return
-**Item: 1**
+
+> Items Found: 2
+
+**Item 1 / 2 **
 
 ## Severity
 
@@ -696,7 +739,7 @@
 
 ---
 
-**Item: 2**
+**Item 2 / 2 **
 
 ## Severity
 
@@ -715,7 +758,10 @@
 
 ---
 # write-after-write
-**Item: 1**
+
+> Items Found: 2
+
+**Item 1 / 2 **
 
 ## Severity
 
@@ -736,7 +782,7 @@
 
 ---
 
-**Item: 2**
+**Item 2 / 2 **
 
 ## Severity
 
@@ -757,7 +803,10 @@
 
 ---
 # events-maths
-**Item: 1**
+
+> Items Found: 4
+
+**Item 1 / 4 **
 
 ## Severity
 
@@ -777,7 +826,7 @@
 
 ---
 
-**Item: 2**
+**Item 2 / 4 **
 
 ## Severity
 
@@ -797,7 +846,7 @@
 
 ---
 
-**Item: 3**
+**Item 3 / 4 **
 
 ## Severity
 
@@ -817,7 +866,7 @@
 
 ---
 
-**Item: 4**
+**Item 4 / 4 **
 
 ## Severity
 
@@ -837,7 +886,10 @@
 
 ---
 # missing-zero-check
-**Item: 1**
+
+> Items Found: 7
+
+**Item 1 / 7 **
 
 ## Severity
 
@@ -857,7 +909,7 @@
 
 ---
 
-**Item: 2**
+**Item 2 / 7 **
 
 ## Severity
 
@@ -877,7 +929,7 @@
 
 ---
 
-**Item: 3**
+**Item 3 / 7 **
 
 ## Severity
 
@@ -897,7 +949,7 @@
 
 ---
 
-**Item: 4**
+**Item 4 / 7 **
 
 ## Severity
 
@@ -917,7 +969,7 @@
 
 ---
 
-**Item: 5**
+**Item 5 / 7 **
 
 ## Severity
 
@@ -937,7 +989,7 @@
 
 ---
 
-**Item: 6**
+**Item 6 / 7 **
 
 ## Severity
 
@@ -957,7 +1009,7 @@
 
 ---
 
-**Item: 7**
+**Item 7 / 7 **
 
 ## Severity
 
@@ -977,7 +1029,10 @@
 
 ---
 # calls-loop
-**Item: 1**
+
+> Items Found: 36
+
+**Item 1 / 36 **
 
 ## Severity
 
@@ -996,7 +1051,7 @@
 
 ---
 
-**Item: 2**
+**Item 2 / 36 **
 
 ## Severity
 
@@ -1015,7 +1070,7 @@
 
 ---
 
-**Item: 3**
+**Item 3 / 36 **
 
 ## Severity
 
@@ -1034,7 +1089,7 @@
 
 ---
 
-**Item: 4**
+**Item 4 / 36 **
 
 ## Severity
 
@@ -1053,7 +1108,7 @@
 
 ---
 
-**Item: 5**
+**Item 5 / 36 **
 
 ## Severity
 
@@ -1072,7 +1127,7 @@
 
 ---
 
-**Item: 6**
+**Item 6 / 36 **
 
 ## Severity
 
@@ -1091,7 +1146,7 @@
 
 ---
 
-**Item: 7**
+**Item 7 / 36 **
 
 ## Severity
 
@@ -1110,7 +1165,7 @@
 
 ---
 
-**Item: 8**
+**Item 8 / 36 **
 
 ## Severity
 
@@ -1129,7 +1184,7 @@
 
 ---
 
-**Item: 9**
+**Item 9 / 36 **
 
 ## Severity
 
@@ -1148,7 +1203,7 @@
 
 ---
 
-**Item: 10**
+**Item 10 / 36 **
 
 ## Severity
 
@@ -1167,7 +1222,7 @@
 
 ---
 
-**Item: 11**
+**Item 11 / 36 **
 
 ## Severity
 
@@ -1186,7 +1241,7 @@
 
 ---
 
-**Item: 12**
+**Item 12 / 36 **
 
 ## Severity
 
@@ -1205,7 +1260,7 @@
 
 ---
 
-**Item: 13**
+**Item 13 / 36 **
 
 ## Severity
 
@@ -1224,7 +1279,7 @@
 
 ---
 
-**Item: 14**
+**Item 14 / 36 **
 
 ## Severity
 
@@ -1243,7 +1298,7 @@
 
 ---
 
-**Item: 15**
+**Item 15 / 36 **
 
 ## Severity
 
@@ -1262,7 +1317,7 @@
 
 ---
 
-**Item: 16**
+**Item 16 / 36 **
 
 ## Severity
 
@@ -1281,7 +1336,7 @@
 
 ---
 
-**Item: 17**
+**Item 17 / 36 **
 
 ## Severity
 
@@ -1300,7 +1355,7 @@
 
 ---
 
-**Item: 18**
+**Item 18 / 36 **
 
 ## Severity
 
@@ -1319,7 +1374,7 @@
 
 ---
 
-**Item: 19**
+**Item 19 / 36 **
 
 ## Severity
 
@@ -1338,7 +1393,7 @@
 
 ---
 
-**Item: 20**
+**Item 20 / 36 **
 
 ## Severity
 
@@ -1357,7 +1412,7 @@
 
 ---
 
-**Item: 21**
+**Item 21 / 36 **
 
 ## Severity
 
@@ -1376,7 +1431,7 @@
 
 ---
 
-**Item: 22**
+**Item 22 / 36 **
 
 ## Severity
 
@@ -1395,7 +1450,7 @@
 
 ---
 
-**Item: 23**
+**Item 23 / 36 **
 
 ## Severity
 
@@ -1414,7 +1469,7 @@
 
 ---
 
-**Item: 24**
+**Item 24 / 36 **
 
 ## Severity
 
@@ -1433,7 +1488,7 @@
 
 ---
 
-**Item: 25**
+**Item 25 / 36 **
 
 ## Severity
 
@@ -1452,7 +1507,7 @@
 
 ---
 
-**Item: 26**
+**Item 26 / 36 **
 
 ## Severity
 
@@ -1471,7 +1526,7 @@
 
 ---
 
-**Item: 27**
+**Item 27 / 36 **
 
 ## Severity
 
@@ -1490,7 +1545,7 @@
 
 ---
 
-**Item: 28**
+**Item 28 / 36 **
 
 ## Severity
 
@@ -1509,7 +1564,7 @@
 
 ---
 
-**Item: 29**
+**Item 29 / 36 **
 
 ## Severity
 
@@ -1528,7 +1583,7 @@
 
 ---
 
-**Item: 30**
+**Item 30 / 36 **
 
 ## Severity
 
@@ -1547,7 +1602,7 @@
 
 ---
 
-**Item: 31**
+**Item 31 / 36 **
 
 ## Severity
 
@@ -1566,7 +1621,7 @@
 
 ---
 
-**Item: 32**
+**Item 32 / 36 **
 
 ## Severity
 
@@ -1585,7 +1640,7 @@
 
 ---
 
-**Item: 33**
+**Item 33 / 36 **
 
 ## Severity
 
@@ -1604,7 +1659,7 @@
 
 ---
 
-**Item: 34**
+**Item 34 / 36 **
 
 ## Severity
 
@@ -1623,7 +1678,7 @@
 
 ---
 
-**Item: 35**
+**Item 35 / 36 **
 
 ## Severity
 
@@ -1642,7 +1697,7 @@
 
 ---
 
-**Item: 36**
+**Item 36 / 36 **
 
 ## Severity
 
@@ -1661,7 +1716,10 @@
 
 ---
 # reentrancy-benign
-**Item: 1**
+
+> Items Found: 16
+
+**Item 1 / 16 **
 
 ## Severity
 
@@ -1686,7 +1744,7 @@
 
 ---
 
-**Item: 2**
+**Item 2 / 16 **
 
 ## Severity
 
@@ -1710,7 +1768,7 @@
 
 ---
 
-**Item: 3**
+**Item 3 / 16 **
 
 ## Severity
 
@@ -1733,7 +1791,7 @@
 
 ---
 
-**Item: 4**
+**Item 4 / 16 **
 
 ## Severity
 
@@ -1756,7 +1814,7 @@
 
 ---
 
-**Item: 5**
+**Item 5 / 16 **
 
 ## Severity
 
@@ -1779,7 +1837,7 @@
 
 ---
 
-**Item: 6**
+**Item 6 / 16 **
 
 ## Severity
 
@@ -1802,7 +1860,7 @@
 
 ---
 
-**Item: 7**
+**Item 7 / 16 **
 
 ## Severity
 
@@ -1827,7 +1885,7 @@
 
 ---
 
-**Item: 8**
+**Item 8 / 16 **
 
 ## Severity
 
@@ -1851,7 +1909,7 @@
 
 ---
 
-**Item: 9**
+**Item 9 / 16 **
 
 ## Severity
 
@@ -1874,7 +1932,7 @@
 
 ---
 
-**Item: 10**
+**Item 10 / 16 **
 
 ## Severity
 
@@ -1898,7 +1956,7 @@
 
 ---
 
-**Item: 11**
+**Item 11 / 16 **
 
 ## Severity
 
@@ -1924,7 +1982,7 @@
 
 ---
 
-**Item: 12**
+**Item 12 / 16 **
 
 ## Severity
 
@@ -1947,7 +2005,7 @@
 
 ---
 
-**Item: 13**
+**Item 13 / 16 **
 
 ## Severity
 
@@ -1970,7 +2028,7 @@
 
 ---
 
-**Item: 14**
+**Item 14 / 16 **
 
 ## Severity
 
@@ -1993,7 +2051,7 @@
 
 ---
 
-**Item: 15**
+**Item 15 / 16 **
 
 ## Severity
 
@@ -2017,7 +2075,7 @@
 
 ---
 
-**Item: 16**
+**Item 16 / 16 **
 
 ## Severity
 
@@ -2043,7 +2101,10 @@
 
 ---
 # reentrancy-events
-**Item: 1**
+
+> Items Found: 5
+
+**Item 1 / 5 **
 
 ## Severity
 
@@ -2066,7 +2127,7 @@
 
 ---
 
-**Item: 2**
+**Item 2 / 5 **
 
 ## Severity
 
@@ -2089,7 +2150,7 @@
 
 ---
 
-**Item: 3**
+**Item 3 / 5 **
 
 ## Severity
 
@@ -2112,7 +2173,7 @@
 
 ---
 
-**Item: 4**
+**Item 4 / 5 **
 
 ## Severity
 
@@ -2135,7 +2196,7 @@
 
 ---
 
-**Item: 5**
+**Item 5 / 5 **
 
 ## Severity
 
@@ -2158,7 +2219,10 @@
 
 ---
 # constable-states
-**Item: 1**
+
+> Items Found: 27
+
+**Item 1 / 27 **
 
 ## Severity
 
@@ -2177,7 +2241,7 @@
 
 ---
 
-**Item: 2**
+**Item 2 / 27 **
 
 ## Severity
 
@@ -2196,7 +2260,7 @@
 
 ---
 
-**Item: 3**
+**Item 3 / 27 **
 
 ## Severity
 
@@ -2215,7 +2279,7 @@
 
 ---
 
-**Item: 4**
+**Item 4 / 27 **
 
 ## Severity
 
@@ -2234,7 +2298,7 @@
 
 ---
 
-**Item: 5**
+**Item 5 / 27 **
 
 ## Severity
 
@@ -2253,7 +2317,7 @@
 
 ---
 
-**Item: 6**
+**Item 6 / 27 **
 
 ## Severity
 
@@ -2272,7 +2336,7 @@
 
 ---
 
-**Item: 7**
+**Item 7 / 27 **
 
 ## Severity
 
@@ -2291,7 +2355,7 @@
 
 ---
 
-**Item: 8**
+**Item 8 / 27 **
 
 ## Severity
 
@@ -2310,7 +2374,7 @@
 
 ---
 
-**Item: 9**
+**Item 9 / 27 **
 
 ## Severity
 
@@ -2329,7 +2393,7 @@
 
 ---
 
-**Item: 10**
+**Item 10 / 27 **
 
 ## Severity
 
@@ -2348,7 +2412,7 @@
 
 ---
 
-**Item: 11**
+**Item 11 / 27 **
 
 ## Severity
 
@@ -2367,7 +2431,7 @@
 
 ---
 
-**Item: 12**
+**Item 12 / 27 **
 
 ## Severity
 
@@ -2386,7 +2450,7 @@
 
 ---
 
-**Item: 13**
+**Item 13 / 27 **
 
 ## Severity
 
@@ -2405,7 +2469,7 @@
 
 ---
 
-**Item: 14**
+**Item 14 / 27 **
 
 ## Severity
 
@@ -2424,7 +2488,7 @@
 
 ---
 
-**Item: 15**
+**Item 15 / 27 **
 
 ## Severity
 
@@ -2443,7 +2507,7 @@
 
 ---
 
-**Item: 16**
+**Item 16 / 27 **
 
 ## Severity
 
@@ -2462,7 +2526,7 @@
 
 ---
 
-**Item: 17**
+**Item 17 / 27 **
 
 ## Severity
 
@@ -2481,7 +2545,7 @@
 
 ---
 
-**Item: 18**
+**Item 18 / 27 **
 
 ## Severity
 
@@ -2500,7 +2564,7 @@
 
 ---
 
-**Item: 19**
+**Item 19 / 27 **
 
 ## Severity
 
@@ -2519,7 +2583,7 @@
 
 ---
 
-**Item: 20**
+**Item 20 / 27 **
 
 ## Severity
 
@@ -2538,7 +2602,7 @@
 
 ---
 
-**Item: 21**
+**Item 21 / 27 **
 
 ## Severity
 
@@ -2557,7 +2621,7 @@
 
 ---
 
-**Item: 22**
+**Item 22 / 27 **
 
 ## Severity
 
@@ -2576,7 +2640,7 @@
 
 ---
 
-**Item: 23**
+**Item 23 / 27 **
 
 ## Severity
 
@@ -2595,7 +2659,7 @@
 
 ---
 
-**Item: 24**
+**Item 24 / 27 **
 
 ## Severity
 
@@ -2614,7 +2678,7 @@
 
 ---
 
-**Item: 25**
+**Item 25 / 27 **
 
 ## Severity
 
@@ -2633,7 +2697,7 @@
 
 ---
 
-**Item: 26**
+**Item 26 / 27 **
 
 ## Severity
 
@@ -2652,7 +2716,7 @@
 
 ---
 
-**Item: 27**
+**Item 27 / 27 **
 
 ## Severity
 
@@ -2671,7 +2735,10 @@
 
 ---
 # immutable-states
-**Item: 1**
+
+> Items Found: 37
+
+**Item 1 / 37 **
 
 ## Severity
 
@@ -2690,7 +2757,7 @@
 
 ---
 
-**Item: 2**
+**Item 2 / 37 **
 
 ## Severity
 
@@ -2709,7 +2776,7 @@
 
 ---
 
-**Item: 3**
+**Item 3 / 37 **
 
 ## Severity
 
@@ -2728,7 +2795,7 @@
 
 ---
 
-**Item: 4**
+**Item 4 / 37 **
 
 ## Severity
 
@@ -2747,7 +2814,7 @@
 
 ---
 
-**Item: 5**
+**Item 5 / 37 **
 
 ## Severity
 
@@ -2766,7 +2833,7 @@
 
 ---
 
-**Item: 6**
+**Item 6 / 37 **
 
 ## Severity
 
@@ -2785,7 +2852,7 @@
 
 ---
 
-**Item: 7**
+**Item 7 / 37 **
 
 ## Severity
 
@@ -2804,7 +2871,7 @@
 
 ---
 
-**Item: 8**
+**Item 8 / 37 **
 
 ## Severity
 
@@ -2823,7 +2890,7 @@
 
 ---
 
-**Item: 9**
+**Item 9 / 37 **
 
 ## Severity
 
@@ -2842,7 +2909,7 @@
 
 ---
 
-**Item: 10**
+**Item 10 / 37 **
 
 ## Severity
 
@@ -2861,7 +2928,7 @@
 
 ---
 
-**Item: 11**
+**Item 11 / 37 **
 
 ## Severity
 
@@ -2880,7 +2947,7 @@
 
 ---
 
-**Item: 12**
+**Item 12 / 37 **
 
 ## Severity
 
@@ -2899,7 +2966,7 @@
 
 ---
 
-**Item: 13**
+**Item 13 / 37 **
 
 ## Severity
 
@@ -2918,7 +2985,7 @@
 
 ---
 
-**Item: 14**
+**Item 14 / 37 **
 
 ## Severity
 
@@ -2937,7 +3004,7 @@
 
 ---
 
-**Item: 15**
+**Item 15 / 37 **
 
 ## Severity
 
@@ -2956,7 +3023,7 @@
 
 ---
 
-**Item: 16**
+**Item 16 / 37 **
 
 ## Severity
 
@@ -2975,7 +3042,7 @@
 
 ---
 
-**Item: 17**
+**Item 17 / 37 **
 
 ## Severity
 
@@ -2994,7 +3061,7 @@
 
 ---
 
-**Item: 18**
+**Item 18 / 37 **
 
 ## Severity
 
@@ -3013,7 +3080,7 @@
 
 ---
 
-**Item: 19**
+**Item 19 / 37 **
 
 ## Severity
 
@@ -3032,7 +3099,7 @@
 
 ---
 
-**Item: 20**
+**Item 20 / 37 **
 
 ## Severity
 
@@ -3051,7 +3118,7 @@
 
 ---
 
-**Item: 21**
+**Item 21 / 37 **
 
 ## Severity
 
@@ -3070,7 +3137,7 @@
 
 ---
 
-**Item: 22**
+**Item 22 / 37 **
 
 ## Severity
 
@@ -3089,7 +3156,7 @@
 
 ---
 
-**Item: 23**
+**Item 23 / 37 **
 
 ## Severity
 
@@ -3108,7 +3175,7 @@
 
 ---
 
-**Item: 24**
+**Item 24 / 37 **
 
 ## Severity
 
@@ -3127,7 +3194,7 @@
 
 ---
 
-**Item: 25**
+**Item 25 / 37 **
 
 ## Severity
 
@@ -3146,7 +3213,7 @@
 
 ---
 
-**Item: 26**
+**Item 26 / 37 **
 
 ## Severity
 
@@ -3165,7 +3232,7 @@
 
 ---
 
-**Item: 27**
+**Item 27 / 37 **
 
 ## Severity
 
@@ -3184,7 +3251,7 @@
 
 ---
 
-**Item: 28**
+**Item 28 / 37 **
 
 ## Severity
 
@@ -3203,7 +3270,7 @@
 
 ---
 
-**Item: 29**
+**Item 29 / 37 **
 
 ## Severity
 
@@ -3222,7 +3289,7 @@
 
 ---
 
-**Item: 30**
+**Item 30 / 37 **
 
 ## Severity
 
@@ -3241,7 +3308,7 @@
 
 ---
 
-**Item: 31**
+**Item 31 / 37 **
 
 ## Severity
 
@@ -3260,7 +3327,7 @@
 
 ---
 
-**Item: 32**
+**Item 32 / 37 **
 
 ## Severity
 
@@ -3279,7 +3346,7 @@
 
 ---
 
-**Item: 33**
+**Item 33 / 37 **
 
 ## Severity
 
@@ -3298,7 +3365,7 @@
 
 ---
 
-**Item: 34**
+**Item 34 / 37 **
 
 ## Severity
 
@@ -3317,7 +3384,7 @@
 
 ---
 
-**Item: 35**
+**Item 35 / 37 **
 
 ## Severity
 
@@ -3336,7 +3403,7 @@
 
 ---
 
-**Item: 36**
+**Item 36 / 37 **
 
 ## Severity
 
@@ -3355,7 +3422,7 @@
 
 ---
 
-**Item: 37**
+**Item 37 / 37 **
 
 ## Severity
 
