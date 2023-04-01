@@ -21,7 +21,6 @@ RUN  apt-get install -y python3-pip python3.9 python3.9-dev
 RUN  ln -s /usr/bin/python3 /usr/local/bin/python
 RUN  apt-get install -y pandoc
 RUN  apt-get install -y git
-RUN  apt-get install -y nodejs
 RUN  apt-get install -y npm
 RUN pip install numpy
 RUN pip3 install numpy    
@@ -32,12 +31,16 @@ RUN npm install -g truffle
 RUN npm install -g ganache-cli
 
 RUN pip3 install solc-select
-RUN solc-select install 0.8.18
+RUN solc-select install 0.8.16
 
 RUN git clone https://github.com/gasgauge/gasgauge.github.io.git
 
+# Foundry
 RUN curl -L https://foundry.paradigm.xyz | bash
 RUN source /root/.bashrc | bash
 RUN foundryup | bash
 
-
+# NodeJs
+RUN rm /bin/sh && ln -s /bin/bash /bin/sh
+RUN curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+RUN source ~/.nvm/nvm.sh && nvm install 16 && nvm use 16

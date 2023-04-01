@@ -1,4 +1,5 @@
 from main import Main
+from glob import glob
 
 
 def main():
@@ -7,14 +8,14 @@ def main():
     CONTRACT_PATH --> for all contracts in folder give the address of the folder
                   --> for a specific contract give the full address of the contract including .sol at the end
     """
-    CONTRACT_PATH = "./contracts/"
+    CONTRACT_PATH = "/auditFiles/madnfts-solidity-contracts/contracts"
     GAS_LIMIT = 6721975
     FUZZER = True
     THRESHOLD = True
-    REPORT_PATH = "./Results.txt"
+    REPORT_PATH = "/gasgauge/results/Results.txt"
     FUZZER_MAX_ITERATION = 10
     # solc compiler version
-    solc = "0.8.18"
+    solc = "0.8.16"
 
     ################################################
 
@@ -30,15 +31,16 @@ def main():
     }
 
     ############## You can leave this part as it is or modify them as needed #######################
-    output_folder = "tempoutput/"
-    output_file = "temp.txt"
-    agent_output = "Agenttemp.txt"
-    gas_gauge_dir = "./gas_gauge_testResult"
+    output_folder = "/gasgauge/tempoutput"
+    output_file = "/gasgauge/temp.txt"
+    agent_output = "/gasgauge/Agenttemp.txt"
+    gas_gauge_dir = "/gasgauge/gas_gauge_testResult"
     new_contract_name = "gas_gauge.sol"
     ##################################
 
     ##################################################################################################################
     contract_name = ""
+    
     if ".sol" in CONTRACT_PATH:
         contract_name = CONTRACT_PATH[CONTRACT_PATH.rfind("/") + 1 :]
         CONTRACT_PATH = CONTRACT_PATH[: CONTRACT_PATH.rfind("/") + 1]

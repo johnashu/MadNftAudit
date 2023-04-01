@@ -9,6 +9,7 @@ services:
     restart: unless-stopped
     volumes:
       - ./auditFiles:/auditFiles
+      - ./Halmos:/halmosData
 
   slither:
     container_name: slither
@@ -17,6 +18,7 @@ services:
     restart: unless-stopped
     volumes:
       - ./auditFiles:/auditFiles
+      - ./Slither:/slitherData
 
   manticore:
     container_name: manticore
@@ -25,6 +27,7 @@ services:
     restart: unless-stopped
     volumes:
       - ./auditFiles:/auditFiles
+      - ./Manticore:/manticoreData
 
   gasgauge:
     container_name: gasgauge
@@ -33,6 +36,12 @@ services:
     restart: unless-stopped
     volumes:
       - ./auditFiles:/auditFiles
+      - ./Gasgauge:/gasgaugeData
 
 volumes:
   auditFiles:
+  halmosData:
+  slitherData:
+  manticoreData:
+  gasgaugeData:
+

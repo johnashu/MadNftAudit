@@ -1,24 +1,49 @@
 import json, os
 
-fn = os.path.join("auditFiles", "slither.results.json")
+
+fn = os.path.join("Slither", "results", "slither.results.json")
 
 impacts = (
     "High",
-    # "Medium",
-    # "Low",
-    # "Optimization"
+    "Medium",
+    "Low",
+    "Optimization"
 )
 
 omit_keys = ("elements", "markdown", "id", "first_markdown_element")
 
-omit_checks = ("uninitialized-local", "uninitialized-state")
+omit_checks = (
+    "uninitialized-local", 
+    "uninitialized-state"
+    )
 
-omit_folders = ("test", "lib", "script")
+omit_folders = ("test", "script")
 
 stars = "*" * 80
 with open(fn) as f:
-    results = json.load(f)["results"]["printers"][-1]["additional_fields"]["detectors"]
+    results = json.load(f)["results"]["detectors"]
 
+markdown_data = {
+
+}
+
+check_template = """
+## Severity
+
+**Impact:** {}
+
+**Likelihood:** {}
+
+## Description
+
+ {}
+
+## Example / POC
+
+## Recommendations
+
+---
+"""
 
 for check in results:
     if (
@@ -28,9 +53,25 @@ for check in results:
         )
         and check["check"] not in omit_checks
     ):
+        try:
+            markdown_data[check["check"]].append(check_template.format(check['impact'], check['confidence'], check['markdown']))
+        except KeyError:
+            markdown_data[check["check"]] = [check_template.format(check['impact'], check['confidence'], check['markdown'])]
+        
         print(
             f"{stars}\n\n>>> {check['elements'][0]['source_mapping']['filename_relative']}\n"
         )
-        for k, v in check.items():
+        
+        for k, v in check.items():            
             if k not in omit_keys:
                 print(f"{k}\n\t{v}\n")
+                
+
+with open("Slither/results/slitherResults.MD", "w") as f:
+    for checkType, items in markdown_data.items():
+        summary = f"# {checkType}"
+        for i, item in enumerate(items):
+            summary += f"\n**Item: {i+1}**\n{item}"
+        f.write(summary)
+
+
