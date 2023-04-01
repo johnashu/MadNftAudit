@@ -1,6 +1,6 @@
 import json, os
 
-
+repo_contract_path = "https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/"
 fn = os.path.join("Slither", "results", "slither.results.json")
 
 impacts = (
@@ -56,7 +56,7 @@ for check in results:
         try:
             markdown_data[check["check"]].append(check_template.format(check['impact'], check['confidence'], check['markdown']))
         except KeyError:
-            markdown_data[check["check"]] = [check_template.format(check['impact'], check['confidence'], check['markdown'])]
+            markdown_data[check["check"]] = [check_template.format(check['impact'], check['confidence'], check['markdown'].replace("contracts/", repo_contract_path))]
         
         print(
             f"{stars}\n\n>>> {check['elements'][0]['source_mapping']['filename_relative']}\n"

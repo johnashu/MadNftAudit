@@ -9,7 +9,7 @@
 
 ## Description
 
- [ERC721Lazy._paymentCheck(address,uint8)](contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L470-L495) uses arbitrary from in transferFrom: [SafeTransferLib.safeTransferFrom(erc20,_erc20Owner,address(this),value)](contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L487-L492)
+ [ERC721Lazy._paymentCheck(address,uint8)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L470-L495) uses arbitrary from in transferFrom: [SafeTransferLib.safeTransferFrom(erc20,_erc20Owner,address(this),value)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L487-L492)
 
 
 ## Example / POC
@@ -47,9 +47,9 @@
 
 ## Description
 
- [MADMarketplace721.getCurrentPrice(bytes32)](contracts/MADMarketplace721.sol#L1287-L1353) performs a multiplication on the result of a division:
-	- [_tick_getCurrentPrice_asm_0 = _startPrice_getCurrentPrice_asm_0 - _endPrice_getCurrentPrice_asm_0 / _endTime_getCurrentPrice_asm_0 - _startTime_getCurrentPrice_asm_0](contracts/MADMarketplace721.sol#L1326-L1329)
-	- [price = _startPrice_getCurrentPrice_asm_0 - timestamp()() - _startTime_getCurrentPrice_asm_0 * _tick_getCurrentPrice_asm_0](contracts/MADMarketplace721.sol#L1330-L1333)
+ [MADMarketplace721.getCurrentPrice(bytes32)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L1287-L1353) performs a multiplication on the result of a division:
+	- [_tick_getCurrentPrice_asm_0 = _startPrice_getCurrentPrice_asm_0 - _endPrice_getCurrentPrice_asm_0 / _endTime_getCurrentPrice_asm_0 - _startTime_getCurrentPrice_asm_0](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L1326-L1329)
+	- [price = _startPrice_getCurrentPrice_asm_0 - timestamp()() - _startTime_getCurrentPrice_asm_0 * _tick_getCurrentPrice_asm_0](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L1330-L1333)
 
 
 ## Example / POC
@@ -89,8 +89,8 @@
 
 ## Description
 
- [SplitterImpl.release(ERC20,address)](contracts/lib/splitter/SplitterImpl.sol#L147-L171) uses a dangerous strict equality:
-	- [payment == 0](contracts/lib/splitter/SplitterImpl.sol#L154)
+ [SplitterImpl.release(ERC20,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/splitter/SplitterImpl.sol#L147-L171) uses a dangerous strict equality:
+	- [payment == 0](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/splitter/SplitterImpl.sol#L154)
 
 
 ## Example / POC
@@ -130,10 +130,10 @@
 ## Description
 
  Contract locking ether found:
-	Contract [ERC1155Minimal](contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L14-L308) has payable functions:
-	 - [ERC1155Minimal.safeMint(address,uint256,address)](contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L73-L83)
-	 - [ERC1155Minimal.burn(address,uint256,address)](contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L85-L92)
-	 - [ERC1155Minimal.publicMint(uint256)](contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L185-L196)
+	Contract [ERC1155Minimal](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L14-L308) has payable functions:
+	 - [ERC1155Minimal.safeMint(address,uint256,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L73-L83)
+	 - [ERC1155Minimal.burn(address,uint256,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L85-L92)
+	 - [ERC1155Minimal.publicMint(uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L185-L196)
 	But does not have a function to withdraw the ether
 
 
@@ -403,17 +403,17 @@
 
 ## Description
 
- Reentrancy in [MADFactory1155.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](contracts/MADFactory1155.sol#L330-L485):
+ Reentrancy in [MADFactory1155.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L330-L485):
 	External calls:
-	- [(tokenSalt,deployed) = ERC1155MinimalDeployer._1155MinimalDeploy(_tokenSalt,_uri,_price,_splitter,router,_royalty,erc20)](contracts/MADFactory1155.sol#L352-L361)
-	- [(tokenSalt,deployed) = ERC1155BasicDeployer._1155BasicDeploy(_tokenSalt,_uri,_price,_maxSupply,_splitter,router,_royalty,erc20)](contracts/MADFactory1155.sol#L385-L395)
+	- [(tokenSalt,deployed) = ERC1155MinimalDeployer._1155MinimalDeploy(_tokenSalt,_uri,_price,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L352-L361)
+	- [(tokenSalt,deployed) = ERC1155BasicDeployer._1155BasicDeploy(_tokenSalt,_uri,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L385-L395)
 	State variables written after the call(s):
-	- [userTokens[tx.origin].push(colId_scope_2)](contracts/MADFactory1155.sol#L398)
-	[MADFactory1155.userTokens](contracts/MADFactory1155.sol#L68) can be used in cross function reentrancies:
-	- [MADFactory1155._userRender(address)](contracts/MADFactory1155.sol#L795-L806)
-	- [MADFactory1155.creatorAuth(address,address)](contracts/MADFactory1155.sol#L686-L708)
-	- [MADFactory1155.getIDsLength(address)](contracts/MADFactory1155.sol#L562-L568)
-	- [MADFactory1155.userTokens](contracts/MADFactory1155.sol#L68)
+	- [userTokens[tx.origin].push(colId_scope_2)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L398)
+	[MADFactory1155.userTokens](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L68) can be used in cross function reentrancies:
+	- [MADFactory1155._userRender(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L795-L806)
+	- [MADFactory1155.creatorAuth(address,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L686-L708)
+	- [MADFactory1155.getIDsLength(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L562-L568)
+	- [MADFactory1155.userTokens](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L68)
 
 
 ## Example / POC
@@ -609,7 +609,7 @@
 
 ## Description
 
- [MADFactory1155.creatorCheck(bytes32)](contracts/MADFactory1155.sol#L711-L734) uses tx.origin for authorization: [creator == origin()()](contracts/MADFactory1155.sol#L725-L727)
+ [MADFactory1155.creatorCheck(bytes32)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L711-L734) uses tx.origin for authorization: [creator == origin()()](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L725-L727)
 
 
 ## Example / POC
@@ -647,8 +647,8 @@
 
 ## Description
 
- [Counters.decrement(Counters.Counter)](contracts/lib/utils/Counters.sol#L46-L56) contains a tautology or contradiction:
-	- [! _val_decrement_asm_0 | _val_decrement_asm_0 < 0x00](contracts/lib/utils/Counters.sol#L49-L53)
+ [Counters.decrement(Counters.Counter)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/utils/Counters.sol#L46-L56) contains a tautology or contradiction:
+	- [! _val_decrement_asm_0 | _val_decrement_asm_0 < 0x00](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/utils/Counters.sol#L49-L53)
 
 
 ## Example / POC
@@ -687,7 +687,7 @@
 
 ## Description
 
- [MADRouter721._tokenRender(address)](contracts/MADRouter721.sol#L482-L490) ignores return value by [MADFactory721.creatorCheck(colID)](contracts/MADRouter721.sol#L488)
+ [MADRouter721._tokenRender(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter721.sol#L482-L490) ignores return value by [MADFactory721.creatorCheck(colID)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter721.sol#L488)
 
 
 ## Example / POC
@@ -725,9 +725,9 @@
 
 ## Description
 
- [MADRouter1155.feeLookup(bytes4).fee](contracts/MADRouter1155.sol#L568) is written in both
-	[fee = sload(uint256)(feeBurn)](contracts/MADRouter1155.sol#L581)
-	[fee = 0x00](contracts/MADRouter1155.sol#L584)
+ [MADRouter1155.feeLookup(bytes4).fee](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter1155.sol#L568) is written in both
+	[fee = sload(uint256)(feeBurn)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter1155.sol#L581)
+	[fee = 0x00](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter1155.sol#L584)
 
 
 ## Example / POC
@@ -767,8 +767,8 @@
 
 ## Description
 
- [ERC1155Whitelist.whitelistMint(uint8,uint256[],uint256,bytes32[])](contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L629-L672) should emit an event for: 
-	- [whitelistMinted += balanceTotal](contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L662) 
+ [ERC1155Whitelist.whitelistMint(uint8,uint256[],uint256,bytes32[])](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L629-L672) should emit an event for: 
+	- [whitelistMinted += balanceTotal](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L662) 
 
 
 ## Example / POC
@@ -847,8 +847,8 @@
 
 ## Description
 
- [ERC1155Lazy.constructor(string,SplitterImpl,uint96,address,address,ERC20)._signer](contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L90) lacks a zero-check on :
-		- [signer = _signer](contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L95)
+ [ERC1155Lazy.constructor(string,SplitterImpl,uint96,address,address,ERC20)._signer](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L90) lacks a zero-check on :
+		- [signer = _signer](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L95)
 
 
 ## Example / POC
@@ -987,7 +987,7 @@
 
 ## Description
 
- [ERC1155Basic.withdraw(address)](contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L262-L297) has external calls inside a loop: [addr = splitter._payees(i)](contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L279)
+ [ERC1155Basic.withdraw(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L262-L297) has external calls inside a loop: [addr = splitter._payees(i)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L279)
 
 
 ## Example / POC
@@ -1671,13 +1671,13 @@
 
 ## Description
 
- Reentrancy in [MADFactory1155.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](contracts/MADFactory1155.sol#L330-L485):
+ Reentrancy in [MADFactory1155.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L330-L485):
 	External calls:
-	- [(tokenSalt,deployed) = ERC1155MinimalDeployer._1155MinimalDeploy(_tokenSalt,_uri,_price,_splitter,router,_royalty,erc20)](contracts/MADFactory1155.sol#L352-L361)
-	- [(tokenSalt,deployed) = ERC1155BasicDeployer._1155BasicDeploy(_tokenSalt,_uri,_price,_maxSupply,_splitter,router,_royalty,erc20)](contracts/MADFactory1155.sol#L385-L395)
-	- [(tokenSalt,deployed) = ERC1155WhitelistDeployer._1155WhitelistDeploy(_tokenSalt,_uri,_price,_maxSupply,_splitter,router,_royalty,erc20)](contracts/MADFactory1155.sol#L419-L429)
+	- [(tokenSalt,deployed) = ERC1155MinimalDeployer._1155MinimalDeploy(_tokenSalt,_uri,_price,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L352-L361)
+	- [(tokenSalt,deployed) = ERC1155BasicDeployer._1155BasicDeploy(_tokenSalt,_uri,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L385-L395)
+	- [(tokenSalt,deployed) = ERC1155WhitelistDeployer._1155WhitelistDeploy(_tokenSalt,_uri,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L419-L429)
 	State variables written after the call(s):
-	- [colInfo[colId_scope_5] = Types.Collection1155(tx.origin,Types.ERC1155Type.ERC1155Whitelist,tokenSalt_scope_3,block.number,_splitter)](contracts/MADFactory1155.sol#L434-L440)
+	- [colInfo[colId_scope_5] = Types.Collection1155(tx.origin,Types.ERC1155Type.ERC1155Whitelist,tokenSalt_scope_3,block.number,_splitter)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L434-L440)
 
 
 ## Example / POC
@@ -2053,11 +2053,11 @@
 
 ## Description
 
- Reentrancy in [MADMarketplace721._extPath1(Types.Order721,uint256,bytes32,address)](contracts/MADMarketplace721.sol#L988-L1032):
+ Reentrancy in [MADMarketplace721._extPath1(Types.Order721,uint256,bytes32,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L988-L1032):
 	External calls:
-	- [_order.token.safeTransferFrom(address(this),_to,_order.tokenId)](contracts/MADMarketplace721.sol#L1019-L1023)
+	- [_order.token.safeTransferFrom(address(this),_to,_order.tokenId)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L1019-L1023)
 	Event emitted after the call(s):
-	- [Claim(_order.token,_order.tokenId,_orderId,_order.seller,_to,_price)](contracts/MADMarketplace721.sol#L1024-L1031)
+	- [Claim(_order.token,_order.tokenId,_orderId,_order.seller,_to,_price)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L1024-L1031)
 
 
 ## Example / POC
@@ -2168,7 +2168,7 @@
 
 ## Description
 
- [MADMarketplace1155.feeVal3](contracts/MADMarketplace1155.sol#L47) should be constant 
+ [MADMarketplace1155.feeVal3](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L47) should be constant 
 
 
 ## Example / POC
@@ -2681,7 +2681,7 @@
 
 ## Description
 
- [ERC1155Whitelist.erc20](contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L39) should be immutable 
+ [ERC1155Whitelist.erc20](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L39) should be immutable 
 
 
 ## Example / POC
