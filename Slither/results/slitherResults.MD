@@ -40,7 +40,7 @@ The following number of issues were found, categorized by their severity:
 
 ---
 
-**Item 2 / 2 **
+_**Item 2 / 2 **_
 
 ## Severity
 
