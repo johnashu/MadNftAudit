@@ -3506,6 +3506,7 @@ _Item 37 / 37_
 
 # ERC Compliance Checks
 
+
 # Check ERC1155B
 
 `/auditFiles/madnfts-solidity-contracts# slither-check-erc ./contracts/lib/tokens/erc1155/Base/ERC1155B.sol ERC1155B`
@@ -3529,13 +3530,15 @@ _Item 37 / 37_
 
 [ ] ERC1155B is not protected for the ERC20 approval race condition
 ```
+
 # Check ERC20
 
 `/auditFiles/madnfts-solidity-contracts# slither-check-erc /auditFiles/madnfts-solidity-contracts/contracts/lib/tokens/erc20.sol ERC20`
 
 ## Check functions
 
-```[✓] totalSupply() is present
+```
+[✓] totalSupply() is present
         [✓] totalSupply() -> (uint256) (correct return type)
         [✓] totalSupply() is view
 [✓] balanceOf(address) is present
@@ -3556,11 +3559,14 @@ _Item 37 / 37_
         
 [ ] name() is missing (optional)
 [ ] symbol() is missing (optional)
-[ ] decimals() is missing (optional)```
+[ ] decimals() is missing (optional)
+
+```
 
 ## Check events
 
-```[✓] Transfer(address,address,uint256) is present
+```
+[✓] Transfer(address,address,uint256) is present
         [✓] parameter 0 is indexed
         [✓] parameter 1 is indexed
 [✓] Approval(address,address,uint256) is present
@@ -3568,14 +3574,17 @@ _Item 37 / 37_
         [✓] parameter 1 is indexed
 
 
-[ ] ERC20 is not protected for the ERC20 approval race condition```# Check ERC721
+[ ] ERC20 is not protected for the ERC20 approval race condition
+```
+# Check ERC721
 
 `/auditFiles/madnfts-solidity-contracts# slither-check-erc ./contracts/lib/tokens/erc721/Base/ERC721.sol ERC721`
 
 
 ## Check functions
 
-```[ ] totalSupply() is missing
+```
+[ ] totalSupply() is missing
 [✓] balanceOf(address) is present
         [✓] balanceOf(address) -> (uint256) (correct return type)
         [✓] balanceOf(address) is view
@@ -3593,11 +3602,13 @@ _Item 37 / 37_
 [✓] symbol() is present
         [✓] symbol() -> (string) (correct return type)
         [✓] symbol() is view
-[ ] decimals() is missing (optional)```
+[ ] decimals() is missing (optional)
+```
 
 ## Check events
 
-```[✓] Transfer(address,address,uint256) is present
+```
+[✓] Transfer(address,address,uint256) is present
         [✓] parameter 0 is indexed
         [✓] parameter 1 is indexed
 [✓] Approval(address,address,uint256) is present
@@ -3605,4 +3616,5 @@ _Item 37 / 37_
         [✓] parameter 1 is indexed
 
 
-[ ] ERC721 is not protected for the ERC20 approval race condition```
+[ ] ERC721 is not protected for the ERC20 approval race condition
+```
