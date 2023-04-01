@@ -4,7 +4,7 @@
 
 ## Check functions
 
-[✓] totalSupply() is present
+```[✓] totalSupply() is present
         [✓] totalSupply() -> (uint256) (correct return type)
         [✓] totalSupply() is view
 [✓] balanceOf(address) is present
@@ -25,11 +25,11 @@
         
 [ ] name() is missing (optional)
 [ ] symbol() is missing (optional)
-[ ] decimals() is missing (optional)
+[ ] decimals() is missing (optional)```
 
 ## Check events
 
-[✓] Transfer(address,address,uint256) is present
+```[✓] Transfer(address,address,uint256) is present
         [✓] parameter 0 is indexed
         [✓] parameter 1 is indexed
 [✓] Approval(address,address,uint256) is present
@@ -37,4 +37,4 @@
         [✓] parameter 1 is indexed
 
 
-[ ] ERC20 is not protected for the ERC20 approval race condition
+[ ] ERC20 is not protected for the ERC20 approval race condition```
