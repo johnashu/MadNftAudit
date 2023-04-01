@@ -3,6 +3,7 @@
 `/auditFiles/madnfts-solidity-contracts# slither-check-erc /auditFiles/madnfts-solidity-contracts/contracts/lib/tokens/erc20.sol ERC20`
 
 ## Check functions
+
 [✓] totalSupply() is present
         [✓] totalSupply() -> (uint256) (correct return type)
         [✓] totalSupply() is view
@@ -27,6 +28,7 @@
 [ ] decimals() is missing (optional)
 
 ## Check events
+
 [✓] Transfer(address,address,uint256) is present
         [✓] parameter 0 is indexed
         [✓] parameter 1 is indexed
