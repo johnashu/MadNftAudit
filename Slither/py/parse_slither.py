@@ -7,19 +7,11 @@ fn = os.path.join("Slither", "results", "slither.results.json")
 
 outFile = "Slither/results/slitherResults.MD"
 
-impacts = (
-    "High",
-    "Medium",
-    "Low",
-    "Optimization"
-)
+impacts = ("High", "Medium", "Low", "Optimization")
 
 omit_keys = ("elements", "markdown", "id", "first_markdown_element")
 
-omit_checks = (
-    "uninitialized-local", 
-    "uninitialized-state"
-    )
+omit_checks = ("uninitialized-local", "uninitialized-state")
 
 omit_folders = ("test", "script")
 
@@ -27,16 +19,9 @@ stars = "*" * 80
 with open(fn) as f:
     results = json.load(f)["results"]["detectors"]
 
-markdown_data = {
+markdown_data = {}
 
-}
-
-items_count = {
-    "High": 0,
-    "Medium": 0,
-    "Low": 0,
-    "Optimization": 0
-}
+items_count = {"High": 0, "Medium": 0, "Low": 0, "Optimization": 0}
 
 for check in results:
     if (
@@ -46,27 +31,39 @@ for check in results:
         )
         and check["check"] not in omit_checks
     ):
-        items_count[check['impact']] += 1 
-        
+        items_count[check["impact"]] += 1
+
         try:
-            markdown_data[check["check"]].append(check_template.format(check['impact'], check['markdown'].replace("contracts/", repo_contract_path)))
+            markdown_data[check["check"]].append(
+                check_template.format(
+                    check["impact"],
+                    check["markdown"].replace("contracts/", repo_contract_path),
+                )
+            )
         except KeyError:
-            markdown_data[check["check"]] = [check_template.format(check['impact'], check['confidence'], check['markdown'].replace("contracts/", repo_contract_path))]
-        
+            markdown_data[check["check"]] = [
+                check_template.format(
+                    check["impact"],
+                    check["confidence"],
+                    check["markdown"].replace("contracts/", repo_contract_path),
+                )
+            ]
+
         print(
             f"{stars}\n\n>>> {check['elements'][0]['source_mapping']['filename_relative']}\n"
         )
-        
-        for k, v in check.items():            
+
+        for k, v in check.items():
             if k not in omit_keys:
                 print(f"{k}\n\t{v}\n")
-                
+
 header = base_template + issues_found.format(
     items_count["High"],
     items_count["Medium"],
     items_count["Low"],
-    items_count["Optimization"]
+    items_count["Optimization"],
 )
+
 
 def get_erc_checks() -> str:
     check_str = ""

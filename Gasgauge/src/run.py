@@ -40,7 +40,7 @@ def main():
 
     ##################################################################################################################
     contract_name = ""
-    
+
     if ".sol" in CONTRACT_PATH:
         contract_name = CONTRACT_PATH[CONTRACT_PATH.rfind("/") + 1 :]
         CONTRACT_PATH = CONTRACT_PATH[: CONTRACT_PATH.rfind("/") + 1]
