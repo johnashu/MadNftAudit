@@ -6,7 +6,14 @@ Docker Linux command line..
 
 `docker exec -it slither bash`
 
-`pip3 install slither-analyzer`
+Install modules
+
+<!-- Hardhat -->
+`cd /auditFiles/madnfts-solidity-contracts && npm install`
+
+run Slither using Config file and the `auditFiles` directory.
+
+`slither /auditFiles/madnfts-solidity-contracts/ --config-file /slitherData/slither.config.json`
 
 # Using Docker
 
