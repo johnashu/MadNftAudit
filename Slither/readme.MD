@@ -15,6 +15,10 @@ run Slither using Config file and the `auditFiles` directory.
 
 `slither /auditFiles/madnfts-solidity-contracts/ --config-file /slitherData/slither.config.json`
 
+## ERC check
+
+`slither-check-erc /auditFiles/madnfts-solidity-contracts/contracts/lib/tokens/erc20.sol ERC20`
+
 # Using Docker
 
 Use the eth-security-toolbox docker image. It includes all of our security tools and every major version of Solidity in a single image. /home/share will be mounted to /share in the container.
@@ -29,6 +33,7 @@ To share a directory in the container:
 Slither is a Solidity static analysis framework written in Python3. It runs a suite of vulnerability detectors, prints visual information about contract details, and provides an API to easily write custom analyses. Slither enables developers to find vulnerabilities, enhance their code comprehension, and quickly prototype custom analyses.
 
 - [Slither](#slither)
+  - [ERC check](#erc-check)
 - [Using Docker](#using-docker)
   - [Features](#features)
   - [Usage](#usage)
