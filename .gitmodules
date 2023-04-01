@@ -1,0 +1,4 @@
+[submodule "auditFiles/madnfts-solidity-contracts"]
+	path = auditFiles/madnfts-solidity-contracts
+	url = https://github.com/madnfts/madnfts-solidity-contracts.git
+	branch = release/1.0
