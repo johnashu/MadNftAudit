@@ -88,6 +88,7 @@ check_template = """
 
 ## Recommendations
 
+[Slither Detectors](https://github.com/crytic/slither?s=35#detectors)**
 ---
 """
 
