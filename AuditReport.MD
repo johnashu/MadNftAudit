@@ -94,7 +94,7 @@ The MAD `Factory` contracts control the `Marketplace` and `Router` ownerships as
 
 Protections in place for re-entry and / or ownership exploits on these functions can be overidden by changing ownership to a *malicious* contract.
 
-This can be used to scam and rugpull users or *malicious*ly cause undesirable results.
+This can be used to scam and rugpull users or *maliciously* cause undesirable results.
 
 Using `withdraw` as an example and to highlight an example of another attack vector that will be available to any *malicious* user if ownership is not retained by `MAD NFTs`. A Solution is also provided for that attack vector below.
 
@@ -106,7 +106,7 @@ However in the `Factory` Contracts that handle the deployment of new contracts,
 it is possible for the owner to change the `router address` using the function `setRouter`.
 
 Here a *malicious* owner can deploy a new copy of the `router contract` including the demonstrated
-attack functions detailed in the Attack contact and more or simply use the ownership to withdraw all funds and fees from all contracts to their own address using the functions provided in the `Router` contract.
+attack functions detailed in the Attack contact and more or simply use the ownership to withdraw funds and fees from all contracts to their own address using the functions provided in the `Router` contract.
 
 No further checks are done for the validity of the router when creating new collections and
 whatever `router address` is passed to the new contract will be the **owner of that contract**.
@@ -163,11 +163,22 @@ Logs:
 
 ```
 
-Re-entrancy is further possible via a `payee` attempting the same attack in the same function.  
-Securing the function will protect both attack vectors in this instance.
+Re-entrancy is further possible via a `payee` attempting the same attack in the same function.
+
 
 **POC** can be found at: 
 
 - `poc/mocks/safeEthHack.sol` 
 - `poc/safeEthMad.t.sol`
+
+
+## Recommendation
+
+Securing the functions with re-entrancy Guard will protect both attack vectors in this instance.
+
+## Further recommendations
+
+Allow creators of Collections to retain full ownership of the contract and implement 2FA for Router origin interactions.
+
+This way, the Contract can be interacted with in a stand-alone fashion  (including transferring ownership) from the owner as well as utilising the MAD NFT Protocol and Marketplace when required.
 

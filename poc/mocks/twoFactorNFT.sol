@@ -1,9 +1,9 @@
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.16;
 
-// SPDX-License-Identifier: AGPL-3.0-only
+// // S_P_D_X-License-Identifier: AGPL-3.0-only
 
-pragma solidity 0.8.16;
+// pragma solidity 0.8.16;
 
 /// @notice Simple single owner authorization mixin.
 /// @author Modified from Solmate (https://github.com/Rari-Capital/solmate/blob/main/src/auth/Owned.sol)
@@ -48,18 +48,39 @@ abstract contract Owned {
     }
 }
 
-// User calls public function and creates a router instance.
-// contracts/MADRouter721.sol
-contract MADRouter721 is Owned(msg.sender) {}
 
-contract Attack {
+
+contract TwoFactorNFT {
     MADRouter721 public madRouter721;
 
-    constructor() {}
+    address public router;
+    address public owner;
 
-    function attack(uint256 _startBalance) external payable {
-        startBalance = _startBalance;
+    error NotAuthorised(address router, address owner);
 
-        madHackSafeETH.withdraw(address(this));
+    constructor(address _router, address _owner) {
+        router = _router;
+        owner = _owner;
+        madRouter721 = MADRouter721(router);
     }
+
+    modifier authorised() {
+        if ((msg.sender != router && tx.origin != owner) || msg.sender != owner) {
+            revert NotAuthorised(router, owner);
+        }
+        _;
+    }
+
+    function withdraw() public authorised {}
+}
+
+// User calls public function and creates a router instance.
+// contracts/MADRouter721.sol
+contract MADRouter721 is Owned(msg.sender)  {
+    function createNft() public returns(address){
+        TwoFactorNFT nft = new TwoFactorNFT(address(this), msg.sender);
+        return address(nft);
+    }
+
+    function withdraw() public onlyOwner {}
 }
