@@ -1,3 +1,26 @@
+// Ownership of contracts ultimatley lies with the owners of MAD Marketplace, 
+// however there are security concerns regarding access.
+
+// The MAD 'Factory' contracts control the 'Marketplace' and 'Router' ownerships as well as the 'Signer'.
+// Protections of re-entry on these functions can be overidden by changing ownership to a malicious contract.
+// This can be used to scam and rugpull users or maliciously cause undesirable results.
+
+// There is high-level protection on functions, such as 'withdraw' in the Router contracts (renetrancy guard).
+// This is assumed to be the only route for a user to take when creating a collection.
+
+// However in the 'Factory' Contracts that handle the deployment of new contracts, 
+// it is possible for the owner to change the 'router' address using the function `setRouter`.
+
+// Here a malicious owner can deploy a copy of the router contract including the demonstrated
+// attack functions detailed in the Attack contact.  
+
+// They can then set that address as the router for their factory.
+// No further checks are done with the validity of the router when creating new collections and
+// whatever router address is passed to the new contract will be the owner of that contract.
+
+
+// ATTACK VECTOR DEMO - Rentry via safeTransferEth
+
 // Rentry via `withdraw` method from the owner can potentially steal funds from `payees`
 
 // withdraw with splitters are located in the following contracts:
@@ -11,6 +34,8 @@
 // ERC721Lazy.sol
 // ERC721Minimal.sol
 // ERC721Whitelist.sol
+
+// Although we are focusing here on reentry via ETH, there are other areas with re-entry risks in safeTransferFrom, safeMint ... .
 
 // 10 ether is sent to the MadHackSafeETH Contract to represent the `balance` of the contract including `fees`
 
@@ -42,7 +67,8 @@
 
 // Re-entrancy is further possible via a 'payee' attempting the same attack.  
 // It would be interesting to investigate but this is out of scope for this audit.  
-// Adding rentrancy guard will protect both attack vectors in this instance.
+// Securing the function will protect both attack vectors in this instance.
+
 
 // SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.16;
