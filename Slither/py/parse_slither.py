@@ -11,12 +11,16 @@ impacts = ("High", "Medium", "Low", "Optimization")
 
 omit_keys = ("elements", "markdown", "id", "first_markdown_element")
 
-omit_checks = ("uninitialized-local", "uninitialized-state")
+omit_checks = (
+    # "uninitialized-local", 
+    # "uninitialized-state"
+    )
 
 omit_folders = ("test", "script")
 
 stars = "*" * 80
 with open(fn) as f:
+    # Results without using any printers. 
     results = json.load(f)["results"]["detectors"]
 
 markdown_data = {}
@@ -37,7 +41,8 @@ for check in results:
             markdown_data[check["check"]].append(
                 check_template.format(
                     check["impact"],
-                    check["markdown"].replace("contracts/", repo_contract_path),
+                    check["confidence"],
+                    check["markdown"].replace("auditFiles/madnfts-solidity-contracts/contracts/", repo_contract_path),
                 )
             )
         except KeyError:
@@ -45,7 +50,7 @@ for check in results:
                 check_template.format(
                     check["impact"],
                     check["confidence"],
-                    check["markdown"].replace("contracts/", repo_contract_path),
+                    check["markdown"].replace("auditFiles/madnfts-solidity-contracts/contracts/", repo_contract_path),
                 )
             ]
 

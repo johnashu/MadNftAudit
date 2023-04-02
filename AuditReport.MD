@@ -174,11 +174,13 @@ Re-entrancy is further possible via a `payee` attempting the same attack in the 
 
 ## Recommendation
 
-Securing the functions with re-entrancy Guard will protect both attack vectors in this instance.
+Securing the functions with re-entrancy Guard will protect both attack vectors if the contracts are to be used stand-alone.
 
 ## Further recommendations
 
-Allow creators of Collections to retain full ownership of the contract and implement 2FA for Router origin interactions.
+Allow creators of Collections to retain full ownership of the contract and implement 2FA for Router origin based interactions.
 
 This way, the Contract can be interacted with in a stand-alone fashion  (including transferring ownership) from the owner as well as utilising the MAD NFT Protocol and Marketplace when required.
+
+Users can be reassured that them and ONLY they can interact with their contract at a contract level.
 
