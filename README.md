@@ -13,7 +13,6 @@ This creates a drag and drop audit environment for security auditors with output
 
 ## Install foundry
 
-
 `curl -L https://foundry.paradigm.xyz | bash` 
 
 Then run this command to install Foundry:

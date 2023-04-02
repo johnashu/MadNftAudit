@@ -26,7 +26,7 @@ def main():
         "port1": "8050",
         "port2": "8060",
         "port3": "8070",
-        "host": "127.0.0.1",
+        "host": "127.0.0.1", 
         "gasLimit": hex(GAS_LIMIT),
     }
 
