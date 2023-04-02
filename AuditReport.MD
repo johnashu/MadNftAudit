@@ -98,19 +98,17 @@ This can be used to scam and rugpull users or *malicious*ly cause undesirable re
 
 Using `withdraw` as an example and to highlight an example of another attack vector that will be available to any *malicious* user if ownership is not retained by `MAD NFTs`. A Solution is also provided for that attack vector below.
 
-There are high-level protection on functions, such as `withdraw` in the Router contracts (renetrancy guard).
+There are high-level protection on functions, such as `withdraw` in the Router contracts (re-entrancy guard).
 
 This is assumed to be the only route for a user to take when creating a collection.
 
 However in the `Factory` Contracts that handle the deployment of new contracts, 
 it is possible for the owner to change the `router address` using the function `setRouter`.
 
-Here a *malicious* owner can deploy a copy of the `router contract` including the demonstrated
-attack functions detailed in the Attack contact.  
+Here a *malicious* owner can deploy a new copy of the `router contract` including the demonstrated
+attack functions detailed in the Attack contact and more or simply use the ownership to withdraw all funds and fees from all contracts to their own address using the functions provided in the `Router` contract.
 
-They can then set that address as the router for their factory.
-
-No further checks are done with the validity of the router when creating new collections and
+No further checks are done for the validity of the router when creating new collections and
 whatever `router address` is passed to the new contract will be the **owner of that contract**.
 
 
@@ -130,7 +128,7 @@ Withdraw with splitters are located in the following contracts:
 - ERC721Minimal.sol
 - ERC721Whitelist.sol
 
-Although we are focusing here on reentry via ETH, there are other areas with re-entry risks in `safeTransferFrom()`, `safeMint()` ... .
+Although we are focusing here on re-entry via ETH, there are other areas with re-entry risks in `safeTransferFrom()`, `safeMint()` ... .
 
 10 ether is sent to the `MadHackSafeETH` Contract to represent the `balance` of the contract including `fees`
 
@@ -168,7 +166,7 @@ Logs:
 Re-entrancy is further possible via a `payee` attempting the same attack in the same function.  
 Securing the function will protect both attack vectors in this instance.
 
-**POC** can be found at 
+**POC** can be found at: 
 
 - `poc/mocks/safeEthHack.sol` 
 - `poc/safeEthMad.t.sol`
