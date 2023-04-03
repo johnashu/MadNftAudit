@@ -92,9 +92,23 @@ There are security concerns regarding centralised control regarding created cont
 
 The MAD `Factory` contracts control the `Marketplace` and `Router` ownerships as well as the `Signer`.
 
+Right now, all collections contracts created by MAD are _owned_ by the `Router` Contracts.  The `Router` contract is handled in the `Factory` contract and that is controlled by _1 private key_.
+
+This means that we have the option of replacing that contract for malicious purposes.
+
+It is also a general security risk, if MAD NFTs are hacked, that puts users at risk.
+
+To be honest, the gain is not fantastic, fairly unlikely to go unnoticed but it is an issue of ownership and how that is perceived by users.
+
+If a collection is created on the MADNFT platform, there is no way to transfer ownership to someone else.
+
+Indeed, neither can MAD NFTs at this time.
+
+
+
 Protections in place for re-entry and / or ownership exploits on these functions can be overidden by changing ownership to a *malicious* contract.
 
-This can be used to scam and rugpull users or *maliciously* cause undesirable results.
+This can be used to extract funds from users or *maliciously* cause undesirable results.
 
 Using `withdraw` as an example and to highlight an example of another attack vector that will be available to any *malicious* user if ownership is not retained by `MAD NFTs`. A Solution is also provided for that attack vector below.
 
