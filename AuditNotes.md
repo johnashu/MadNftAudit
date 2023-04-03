@@ -18,3 +18,9 @@ https://t.co/yqdk7SrRdG
 
 https://github.com/pashov/audits/blob/master/solo/RollingDutchAuction-security-review.md
 
+
+
+
+## Process
+
+Analysis -> Identify issue -> Add issue to audit -> Fix issue -> PR to main MADNFTs (ref issue in PR and code lines) -> merge to MADNFTs Branch -> Update audit with Fix info (PR etc) -> Repeat!
