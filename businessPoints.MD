@@ -1,4 +1,5 @@
 # Audit points to discuss with Business.
+---
 
 
 ## autoTransferFunds in Marketplace transfers users bids that are not completed.
@@ -23,4 +24,8 @@ It requires maintanence and periodic funding of the wallet.  If this grows in va
 
 Q. Is this an actual business feature that is required?  This is catering and paying for users that are not interacting with the platform. 
 
-## 
+---
+
+## Centralisation / security risks
+
+See [[C-1] - Ownership of Contracts Renders Them Open to Abuse](https://github.com/johnashu/MadNftAudit/blob/main/AuditReport.MD#c-1---ownership-of-contracts-renders-them-open-to-abuse)
