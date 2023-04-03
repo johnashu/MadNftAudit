@@ -184,3 +184,21 @@ This way, the Contract can be interacted with in a stand-alone fashion  (includi
 
 Users can be reassured that them and ONLY they can interact with their contract at a contract level.
 
+### Creation:
+
+**WHEN** a user creates a collection
+**THEN** a new collection contract is created
+**AND** the owner of that contract is the original caller (EOA)
+**AND** the router of that contract is the MAD router
+
+### Interactions Stand-alone:
+
+**WHEN** an owner interacts with the contract using the functions in the contract
+**THEN** the collection contract will check that the caller is the ‘owner’
+
+
+### Interactions MAD Protocol (Router):
+
+**WHEN** an owner interacts with the collection contract using the functions located in the MAD NFT Router contract and accessed by madnfts.io 
+**THEN** the collection contract will check that the caller is the `router` and that the origin of that call is the `owner`
+
