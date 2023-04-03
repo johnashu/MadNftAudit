@@ -62,7 +62,7 @@ for check in results:
             if k not in omit_keys:
                 print(f"{k}\n\t{v}\n")
 
-header = base_template + issues_found.format(
+header = "# Slither Results\n\n" + issues_found.format(
     items_count["High"],
     items_count["Medium"],
     items_count["Low"],
