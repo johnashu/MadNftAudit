@@ -1,3 +1,48 @@
+# Sliter Removed Items
+
+# arbitrary-send-erc20
+
+> Items Found: 2
+
+_Item 1 / 2_
+
+## Severity
+
+**Impact:** High
+
+**Likelihood:** High
+
+## Description
+
+
+ [ERC721Lazy._paymentCheck(address,uint8)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L470-L495) uses arbitrary from in transferFrom: [SafeTransferLib.safeTransferFrom(erc20,_erc20Owner,address(this),value)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L487-L492)
+
+
+## Reason removed
+
+erc20 is the erc20 token payment address set by the owner. and is by design.
+
+---
+
+_Item 2 / 2_
+
+## Severity
+
+**Impact:** High
+
+**Likelihood:** High
+
+## Description
+
+ [ERC1155Lazy._paymentCheck(address,uint8)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L577-L602) uses arbitrary from in transferFrom: [SafeTransferLib.safeTransferFrom(erc20,_erc20Owner,address(this),value)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L594-L599)
+
+
+## Reason removed
+
+erc20 is the erc20 token payment address set by the owner. and is by design.
+
+---
+
 # uninitialized-state
 
 > Items Found: 20
@@ -76,7 +121,28 @@ _Item 2 / 20_
 
         emit MarketplaceUpdated(_market);
     }
-
+```
 ---
 
+_Item 3,10,11,16 / 20_
+
+## Severity
+
+**Impact:** High
+
+**Likelihood:** High
+
+## Description
+
+**EXAMPLE:** 
+
+ [MADMarketplace721.maxOrderDuration](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L71) is never initialized. It is used in:
+	- [MADMarketplace721.updateSettings(uint256,uint256,uint256,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L485-L519)
+	- [MADMarketplace721._makeOrderChecks(uint256,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L1098-L1137)
+
+## Reason removed
+
+initial value is hardcoded with optional function `updateSettings()` by design.
+
+---
 
