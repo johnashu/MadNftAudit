@@ -1,12 +1,19 @@
-# Contracts Deployed - Not Verified.
+# Contracts Deployed - Not Verified.  
+
+We need to ensure that verification process is including for deployment.
 
 # Withdaw Methods
 
-# Salt
+- Discussed in audit already.
 
-# Router deploy args
+# Salt known
 
-# Signatures
+Non- issues no self destruct is used.
+
+
+# Signatures 
+
+Check possible attack vectors.
 
 https://dacian.me/signature-replay-attacks?s=35
 
@@ -14,7 +21,14 @@ https://twitter.com/danielvf/status/1563168400234258433?t=e_Ze4iXU_hbq5cGtAXqqWA
 
 https://t.co/yqdk7SrRdG
 
-# Dutch Auction Audit
+
+# Auctions
+
+Check calculations in auctions - some findings are in slither analysis but needs a bigger scope.
+
+## Dutch Auction Audit
+
+Audit on the dutch auction protocol for reference.
 
 https://github.com/pashov/audits/blob/master/solo/RollingDutchAuction-security-review.md
 
