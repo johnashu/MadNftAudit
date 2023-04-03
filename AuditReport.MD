@@ -86,7 +86,7 @@ The following number of issues were found, categorized by their severity: (TBD)
 
 # Critical Findings
 
-## Ownership of Contracts Renders Them Open to Abuse
+## [C-1] - Ownership of Contracts Renders Them Open to Abuse
 
 There are security concerns regarding centralised control regarding created contracts access.
 
