@@ -14,69 +14,6 @@ The following number of issues were found, categorized by their severity:
 > Items Found: 20
 
 
-_Item 4 / 20_
-
-## Severity
-
-**Impact:** High
-
-**Likelihood:** High
-
-## Description
-
- [MADFactory721.market](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L79) is never initialized. It is used in:
-	- [MADFactory721.setMarket(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L520-L528)
-	- [MADFactory721._isMarket()](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L766-L773)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 5 / 20_
-
-## Severity
-
-**Impact:** High
-
-**Likelihood:** High
-
-## Description
-
- [MADMarketplace721.minOrderDuration](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L70) is never initialized. It is used in:
-	- [MADMarketplace721.updateSettings(uint256,uint256,uint256,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L485-L519)
-	- [MADMarketplace721._makeOrderChecks(uint256,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L1098-L1137)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 6 / 20_
-
-## Severity
-
-**Impact:** High
-
-**Likelihood:** High
-
-## Description
-
- [MADMarketplace721.feeSelector](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L67-L68) is never initialized. It is used in:
-	- [MADMarketplace721.buy(bytes32)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L263-L348)
-	- [MADMarketplace721.claim(bytes32)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L353-L416)
-	- [MADMarketplace721._feeResolver(uint256,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L1034-L1054)
-
-
-## Example / POC
-
-## Recommendations
-
----
 
 _Item 7 / 20_
 
@@ -145,27 +82,6 @@ _Item 9 / 20_
 ---
 
 
-_Item 12 / 20_
-
-## Severity
-
-**Impact:** High
-
-**Likelihood:** High
-
-## Description
-
- [MADMarketplace1155.minOrderDuration](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L70) is never initialized. It is used in:
-	- [MADMarketplace1155.updateSettings(uint256,uint256,uint256,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L507-L541)
-	- [MADMarketplace1155._makeOrderChecks(uint256,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L1170-L1209)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
 _Item 13 / 20_
 
 ## Severity
@@ -232,49 +148,6 @@ _Item 15 / 20_
 
 ---
 
-
-_Item 17 / 20_
-
-## Severity
-
-**Impact:** High
-
-**Likelihood:** High
-
-## Description
-
- [MADRouter1155.recipient](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter1155.sol#L50) is never initialized. It is used in:
-	- [MADRouter1155.setRecipient(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter1155.sol#L107-L115)
-	- [MADRouter1155.withdraw(address,ERC20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter1155.sol#L487-L555)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 18 / 20_
-
-## Severity
-
-**Impact:** High
-
-**Likelihood:** High
-
-## Description
-
- [MADMarketplace1155.feeSelector](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L67-L68) is never initialized. It is used in:
-	- [MADMarketplace1155.buy(bytes32)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L281-L361)
-	- [MADMarketplace1155.claim(bytes32)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L366-L427)
-	- [MADMarketplace1155._feeResolver(uint256,uint256,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L1102-L1126)
-
-
-## Example / POC
-
-## Recommendations
-
----
 
 _Item 19 / 20_
 
