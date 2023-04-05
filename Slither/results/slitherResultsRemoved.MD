@@ -1,4 +1,4 @@
-# Sliter Removed Items
+# Slither Removed Items
 
 # arbitrary-send-erc20
 
