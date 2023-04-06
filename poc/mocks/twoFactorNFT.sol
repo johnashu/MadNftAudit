@@ -64,11 +64,23 @@ contract TwoFactorNFT {
         madRouter721 = MADRouter721(router);
     }
 
+
+
     modifier authorised() {
-        if ((msg.sender != router && tx.origin != owner) || msg.sender != owner) {
+        if (
+            (
+                msg.sender != router && tx.origin != owner) 
+                || 
+                msg.sender != owner
+                )
+             {
             revert NotAuthorised(router, owner);
         }
         _;
+    //      return (
+    //         address(auth) != address(0) 
+    //         && auth.canCall(user, address(this), functionSig)) 
+    //         || user == owner;
     }
 
     function withdraw() public authorised {}
@@ -83,4 +95,25 @@ contract MADRouter721 is Owned(msg.sender)  {
     }
 
     function withdraw() public onlyOwner {}
+
+    
+
+
+    struct s {
+        uint a;
+    }
+
+    mapping(uint => uint) public intMap;
+
+    mapping(uint => s) public structMap;
+
+    function setIntMap(uint x) public {
+        intMap[x] = x;
+    }
+
+        function setIntstructMap(uint x) public {
+         structMap[x] = s(x);
+    }
+
+
 }
