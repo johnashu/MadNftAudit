@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
-pragma solidity 0.8.18;
+pragma solidity 0.8.19;
 
 abstract contract ERC721 {
     // Contract to hold ERC721 functions in the ERC standard

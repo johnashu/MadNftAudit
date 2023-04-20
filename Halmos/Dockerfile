@@ -31,7 +31,7 @@ RUN npm install -g truffle
 RUN npm install -g ganache-cli
 
 RUN pip3 install solc-select
-RUN solc-select install 0.8.16
+RUN solc-select install 0.8.19
 
 RUN git clone https://github.com/gasgauge/gasgauge.github.io.git
 

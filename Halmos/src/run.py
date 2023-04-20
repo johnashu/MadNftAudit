@@ -14,7 +14,7 @@ def main():
     REPORT_PATH = "./Results.txt"
     FUZZER_MAX_ITERATION = 10
     # solc compiler version
-    solc = "0.8.16"
+    solc = "0.8.19"
 
     ################################################
 

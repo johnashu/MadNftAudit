@@ -71,9 +71,11 @@ The following smart contracts were in scope of the audit:
 
 - `MAD.sol`
 
+---
 """
 
 check_template = """
+
 ## Severity
 
 **Impact:** {}
@@ -82,25 +84,30 @@ check_template = """
 
 ## Description
 
- {}
+- {}: 
+
+- {}
 
 ## Example / POC
 
 ## Recommendations
 
 [Slither Detectors](https://github.com/crytic/slither?s=35#detectors)**
+
 ---
 """
 
 checks_header = """
+
 # ERC Compliance Checks
 
 """
 
 issues_found = """
+
 The following number of issues were found, categorized by their severity:
 
-- Critical 
+- Critical: ? issues
 - High: {} issues
 - Medium: {} issues
 - Low: {} issues

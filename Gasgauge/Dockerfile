@@ -37,7 +37,7 @@ RUN npm install -g truffle
 RUN npm install -g ganache-cli
 
 RUN pip3 install solc-select
-RUN solc-select install 0.8.16
+RUN solc-select install 0.8.19
 
 # RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 RUN curl -L https://foundry.paradigm.xyz | bash

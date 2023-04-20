@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.16;
+pragma solidity ^0.8.19;
 
 contract MadHackSafeETH {
     uint256 public feeCount = 1 ether;
