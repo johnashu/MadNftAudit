@@ -1,56 +1,14 @@
 # Mythril
 
+1. Run `./py/main.py`
+
+2. copy scripts to server (ensure LF)
+
+3. from the root directory run `bash runAll.sh`
+
 https://swcregistry.io/
 
 https://github.com/ConsenSys/mythril
-
-https://mythril-classic.readthedocs.io/en/master/tutorial.html
-
-
-`pip install solc-select`
-
-`solc-select install 0.8.19`
-
-`solc-select use 0.8.19`
-
-## Installing ethash on Windows:
-
-Clone the project from github
-
-`git clone https://github.com/ethereum/ethash.git`
-
-Open `\src\libethash\mmap_win32.c` for editing
-
-Add the following after the **last** `#include` statement
-
-`#pragma comment(lib, "Shell32.lib")`
-
-Open `\src\python\core.c`
-
-Replace:
-
-```c
-#include <alloca.h>
-```
-
-with:
-
-```c
-
-#if defined(_WIN32) || defined(WIN32)
-#include <malloc.h>
-#else
-#include <alloca.h>
-#endif
-
-```
-Run the following in the source code main folder
-
-`setup.py install`
-
-This should successsfully install ethash under Windows
-
-
 
 <p align="center">
 	<img src="/static/mythril_new.png" height="320px"/>
