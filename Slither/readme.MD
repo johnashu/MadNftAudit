@@ -1,6 +1,14 @@
 # Slither
 
-,inheritance-graph
+# Virtual env
+
+Create
+
+`python -m venv venv`
+
+Activate
+
+`.\venv\Scripts\activate`
 
 https://github.com/crytic/slither?s=35#how-to-install
 
@@ -10,16 +18,17 @@ Docker Linux command line..
 
 Install modules
 
-<!-- Hardhat -->
-`cd /auditFiles/madnfts-solidity-contracts && npm install`
-
 run Slither using Config file and the `auditFiles` directory.
 
-`slither /auditFiles/madnfts-solidity-contracts/ --config-file /slitherData/slither.config.json`
+`slither . --config-file Slither/slither.config.json`
 
 ## ERC check
 
-`slither-check-erc /auditFiles/madnfts-solidity-contracts/contracts/lib/tokens/erc20.sol ERC20`
+`slither-check-erc contracts/lib/tokens/erc20.sol ERC20`
+
+`slither-check-erc contracts/lib/tokens/erc721/Base/erc721.sol ERC721`
+
+`slither-check-erc contracts/lib/tokens/erc1155/Base/erc1155B.sol ERC1155`
 
 # Using Docker
 
@@ -35,6 +44,7 @@ To share a directory in the container:
 Slither is a Solidity static analysis framework written in Python3. It runs a suite of vulnerability detectors, prints visual information about contract details, and provides an API to easily write custom analyses. Slither enables developers to find vulnerabilities, enhance their code comprehension, and quickly prototype custom analyses.
 
 - [Slither](#slither)
+- [Virtual env](#virtual-env)
   - [ERC check](#erc-check)
 - [Using Docker](#using-docker)
   - [Features](#features)
@@ -93,6 +103,10 @@ slither tests/uninitialized.sol
 ## How to install
 
 Slither requires Python 3.8+ and [solc](https://github.com/ethereum/solidity/), the Solidity compiler. We recommend using [solc-select](https://github.com/crytic/solc-select) to conveniently switch between solc versions, but it is not required. For additional configuration, see the [usage](https://github.com/trailofbits/slither/wiki/Usage) documentation.
+
+`solc-select install 0.8.19`
+
+`solc-select use 0.8.19`
 
 ### Using Pip
 

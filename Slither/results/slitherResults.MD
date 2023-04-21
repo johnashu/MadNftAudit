@@ -1,21 +1,90 @@
 # Slither Results
 
+
+
 The following number of issues were found, categorized by their severity:
 
-- Critical 
-- High: 22 issues
-- Medium: 82 issues
-- Low: 68 issues
-- Optimization: 64 issues
+- Critical: ? issues
+- High: 19 issues
+- Medium: 22 issues
+- Low: 13 issues
+- Optimization: 26 issues
+
+
+
+# Excluded Detectors
+ 
+ - *pragma*
+
+- *solc-version*
+
+- *assembly*
+
+- *naming-convention*
+
+
+## Smart Contracts Analysed With Issues: 
+- [contracts/Marketplace/MADMarketplaceBase.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol)
+- [contracts/Router/MADRouterBase.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouterBase.sol)
+- [contracts/Marketplace/MADMarketplace721.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol)
+- [contracts/Factory/MADFactoryBase.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactoryBase.sol)
+- [contracts/Marketplace/MADMarketplace1155.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace1155.sol)
+- [contracts/lib/splitter/SplitterImpl.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/splitter/SplitterImpl.sol)
+- [contracts/MADTokens/ERC1155/ERC1155Basic.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/ERC1155/ERC1155Basic.sol)
+- [contracts/MADTokens/ERC721/ERC721Basic.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/ERC721/ERC721Basic.sol)
+- [contracts/Factory/MADFactory1155.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactory1155.sol)
+- [contracts/Factory/MADFactory721.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactory721.sol)
+- [contracts/lib/utils/Counters.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/utils/Counters.sol)
+- [contracts/MADTokens/common/ImplBase.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/common/ImplBase.sol)
+- [contracts/Router/MADRouter721.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouter721.sol)
+- [contracts/Router/MADRouter1155.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouter1155.sol)
+- [contracts/lib/tokens/ERC1155/Base/ERC1155B.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/tokens/ERC1155/Base/ERC1155B.sol)
+- [contracts/lib/tokens/ERC721/Base/ERC721.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/tokens/ERC721/Base/ERC721.sol)
+- [contracts/lib/utils/MerkleProof.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/utils/MerkleProof.sol)
+- [contracts/lib/utils/CREATE3.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/utils/CREATE3.sol)
+- [contracts/lib/uniswap/IUniswapV3SwapCallback.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/uniswap/IUniswapV3SwapCallback.sol)
+- [contracts/lib/utils/SafeTransferLib.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/utils/SafeTransferLib.sol)
+- [contracts/lib/tokens/common/ERC2981.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/tokens/common/ERC2981.sol)
+- [contracts/lib/auth/Owned.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/auth/Owned.sol)
+
+## Smart Contracts Analysed With NO Issues: 
+- [contracts/MAD.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MAD.sol)
+- [contracts/static_analysis.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/static_analysis.sol)
+- [contracts/lib/auth/FactoryVerifier.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/auth/FactoryVerifier.sol)
+- [contracts/lib/deployers/ERC1155Deployer.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/deployers/ERC1155Deployer.sol)
+- [contracts/lib/deployers/ERC721Deployer.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/deployers/ERC721Deployer.sol)
+- [contracts/lib/deployers/SplitterDeployer.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/deployers/SplitterDeployer.sol)
+- [contracts/lib/security/DCPrevent.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/security/DCPrevent.sol)
+- [contracts/lib/security/Pausable.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/security/Pausable.sol)
+- [contracts/lib/security/ReentrancyGuard.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/security/ReentrancyGuard.sol)
+- [contracts/lib/splitter/SplitterEventsAndErrors.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/splitter/SplitterEventsAndErrors.sol)
+- [contracts/lib/test/erc1155-mock.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/test/erc1155-mock.sol)
+- [contracts/lib/test/erc20-mock.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/test/erc20-mock.sol)
+- [contracts/lib/test/erc2981-mock.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/test/erc2981-mock.sol)
+- [contracts/lib/test/erc721-mock.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/test/erc721-mock.sol)
+- [contracts/lib/test/test-interfaces.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/test/test-interfaces.sol)
+- [contracts/lib/tokens/ERC20.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/tokens/ERC20.sol)
+- [contracts/lib/tokens/common/FeeOracle.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/tokens/common/FeeOracle.sol)
+- [contracts/lib/tokens/ERC1155/Base/interfaces/IERC1155.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/tokens/ERC1155/Base/interfaces/IERC1155.sol)
+- [contracts/lib/tokens/ERC1155/Base/utils/ERC1155Holder.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/tokens/ERC1155/Base/utils/ERC1155Holder.sol)
+- [contracts/lib/tokens/ERC721/Base/interfaces/IERC721.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/tokens/ERC721/Base/interfaces/IERC721.sol)
+- [contracts/lib/tokens/ERC721/Base/utils/ERC721Holder.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/tokens/ERC721/Base/utils/ERC721Holder.sol)
+- [contracts/lib/uniswap/ISwapRouter.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/uniswap/ISwapRouter.sol)
+- [contracts/lib/utils/Strings.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/utils/Strings.sol)
+- [contracts/MADTokens/common/interfaces/ImplBaseEventsAndErrors.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/common/interfaces/ImplBaseEventsAndErrors.sol)
+- [contracts/Shared/EventsAndErrors.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Shared/EventsAndErrors.sol)
+- [contracts/Shared/MADBase.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Shared/MADBase.sol)
+- [contracts/Shared/Types.sol](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Shared/Types.sol)
+
+
 
 
 # uninitialized-state
 
-> Items Found: 20
+> Items Found: 19
 
+_Item 1 / 19_
 
-
-_Item 7 / 20_
 
 ## Severity
 
@@ -25,18 +94,25 @@ _Item 7 / 20_
 
 ## Description
 
- [MADMarketplace721.minBidValue](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L73) is never initialized. It is used in:
-	- [MADMarketplace721.updateSettings(uint256,uint256,uint256,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L485-L519)
-	- [MADMarketplace721._bidChecks(uint8,uint256,address,uint256,uint256,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L1163-L1219)
+- L50: 
+
+- [MADMarketplaceBase.recipient](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L50) is never initialized. It is used in:
+	- [MADMarketplaceBase.setRecipient(address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L338-L347)
+	- [MADMarketplace1155._intPath(Types.Order1155,uint256,bytes32,address,uint256)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace1155.sol#L298-L331)
+	- [MADMarketplace1155._extPath0(Types.Order1155,uint256,bytes32,address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace1155.sol#L333-L366)
+	- [MADMarketplace1155._extPath1(Types.Order1155,uint256,bytes32,address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace1155.sol#L368-L386)
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 8 / 20_
+_Item 2 / 19_
+
 
 ## Severity
 
@@ -46,20 +122,24 @@ _Item 8 / 20_
 
 ## Description
 
- [MADMarketplace721.recipient](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L75) is never initialized. It is used in:
-	- [MADMarketplace721.setRecipient(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L544-L559)
-	- [MADMarketplace721._intPath(Types.Order721,uint256,bytes32,address,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L851-L918)
-	- [MADMarketplace721._extPath0(Types.Order721,uint256,bytes32,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L920-L986)
-	- [MADMarketplace721._extPath1(Types.Order721,uint256,bytes32,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L988-L1032)
+- L54: 
+
+- [MADMarketplaceBase.MADFactory](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L54) is never initialized. It is used in:
+	- [MADMarketplaceBase.setFactory(FactoryVerifier)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L275-L284)
+	- [MADMarketplace1155.buy(bytes32)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace1155.sol#L118-L153)
+	- [MADMarketplace1155.claim(bytes32)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace1155.sol#L158-L186)
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 9 / 20_
+_Item 3 / 19_
+
 
 ## Severity
 
@@ -69,20 +149,23 @@ _Item 9 / 20_
 
 ## Description
 
- [MADMarketplace721.MADFactory721](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L76) is never initialized. It is used in:
-	- [MADMarketplace721.buy(bytes32)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L263-L348)
-	- [MADMarketplace721.claim(bytes32)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L353-L416)
-	- [MADMarketplace721.setFactory(FactoryVerifier)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L451-L460)
+- L48: 
+
+- [MADRouterBase.madFactory](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouterBase.sol#L48) is never initialized. It is used in:
+	- [MADRouterBase.setFactory(FactoryVerifier)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouterBase.sol#L121-L130)
+	- [MADRouter721._tokenRender(address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouter721.sol#L144-L148)
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
+_Item 4 / 19_
 
-_Item 13 / 20_
 
 ## Severity
 
@@ -92,19 +175,24 @@ _Item 13 / 20_
 
 ## Description
 
- [MADMarketplace1155.MADFactory1155](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L76) is never initialized. It is used in:
-	- [MADMarketplace1155.buy(bytes32)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L281-L361)
-	- [MADMarketplace1155.claim(bytes32)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L366-L427)
-	- [MADMarketplace1155.setFactory(FactoryVerifier)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L471-L480)
+- L30: 
+
+- [MADMarketplace721.feeSelector](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L30) is never initialized. It is used in:
+	- [MADMarketplace721.buy(bytes32)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L104-L150)
+	- [MADMarketplace721.claim(bytes32)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L155-L192)
+	- [MADMarketplace721._feeResolver(uint256,uint256)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L376-L393)
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 14 / 20_
+_Item 5 / 19_
+
 
 ## Severity
 
@@ -114,18 +202,23 @@ _Item 14 / 20_
 
 ## Description
 
- [MADFactory721.signer](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L82) is never initialized. It is used in:
-	- [MADFactory721.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L334-L497)
-	- [MADFactory721.setSigner(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L544-L552)
+- L48: 
+
+- [MADRouterBase.madFactory](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouterBase.sol#L48) is never initialized. It is used in:
+	- [MADRouterBase.setFactory(FactoryVerifier)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouterBase.sol#L121-L130)
+	- [MADRouter1155._tokenRender(address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouter1155.sol#L197-L201)
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 15 / 20_
+_Item 6 / 19_
+
 
 ## Severity
 
@@ -135,21 +228,24 @@ _Item 15 / 20_
 
 ## Description
 
- [MADMarketplace1155.recipient](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L75) is never initialized. It is used in:
-	- [MADMarketplace1155.setRecipient(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L571-L586)
-	- [MADMarketplace1155._intPath(Types.Order1155,uint256,bytes32,address,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L896-L970)
-	- [MADMarketplace1155._extPath0(Types.Order1155,uint256,bytes32,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L972-L1047)
-	- [MADMarketplace1155._extPath1(Types.Order1155,uint256,bytes32,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L1049-L1100)
+- L60: 
+
+- [MADFactoryBase.router](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactoryBase.sol#L60) is never initialized. It is used in:
+	- [MADFactoryBase._isRouter()](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactoryBase.sol#L378-L388)
+	- [MADFactoryBase.setRouter(address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactoryBase.sol#L483-L491)
+	- [MADFactory721.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactory721.sol#L50-L89)
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
+_Item 7 / 19_
 
-_Item 19 / 20_
 
 ## Severity
 
@@ -159,18 +255,23 @@ _Item 19 / 20_
 
 ## Description
 
- [MADMarketplace1155.minBidValue](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L72) is never initialized. It is used in:
-	- [MADMarketplace1155.updateSettings(uint256,uint256,uint256,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L507-L541)
-	- [MADMarketplace1155._bidChecks(uint8,uint256,address,uint256,uint256,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L1235-L1291)
+- L47: 
+
+- [MADMarketplaceBase.minBidValue](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L47) is never initialized. It is used in:
+	- [MADMarketplaceBase._bidChecks(uint8,uint256,address,uint256,uint256,uint256)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L155-L199)
+	- [MADMarketplaceBase.updateSettings(uint256,uint256,uint256,uint256)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L304-L334)
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 20 / 20_
+_Item 8 / 19_
+
 
 ## Severity
 
@@ -180,22 +281,319 @@ _Item 20 / 20_
 
 ## Description
 
- [MADFactory1155.signer](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L82) is never initialized. It is used in:
-	- [MADFactory1155.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L330-L485)
-	- [MADFactory1155.setSigner(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L531-L539)
+- L60: 
+
+- [MADFactoryBase.router](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactoryBase.sol#L60) is never initialized. It is used in:
+	- [MADFactoryBase._isRouter()](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactoryBase.sol#L378-L388)
+	- [MADFactoryBase.setRouter(address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactoryBase.sol#L483-L491)
+	- [MADFactory1155.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactory1155.sol#L61-L112)
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
+
+_Item 9 / 19_
+
+
+## Severity
+
+**Impact:** High
+
+**Likelihood:** High
+
+## Description
+
+- L48: 
+
+- [MADMarketplaceBase.maxOrderDuration](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L48) is never initialized. It is used in:
+	- [MADMarketplaceBase._makeOrderChecks(uint256,uint256)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L108-L133)
+	- [MADMarketplaceBase.updateSettings(uint256,uint256,uint256,uint256)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L304-L334)
+
+
+## Example / POC
+
+## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
+---
+
+_Item 10 / 19_
+
+
+## Severity
+
+**Impact:** High
+
+**Likelihood:** High
+
+## Description
+
+- L46: 
+
+- [MADMarketplaceBase.minAuctionIncrement](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L46) is never initialized. It is used in:
+	- [MADMarketplaceBase.updateSettings(uint256,uint256,uint256,uint256)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L304-L334)
+	- [MADMarketplace1155.bid(bytes32)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace1155.sol#L82-L113)
+
+
+## Example / POC
+
+## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
+---
+
+_Item 11 / 19_
+
+
+## Severity
+
+**Impact:** High
+
+**Likelihood:** High
+
+## Description
+
+- L45: 
+
+- [MADMarketplaceBase.minOrderDuration](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L45) is never initialized. It is used in:
+	- [MADMarketplaceBase._makeOrderChecks(uint256,uint256)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L108-L133)
+	- [MADMarketplaceBase.updateSettings(uint256,uint256,uint256,uint256)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L304-L334)
+
+
+## Example / POC
+
+## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
+---
+
+_Item 12 / 19_
+
+
+## Severity
+
+**Impact:** High
+
+**Likelihood:** High
+
+## Description
+
+- L39: 
+
+- [MADRouterBase.recipient](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouterBase.sol#L39) is never initialized. It is used in:
+	- [MADRouterBase.setRecipient(address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouterBase.sol#L134-L142)
+	- [MADRouter721.withdraw(address,ERC20)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouter721.sol#L121-L133)
+
+
+## Example / POC
+
+## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
+---
+
+_Item 13 / 19_
+
+
+## Severity
+
+**Impact:** High
+
+**Likelihood:** High
+
+## Description
+
+- L66: 
+
+- [MADFactoryBase.signer](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactoryBase.sol#L66) is never initialized. It is used in:
+	- [MADFactoryBase.setSigner(address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactoryBase.sol#L495-L503)
+
+
+## Example / POC
+
+## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
+---
+
+_Item 14 / 19_
+
+
+## Severity
+
+**Impact:** High
+
+**Likelihood:** High
+
+## Description
+
+- L46: 
+
+- [MADMarketplaceBase.minAuctionIncrement](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L46) is never initialized. It is used in:
+	- [MADMarketplaceBase.updateSettings(uint256,uint256,uint256,uint256)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L304-L334)
+	- [MADMarketplace721.bid(bytes32)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L66-L99)
+
+
+## Example / POC
+
+## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
+---
+
+_Item 15 / 19_
+
+
+## Severity
+
+**Impact:** High
+
+**Likelihood:** High
+
+## Description
+
+- L39: 
+
+- [MADRouterBase.recipient](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouterBase.sol#L39) is never initialized. It is used in:
+	- [MADRouterBase.setRecipient(address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouterBase.sol#L134-L142)
+	- [MADRouter1155.withdraw(address,ERC20)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouter1155.sol#L174-L186)
+
+
+## Example / POC
+
+## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
+---
+
+_Item 16 / 19_
+
+
+## Severity
+
+**Impact:** High
+
+**Likelihood:** High
+
+## Description
+
+- L63: 
+
+- [MADFactoryBase.market](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactoryBase.sol#L63) is never initialized. It is used in:
+	- [MADFactoryBase._isMarket()](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactoryBase.sol#L426-L433)
+	- [MADFactoryBase.setMarket(address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactoryBase.sol#L472-L479)
+
+
+## Example / POC
+
+## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
+---
+
+_Item 17 / 19_
+
+
+## Severity
+
+**Impact:** High
+
+**Likelihood:** High
+
+## Description
+
+- L54: 
+
+- [MADMarketplaceBase.MADFactory](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L54) is never initialized. It is used in:
+	- [MADMarketplaceBase.setFactory(FactoryVerifier)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L275-L284)
+	- [MADMarketplace721.buy(bytes32)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L104-L150)
+	- [MADMarketplace721.claim(bytes32)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L155-L192)
+
+
+## Example / POC
+
+## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
+---
+
+_Item 18 / 19_
+
+
+## Severity
+
+**Impact:** High
+
+**Likelihood:** High
+
+## Description
+
+- L33: 
+
+- [MADMarketplace1155.feeSelector](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace1155.sol#L33) is never initialized. It is used in:
+	- [MADMarketplace1155.buy(bytes32)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace1155.sol#L118-L153)
+	- [MADMarketplace1155.claim(bytes32)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace1155.sol#L158-L186)
+	- [MADMarketplace1155._feeResolver(uint256,uint256,uint256)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace1155.sol#L388-L408)
+
+
+## Example / POC
+
+## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
+---
+
+_Item 19 / 19_
+
+
+## Severity
+
+**Impact:** High
+
+**Likelihood:** High
+
+## Description
+
+- L50: 
+
+- [MADMarketplaceBase.recipient](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L50) is never initialized. It is used in:
+	- [MADMarketplaceBase.setRecipient(address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L338-L347)
+	- [MADMarketplace721._intPath(Types.Order721,uint256,bytes32,address,uint256)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L296-L329)
+	- [MADMarketplace721._extPath0(Types.Order721,uint256,bytes32,address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L331-L358)
+	- [MADMarketplace721._extPath1(Types.Order721,uint256,bytes32,address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L360-L374)
+
+
+## Example / POC
+
+## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
+---
+
+
 # divide-before-multiply
 
 > Items Found: 2
 
 _Item 1 / 2_
 
+
 ## Severity
 
 **Impact:** Medium
@@ -204,19 +602,24 @@ _Item 1 / 2_
 
 ## Description
 
- [MADMarketplace721.getCurrentPrice(bytes32)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L1287-L1353) performs a multiplication on the result of a division:
-	- [_tick_getCurrentPrice_asm_0 = _startPrice_getCurrentPrice_asm_0 - _endPrice_getCurrentPrice_asm_0 / _endTime_getCurrentPrice_asm_0 - _startTime_getCurrentPrice_asm_0](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L1326-L1329)
-	- [price = _startPrice_getCurrentPrice_asm_0 - timestamp()() - _startTime_getCurrentPrice_asm_0 * _tick_getCurrentPrice_asm_0](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L1330-L1333)
+- L402-L434: 
+
+- [MADMarketplace721.getCurrentPrice(bytes32)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L402-L434) performs a multiplication on the result of a division:
+	- [_tick_getCurrentPrice_asm_0 = _startPrice_getCurrentPrice_asm_0 - _endPrice_getCurrentPrice_asm_0 / _endTime_getCurrentPrice_asm_0 - _startTime_getCurrentPrice_asm_0](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L419)
+	- [price = _startPrice_getCurrentPrice_asm_0 - timestamp()() - _startTime_getCurrentPrice_asm_0 * _tick_getCurrentPrice_asm_0](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L420)
 
 
 ## Example / POC
 
 ## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
 
 ---
 
 _Item 2 / 2_
 
+
 ## Severity
 
 **Impact:** Medium
@@ -225,21 +628,28 @@ _Item 2 / 2_
 
 ## Description
 
- [MADMarketplace1155.getCurrentPrice(bytes32)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L1359-L1425) performs a multiplication on the result of a division:
-	- [_tick_getCurrentPrice_asm_0 = _startPrice_getCurrentPrice_asm_0 - _endPrice_getCurrentPrice_asm_0 / _endTime_getCurrentPrice_asm_0 - _startTime_getCurrentPrice_asm_0](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L1398-L1401)
-	- [price = _startPrice_getCurrentPrice_asm_0 - timestamp()() - _startTime_getCurrentPrice_asm_0 * _tick_getCurrentPrice_asm_0](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L1402-L1405)
+- L417-L449: 
+
+- [MADMarketplace1155.getCurrentPrice(bytes32)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace1155.sol#L417-L449) performs a multiplication on the result of a division:
+	- [_tick_getCurrentPrice_asm_0 = _startPrice_getCurrentPrice_asm_0 - _endPrice_getCurrentPrice_asm_0 / _endTime_getCurrentPrice_asm_0 - _startTime_getCurrentPrice_asm_0](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace1155.sol#L434)
+	- [price = _startPrice_getCurrentPrice_asm_0 - timestamp()() - _startTime_getCurrentPrice_asm_0 * _tick_getCurrentPrice_asm_0](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace1155.sol#L435)
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
+
+
 # incorrect-equality
 
-> Items Found: 2
+> Items Found: 1
 
-_Item 1 / 2_
+_Item 1 / 1_
+
 
 ## Severity
 
@@ -249,40 +659,27 @@ _Item 1 / 2_
 
 ## Description
 
- [SplitterImpl.release(ERC20,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/splitter/SplitterImpl.sol#L147-L171) uses a dangerous strict equality:
-	- [payment == 0](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/splitter/SplitterImpl.sol#L154)
+- L147-L171: 
+
+- [SplitterImpl.release(ERC20,address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/splitter/SplitterImpl.sol#L147-L171) uses a dangerous strict equality:
+	- [payment == 0](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/splitter/SplitterImpl.sol#L154)
 
 
 ## Example / POC
 
 ## Recommendations
 
----
-
-_Item 2 / 2_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** High
-
-## Description
-
- [SplitterImpl.release(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/splitter/SplitterImpl.sol#L107-L127) uses a dangerous strict equality:
-	- [payment == 0](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/splitter/SplitterImpl.sol#L112)
-
-
-## Example / POC
-
-## Recommendations
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
 
 ---
+
+
 # locked-ether
 
-> Items Found: 11
+> Items Found: 5
 
-_Item 1 / 11_
+_Item 1 / 5_
+
 
 ## Severity
 
@@ -292,11 +689,13 @@ _Item 1 / 11_
 
 ## Description
 
- Contract locking ether found:
-	Contract [ERC1155Minimal](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L14-L308) has payable functions:
-	 - [ERC1155Minimal.safeMint(address,uint256,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L73-L83)
-	 - [ERC1155Minimal.burn(address,uint256,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L85-L92)
-	 - [ERC1155Minimal.publicMint(uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L185-L196)
+- L10-L459: 
+
+- Contract locking ether found:
+	Contract [MADMarketplace1155](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace1155.sol#L10-L459) has payable functions:
+	 - [MADMarketplaceBase.receive()](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L82)
+	 - [MADMarketplace1155.bid(bytes32)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace1155.sol#L82-L113)
+	 - [MADMarketplace1155.buy(bytes32)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace1155.sol#L118-L153)
 	But does not have a function to withdraw the ether
 
 
@@ -304,9 +703,12 @@ _Item 1 / 11_
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 2 / 11_
+_Item 2 / 5_
+
 
 ## Severity
 
@@ -316,11 +718,16 @@ _Item 2 / 11_
 
 ## Description
 
- Contract locking ether found:
-	Contract [MADMarketplace1155](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L15-L1452) has payable functions:
-	 - [MADMarketplace1155.bid(bytes32)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L190-L276)
-	 - [MADMarketplace1155.buy(bytes32)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L281-L361)
-	 - [MADMarketplace1155.receive()](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L463)
+- L8-L247: 
+
+- Contract locking ether found:
+	Contract [ERC1155Basic](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/ERC1155/ERC1155Basic.sol#L8-L247) has payable functions:
+	 - [ERC1155Basic.mintTo(address,uint256,uint256[],address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/ERC1155/ERC1155Basic.sol#L36-L60)
+	 - [ERC1155Basic.mintBatchTo(address,uint256[],uint256[],address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/ERC1155/ERC1155Basic.sol#L62-L85)
+	 - [ERC1155Basic.burn(address[],uint256[],uint256[],address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/ERC1155/ERC1155Basic.sol#L87-L111)
+	 - [ERC1155Basic.burnBatch(address,uint256[],uint256[],address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/ERC1155/ERC1155Basic.sol#L113-L137)
+	 - [ERC1155Basic.mint(uint256,uint256)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/ERC1155/ERC1155Basic.sol#L143-L170)
+	 - [ERC1155Basic.mintBatch(uint256[],uint256[])](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/ERC1155/ERC1155Basic.sol#L172-L204)
 	But does not have a function to withdraw the ether
 
 
@@ -328,9 +735,12 @@ _Item 2 / 11_
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 3 / 11_
+_Item 3 / 5_
+
 
 ## Severity
 
@@ -340,14 +750,12 @@ _Item 3 / 11_
 
 ## Description
 
- Contract locking ether found:
-	Contract [ERC1155Basic](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L17-L579) has payable functions:
-	 - [ERC1155Basic.mintTo(address,uint256,uint256[],address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L142-L171)
-	 - [ERC1155Basic.mintBatchTo(address,uint256[],uint256[],address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L173-L201)
-	 - [ERC1155Basic.burn(address[],uint256[],uint256[],address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L203-L231)
-	 - [ERC1155Basic.burnBatch(address,uint256[],uint256[],address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L233-L260)
-	 - [ERC1155Basic.mint(uint256,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L344-L373)
-	 - [ERC1155Basic.mintBatch(uint256[],uint256[])](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L375-L415)
+- L27-L297: 
+
+- Contract locking ether found:
+	Contract [SplitterImpl](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/splitter/SplitterImpl.sol#L27-L297) has payable functions:
+	 - [SplitterImpl.constructor(address[],uint256[])](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/splitter/SplitterImpl.sol#L58-L78)
+	 - [SplitterImpl.receive()](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/splitter/SplitterImpl.sol#L92-L98)
 	But does not have a function to withdraw the ether
 
 
@@ -355,9 +763,12 @@ _Item 3 / 11_
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 4 / 11_
+_Item 4 / 5_
+
 
 ## Severity
 
@@ -367,10 +778,13 @@ _Item 4 / 11_
 
 ## Description
 
- Contract locking ether found:
-	Contract [SplitterImpl](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/splitter/SplitterImpl.sol#L27-L297) has payable functions:
-	 - [SplitterImpl.constructor(address[],uint256[])](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/splitter/SplitterImpl.sol#L58-L78)
-	 - [SplitterImpl.receive()](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/splitter/SplitterImpl.sol#L92-L98)
+- L10-L444: 
+
+- Contract locking ether found:
+	Contract [MADMarketplace721](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L10-L444) has payable functions:
+	 - [MADMarketplaceBase.receive()](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L82)
+	 - [MADMarketplace721.bid(bytes32)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L66-L99)
+	 - [MADMarketplace721.buy(bytes32)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L104-L150)
 	But does not have a function to withdraw the ether
 
 
@@ -378,9 +792,12 @@ _Item 4 / 11_
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 5 / 11_
+_Item 5 / 5_
+
 
 ## Severity
 
@@ -390,10 +807,13 @@ _Item 5 / 11_
 
 ## Description
 
- Contract locking ether found:
-	Contract [ERC721Lazy](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L18-L555) has payable functions:
-	 - [ERC721Lazy.burn(uint256[],address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L131-L157)
-	 - [ERC721Lazy.lazyMint(Types.Voucher,uint8,bytes32,bytes32)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L246-L276)
+- L8-L142: 
+
+- Contract locking ether found:
+	Contract [ERC721Basic](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/ERC721/ERC721Basic.sol#L8-L142) has payable functions:
+	 - [ERC721Basic.mintTo(address,uint256,address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/ERC721/ERC721Basic.sol#L42-L65)
+	 - [ERC721Basic.burn(uint256[],address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/ERC721/ERC721Basic.sol#L67-L89)
+	 - [ERC721Basic.mint(uint256)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/ERC721/ERC721Basic.sol#L95-L116)
 	But does not have a function to withdraw the ether
 
 
@@ -401,375 +821,18 @@ _Item 5 / 11_
 
 ## Recommendations
 
----
-
-_Item 6 / 11_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** High
-
-## Description
-
- Contract locking ether found:
-	Contract [ERC721Minimal](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Minimal.sol#L15-L311) has payable functions:
-	 - [ERC721Minimal.safeMint(address,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Minimal.sol#L77-L86)
-	 - [ERC721Minimal.burn(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Minimal.sol#L88-L95)
-	 - [ERC721Minimal.publicMint()](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Minimal.sol#L188-L199)
-	But does not have a function to withdraw the ether
-
-
-## Example / POC
-
-## Recommendations
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
 
 ---
 
-_Item 7 / 11_
 
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** High
-
-## Description
-
- Contract locking ether found:
-	Contract [ERC721Whitelist](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Whitelist.sol#L18-L669) has payable functions:
-	 - [ERC721Whitelist.burn(uint256[],address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Whitelist.sol#L267-L291)
-	 - [ERC721Whitelist.mintToCreator(uint256,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Whitelist.sol#L293-L317)
-	 - [ERC721Whitelist.giftTokens(address[],address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Whitelist.sol#L321-L349)
-	 - [ERC721Whitelist.mint(uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Whitelist.sol#L434-L460)
-	 - [ERC721Whitelist.whitelistMint(uint8,bytes32[])](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Whitelist.sol#L463-L495)
-	But does not have a function to withdraw the ether
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 8 / 11_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** High
-
-## Description
-
- Contract locking ether found:
-	Contract [ERC1155Lazy](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L18-L662) has payable functions:
-	 - [ERC1155Lazy.lazyMint(Types.Voucher,uint8,bytes32,bytes32)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L117-L151)
-	 - [ERC1155Lazy.lazyMintBatch(Types.UserBatch,uint8,bytes32,bytes32)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L154-L195)
-	 - [ERC1155Lazy.burn(address[],uint256[],uint256[],address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L222-L252)
-	 - [ERC1155Lazy.burnBatch(address,uint256[],uint256[],address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L254-L280)
-	But does not have a function to withdraw the ether
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 9 / 11_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** High
-
-## Description
-
- Contract locking ether found:
-	Contract [MADMarketplace721](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L15-L1380) has payable functions:
-	 - [MADMarketplace721.bid(bytes32)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L169-L258)
-	 - [MADMarketplace721.buy(bytes32)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L263-L348)
-	 - [MADMarketplace721.receive()](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L443)
-	But does not have a function to withdraw the ether
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 10 / 11_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** High
-
-## Description
-
- Contract locking ether found:
-	Contract [ERC1155Whitelist](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L19-L963) has payable functions:
-	 - [ERC1155Whitelist.burn(address[],uint256[],uint256[],address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L286-L313)
-	 - [ERC1155Whitelist.burnBatch(address,uint256[],uint256[],address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L316-L341)
-	 - [ERC1155Whitelist.mintToCreator(uint256,uint256[],uint256,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L344-L378)
-	 - [ERC1155Whitelist.mintBatchToCreator(uint256[],uint256[],uint256,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L381-L418)
-	 - [ERC1155Whitelist.giftTokens(address[],uint256[],uint256,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L421-L465)
-	 - [ERC1155Whitelist.mint(uint256,uint256[],uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L550-L583)
-	 - [ERC1155Whitelist.mintBatch(uint256[],uint256[])](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L586-L626)
-	 - [ERC1155Whitelist.whitelistMint(uint8,uint256[],uint256,bytes32[])](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L629-L672)
-	 - [ERC1155Whitelist.whitelistMintBatch(uint256[],uint256[],bytes32[])](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L675-L717)
-	But does not have a function to withdraw the ether
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 11 / 11_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** High
-
-## Description
-
- Contract locking ether found:
-	Contract [ERC721Basic](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Basic.sol#L17-L447) has payable functions:
-	 - [ERC721Basic.mintTo(address,uint256,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Basic.sol#L146-L169)
-	 - [ERC721Basic.burn(uint256[],address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Basic.sol#L171-L197)
-	 - [ERC721Basic.mint(uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Basic.sol#L281-L307)
-	But does not have a function to withdraw the ether
-
-
-## Example / POC
-
-## Recommendations
-
----
-# reentrancy-no-eth
-
-> Items Found: 7
-
-_Item 1 / 7_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADFactory1155.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L330-L485):
-	External calls:
-	- [(tokenSalt,deployed) = ERC1155MinimalDeployer._1155MinimalDeploy(_tokenSalt,_uri,_price,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L352-L361)
-	- [(tokenSalt,deployed) = ERC1155BasicDeployer._1155BasicDeploy(_tokenSalt,_uri,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L385-L395)
-	State variables written after the call(s):
-	- [userTokens[tx.origin].push(colId_scope_2)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L398)
-	[MADFactory1155.userTokens](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L68) can be used in cross function reentrancies:
-	- [MADFactory1155._userRender(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L795-L806)
-	- [MADFactory1155.creatorAuth(address,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L686-L708)
-	- [MADFactory1155.getIDsLength(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L562-L568)
-	- [MADFactory1155.userTokens](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L68)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 2 / 7_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADFactory1155.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L330-L485):
-	External calls:
-	- [(tokenSalt,deployed) = ERC1155MinimalDeployer._1155MinimalDeploy(_tokenSalt,_uri,_price,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L352-L361)
-	- [(tokenSalt,deployed) = ERC1155BasicDeployer._1155BasicDeploy(_tokenSalt,_uri,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L385-L395)
-	- [(tokenSalt,deployed) = ERC1155WhitelistDeployer._1155WhitelistDeploy(_tokenSalt,_uri,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L419-L429)
-	- [(tokenSalt,deployed) = ERC1155LazyDeployer._1155LazyDeploy(_tokenSalt,_uri,_splitter,router,signer,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L453-L462)
-	State variables written after the call(s):
-	- [userTokens[tx.origin].push(colId_scope_8)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L465)
-	[MADFactory1155.userTokens](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L68) can be used in cross function reentrancies:
-	- [MADFactory1155._userRender(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L795-L806)
-	- [MADFactory1155.creatorAuth(address,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L686-L708)
-	- [MADFactory1155.getIDsLength(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L562-L568)
-	- [MADFactory1155.userTokens](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L68)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 3 / 7_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADFactory721.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L334-L497):
-	External calls:
-	- [(tokenSalt,deployed) = ERC721MinimalDeployer._721MinimalDeploy(_tokenSalt,_name,_symbol,_baseURI,_price,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L356-L367)
-	- [(tokenSalt,deployed) = ERC721BasicDeployer._721BasicDeploy(_tokenSalt,_name,_symbol,_baseURI,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L391-L403)
-	- [(tokenSalt,deployed) = ERC721WhitelistDeployer._721WhitelistDeploy(_tokenSalt,_name,_symbol,_baseURI,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L427-L439)
-	State variables written after the call(s):
-	- [userTokens[tx.origin].push(colId_scope_5)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L442)
-	[MADFactory721.userTokens](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L68) can be used in cross function reentrancies:
-	- [MADFactory721._userRender(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L809-L820)
-	- [MADFactory721.creatorAuth(address,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L700-L722)
-	- [MADFactory721.getIDsLength(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L575-L581)
-	- [MADFactory721.userTokens](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L68)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 4 / 7_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADFactory721.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L334-L497):
-	External calls:
-	- [(tokenSalt,deployed) = ERC721MinimalDeployer._721MinimalDeploy(_tokenSalt,_name,_symbol,_baseURI,_price,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L356-L367)
-	- [(tokenSalt,deployed) = ERC721BasicDeployer._721BasicDeploy(_tokenSalt,_name,_symbol,_baseURI,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L391-L403)
-	- [(tokenSalt,deployed) = ERC721WhitelistDeployer._721WhitelistDeploy(_tokenSalt,_name,_symbol,_baseURI,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L427-L439)
-	- [(tokenSalt,deployed) = ERC721LazyDeployer._721LazyDeploy(_tokenSalt,_name,_symbol,_baseURI,_splitter,router,signer,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L463-L474)
-	State variables written after the call(s):
-	- [userTokens[tx.origin].push(colId_scope_8)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L477)
-	[MADFactory721.userTokens](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L68) can be used in cross function reentrancies:
-	- [MADFactory721._userRender(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L809-L820)
-	- [MADFactory721.creatorAuth(address,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L700-L722)
-	- [MADFactory721.getIDsLength(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L575-L581)
-	- [MADFactory721.userTokens](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L68)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 5 / 7_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADFactory721.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L334-L497):
-	External calls:
-	- [(tokenSalt,deployed) = ERC721MinimalDeployer._721MinimalDeploy(_tokenSalt,_name,_symbol,_baseURI,_price,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L356-L367)
-	- [(tokenSalt,deployed) = ERC721BasicDeployer._721BasicDeploy(_tokenSalt,_name,_symbol,_baseURI,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L391-L403)
-	State variables written after the call(s):
-	- [userTokens[tx.origin].push(colId_scope_2)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L406)
-	[MADFactory721.userTokens](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L68) can be used in cross function reentrancies:
-	- [MADFactory721._userRender(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L809-L820)
-	- [MADFactory721.creatorAuth(address,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L700-L722)
-	- [MADFactory721.getIDsLength(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L575-L581)
-	- [MADFactory721.userTokens](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L68)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 6 / 7_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADFactory1155.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L330-L485):
-	External calls:
-	- [(tokenSalt,deployed) = ERC1155MinimalDeployer._1155MinimalDeploy(_tokenSalt,_uri,_price,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L352-L361)
-	- [(tokenSalt,deployed) = ERC1155BasicDeployer._1155BasicDeploy(_tokenSalt,_uri,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L385-L395)
-	- [(tokenSalt,deployed) = ERC1155WhitelistDeployer._1155WhitelistDeploy(_tokenSalt,_uri,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L419-L429)
-	State variables written after the call(s):
-	- [userTokens[tx.origin].push(colId_scope_5)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L432)
-	[MADFactory1155.userTokens](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L68) can be used in cross function reentrancies:
-	- [MADFactory1155._userRender(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L795-L806)
-	- [MADFactory1155.creatorAuth(address,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L686-L708)
-	- [MADFactory1155.getIDsLength(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L562-L568)
-	- [MADFactory1155.userTokens](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L68)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 7 / 7_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [ERC1155Whitelist.whitelistMint(uint8,uint256[],uint256,bytes32[])](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L629-L672):
-	External calls:
-	- [_mint(msg.sender,_incrementCounter(balances[i]),balances[i],)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L650-L655)
-		- [require(bool,string)(ERC1155TokenReceiver(to).onERC1155Received(msg.sender,address(0),id,amount,data) == ERC1155TokenReceiver.onERC1155Received.selector,UNSAFE_RECIPIENT)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Base/ERC1155B.sol#L250-L262)
-	State variables written after the call(s):
-	- [whitelistMinted += balanceTotal](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L662)
-	[ERC1155Whitelist.whitelistMinted](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L81) can be used in cross function reentrancies:
-	- [ERC1155Whitelist.whitelistMinted](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L81)
-
-
-## Example / POC
-
-## Recommendations
-
----
 # tx-origin
 
 > Items Found: 2
 
 _Item 1 / 2_
 
+
 ## Severity
 
 **Impact:** Medium
@@ -778,17 +841,22 @@ _Item 1 / 2_
 
 ## Description
 
- [MADFactory1155.creatorCheck(bytes32)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L711-L734) uses tx.origin for authorization: [creator == origin()()](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L725-L727)
+- L130-L153: 
+
+- [MADFactory1155.creatorCheck(bytes32)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactory1155.sol#L130-L153) uses tx.origin for authorization: [creator == origin()()](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactory1155.sol#L144-L146)
 
 
 ## Example / POC
 
 ## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
 
 ---
 
 _Item 2 / 2_
 
+
 ## Severity
 
 **Impact:** Medium
@@ -797,20 +865,27 @@ _Item 2 / 2_
 
 ## Description
 
- [MADFactory721.creatorCheck(bytes32)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L725-L748) uses tx.origin for authorization: [creator == origin()()](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L739-L741)
+- L117-L137: 
+
+- [MADFactory721.creatorCheck(bytes32)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactory721.sol#L117-L137) uses tx.origin for authorization: [creator == origin()()](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactory721.sol#L128-L130)
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
+
+
 # tautology
 
 > Items Found: 2
 
 _Item 1 / 2_
 
+
 ## Severity
 
 **Impact:** Medium
@@ -819,18 +894,23 @@ _Item 1 / 2_
 
 ## Description
 
- [Counters.decrement(Counters.Counter)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/utils/Counters.sol#L46-L56) contains a tautology or contradiction:
-	- [! _val_decrement_asm_0 | _val_decrement_asm_0 < 0x00](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/utils/Counters.sol#L49-L53)
+- L39-L49: 
+
+- [Counters.decrement(Counters.Counter)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/utils/Counters.sol#L39-L49) contains a tautology or contradiction:
+	- [! _val_decrement_asm_0 | _val_decrement_asm_0 < 0x00](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/utils/Counters.sol#L42-L46)
 
 
 ## Example / POC
 
 ## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
 
 ---
 
 _Item 2 / 2_
 
+
 ## Severity
 
 **Impact:** Medium
@@ -839,20 +919,27 @@ _Item 2 / 2_
 
 ## Description
 
- [Counters.decrement(Counters.Counter,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/utils/Counters.sol#L58-L74) contains a tautology or contradiction:
-	- [! _val_decrement_asm_0 | _val_decrement_asm_0 < 0x00 | _val_decrement_asm_0 - amount < 0x00](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/utils/Counters.sol#L64-L71)
+- L51-L61: 
+
+- [Counters.decrement(Counters.Counter,uint256)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/utils/Counters.sol#L51-L61) contains a tautology or contradiction:
+	- [! _val_decrement_asm_0 | _val_decrement_asm_0 < 0x00 | _val_decrement_asm_0 - amount < 0x00](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/utils/Counters.sol#L54-L58)
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
+
+
 # uninitialized-local
 
-> Items Found: 52
+> Items Found: 7
 
-_Item 1 / 52_
+_Item 1 / 7_
+
 
 ## Severity
 
@@ -862,16 +949,21 @@ _Item 1 / 52_
 
 ## Description
 
- [ERC721Minimal.withdrawERC20(ERC20,address).j](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Minimal.sol#L171) is a local variable never initialized
+- L208: 
+
+- [ERC1155Basic._sumAmounts(uint256[]).i](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/ERC1155/ERC1155Basic.sol#L208) is a local variable never initialized
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 2 / 52_
+_Item 2 / 7_
+
 
 ## Severity
 
@@ -881,16 +973,21 @@ _Item 2 / 52_
 
 ## Description
 
- [ERC721Lazy.lazyMint(Types.Voucher,uint8,bytes32,bytes32).i](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L268) is a local variable never initialized
+- L171: 
+
+- [ImplBase.withdrawERC20(ERC20,address).i](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/common/ImplBase.sol#L171) is a local variable never initialized
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 3 / 52_
+_Item 3 / 7_
+
 
 ## Severity
 
@@ -900,16 +997,21 @@ _Item 3 / 52_
 
 ## Description
 
- [ERC1155Whitelist.withdraw(address).j](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L492) is a local variable never initialized
+- L138: 
+
+- [ImplBase.withdraw(address).i](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/common/ImplBase.sol#L138) is a local variable never initialized
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 4 / 52_
+_Item 4 / 7_
+
 
 ## Severity
 
@@ -919,16 +1021,21 @@ _Item 4 / 52_
 
 ## Description
 
- [ERC721Basic.withdrawERC20(ERC20,address).i](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Basic.sol#L254) is a local variable never initialized
+- L148: 
+
+- [ImplBase.withdraw(address).j](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/common/ImplBase.sol#L148) is a local variable never initialized
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 5 / 52_
+_Item 5 / 7_
+
 
 ## Severity
 
@@ -938,16 +1045,21 @@ _Item 5 / 52_
 
 ## Description
 
- [ERC721Lazy.withdrawERC20(ERC20,address).j](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L224) is a local variable never initialized
+- L181: 
+
+- [ImplBase.withdrawERC20(ERC20,address).j](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/common/ImplBase.sol#L181) is a local variable never initialized
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 6 / 52_
+_Item 6 / 7_
+
 
 ## Severity
 
@@ -957,16 +1069,21 @@ _Item 6 / 52_
 
 ## Description
 
- [MADFactory721.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256).tokenSalt_scope_3](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L427) is a local variable never initialized
+- L70: 
+
+- [SplitterImpl.constructor(address[],uint256[]).i](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/splitter/SplitterImpl.sol#L70) is a local variable never initialized
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 7 / 52_
+_Item 7 / 7_
+
 
 ## Severity
 
@@ -976,875 +1093,27 @@ _Item 7 / 52_
 
 ## Description
 
- [ERC1155Minimal.withdrawERC20(ERC20,address).j](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L168) is a local variable never initialized
+- L132: 
+
+- [SplitterImpl.releaseAll().i](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/splitter/SplitterImpl.sol#L132) is a local variable never initialized
 
 
 ## Example / POC
 
 ## Recommendations
 
----
-
-_Item 8 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Lazy.withdrawERC20(ERC20,address).i](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L337) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
 
 ---
 
-_Item 9 / 52_
 
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Basic._sumAmounts(uint256[]).i](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L436) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 10 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Basic.withdraw(address).j](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Basic.sol#L224) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 11 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Lazy.lazyMint(Types.Voucher,uint8,bytes32,bytes32).i](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L139) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 12 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Lazy.withdraw(address).i](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L297) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 13 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Minimal.withdraw(address).j](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Minimal.sol#L131) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 14 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Whitelist.withdrawERC20(ERC20,address).j](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L532) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 15 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [MADFactory721.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256).tokenSalt_scope_0](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L391) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 16 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Minimal.withdraw(address).i](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L118) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 17 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Lazy.withdrawERC20(ERC20,address).i](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L214) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 18 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [MADFactory1155.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256).tokenSalt_scope_3](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L419) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 19 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Whitelist.withdraw(address).j](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Whitelist.sol#L376) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 20 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Basic.withdraw(address).i](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Basic.sol#L214) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 21 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [MADFactory1155.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256).deployed_scope_4](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L419) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 22 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Minimal.withdraw(address).j](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L128) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 23 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Whitelist.withdrawERC20(ERC20,address).j](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Whitelist.sol#L416) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 24 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Basic.withdrawERC20(ERC20,address).j](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Basic.sol#L264) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 25 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [MADFactory721.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256).deployed_scope_1](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L391) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 26 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [MADFactory1155.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256).tokenSalt_scope_0](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L385) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 27 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [MADFactory721.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256).deployed_scope_7](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L463) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 28 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Lazy.lazyMintBatch(Types.UserBatch,uint8,bytes32,bytes32).i](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L176) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 29 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Whitelist.withdrawERC20(ERC20,address).i](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L522) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 30 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Lazy._userMint(uint256,uint256[],address).j](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L508) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 31 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Minimal.withdrawERC20(ERC20,address).i](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Minimal.sol#L161) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 32 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [MADFactory1155.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256).deployed_scope_1](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L385) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 33 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Whitelist.withdrawERC20(ERC20,address).i](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Whitelist.sol#L406) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 34 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [SplitterImpl.constructor(address[],uint256[]).i](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/splitter/SplitterImpl.sol#L70) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 35 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Minimal.withdrawERC20(ERC20,address).i](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L158) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 36 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Whitelist.withdraw(address).i](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Whitelist.sol#L366) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 37 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [MADFactory1155.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256).tokenSalt_scope_6](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L453) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 38 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Lazy.withdraw(address).i](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L174) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 39 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Basic.withdraw(address).j](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L287) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 40 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Lazy.withdrawERC20(ERC20,address).j](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L347) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 41 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [SplitterImpl.releaseAll().i](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/splitter/SplitterImpl.sol#L132) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 42 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [MADFactory721.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256).tokenSalt_scope_6](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L463) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 43 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Whitelist.withdraw(address).i](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L482) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 44 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Minimal.withdraw(address).i](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Minimal.sol#L121) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 45 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Basic.withdrawERC20(ERC20,address).j](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L327) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 46 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Lazy.withdraw(address).j](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L307) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 47 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [MADFactory1155.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256).deployed_scope_7](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L453) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 48 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [MADFactory721.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256).deployed_scope_4](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L427) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 49 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Basic.withdrawERC20(ERC20,address).i](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L317) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 50 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Lazy._userMint(uint256,address).j](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L389) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 51 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Lazy.withdraw(address).j](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L184) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 52 / 52_
-
-## Severity
-
-**Impact:** Medium
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Basic.withdraw(address).i](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L277) is a local variable never initialized
-
-
-## Example / POC
-
-## Recommendations
-
----
 # unused-return
 
 > Items Found: 2
 
 _Item 1 / 2_
 
+
 ## Severity
 
 **Impact:** Medium
@@ -1853,17 +1122,22 @@ _Item 1 / 2_
 
 ## Description
 
- [MADRouter721._tokenRender(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter721.sol#L482-L490) ignores return value by [MADFactory721.creatorCheck(colID)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter721.sol#L488)
+- L144-L148: 
+
+- [MADRouter721._tokenRender(address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouter721.sol#L144-L148) ignores return value by [madFactory.creatorCheck(colID)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouter721.sol#L146)
 
 
 ## Example / POC
 
 ## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
 
 ---
 
 _Item 2 / 2_
 
+
 ## Severity
 
 **Impact:** Medium
@@ -1872,19 +1146,26 @@ _Item 2 / 2_
 
 ## Description
 
- [MADRouter1155._tokenRender(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter1155.sol#L595-L603) ignores return value by [MADFactory1155.creatorCheck(colID)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter1155.sol#L601)
+- L197-L201: 
+
+- [MADRouter1155._tokenRender(address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouter1155.sol#L197-L201) ignores return value by [madFactory.creatorCheck(colID)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouter1155.sol#L199)
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
+
+
 # write-after-write
 
-> Items Found: 2
+> Items Found: 1
 
-_Item 1 / 2_
+_Item 1 / 1_
+
 
 ## Severity
 
@@ -1894,43 +1175,269 @@ _Item 1 / 2_
 
 ## Description
 
- [MADRouter1155.feeLookup(bytes4).fee](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter1155.sol#L568) is written in both
-	[fee = sload(uint256)(feeBurn)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter1155.sol#L581)
-	[fee = 0x00](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter1155.sol#L584)
+- L76: 
+
+- [MADRouterBase.feeLookup(bytes4).fee](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouterBase.sol#L76) is written in both
+	[fee = sload(uint256)(feeBurn)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouterBase.sol#L88)
+	[fee = 0x00](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouterBase.sol#L91)
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 2 / 2_
+
+# calls-loop
+
+> Items Found: 6
+
+_Item 1 / 6_
+
 
 ## Severity
 
-**Impact:** Medium
+**Impact:** Low
 
-**Likelihood:** High
+**Likelihood:** Medium
 
 ## Description
 
- [MADRouter721.feeLookup(bytes4).fee](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter721.sol#L455) is written in both
-	[fee = sload(uint256)(feeBurn)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter721.sol#L468)
-	[fee = 0x00](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter721.sol#L471)
+- L167-L179: 
+
+- [ERC1155B._mint(address,uint256,uint256,bytes)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/tokens/ERC1155/Base/ERC1155B.sol#L167-L179) has external calls inside a loop: [require(bool,string)(ERC1155TokenReceiver(to).onERC1155Received(msg.sender,address(0),id,amount,data) == ERC1155TokenReceiver.onERC1155Received.selector,UNSAFE_RECIPIENT)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/tokens/ERC1155/Base/ERC1155B.sol#L173-L177)
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
-# events-maths
+
+_Item 2 / 6_
+
+
+## Severity
+
+**Impact:** Low
+
+**Likelihood:** Medium
+
+## Description
+
+- L126-L155: 
+
+- [ImplBase.withdraw(address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/common/ImplBase.sol#L126-L155) has external calls inside a loop: [share = splitter._shares(addr)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/common/ImplBase.sol#L141)
+
+
+## Example / POC
+
+## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
+---
+
+_Item 3 / 6_
+
+
+## Severity
+
+**Impact:** Low
+
+**Likelihood:** Medium
+
+## Description
+
+- L126-L155: 
+
+- [ImplBase.withdraw(address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/common/ImplBase.sol#L126-L155) has external calls inside a loop: [addr = splitter._payees(i)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/common/ImplBase.sol#L140)
+
+
+## Example / POC
+
+## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
+---
+
+_Item 4 / 6_
+
+
+## Severity
+
+**Impact:** Low
+
+**Likelihood:** Medium
+
+## Description
+
+- L157-L188: 
+
+- [ImplBase.withdrawERC20(ERC20,address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/common/ImplBase.sol#L157-L188) has external calls inside a loop: [share = splitter._shares(addr)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/common/ImplBase.sol#L174)
+
+
+## Example / POC
+
+## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
+---
+
+_Item 5 / 6_
+
+
+## Severity
+
+**Impact:** Low
+
+**Likelihood:** Medium
+
+## Description
+
+- L181-L190: 
+
+- [ERC721._safeMint(address,uint256)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/tokens/ERC721/Base/ERC721.sol#L181-L190) has external calls inside a loop: [require(bool,string)(to.code.length == 0 || ERC721TokenReceiver(to).onERC721Received(msg.sender,address(0),id,) == ERC721TokenReceiver.onERC721Received.selector,UNSAFE_RECIPIENT)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/tokens/ERC721/Base/ERC721.sol#L184-L189)
+
+
+## Example / POC
+
+## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
+---
+
+_Item 6 / 6_
+
+
+## Severity
+
+**Impact:** Low
+
+**Likelihood:** Medium
+
+## Description
+
+- L157-L188: 
+
+- [ImplBase.withdrawERC20(ERC20,address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/common/ImplBase.sol#L157-L188) has external calls inside a loop: [addr = splitter._payees(i)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/common/ImplBase.sol#L173)
+
+
+## Example / POC
+
+## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
+---
+
+
+# reentrancy-benign
+
+> Items Found: 3
+
+_Item 1 / 3_
+
+
+## Severity
+
+**Impact:** Low
+
+**Likelihood:** Medium
+
+## Description
+
+- L50-L89: 
+
+- Reentrancy in [MADFactory721.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactory721.sol#L50-L89):
+	External calls:
+	- [(tokenSalt,deployed) = ERC721BasicDeployer._721BasicDeploy(_tokenSalt,_name,_symbol,_baseURI,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactory721.sol#L64-L75)
+	State variables written after the call(s):
+	- [colInfo[colId] = Types.Collection721(tx.origin,Types.ERC721Type.ERC721Basic,tokenSalt,block.number,_splitter)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactory721.sol#L80-L86)
+	- [userTokens[tx.origin].push(colId)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactory721.sol#L78)
+
+
+## Example / POC
+
+## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
+---
+
+_Item 2 / 3_
+
+
+## Severity
+
+**Impact:** Low
+
+**Likelihood:** Medium
+
+## Description
+
+- L61-L112: 
+
+- Reentrancy in [MADFactory1155.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactory1155.sol#L61-L112):
+	External calls:
+	- [(tokenSalt,deployed) = ERC1155BasicDeployer._1155BasicDeploy(_tokenSalt,_uri,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactory1155.sol#L80-L90)
+	State variables written after the call(s):
+	- [colInfo[colId] = Types.Collection1155(tx.origin,Types.ERC1155Type.ERC1155Basic,tokenSalt,block.number,_splitter)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactory1155.sol#L95-L101)
+	- [userTokens[tx.origin].push(colId)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactory1155.sol#L93)
+
+
+## Example / POC
+
+## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
+---
+
+_Item 3 / 3_
+
+
+## Severity
+
+**Impact:** Low
+
+**Likelihood:** Medium
+
+## Description
+
+- L307-L347: 
+
+- Reentrancy in [MADFactoryBase._splitterResolver(string,address,address,uint256,uint256,uint256)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactoryBase.sol#L307-L347):
+	External calls:
+	- [(splitter,splitterSalt) = SplitterDeployer._SplitterDeploy(_splitterSalt,_payees,_shares)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactoryBase.sol#L322-L327)
+	State variables written after the call(s):
+	- [splitterInfo[tx.origin][splitter] = Types.SplitterConfig(splitter,splitterSalt,_ambassador,_project,_ambShare,_projectShare,true)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactoryBase.sol#L329-L338)
+
+
+## Example / POC
+
+## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
+---
+
+
+# reentrancy-events
 
 > Items Found: 4
 
 _Item 1 / 4_
 
+
 ## Severity
 
 **Impact:** Low
@@ -1939,18 +1446,26 @@ _Item 1 / 4_
 
 ## Description
 
- [ERC1155Whitelist.whitelistMint(uint8,uint256[],uint256,bytes32[])](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L629-L672) should emit an event for: 
-	- [whitelistMinted += balanceTotal](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L662) 
+- L296-L329: 
+
+- Reentrancy in [MADMarketplace721._intPath(Types.Order721,uint256,bytes32,address,uint256)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L296-L329):
+	External calls:
+	- [_order.token.safeTransferFrom(address(this),_to,_order.tokenId)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L327)
+	Event emitted after the call(s):
+	- [Claim(_order.token,_order.tokenId,_orderId,_order.seller,_to,_price)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L328)
 
 
 ## Example / POC
 
 ## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
 
 ---
 
 _Item 2 / 4_
 
+
 ## Severity
 
 **Impact:** Low
@@ -1959,18 +1474,26 @@ _Item 2 / 4_
 
 ## Description
 
- [ERC1155Whitelist.mintToCreator(uint256,uint256[],uint256,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L344-L378) should emit an event for: 
-	- [freeSupply += balanceTotal](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L359) 
+- L360-L374: 
+
+- Reentrancy in [MADMarketplace721._extPath1(Types.Order721,uint256,bytes32,address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L360-L374):
+	External calls:
+	- [_order.token.safeTransferFrom(address(this),_to,_order.tokenId)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L372)
+	Event emitted after the call(s):
+	- [Claim(_order.token,_order.tokenId,_orderId,_order.seller,_to,_price)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L373)
 
 
 ## Example / POC
 
 ## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
 
 ---
 
 _Item 3 / 4_
 
+
 ## Severity
 
 **Impact:** Low
@@ -1979,40 +1502,25 @@ _Item 3 / 4_
 
 ## Description
 
- [ERC1155Whitelist.mintBatchToCreator(uint256[],uint256[],uint256,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L381-L418) should emit an event for: 
-	- [freeSupply += balanceTotal](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L400) 
+- L384-L416: 
+
+- Reentrancy in [MADMarketplaceBase._withdrawOutbid(ERC20,uint256,uint160)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L384-L416):
+	External calls:
+	- [amountOut = swapRouter.exactInputSingle(params)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L414)
+	Event emitted after the call(s):
+	- [WithdrawOutbid(msg.sender,address(_token),amountOut)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L415)
 
 
 ## Example / POC
 
 ## Recommendations
+
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
 
 ---
 
 _Item 4 / 4_
 
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Whitelist.giftTokens(address[],uint256[],uint256,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L421-L465) should emit an event for: 
-	- [freeSupply += amountGifted](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L443) 
-
-
-## Example / POC
-
-## Recommendations
-
----
-# missing-zero-check
-
-> Items Found: 7
-
-_Item 1 / 7_
 
 ## Severity
 
@@ -2022,1330 +1530,30 @@ _Item 1 / 7_
 
 ## Description
 
- [ERC1155Lazy.constructor(string,SplitterImpl,uint96,address,address,ERC20)._signer](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L90) lacks a zero-check on :
-		- [signer = _signer](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L95)
+- L331-L358: 
 
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 2 / 7_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Lazy.setSigner(address)._signer](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L201) lacks a zero-check on :
-		- [signer = _signer](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L202)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 3 / 7_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Lazy.constructor(string,string,string,SplitterImpl,uint96,address,address,ERC20)._signer](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L86) lacks a zero-check on :
-		- [signer = _signer](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L91)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 4 / 7_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Lazy.setSigner(address)._signer](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L108) lacks a zero-check on :
-		- [signer = _signer](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L109)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 5 / 7_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [MADFactory1155.constructor(address,address,address,address)._router](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L94) lacks a zero-check on :
-		- [router = _router](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L105)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 6 / 7_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [Owned.setOwner(address).newOwner](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/auth/Owned.sol#L44) lacks a zero-check on :
-		- [owner = newOwner](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/auth/Owned.sol#L49)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 7 / 7_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [MADFactory721.constructor(address,address,address,address)._router](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L94) lacks a zero-check on :
-		- [router = _router](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L105)
-
-
-## Example / POC
-
-## Recommendations
-
----
-# calls-loop
-
-> Items Found: 36
-
-_Item 1 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Basic.withdraw(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L262-L297) has external calls inside a loop: [addr = splitter._payees(i)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L279)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 2 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Minimal.withdraw(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Minimal.sol#L106-L141) has external calls inside a loop: [share = splitter._shares(addr)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Minimal.sol#L124)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 3 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Whitelist.withdrawERC20(ERC20,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L504-L543) has external calls inside a loop: [addr = splitter._payees(i)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L524)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 4 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [MADMarketplace1155._withdrawOutbid(address,ERC20,uint256,uint160)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L688-L740) has external calls inside a loop: [amountOut = swapRouter.exactInputSingle(params)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L736-L738)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 5 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Basic.withdrawERC20(ERC20,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L299-L338) has external calls inside a loop: [addr = splitter._payees(i)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L319)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 6 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721._safeMint(address,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Base/ERC721.sol#L251-L268) has external calls inside a loop: [require(bool,string)(to.code.length == 0 || ERC721TokenReceiver(to).onERC721Received(msg.sender,address(0),id,) == ERC721TokenReceiver.onERC721Received.selector,UNSAFE_RECIPIENT)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Base/ERC721.sol#L257-L267)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 7 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Minimal.withdraw(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Minimal.sol#L106-L141) has external calls inside a loop: [addr = splitter._payees(i)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Minimal.sol#L123)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 8 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Lazy.withdrawERC20(ERC20,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L196-L235) has external calls inside a loop: [share = splitter._shares(addr)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L217)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 9 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Lazy.withdrawERC20(ERC20,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L319-L358) has external calls inside a loop: [addr = splitter._payees(i)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L339)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 10 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Minimal.withdraw(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L103-L138) has external calls inside a loop: [addr = splitter._payees(i)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L120)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 11 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Basic.withdraw(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Basic.sol#L199-L234) has external calls inside a loop: [share = splitter._shares(addr)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Basic.sol#L217)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 12 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Whitelist.withdrawERC20(ERC20,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Whitelist.sol#L388-L427) has external calls inside a loop: [addr = splitter._payees(i)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Whitelist.sol#L408)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 13 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Whitelist.withdrawERC20(ERC20,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Whitelist.sol#L388-L427) has external calls inside a loop: [share = splitter._shares(addr)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Whitelist.sol#L409)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 14 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Lazy.withdrawERC20(ERC20,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L319-L358) has external calls inside a loop: [share = splitter._shares(addr)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L340)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 15 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Minimal.withdraw(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L103-L138) has external calls inside a loop: [share = splitter._shares(addr)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L121)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 16 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Basic.withdraw(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Basic.sol#L199-L234) has external calls inside a loop: [addr = splitter._payees(i)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Basic.sol#L216)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 17 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Basic.withdrawERC20(ERC20,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Basic.sol#L236-L275) has external calls inside a loop: [share = splitter._shares(addr)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Basic.sol#L257)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 18 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Whitelist.withdraw(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Whitelist.sol#L351-L386) has external calls inside a loop: [addr = splitter._payees(i)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Whitelist.sol#L368)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 19 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Basic.withdrawERC20(ERC20,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Basic.sol#L236-L275) has external calls inside a loop: [addr = splitter._payees(i)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Basic.sol#L256)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 20 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Minimal.withdrawERC20(ERC20,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Minimal.sol#L143-L182) has external calls inside a loop: [addr = splitter._payees(i)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Minimal.sol#L163)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 21 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Lazy.withdraw(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L159-L194) has external calls inside a loop: [share = splitter._shares(addr)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L177)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 22 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Minimal.withdrawERC20(ERC20,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L140-L179) has external calls inside a loop: [addr = splitter._payees(i)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L160)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 23 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155B._mint(address,uint256,uint256,bytes)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Base/ERC1155B.sol#L233-L264) has external calls inside a loop: [require(bool,string)(ERC1155TokenReceiver(to).onERC1155Received(msg.sender,address(0),id,amount,data) == ERC1155TokenReceiver.onERC1155Received.selector,UNSAFE_RECIPIENT)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Base/ERC1155B.sol#L250-L262)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 24 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Basic.withdraw(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L262-L297) has external calls inside a loop: [share = splitter._shares(addr)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L280)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 25 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Lazy.withdraw(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L159-L194) has external calls inside a loop: [addr = splitter._payees(i)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L176)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 26 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [MADMarketplace721._withdrawOutbid(address,ERC20,uint256,uint160)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L667-L719) has external calls inside a loop: [amountOut = swapRouter.exactInputSingle(params)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L715-L717)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 27 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Whitelist.withdrawERC20(ERC20,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L504-L543) has external calls inside a loop: [share = splitter._shares(addr)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L525)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 28 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Lazy.withdraw(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L282-L317) has external calls inside a loop: [addr = splitter._payees(i)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L299)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 29 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Basic.withdrawERC20(ERC20,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L299-L338) has external calls inside a loop: [share = splitter._shares(addr)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L320)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 30 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Whitelist.withdraw(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Whitelist.sol#L351-L386) has external calls inside a loop: [share = splitter._shares(addr)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Whitelist.sol#L369)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 31 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Lazy.withdraw(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L282-L317) has external calls inside a loop: [share = splitter._shares(addr)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L300)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 32 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Minimal.withdrawERC20(ERC20,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Minimal.sol#L143-L182) has external calls inside a loop: [share = splitter._shares(addr)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Minimal.sol#L164)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 33 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC721Lazy.withdrawERC20(ERC20,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L196-L235) has external calls inside a loop: [addr = splitter._payees(i)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L216)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 34 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Minimal.withdrawERC20(ERC20,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L140-L179) has external calls inside a loop: [share = splitter._shares(addr)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L161)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 35 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Whitelist.withdraw(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L467-L502) has external calls inside a loop: [share = splitter._shares(addr)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L485)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 36 / 36_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- [ERC1155Whitelist.withdraw(address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L467-L502) has external calls inside a loop: [addr = splitter._payees(i)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L484)
-
-
-## Example / POC
-
-## Recommendations
-
----
-# reentrancy-benign
-
-> Items Found: 16
-
-_Item 1 / 16_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADFactory1155.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L330-L485):
+- Reentrancy in [MADMarketplace721._extPath0(Types.Order721,uint256,bytes32,address)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L331-L358):
 	External calls:
-	- [(tokenSalt,deployed) = ERC1155MinimalDeployer._1155MinimalDeploy(_tokenSalt,_uri,_price,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L352-L361)
-	- [(tokenSalt,deployed) = ERC1155BasicDeployer._1155BasicDeploy(_tokenSalt,_uri,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L385-L395)
-	- [(tokenSalt,deployed) = ERC1155WhitelistDeployer._1155WhitelistDeploy(_tokenSalt,_uri,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L419-L429)
-	State variables written after the call(s):
-	- [colInfo[colId_scope_5] = Types.Collection1155(tx.origin,Types.ERC1155Type.ERC1155Whitelist,tokenSalt_scope_3,block.number,_splitter)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L434-L440)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 2 / 16_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADFactory721.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L334-L497):
-	External calls:
-	- [(tokenSalt,deployed) = ERC721MinimalDeployer._721MinimalDeploy(_tokenSalt,_name,_symbol,_baseURI,_price,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L356-L367)
-	State variables written after the call(s):
-	- [colInfo[colId] = Types.Collection721(tx.origin,Types.ERC721Type.ERC721Minimal,tokenSalt,block.number,_splitter)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L372-L378)
-	- [userTokens[tx.origin].push(colId)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L370)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 3 / 16_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADFactory721.splitterCheck(string,address,address,uint256,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L134-L314):
-	External calls:
-	- [_splitter_scope_5 = SplitterDeployer._SplitterDeploy(_splitterSalt,_payees_scope_3,_shares_scope_4)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L234-L238)
-	State variables written after the call(s):
-	- [splitterInfo[tx.origin][_splitter_scope_5] = Types.SplitterConfig(_splitter_scope_5,splitterSalt,address(0),_project,0,_projectShare,true)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L240-L249)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 4 / 16_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADFactory1155.splitterCheck(string,address,address,uint256,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L130-L310):
-	External calls:
-	- [_splitter_scope_5 = SplitterDeployer._SplitterDeploy(_splitterSalt,_payees_scope_3,_shares_scope_4)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L230-L234)
-	State variables written after the call(s):
-	- [splitterInfo[tx.origin][_splitter_scope_5] = Types.SplitterConfig(_splitter_scope_5,splitterSalt,address(0),_project,0,_projectShare,true)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L236-L245)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 5 / 16_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADFactory1155.splitterCheck(string,address,address,uint256,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L130-L310):
-	External calls:
-	- [_splitter_scope_8 = SplitterDeployer._SplitterDeploy(_splitterSalt,_payees_scope_6,_shares_scope_7)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L277-L281)
-	State variables written after the call(s):
-	- [splitterInfo[tx.origin][_splitter_scope_8] = Types.SplitterConfig(_splitter_scope_8,splitterSalt,_ambassador,_project,_ambShare,_projectShare,true)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L283-L292)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 6 / 16_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADFactory721.splitterCheck(string,address,address,uint256,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L134-L314):
-	External calls:
-	- [_splitter_scope_8 = SplitterDeployer._SplitterDeploy(_splitterSalt,_payees_scope_6,_shares_scope_7)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L281-L285)
-	State variables written after the call(s):
-	- [splitterInfo[tx.origin][_splitter_scope_8] = Types.SplitterConfig(_splitter_scope_8,splitterSalt,_ambassador,_project,_ambShare,_projectShare,true)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L287-L296)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 7 / 16_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADFactory721.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L334-L497):
-	External calls:
-	- [(tokenSalt,deployed) = ERC721MinimalDeployer._721MinimalDeploy(_tokenSalt,_name,_symbol,_baseURI,_price,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L356-L367)
-	- [(tokenSalt,deployed) = ERC721BasicDeployer._721BasicDeploy(_tokenSalt,_name,_symbol,_baseURI,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L391-L403)
-	- [(tokenSalt,deployed) = ERC721WhitelistDeployer._721WhitelistDeploy(_tokenSalt,_name,_symbol,_baseURI,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L427-L439)
-	State variables written after the call(s):
-	- [colInfo[colId_scope_5] = Types.Collection721(tx.origin,Types.ERC721Type.ERC721Whitelist,tokenSalt_scope_3,block.number,_splitter)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L444-L450)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 8 / 16_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADFactory1155.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L330-L485):
-	External calls:
-	- [(tokenSalt,deployed) = ERC1155MinimalDeployer._1155MinimalDeploy(_tokenSalt,_uri,_price,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L352-L361)
-	- [(tokenSalt,deployed) = ERC1155BasicDeployer._1155BasicDeploy(_tokenSalt,_uri,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L385-L395)
-	State variables written after the call(s):
-	- [colInfo[colId_scope_2] = Types.Collection1155(tx.origin,Types.ERC1155Type.ERC1155Basic,tokenSalt_scope_0,block.number,_splitter)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L400-L406)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 9 / 16_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADFactory1155.splitterCheck(string,address,address,uint256,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L130-L310):
-	External calls:
-	- [_splitter = SplitterDeployer._SplitterDeploy(_splitterSalt,_payees,_shares)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L152-L156)
-	State variables written after the call(s):
-	- [splitterInfo[tx.origin][_splitter] = Types.SplitterConfig(_splitter,splitterSalt,address(0),address(0),0,0,true)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L158-L167)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 10 / 16_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADFactory721.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L334-L497):
-	External calls:
-	- [(tokenSalt,deployed) = ERC721MinimalDeployer._721MinimalDeploy(_tokenSalt,_name,_symbol,_baseURI,_price,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L356-L367)
-	- [(tokenSalt,deployed) = ERC721BasicDeployer._721BasicDeploy(_tokenSalt,_name,_symbol,_baseURI,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L391-L403)
-	State variables written after the call(s):
-	- [colInfo[colId_scope_2] = Types.Collection721(tx.origin,Types.ERC721Type.ERC721Basic,tokenSalt_scope_0,block.number,_splitter)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L408-L414)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 11 / 16_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADFactory1155.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L330-L485):
-	External calls:
-	- [(tokenSalt,deployed) = ERC1155MinimalDeployer._1155MinimalDeploy(_tokenSalt,_uri,_price,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L352-L361)
-	- [(tokenSalt,deployed) = ERC1155BasicDeployer._1155BasicDeploy(_tokenSalt,_uri,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L385-L395)
-	- [(tokenSalt,deployed) = ERC1155WhitelistDeployer._1155WhitelistDeploy(_tokenSalt,_uri,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L419-L429)
-	- [(tokenSalt,deployed) = ERC1155LazyDeployer._1155LazyDeploy(_tokenSalt,_uri,_splitter,router,signer,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L453-L462)
-	State variables written after the call(s):
-	- [colInfo[colId_scope_8] = Types.Collection1155(tx.origin,Types.ERC1155Type.ERC1155Lazy,tokenSalt_scope_6,block.number,_splitter)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L467-L473)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 12 / 16_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADFactory721.splitterCheck(string,address,address,uint256,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L134-L314):
-	External calls:
-	- [_splitter_scope_2 = SplitterDeployer._SplitterDeploy(_splitterSalt,_payees_scope_0,_shares_scope_1)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L195-L199)
-	State variables written after the call(s):
-	- [splitterInfo[tx.origin][_splitter_scope_2] = Types.SplitterConfig(_splitter_scope_2,splitterSalt,_ambassador,address(0),_ambShare,0,true)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L201-L210)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 13 / 16_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADFactory1155.splitterCheck(string,address,address,uint256,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L130-L310):
-	External calls:
-	- [_splitter_scope_2 = SplitterDeployer._SplitterDeploy(_splitterSalt,_payees_scope_0,_shares_scope_1)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L191-L195)
-	State variables written after the call(s):
-	- [splitterInfo[tx.origin][_splitter_scope_2] = Types.SplitterConfig(_splitter_scope_2,splitterSalt,_ambassador,address(0),_ambShare,0,true)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L197-L206)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 14 / 16_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADFactory721.splitterCheck(string,address,address,uint256,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L134-L314):
-	External calls:
-	- [_splitter = SplitterDeployer._SplitterDeploy(_splitterSalt,_payees,_shares)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L156-L160)
-	State variables written after the call(s):
-	- [splitterInfo[tx.origin][_splitter] = Types.SplitterConfig(_splitter,splitterSalt,address(0),address(0),0,0,true)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L162-L171)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 15 / 16_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADFactory1155.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L330-L485):
-	External calls:
-	- [(tokenSalt,deployed) = ERC1155MinimalDeployer._1155MinimalDeploy(_tokenSalt,_uri,_price,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L352-L361)
-	State variables written after the call(s):
-	- [colInfo[colId] = Types.Collection1155(tx.origin,Types.ERC1155Type.ERC1155Minimal,tokenSalt,block.number,_splitter)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L366-L372)
-	- [userTokens[tx.origin].push(colId)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L364)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 16 / 16_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADFactory721.createCollection(uint8,string,string,string,uint256,uint256,string,address,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L334-L497):
-	External calls:
-	- [(tokenSalt,deployed) = ERC721MinimalDeployer._721MinimalDeploy(_tokenSalt,_name,_symbol,_baseURI,_price,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L356-L367)
-	- [(tokenSalt,deployed) = ERC721BasicDeployer._721BasicDeploy(_tokenSalt,_name,_symbol,_baseURI,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L391-L403)
-	- [(tokenSalt,deployed) = ERC721WhitelistDeployer._721WhitelistDeploy(_tokenSalt,_name,_symbol,_baseURI,_price,_maxSupply,_splitter,router,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L427-L439)
-	- [(tokenSalt,deployed) = ERC721LazyDeployer._721LazyDeploy(_tokenSalt,_name,_symbol,_baseURI,_splitter,router,signer,_royalty,erc20)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L463-L474)
-	State variables written after the call(s):
-	- [colInfo[colId_scope_8] = Types.Collection721(tx.origin,Types.ERC721Type.ERC721Lazy,tokenSalt_scope_6,block.number,_splitter)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L479-L485)
-
-
-## Example / POC
-
-## Recommendations
-
----
-# reentrancy-events
-
-> Items Found: 5
-
-_Item 1 / 5_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADMarketplace721._extPath1(Types.Order721,uint256,bytes32,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L988-L1032):
-	External calls:
-	- [_order.token.safeTransferFrom(address(this),_to,_order.tokenId)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L1019-L1023)
+	- [_order.token.safeTransferFrom(address(this),_to,_order.tokenId)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L356)
 	Event emitted after the call(s):
-	- [Claim(_order.token,_order.tokenId,_orderId,_order.seller,_to,_price)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L1024-L1031)
+	- [Claim(_order.token,_order.tokenId,_orderId,_order.seller,_to,_price)](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplace721.sol#L357)
 
 
 ## Example / POC
 
 ## Recommendations
 
----
-
-_Item 2 / 5_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADMarketplace1155._withdrawOutbid(address,ERC20,uint256,uint160)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L688-L740):
-	External calls:
-	- [amountOut = swapRouter.exactInputSingle(params)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L736-L738)
-	Event emitted after the call(s):
-	- [WithdrawOutbid(_sender,address(_token),amountOut)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L739)
-
-
-## Example / POC
-
-## Recommendations
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
 
 ---
 
-_Item 3 / 5_
 
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADMarketplace721._intPath(Types.Order721,uint256,bytes32,address,uint256)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L851-L918):
-	External calls:
-	- [_order.token.safeTransferFrom(address(this),_to,_order.tokenId)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L905-L909)
-	Event emitted after the call(s):
-	- [Claim(_order.token,_order.tokenId,_orderId,_order.seller,_to,_price)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L910-L917)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 4 / 5_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADMarketplace721._extPath0(Types.Order721,uint256,bytes32,address)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L920-L986):
-	External calls:
-	- [_order.token.safeTransferFrom(address(this),_to,_order.tokenId)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L973-L977)
-	Event emitted after the call(s):
-	- [Claim(_order.token,_order.tokenId,_orderId,_order.seller,_to,_price)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L978-L985)
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 5 / 5_
-
-## Severity
-
-**Impact:** Low
-
-**Likelihood:** Medium
-
-## Description
-
- Reentrancy in [MADMarketplace721._withdrawOutbid(address,ERC20,uint256,uint160)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L667-L719):
-	External calls:
-	- [amountOut = swapRouter.exactInputSingle(params)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L715-L717)
-	Event emitted after the call(s):
-	- [WithdrawOutbid(_sender,address(_token),amountOut)](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L718)
-
-
-## Example / POC
-
-## Recommendations
-
----
 # constable-states
 
-> Items Found: 27
+> Items Found: 18
 
-_Item 1 / 27_
+_Item 1 / 18_
+
 
 ## Severity
 
@@ -3355,16 +1563,21 @@ _Item 1 / 27_
 
 ## Description
 
- [MADMarketplace1155.feeVal3](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L47) should be constant 
+- L45: 
+
+- [MADRouterBase.maxFeeBurn](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouterBase.sol#L45) should be constant 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 2 / 27_
+_Item 2 / 18_
+
 
 ## Severity
 
@@ -3374,16 +1587,21 @@ _Item 2 / 27_
 
 ## Description
 
- [MADMarketplace1155.feeVal2](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L46) should be constant 
+- L46: 
+
+- [MADMarketplaceBase.minAuctionIncrement](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L46) should be constant 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 3 / 27_
+_Item 3 / 18_
+
 
 ## Severity
 
@@ -3393,16 +1611,21 @@ _Item 3 / 27_
 
 ## Description
 
- [MADMarketplace721.minAuctionIncrement](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L72) should be constant 
+- L47: 
+
+- [MADMarketplaceBase.minBidValue](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L47) should be constant 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 4 / 27_
+_Item 4 / 18_
+
 
 ## Severity
 
@@ -3412,16 +1635,21 @@ _Item 4 / 27_
 
 ## Description
 
- [MADMarketplace1155.minAuctionIncrement](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L71) should be constant 
+- L48: 
+
+- [MADRouterBase.madFactory](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouterBase.sol#L48) should be constant 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 5 / 27_
+_Item 5 / 18_
+
 
 ## Severity
 
@@ -3431,16 +1659,21 @@ _Item 5 / 27_
 
 ## Description
 
- [MADFactory1155.market](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L79) should be constant 
+- L27: 
+
+- [MADMarketplaceBase.royaltyFee](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L27) should be constant 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 6 / 27_
+_Item 6 / 18_
+
 
 ## Severity
 
@@ -3450,16 +1683,21 @@ _Item 6 / 27_
 
 ## Description
 
- [MADMarketplace1155.minBidValue](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L72) should be constant 
+- L42: 
+
+- [MADRouterBase.maxFeeMint](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouterBase.sol#L42) should be constant 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 7 / 27_
+_Item 7 / 18_
+
 
 ## Severity
 
@@ -3469,16 +1707,21 @@ _Item 7 / 27_
 
 ## Description
 
- [MADFactory721.market](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L79) should be constant 
+- L54: 
+
+- [MADMarketplaceBase.MADFactory](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L54) should be constant 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 8 / 27_
+_Item 8 / 18_
+
 
 ## Severity
 
@@ -3488,16 +1731,21 @@ _Item 8 / 27_
 
 ## Description
 
- [MADRouter721.feeBurn](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter721.sol#L47) should be constant 
+- L39: 
+
+- [MADRouterBase.recipient](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouterBase.sol#L39) should be constant 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 9 / 27_
+_Item 9 / 18_
+
 
 ## Severity
 
@@ -3507,16 +1755,21 @@ _Item 9 / 27_
 
 ## Description
 
- [MADRouter1155.feeMint](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter1155.sol#L44) should be constant 
+- L28: 
+
+- [MADMarketplaceBase.maxFee](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L28) should be constant 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 10 / 27_
+_Item 10 / 18_
+
 
 ## Severity
 
@@ -3526,16 +1779,21 @@ _Item 10 / 27_
 
 ## Description
 
- [MADMarketplace721.feeVal3](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L47) should be constant 
+- L63: 
+
+- [MADFactoryBase.market](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactoryBase.sol#L63) should be constant 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 11 / 27_
+_Item 11 / 18_
+
 
 ## Severity
 
@@ -3545,16 +1803,21 @@ _Item 11 / 27_
 
 ## Description
 
- [MADRouter1155.feeBurn](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter1155.sol#L47) should be constant 
+- L42: 
+
+- [MADMarketplaceBase.MAX_ROYALTY_FEE](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L42) should be constant 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 12 / 27_
+_Item 12 / 18_
+
 
 ## Severity
 
@@ -3564,16 +1827,21 @@ _Item 12 / 27_
 
 ## Description
 
- [MADRouter1155.recipient](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter1155.sol#L50) should be constant 
+- L36: 
+
+- [MADRouterBase.feeBurn](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouterBase.sol#L36) should be constant 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 13 / 27_
+_Item 13 / 18_
+
 
 ## Severity
 
@@ -3583,16 +1851,21 @@ _Item 13 / 27_
 
 ## Description
 
- [MADMarketplace1155.MADFactory1155](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L76) should be constant 
+- L50: 
+
+- [MADMarketplaceBase.recipient](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L50) should be constant 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 14 / 27_
+_Item 14 / 18_
+
 
 ## Severity
 
@@ -3602,16 +1875,21 @@ _Item 14 / 27_
 
 ## Description
 
- [MADMarketplace721.MADFactory721](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L76) should be constant 
+- L60: 
+
+- [MADFactoryBase.router](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactoryBase.sol#L60) should be constant 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 15 / 27_
+_Item 15 / 18_
+
 
 ## Severity
 
@@ -3621,16 +1899,21 @@ _Item 15 / 27_
 
 ## Description
 
- [MADRouter721.recipient](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter721.sol#L56) should be constant 
+- L43: 
+
+- [MADMarketplaceBase.MAX_FEES](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L43) should be constant 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 16 / 27_
+_Item 16 / 18_
+
 
 ## Severity
 
@@ -3640,16 +1923,21 @@ _Item 16 / 27_
 
 ## Description
 
- [MADMarketplace721.feeVal2](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L46) should be constant 
+- L45: 
+
+- [MADMarketplaceBase.minOrderDuration](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L45) should be constant 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 17 / 27_
+_Item 17 / 18_
+
 
 ## Severity
 
@@ -3659,16 +1947,21 @@ _Item 17 / 27_
 
 ## Description
 
- [ERC1155Whitelist.baseURI](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L51) should be constant 
+- L66: 
+
+- [MADFactoryBase.signer](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Factory/MADFactoryBase.sol#L66) should be constant 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 18 / 27_
+_Item 18 / 18_
+
 
 ## Severity
 
@@ -3678,190 +1971,26 @@ _Item 18 / 27_
 
 ## Description
 
- [MADMarketplace721.minOrderDuration](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L70) should be constant 
+- L48: 
+
+- [MADMarketplaceBase.maxOrderDuration](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Marketplace/MADMarketplaceBase.sol#L48) should be constant 
 
 
 ## Example / POC
 
 ## Recommendations
 
----
-
-_Item 19 / 27_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [MADRouter721.feeMint](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter721.sol#L44) should be constant 
-
-
-## Example / POC
-
-## Recommendations
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
 
 ---
 
-_Item 20 / 27_
 
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [MADMarketplace1155.recipient](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L75) should be constant 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 21 / 27_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [MADFactory1155.signer](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L82) should be constant 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 22 / 27_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [MADMarketplace721.recipient](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L75) should be constant 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 23 / 27_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [MADFactory721.signer](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L82) should be constant 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 24 / 27_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [MADMarketplace1155.maxOrderDuration](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L73) should be constant 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 25 / 27_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [MADMarketplace721.minBidValue](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L73) should be constant 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 26 / 27_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [MADMarketplace1155.minOrderDuration](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace1155.sol#L70) should be constant 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 27 / 27_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [MADMarketplace721.maxOrderDuration](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADMarketplace721.sol#L71) should be constant 
-
-
-## Example / POC
-
-## Recommendations
-
----
 # immutable-states
 
-> Items Found: 37
+> Items Found: 8
 
-_Item 1 / 37_
+_Item 1 / 8_
+
 
 ## Severity
 
@@ -3871,16 +2000,21 @@ _Item 1 / 37_
 
 ## Description
 
- [ERC1155Whitelist.erc20](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L39) should be immutable 
+- L49: 
+
+- [ImplBase.maxSupply](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/common/ImplBase.sol#L49) should be immutable 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 2 / 37_
+_Item 2 / 8_
+
 
 ## Severity
 
@@ -3890,16 +2024,21 @@ _Item 2 / 37_
 
 ## Description
 
- [MADRouter1155.MADFactory1155](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter1155.sol#L32) should be immutable 
+- L10: 
+
+- [ERC2981._royaltyFee](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/tokens/common/ERC2981.sol#L10) should be immutable 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 3 / 37_
+_Item 3 / 8_
+
 
 ## Severity
 
@@ -3909,16 +2048,21 @@ _Item 3 / 37_
 
 ## Description
 
- [ERC1155Basic.price](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L54) should be immutable 
+- L33: 
+
+- [MADRouterBase.feeMint](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/Router/MADRouterBase.sol#L33) should be immutable 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 4 / 37_
+_Item 4 / 8_
+
 
 ## Severity
 
@@ -3928,16 +2072,21 @@ _Item 4 / 37_
 
 ## Description
 
- [ERC1155Whitelist.splitter](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L36) should be immutable 
+- L25: 
+
+- [ImplBase.splitter](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/common/ImplBase.sol#L25) should be immutable 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 5 / 37_
+_Item 5 / 8_
+
 
 ## Severity
 
@@ -3947,16 +2096,21 @@ _Item 5 / 37_
 
 ## Description
 
- [MADRouter721.MADFactory721](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter721.sol#L32) should be immutable 
+- L19: 
+
+- [Owned.owner](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/auth/Owned.sol#L19) should be immutable 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 6 / 37_
+_Item 6 / 8_
+
 
 ## Severity
 
@@ -3966,16 +2120,21 @@ _Item 6 / 37_
 
 ## Description
 
- [ERC721Whitelist.publicPrice](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Whitelist.sol#L61) should be immutable 
+- L12: 
+
+- [ERC2981._royaltyRecipient](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/lib/tokens/common/ERC2981.sol#L12) should be immutable 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 7 / 37_
+_Item 7 / 8_
+
 
 ## Severity
 
@@ -3985,16 +2144,21 @@ _Item 7 / 37_
 
 ## Description
 
- [ERC1155Minimal.splitter](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L26) should be immutable 
+- L28: 
+
+- [ImplBase.erc20](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/common/ImplBase.sol#L28) should be immutable 
 
 
 ## Example / POC
 
 ## Recommendations
 
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
+
 ---
 
-_Item 8 / 37_
+_Item 8 / 8_
+
 
 ## Severity
 
@@ -4004,565 +2168,19 @@ _Item 8 / 37_
 
 ## Description
 
- [MADRouter1155.maxFeeMint](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter1155.sol#L53) should be immutable 
+- L46: 
+
+- [ImplBase.price](https://github.com/johnashu/madnfts-solidity-contracts/tree/main/contracts/MADTokens/common/ImplBase.sol#L46) should be immutable 
 
 
 ## Example / POC
 
 ## Recommendations
 
----
-
-_Item 9 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [ERC721Basic.erc20](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Basic.sol#L36) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
+*[Slither Detectors Information](https://github.com/crytic/slither?s=35#detectors)*
 
 ---
 
-_Item 10 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [MADFactory1155.router](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory1155.sol#L76) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 11 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [ERC721Whitelist.maxSupply](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Whitelist.sol#L55) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 12 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [ERC2981._royaltyFee](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/common/ERC2981.sol#L10) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 13 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [ERC721Basic.splitter](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Basic.sol#L33) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 14 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [MADFactory721.router](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADFactory721.sol#L76) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 15 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [ERC1155Minimal.erc20](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L29) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 16 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [ERC721Minimal.splitter](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Minimal.sol#L28) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 17 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [MADRouter721.maxFeeBurn](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter721.sol#L53) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 18 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [ERC1155Basic.splitter](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L33) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 19 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [ERC721Lazy.erc20](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L52) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 20 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [ERC721Whitelist.erc20](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Whitelist.sol#L37) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 21 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [MADRouter1155.maxFeeBurn](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter1155.sol#L56) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 22 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [Owned.owner](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/auth/Owned.sol#L22) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 23 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [ERC2981._royaltyRecipient](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/common/ERC2981.sol#L12) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 24 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [ERC721Basic.maxSupply](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Basic.sol#L57) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 25 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [ERC721Minimal.erc20](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Minimal.sol#L31) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 26 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [ERC1155Basic.maxSupply](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L57) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 27 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [ERC1155Minimal.price](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Minimal.sol#L32) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 28 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [ERC721Whitelist.splitter](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Whitelist.sol#L34) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 29 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [ERC721Lazy.splitter](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Lazy.sol#L49) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 30 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [ERC1155Lazy.erc20](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L58) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 31 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [ERC721Minimal.price](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Minimal.sol#L34) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 32 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [MADRouter721.maxFeeMint](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/MADRouter721.sol#L50) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 33 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [ERC721Basic.price](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC721/Impl/ERC721Basic.sol#L54) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 34 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [ERC1155Lazy.splitter](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Lazy.sol#L55) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 35 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [ERC1155Basic.erc20](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Basic.sol#L36) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 36 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [ERC1155Whitelist.publicPrice](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L66) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
-
-_Item 37 / 37_
-
-## Severity
-
-**Impact:** Optimization
-
-**Likelihood:** High
-
-## Description
-
- [ERC1155Whitelist.maxSupply](https://github.com/madnfts/madnfts-solidity-contracts/tree/c128e6780c557dc8eb432c6545ebc2411b26cbd3/contracts/lib/tokens/ERC1155/Impl/ERC1155Whitelist.sol#L60) should be immutable 
-
-
-## Example / POC
-
-## Recommendations
-
----
 
 # ERC Compliance Checks
 
